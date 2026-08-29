@@ -9,10 +9,12 @@ USER 101
 
 # Each destination folder becomes the paper's public path on the chosen host.
 COPY graph/secure-domination-p5-free/website/index.html /usr/share/nginx/html/secure-domination-p5-free/
+COPY graph/secure-domination-p5-free/website/favicon.png /usr/share/nginx/html/secure-domination-p5-free/
 COPY graph/secure-domination-p5-free/website/css /usr/share/nginx/html/secure-domination-p5-free/css
 COPY graph/secure-domination-p5-free/website/js /usr/share/nginx/html/secure-domination-p5-free/js
 
 COPY biology/aggregate-chemistry-transfer/website/index.html /usr/share/nginx/html/aggregate-chemistry-transfer/
+COPY biology/aggregate-chemistry-transfer/website/favicon.png /usr/share/nginx/html/aggregate-chemistry-transfer/
 COPY biology/aggregate-chemistry-transfer/website/css /usr/share/nginx/html/aggregate-chemistry-transfer/css
 COPY biology/aggregate-chemistry-transfer/website/assets /usr/share/nginx/html/aggregate-chemistry-transfer/assets
 

@@ -8,6 +8,7 @@ command, environment variable, database, or sibling website.
 
 ```text
 index.html
+favicon.png
 css/site.css
 assets/biology_comparison.png
 Dockerfile
