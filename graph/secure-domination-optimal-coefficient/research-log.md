@@ -160,3 +160,32 @@ This correction removes the component-representative consequence but does
 not affect the exact residual-security equivalence, the computational
 frontiers, the coefficient interval, the alpha-three theorem, or the
 operation results.
+
+## 12. Dominating-set residual completion
+
+A replacement argument proved the general bound
+
+`gamma_s(G) <= |D| + alpha(G-D) - 1`
+
+for every dominating set `D` with nonempty outside graph. Choose a maximum
+independent set outside `D` and omit one member; the still-undominated
+outside residual must be a clique, which makes every attack defendable. The
+construction was then checked directly over the complete Graph Atlas.
+
+Consequently, every graph with a dominating pair satisfies
+`gamma_s <= alpha+1`. This closes the dominating-edge branch that repeatedly
+appeared in the finite obstruction mining. It does not close the full
+candidate: larger dominating cores still require a collective replacement
+or a sharper global accounting argument.
+
+A clique-specific refinement constructs a secure set of size
+
+`sum_k alpha(G[P_k]) + gamma(G[M])`,
+
+where `M` is the outside region with multiple clique neighbors. It passed
+5,830 direct constructions across every minimal dominating clique in the
+Graph Atlas. A complete-bipartite two-private-region family disproves the
+tempting next inequality that the sum of private-region independence numbers
+is at most `alpha+1`; its gap is unbounded even though a cross-region secure
+four-set keeps the target bound true. Future work must exploit those cross
+edges rather than budget each private region independently.
