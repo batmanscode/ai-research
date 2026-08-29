@@ -31,7 +31,7 @@ landscapes influenced the broader research path. The decisive next experiment
 is a frozen, prospective evaluation on a fourth backbone; a preregistration is
 included.
 
-- [Lay report source](https://github.com/batmanscode/ai-research/blob/main/site/biology.html)
-- [Full methods and limitations](https://github.com/batmanscode/ai-research/blob/main/biology/README.md)
-- [Reproducible pipeline](https://github.com/batmanscode/ai-research/blob/main/biology/native_core_transfer.py)
-- [Fourth-backbone preregistration](https://github.com/batmanscode/ai-research/blob/main/biology/fourth_backbone_preregistration.md)
+- [Interactive visual paper](https://github.com/batmanscode/ai-research/blob/main/biology/aggregate-chemistry-transfer/website/index.html)
+- [Full methods and limitations](https://github.com/batmanscode/ai-research/blob/main/biology/aggregate-chemistry-transfer/README.md)
+- [Reproducible pipeline](https://github.com/batmanscode/ai-research/blob/main/biology/aggregate-chemistry-transfer/native_core_transfer.py)
+- [Fourth-backbone preregistration](https://github.com/batmanscode/ai-research/blob/main/biology/aggregate-chemistry-transfer/fourth_backbone_preregistration.md)

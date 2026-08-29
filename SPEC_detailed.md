@@ -8,16 +8,16 @@ This is the current product, research, and technical truth for `ai-research`.
 
 The repository is an extensible public home for small, independently auditable
 AI-assisted research results. Its first release contains one exact graph-
-theory result and one exploratory biological machine-learning result, plus a
-lay-facing static explainer.
+theory result and one exploratory biological machine-learning result, plus one
+independently deployable, lay-facing visual paper for each result.
 
 ## Repository structure
 
-- `graph/` — theorem statement, precise scope, research log, standard-library
-  verifier, and machine-readable certificate.
-- `biology/` — corrected analysis, public-data downloader, frozen results,
-  figure, research log, and prospective fourth-backbone preregistration.
-- `site/` — dependency-free two-page static explainer.
+- `graph/` — category index; each named project owns its theorem, evidence,
+  verifier, design contract, and visual paper.
+- `biology/` — category index; each named project owns its analysis, results,
+  preregistration, design contract, and visual paper.
+- `site/` — compatibility copy of the original two-page static explainer.
 - `findings/` — Markdown source for external finding submissions.
 - Root documents — project routing, owner intent, current truth, design,
   validation, deployment, citation, licensing, and file integrity.
@@ -56,24 +56,28 @@ public-test results. The broader representation path was influenced by prior
 test inspection. Confirmation requires the frozen prospective fourth-backbone
 study.
 
-## Static explainer
+## Visual papers
 
-`site/index.html` introduces secure domination in plain language and contains
+`graph/secure-domination-p5-free/website/index.html` introduces secure
+domination in plain language and contains
 a four-step SVG story: icosahedron, complement, failed triple, secure four-set.
 Tabs and an optional timed playback control change the exact graph state.
 
-`site/biology.html` explains the corrected reference state, three held-
-backbone comparisons, within-count signal, invariance hypothesis, failed
-position-specific structural transfer, and evidence boundary.
+`biology/aggregate-chemistry-transfer/website/index.html` explains the corrected
+reference state, three held-backbone comparisons, within-count signal,
+invariance hypothesis, failed position-specific structural transfer, and
+evidence boundary.
 
+Each paper owns its first-party assets and can be deployed without the other.
 Both pages use relative first-party assets, semantic headings, a skip link,
 responsive layouts, visible text labels in addition to color, and reduced-
 motion handling. External links point to stable repository or source URLs.
 
 ## Deployment
 
-Deployment is owner-managed. The deployable root is `site/`; the repository
-contains no automatic deployment workflow. See `DEPLOYMENT.md`.
+Deployment is owner-managed. The canonical deploy roots are the two project
+`website/` directories; the repository contains no automatic deployment
+workflow. See `DEPLOYMENT.md`.
 
 ## Known limitations and open gates
 
@@ -93,4 +97,3 @@ contains no automatic deployment workflow. See `DEPLOYMENT.md`.
 - All tracked artifact checksums pass and no credentials appear in the commit.
 - The static site works at desktop, compact, phone, and narrow widths once
   hosted, with no broken first-party assets or critical console errors.
-

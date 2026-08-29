@@ -6,7 +6,8 @@ reproducible, and exploratory results visibly exploratory.
 ## Read the right truth
 
 1. `SPEC_detailed.md` — current repository, result, and interaction truth.
-2. `graph/README.md` and `biology/README.md` — domain methods and claim scope.
+2. Each named project's `README.md` — domain methods and claim scope; category
+   `README.md` files route to the current projects.
 3. `DESIGN.md` — visual, interaction, and public-voice rules.
 4. `PLAYTEST.md` — evergreen verification contract and open gates.
 5. `playtest/RESULTS.md` — durable evidence and unresolved gates.
@@ -28,6 +29,10 @@ drafts, not a second source of scientific truth.
   changes.
 - Deployment is owner-managed. Do not add or run automatic deployment unless
   the owner explicitly requests it.
+- Treat `graph/<project>/` and `biology/<project>/` as independent projects.
+  Each owns its scientific report, evidence, `DESIGN.md`, and `website/`.
+- Keep `site/` as a compatibility copy until its already-published source links
+  are deliberately retired.
 - Publish external findings only after the corresponding source tree and links
   are stable.
 
@@ -41,4 +46,3 @@ opinion, not the decision-maker.
 Before major commits, check whether the relevant README, specs, design,
 playtest, and domain reports still agree. Commit coherent milestones with clear
 messages.
-

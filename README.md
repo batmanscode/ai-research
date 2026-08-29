@@ -4,21 +4,23 @@ Two auditable research tracks developed from public open problems: an exact
 counterexample in secure domination and a corrected exploratory experiment on
 protein-fitness transfer.
 
-**Interactive explainer source:** [`site/index.html`](site/index.html)
+**Independent visual papers:**
+[graph counterexample](graph/secure-domination-p5-free/website/index.html) ·
+[protein transfer](biology/aggregate-chemistry-transfer/website/index.html)
 
 ## Results at a glance
 
 | track | result | status | start here |
 |---|---|---|---|
-| Graph theory | For the complement \(G\) of the icosahedral graph, \(\gamma_s(G)=4>3=\alpha(G)\). Thus the proposed coefficient-one strengthening is false and the best universal coefficient lies in \([4/3,3/2]\). | Exact, exhaustively certified theorem/counterexample. The optimum coefficient remains open. | [`graph/README.md`](graph/README.md) |
-| Protein fitness | A validation-selected 11–16 feature aggregate-chemistry ridge improves on native mutation count in all three FLIP2 Hydro held-backbone folds; within-count signal is positive in each. | Exploratory reconstruction, not untouched confirmation. A fourth backbone is preregistered. | [`biology/README.md`](biology/README.md) |
+| Graph theory | For the complement \(G\) of the icosahedral graph, \(\gamma_s(G)=4>3=\alpha(G)\). Thus the proposed coefficient-one strengthening is false and the best universal coefficient lies in \([4/3,3/2]\). | Exact, exhaustively certified theorem/counterexample. The optimum coefficient remains open. | [`graph/secure-domination-p5-free/`](graph/secure-domination-p5-free/) |
+| Protein fitness | A validation-selected 11–16 feature aggregate-chemistry ridge improves on native mutation count in all three FLIP2 Hydro held-backbone folds; within-count signal is positive in each. | Exploratory reconstruction, not untouched confirmation. A fourth backbone is preregistered. | [`biology/aggregate-chemistry-transfer/`](biology/aggregate-chemistry-transfer/) |
 
 ## Reproduce
 
 The graph result needs only Python's standard library:
 
 ```bash
-cd graph
+cd graph/secure-domination-p5-free
 python3 verify_counterexample.py
 ```
 
@@ -29,19 +31,22 @@ statistics and figure:
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-cd biology
+cd biology/aggregate-chemistry-transfer
 python3 native_core_transfer.py
 ```
 
-The website is dependency-free. Open `site/index.html`, or deploy the `site/`
-directory with any static host.
+Both visual papers are dependency-free. Deploy
+`graph/secure-domination-p5-free/website/` and
+`biology/aggregate-chemistry-transfer/website/` independently with any static
+host. The original `site/` paths remain as compatibility copies for published
+source links.
 
 ## Repository map
 
 ```text
-graph/      proof, standard-library verifier, exact certificate, research log
-biology/    corrected pipeline, results, preregistration, research log
-site/       lay explanation and interactive graph story
+graph/      category index and named graph-theory projects
+biology/    category index and named biological projects
+site/       compatibility copy of the original combined explainer
 findings/   source drafts for the two Emergent Mind reports
 ```
 
@@ -59,8 +64,8 @@ Project truth and verification are routed through [`AGENTS.md`](AGENTS.md),
 - The biology test landscapes had influenced the broader research path before
   this reconstruction. The per-fold hyperparameters are selected on
   training-side validation, but the result remains exploratory.
-- `graph/research-log.md` and `biology/research-log.md` record corrections and
-  failed approaches because negative information is part of the useful result.
+- Each project's `research-log.md` records corrections and failed approaches
+  because negative information is part of the useful result.
 
 ## Sources and licenses
 

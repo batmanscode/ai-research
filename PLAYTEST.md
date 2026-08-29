@@ -31,16 +31,16 @@ prove responsive layout; an AI review does not replace primary judgment.
 From the repository root:
 
 ```bash
-(cd graph && python3 verify_counterexample.py --output /tmp/certificate.json)
-cmp graph/data/counterexample_certificate.json /tmp/certificate.json
+(cd graph/secure-domination-p5-free && python3 verify_counterexample.py --output /tmp/certificate.json)
+cmp graph/secure-domination-p5-free/data/counterexample_certificate.json /tmp/certificate.json
 
-python3 biology/native_core_transfer.py \
+python3 biology/aggregate-chemistry-transfer/native_core_transfer.py \
   --data-dir .cache/hydro \
   --output /tmp/biology.json \
   --figure /tmp/biology.png \
   --bootstrap 50 --permutations 100
 
-node --check site/js/graph-story.js
+node --check graph/secure-domination-p5-free/website/js/graph-story.js
 sha256sum -c CHECKSUMS.sha256
 ```
 
@@ -54,7 +54,10 @@ credential values; report only pass/fail or filenames needing inspection.
 
 ## Website scenario
 
-Serve `site/` on a trusted local or deployed static host.
+Run the graph scenario with `graph/secure-domination-p5-free/website/` as the
+static root and the biology scenario with
+`biology/aggregate-chemistry-transfer/website/` as the static root. Neither may
+rely on its sibling site being mounted beside it.
 
 1. Confirm the hero states `gamma_s = 4 > 3 = alpha` and the coefficient gap.
 2. Select Shape, Flip, Three, and Four. Confirm edge counts 30, 36, 36, 36;
@@ -62,9 +65,9 @@ Serve `site/` on a trusted local or deployed static host.
    10; the secure set is `{0,1,2,3}`.
 3. Play, pause, and directly select a step during playback.
 4. Follow proof, certificate, research-log, repository, and source links.
-5. Open the biology page and verify all nine comparison values, all three
-   within-count values, native cores, and the exploratory warning.
-6. Confirm no unexpected console errors, broken first-party requests, clipped
+5. Separately open the biology website and verify all nine comparison values,
+   all three within-count values, native cores, and the exploratory warning.
+6. On both websites, confirm no unexpected console errors, broken first-party requests, clipped
    text, or horizontal document overflow.
 
 Repeat at approximately 1440×900, 1024×768, 390×844, and 320×568. At 200%
@@ -93,4 +96,3 @@ Immediately before publishing an Emergent Mind finding:
 - include stable repository, method, and certificate/preregistration links;
 - use the agreed attribution; and
 - read the returned finding object back before claiming success.
-

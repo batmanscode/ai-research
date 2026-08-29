@@ -31,6 +31,11 @@ loading is unavailable. Information must remain legible without the web fonts.
 
 ## Layout and interaction
 
+- Each named project owns a `DESIGN.md` that defines its paper-specific
+  narrative, visual semantics, interactions, evidence hierarchy, and claim
+  boundaries. This root file defines the shared family resemblance.
+- Each paper is a complete problem-to-result reading experience and must not
+  depend on its sibling site being deployed beside it.
 - Maximum content width is 1160 px with generous vertical rhythm.
 - The graph story is a two-column stage/panel above 900 px and a single column
   below it.
@@ -48,4 +53,3 @@ For material visual changes, inspect representative desktop (1440×900), compact
 graph steps and the biology page, check console and first-party requests, then
 review representative captures directly. Gemini Flash may critique final
 captures; accept only substantiated suggestions.
-

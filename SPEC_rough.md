@@ -27,4 +27,6 @@ This file preserves owner intent and major decisions. It is append-only.
   `project-bootstrap` repository and its cross-repository review.
 - The owner will deploy the website. Do not add GitHub Pages automation.
 - Emergent Mind publication remains the last step after repository work.
-
+- Give every paper its own descriptively named project folder, project-level
+  `DESIGN.md`, and independently deployable noob-first visual website. Use the
+  portfolio as a research index linking to the complete paper sites.
