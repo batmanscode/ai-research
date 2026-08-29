@@ -3,7 +3,7 @@
 Last updated: 30 August 2026
 
 This is the current product, research, and technical truth for `ai-research`,
-published under the Silly Goose Labs umbrella brand.
+published under the Silly Goose Research Labs umbrella brand.
 
 ## Purpose
 

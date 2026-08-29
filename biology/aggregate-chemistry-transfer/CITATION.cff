@@ -1,11 +1,11 @@
 cff-version: 1.2.0
 message: "If you use this analysis, cite this project, FLIP2, and the underlying Hydro dataset."
-title: "Aggregate chemistry transfer across FLIP2 Hydro protein backbones"
+title: "A small aggregate-chemistry model transfers across three protein backbones"
 type: software
-version: 1.0.0
-date-released: 2026-08-29
+version: 1.0.1
+date-released: 2026-08-30
 authors:
-  - name: "Silly Goose Labs contributors"
+  - name: "Silly Goose Research Labs contributors"
 repository-code: "https://github.com/batmanscode/ai-research/tree/main/biology/aggregate-chemistry-transfer"
 url: "https://github.com/batmanscode/ai-research/tree/main/biology/aggregate-chemistry-transfer"
 license: MIT

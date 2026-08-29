@@ -4,11 +4,11 @@ Last updated: 30 August 2026
 
 ## Direction
 
-Silly Goose Labs is the umbrella brand; each visual paper keeps its precise
-scientific title. The family should feel like a careful research exhibit, not a
-generic AI dashboard: warm paper, deep ink, restrained botanical and mineral
-accents, large editorial type, and evidence that becomes more concrete as the
-reader moves down the page.
+Silly Goose Research Labs is the umbrella brand; each visual paper keeps its
+precise scientific title. The family should feel like a careful research
+exhibit, not a generic AI dashboard: warm paper, deep ink, restrained botanical
+and mineral accents, large editorial type, and evidence that becomes more
+concrete as the reader moves down the page.
 
 This root contract stays deliberately broad. It defines the family resemblance
 and review standard; each project-owned `DESIGN.md` is authoritative for that
@@ -58,6 +58,9 @@ loading is unavailable. Information must remain legible without the web fonts.
   require horizontal scrolling.
 - Navigation labels stay short and on one line at the supported narrow width;
   prefer a few direct links over a disclosure menu.
+- Goose illustrations are optional colophon or marginal details, never the
+  hero subject. They must not compete with a paper's result, problem, or
+  evidence; the compact `SG` mark is sufficient when a mascot adds no meaning.
 
 ## Review standard
 

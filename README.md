@@ -1,4 +1,4 @@
-# Silly Goose Labs · AI research
+# Silly Goose Research Labs · AI research
 
 An extensible home for auditable, AI-assisted research. The first two tracks
 developed from public open problems: an exact counterexample in secure
@@ -58,8 +58,9 @@ certificates, results, and scoped claims remain the auditable evidence.
 
 ## Citation
 
-Use the root [`CITATION.cff`](CITATION.cff) for the repository as a whole and
-the relevant project's citation for a specific result:
+Use the root [`CITATION.cff`](CITATION.cff) when citing the repository as a
+collection. For a specific result, use that project's more precise citation
+instead:
 
 - [`graph/secure-domination-p5-free/CITATION.cff`](graph/secure-domination-p5-free/CITATION.cff)
 - [`biology/aggregate-chemistry-transfer/CITATION.cff`](biology/aggregate-chemistry-transfer/CITATION.cff)
