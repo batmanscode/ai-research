@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="An interactive explanation of a 12-vertex counterexample in secure domination.">
-  <title>The Icosahedral Counterexample</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%230b0f10'/%3E%3Ccircle cx='16' cy='16' r='14.5' fill='none' stroke='%23d9ff6f'/%3E%3Ctext x='16' y='20' text-anchor='middle' font-family='monospace' font-size='10' fill='%23d9ff6f'%3ESG%3C/text%3E%3C/svg%3E">
+  <meta name="description" content="A certified 12-vertex counterexample establishing a 4/3 lower bound for secure domination in connected P5-free graphs.">
+  <title>A 4/3 Lower Bound for Secure Domination in Connected P5-Free Graphs</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%23f9f8f4'/%3E%3Ccircle cx='16' cy='16' r='14.5' fill='none' stroke='%232a5438'/%3E%3Ctext x='16' y='20' text-anchor='middle' font-family='monospace' font-size='10' fill='%232a5438'%3ESG%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
@@ -25,12 +25,13 @@
   <main id="main">
     <section class="hero shell">
       <div class="hero-copy">
-        <p class="eyebrow">Verified counterexample · 12 vertices</p>
-        <h1>Three guards look sufficient.<br><em>They aren’t.</em></h1>
-        <p class="lede">A highly symmetric graph—the complement of an icosahedron—breaks the most natural strengthening of a published secure-domination bound.</p>
+        <p class="eyebrow">Exact theorem · Connected P₅-free graphs</p>
+        <h1>A 4/3 lower bound<br><em>for secure domination.</em></h1>
+        <p class="lede">Secure guards must answer attacks without leaving the network exposed. A certified 12-vertex counterexample proves that the best universal multiplier for this family of graphs is at least 4/3.</p>
         <div class="result-equation" aria-label="secure domination number four is greater than independence number three">
           <span>γ<sub>s</sub>(G)</span><b>= 4</b><i>&gt;</i><span>α(G)</span><b>= 3</b>
         </div>
+        <p class="equation-key"><strong>γ<sub>s</sub></strong> is the fewest secure guards; <strong>α</strong> is the largest set of points with no links between them.</p>
         <div class="hero-actions">
           <a class="button primary" href="#explore">See why</a>
           <a class="button ghost" href="https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-p5-free/README.md">Read the proof ↗</a>
@@ -44,6 +45,30 @@
         </div>
         <small>The best universal coefficient remains open.</small>
       </aside>
+    </section>
+
+    <section class="plain shell">
+      <div class="section-heading narrow">
+        <p class="eyebrow">The problem</p>
+        <h2>What does it mean to guard a network securely?</h2>
+      </div>
+      <div class="plain-grid">
+        <article>
+          <span class="plain-number">1</span>
+          <h3>Cover</h3>
+          <p>Every unguarded point must touch at least one guard. That is ordinary domination.</p>
+        </article>
+        <article>
+          <span class="plain-number">2</span>
+          <h3>Respond</h3>
+          <p>If any unguarded point is attacked, an adjacent guard moves there.</p>
+        </article>
+        <article>
+          <span class="plain-number">3</span>
+          <h3>Stay covered</h3>
+          <p>After the move, every point must still touch a guard. That extra condition is security.</p>
+        </article>
+      </div>
     </section>
 
     <section id="explore" class="explorer shell" aria-labelledby="explorer-title">
@@ -88,35 +113,11 @@
       </div>
     </section>
 
-    <section class="plain shell">
-      <div class="section-heading narrow">
-        <p class="eyebrow">In plain English</p>
-        <h2>A guard must be able to move without exposing anyone.</h2>
-      </div>
-      <div class="plain-grid">
-        <article>
-          <span class="plain-number">1</span>
-          <h3>Cover</h3>
-          <p>Every unguarded point must touch at least one guard. That is ordinary domination.</p>
-        </article>
-        <article>
-          <span class="plain-number">2</span>
-          <h3>Respond</h3>
-          <p>If any unguarded point is attacked, an adjacent guard moves there.</p>
-        </article>
-        <article>
-          <span class="plain-number">3</span>
-          <h3>Stay covered</h3>
-          <p>After the move, every point must still touch a guard. That extra condition is security.</p>
-        </article>
-      </div>
-    </section>
-
     <section class="evidence shell">
       <div class="evidence-copy">
         <p class="eyebrow">Exhaustive certificate</p>
         <h2>Every small possibility was checked.</h2>
-        <p>The claim does not rest on a picture. A plain-set verifier checks all relevant vertex subsets and records a witness whenever three guards fail.</p>
+        <p>The claim does not rest on a picture. A simple independent verifier checks every relevant set of vertices and records why each three-guard set fails.</p>
         <a class="text-link" href="https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-p5-free/data/counterexample_certificate.json">Open the machine-readable certificate ↗</a>
       </div>
       <div class="evidence-grid" aria-label="Exact verification counts">
@@ -133,9 +134,9 @@
         <h2>The failed ideas mattered.</h2>
       </div>
       <ol class="timeline">
-        <li><span>01</span><div><h3>Small graphs agreed</h3><p>Every eligible graph through order 10 obeyed γ<sub>s</sub> ≤ α, so the stronger statement looked plausible.</p></div></li>
+        <li><span>01</span><div><h3>Small graphs agreed</h3><p>Every eligible graph with up to 10 vertices obeyed γ<sub>s</sub> ≤ α, so the stronger statement looked plausible.</p></div></li>
         <li><span>02</span><div><h3>False shortcuts broke</h3><p>Maximum independent sets, dominating paths, and a tempting dominating-edge lemma all failed as general proof routes.</p></div></li>
-        <li><span>03</span><div><h3>SAT targeted the residue</h3><p>The search encoded α = 3, P₅-freeness, connectivity, and failure of every triple—without enumerating every graph.</p></div></li>
+        <li><span>03</span><div><h3>SAT searched what remained</h3><p>The search required α = 3, no induced P₅, connectivity, and failure of every triple—without enumerating every graph.</p></div></li>
         <li><span>04</span><div><h3>Symmetry revealed the object</h3><p>The 12-vertex model was recognized as the complement of an icosahedron, then independently verified without the SAT clauses.</p></div></li>
       </ol>
       <a class="button ghost" href="https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-p5-free/research-log.md">Read the full research log ↗</a>

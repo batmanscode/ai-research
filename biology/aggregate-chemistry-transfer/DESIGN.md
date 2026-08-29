@@ -1,14 +1,15 @@
 ---
 version: 1
-name: Aggregate Chemistry Across Protein Backbones
+name: A Small Aggregate-Chemistry Model Transfers Across Three Protein Backbones
 description: A visual exploratory paper about transferable protein-fitness signal, its correction, and its evidence boundary.
 colors:
-  background: "#0B0F10"
-  panel: "#121718"
-  text: "#F4F1EA"
-  model: "#74E8DC"
-  caveat: "#FF826E"
-  comparison: "#AE9CFF"
+  background: "#F9F8F4"
+  panel: "#FFFDF8"
+  text: "#1E201D"
+  model: "#2A5438"
+  context: "#3D6277"
+  caveat: "#9E3A2B"
+  comparison: "#65569C"
 typography:
   display: "Newsreader, Georgia, serif"
   body: "Manrope, system-ui, sans-serif"
@@ -26,21 +27,25 @@ required.
 
 ## Narrative
 
-1. Explain a protein backbone as a different structural context, not merely a
+1. Lead with the bounded result across three proteins.
+2. Explain why positions that share a number need not share a structural role.
+3. Explain a protein backbone as a different structural context, not merely a
    new row from the same distribution.
-2. Compare native mutation count with the small aggregate-chemistry model on
+4. Compare native mutation count with the small aggregate-chemistry model on
    all three held backbones.
-3. Interrupt the success story with the native-core correction.
-4. Show within-count ranking to separate chemistry signal from mutation burden.
-5. Explain why position-invariant aggregation may transfer when naive site
+5. Interrupt the success story with the native-core correction.
+6. Show within-count ranking to separate chemistry signal from mutation burden.
+7. Explain why position-invariant aggregation may transfer when naive site
    correspondence does not.
-6. Finish with the prospective fourth-backbone test and publication boundary.
+8. Finish with the prospective fourth-backbone test and publication boundary.
 
 ## Visual language
 
-- Cyan identifies the aggregate model.
+- Forest green identifies the aggregate model and result values.
+- Powder blue identifies exploratory context, dataset metadata, and the
+  mutation-count baseline.
 - Violet identifies published comparators, always named in surrounding copy.
-- Coral marks corrections and post-hoc limitations, never buried footnotes.
+- Madder red marks corrections and post-hoc limitations, never buried footnotes.
 - Values appear as text as well as bar length; bars are descriptive, not a
   claim of an official leaderboard win.
 

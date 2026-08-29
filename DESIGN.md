@@ -6,9 +6,9 @@ Last updated: 30 August 2026
 
 Silly Goose Labs is the umbrella brand; each visual paper keeps its precise
 scientific title. The family should feel like a careful research exhibit, not a
-generic AI dashboard: dark paper, restrained fluorescent accents, large
-editorial type, and evidence that becomes more concrete as the reader moves
-down the page.
+generic AI dashboard: warm paper, deep ink, restrained botanical and mineral
+accents, large editorial type, and evidence that becomes more concrete as the
+reader moves down the page.
 
 This root contract stays deliberately broad. It defines the family resemblance
 and review standard; each project-owned `DESIGN.md` is authoritative for that
@@ -17,6 +17,8 @@ paper's reader promise, narrative, evidence boundary, and interactions.
 ## Voice
 
 - Lead with the result in ordinary language.
+- Introduce the problem before asking the reader to carry specialist terms.
+- Write for a curious adult: plain without becoming cute, vague, or patronizing.
 - Use short declarative headings and explain symbols nearby.
 - Separate what is proved, what is finite evidence, and what remains open.
 - Keep corrections and post-hoc caveats prominent rather than defensive.
@@ -24,11 +26,12 @@ paper's reader promise, narrative, evidence boundary, and interactions.
 
 ## Visual tokens
 
-- Background `#0b0f10`; panels `#121718`; primary text `#f4f1ea`.
-- Acid `#d9ff6f` marks conclusions and selected guards.
-- Coral `#ff826e` marks attacks, warnings, and the key matching.
-- Cyan `#74e8dc` marks the aggregate biology model.
-- Violet `#ae9cff` marks comparison/exposure states.
+- Background `#f9f8f4`; panels `#fffdf8`; primary text `#1e201d`.
+- Forest `#2a5438` marks conclusions and selected guards.
+- Madder `#9e3a2b` marks attacks, warnings, and the key matching.
+- Powder blue `#dce9ef` with slate-blue ink `#3d6277` marks exploratory
+  context, dataset metadata, and baseline comparisons.
+- Violet `#65569c` marks comparison/exposure states.
 - Manrope carries UI and body copy; Newsreader italic adds editorial emphasis;
   DM Mono carries numbers, labels, and exact quantities.
 
@@ -42,6 +45,8 @@ loading is unavailable. Information must remain legible without the web fonts.
   boundaries. This root file defines the shared family resemblance.
 - Each paper is a complete problem-to-result reading experience and must not
   depend on its sibling site being deployed beside it.
+- The opening order is result hook, problem, minimum vocabulary, visual
+  argument, evidence boundary, and what remains unknown.
 - Maximum content width is 1160 px with generous vertical rhythm.
 - The graph story is a two-column stage/panel above 900 px and a single column
   below it.

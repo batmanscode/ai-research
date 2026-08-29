@@ -85,8 +85,10 @@ testing.
 Capture representative graph steps and the complete biology comparison after
 the scenario. Inspect hierarchy, graph legibility, text collisions, clipping,
 bar accuracy, caveat visibility, color-plus-text state, and mobile reading
-order. Ask Gemini Flash for a sanitized second opinion only after direct
-inspection. Record durable failures or open gates, not ceremonial approvals.
+order. Confirm the opening names the actual contribution and classifies it
+honestly as an exact theorem/counterexample or an exploratory finding. Ask
+Gemini Flash for a sanitized second opinion only after direct inspection.
+Record durable failures or open gates, not ceremonial approvals.
 
 ## External publication
 

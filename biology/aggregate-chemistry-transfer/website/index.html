@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="A corrected exploratory FLIP2 experiment on cross-backbone protein fitness prediction.">
-  <title>Aggregate Chemistry Across Protein Backbones</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%230b0f10'/%3E%3Ccircle cx='16' cy='16' r='14.5' fill='none' stroke='%23d9ff6f'/%3E%3Ctext x='16' y='20' text-anchor='middle' font-family='monospace' font-size='10' fill='%23d9ff6f'%3ESG%3C/text%3E%3C/svg%3E">
+  <meta name="description" content="An exploratory test of a small aggregate-chemistry model across three held-out protein backbones.">
+  <title>A Small Aggregate-Chemistry Model Transfers Across Three Protein Backbones</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='16' fill='%23f9f8f4'/%3E%3Ccircle cx='16' cy='16' r='14.5' fill='none' stroke='%232a5438'/%3E%3Ctext x='16' y='20' text-anchor='middle' font-family='monospace' font-size='10' fill='%232a5438'%3ESG%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="css/site.css">
 </head>
 <body class="biology-page">
@@ -21,19 +21,27 @@
   </header>
   <main id="main">
     <section class="bio-hero shell">
-      <p class="eyebrow">Reconstructed exploratory analysis · FLIP2 Hydro</p>
-      <h1>Small chemistry features transfer.<br><em>Position labels do not.</em></h1>
-      <p class="lede">A corrected, validation-selected ridge model ranks variants on three unseen protein backbones using only mutation burden and aggregate physicochemical changes.</p>
-      <div class="caveat"><strong>Important:</strong> the public test landscapes influenced the broader research path. These are descriptive results, not untouched confirmation.</div>
+      <p class="eyebrow">Exploratory finding · FLIP2 Hydro</p>
+      <h1>Aggregate chemistry transfers.<br><em>Across three protein backbones.</em></h1>
+      <p class="lede">Can a model learn from mutations in some proteins and still rank variants in a protein it did not train on? Here, a small model with 11–16 position-free chemistry features beat mutation count alone on all three held-out backbones.</p>
+      <div class="caveat"><strong>Important:</strong> earlier study choices were influenced by the public test data. These are descriptive results, not untouched confirmation.</div>
+    </section>
+
+    <section class="problem-intro shell">
+      <div>
+        <p class="eyebrow">The problem</p>
+        <h2>Protein positions do not line up neatly.</h2>
+      </div>
+      <p>The seven tested amino-acid positions sit in different structural contexts in these three proteins. Calling each one “site 1” or “site 7” makes the positions look comparable when they are not. The question was whether a small summary of overall chemical change could travel better.</p>
     </section>
 
     <section class="bio-chart shell" aria-labelledby="bio-chart-title">
       <div class="section-heading">
-        <p class="eyebrow">Held-backbone Spearman ρ</p>
-        <h2 id="bio-chart-title">The invariant model improves on mutation count in all three folds.</h2>
+        <p class="eyebrow">Rank correlation · Spearman ρ</p>
+        <h2 id="bio-chart-title">The chemistry model beats mutation count alone on every held-out protein.</h2>
       </div>
       <div class="bar-chart" role="img" aria-label="For FYN-SH3 baseline 0.253, model 0.411, official best 0.444. For CspA baseline 0.056, model 0.246, official best 0.151. For CI-2A baseline 0.293, model 0.476, official best 0.394.">
-        <div class="chart-legend"><span class="base">Native count</span><span class="ours">Aggregate model</span><span class="official">Published best</span></div>
+        <div class="chart-legend"><span class="base">Mutation count</span><span class="ours">Chemistry model</span><span class="official">Published best</span></div>
         <div class="chart-row"><b>FYN-SH3<small>P06241 · n=9,972</small></b><div class="track"><i class="base" style="--w:44.9%">0.253</i><i class="ours" style="--w:72.9%">0.411</i><i class="official" style="--w:78.8%">0.444</i></div></div>
         <div class="chart-row"><b>CspA<small>P0A9X9 · n=8,500</small></b><div class="track"><i class="base" style="--w:10%">0.056</i><i class="ours" style="--w:43.6%">0.246</i><i class="official" style="--w:26.8%">0.151</i></div></div>
         <div class="chart-row"><b>CI-2A<small>P01053 · n=6,463</small></b><div class="track"><i class="base" style="--w:52%">0.293</i><i class="ours" style="--w:84.4%">0.476</i><i class="official" style="--w:69.9%">0.394</i></div></div>
@@ -44,7 +52,7 @@
     <section class="bio-correction shell">
       <div class="correction-card">
         <p class="eyebrow">The correction</p>
-        <h2>`VVVVVVV` was not the wild type.</h2>
+        <h2>`VVVVVVV` was not the native sequence.</h2>
         <p>The first analysis counted non-valine residues. Canonical mapping showed that the all-valine sequence is an engineered anchor. The analysis was retracted and rebuilt with the native cores.</p>
       </div>
       <div class="core-table" role="table" aria-label="Correct native core sequences">
@@ -57,22 +65,22 @@
 
     <section class="signal shell">
       <div class="section-heading narrow">
-        <p class="eyebrow">Not merely mutation burden</p>
-        <h2>Chemistry still ranks variants within the same mutation count.</h2>
+        <p class="eyebrow">More than mutation count</p>
+        <h2>Chemistry still separates variants with the same number of mutations.</h2>
       </div>
       <div class="signal-grid">
         <div><strong>0.389</strong><span>FYN-SH3</span><small>within-count ρ</small></div>
         <div><strong>0.272</strong><span>CspA</span><small>within-count ρ</small></div>
         <div><strong>0.395</strong><span>CI-2A</span><small>within-count ρ</small></div>
       </div>
-      <p class="center-note">All three within-stratum permutation tests: p = 1/1001.</p>
+      <p class="center-note">Within each mutation-count group, all three permutation checks: p = 1/1001.</p>
     </section>
 
     <section class="method shell">
       <div>
-        <p class="eyebrow">The useful inductive bias</p>
-        <h2>Aggregate first. Transfer second.</h2>
-        <p>The seven randomized sites are buried, but their ordinal positions are not homologous across these unrelated folds. The model therefore summarizes property changes without assigning a common “site 1” or “site 7.”</p>
+        <p class="eyebrow">Why it may transfer</p>
+        <h2>Keep the chemistry. Drop the position labels.</h2>
+        <p>The seven randomized sites are buried, but “site 1” in one protein does not match “site 1” in another. The model summarizes chemical changes without pretending those positions line up.</p>
       </div>
       <div class="method-flow" aria-label="Method flow">
         <span>7 core residues</span><b>→</b><span>signed + absolute property changes</span><b>→</b><span>11–16 invariant features</span><b>→</b><span>ridge ranking</span>
@@ -86,9 +94,9 @@
         <h2>A fourth backbone is the decisive experiment.</h2>
       </div>
       <ol>
-        <li><span>01</span>Freeze the current features, penalty grid, and metrics before labels.</li>
-        <li><span>02</span>Assay 1,000–2,000 QC-passing variants across mutation-count strata.</li>
-        <li><span>03</span>Use at least three independently prepared biological replicate libraries.</li>
+        <li><span>01</span>Freeze the features, model settings, and metrics before seeing labels.</li>
+        <li><span>02</span>Assay 1,000–2,000 variants that pass quality checks, spread across mutation counts.</li>
+        <li><span>03</span>Prepare at least three independent replicate libraries.</li>
         <li><span>04</span>Report the result whether it confirms or falsifies transfer.</li>
       </ol>
       <div class="next-actions"><a class="button primary" href="https://github.com/batmanscode/ai-research/blob/main/biology/aggregate-chemistry-transfer/fourth_backbone_preregistration.md">Read the preregistration ↗</a><a class="button ghost" href="https://github.com/batmanscode/ai-research/blob/main/biology/aggregate-chemistry-transfer/native_core_transfer.py">Run the analysis ↗</a></div>
