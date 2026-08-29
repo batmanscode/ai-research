@@ -1,6 +1,6 @@
 # Playtest and verification contract
 
-Last reviewed: 29 August 2026
+Last reviewed: 30 August 2026
 
 This is the evergreen release contract. Durable baselines and unresolved gates
 live in `playtest/RESULTS.md`.
@@ -74,7 +74,8 @@ Repeat at approximately 1440×900, 1024×768, 390×844, and 320×568. At 200%
 zoom, verify usable reflow. Keyboard through skip link, tabs, play control, and
 links; verify Left/Right and Home/End move and select graph tabs. Confirm visible
 focus and that reduced-motion preference removes nonessential transition
-duration.
+duration. At 320 px, confirm header labels stay on one line and navigation links
+retain at least 44 px of touch height.
 
 Browser emulation does not complete human screen-reader or physical-device
 testing.

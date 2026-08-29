@@ -1,5 +1,35 @@
 # Durable verification results
 
+## 30 August 2026 — minimal paper review and reproducible model selection
+
+- **Manual/browser:** both canonical papers were inspected at desktop,
+  compact, phone, and 320 px widths. The only material visual defect was the
+  narrow header: long labels wrapped and distorted the active pill. Short,
+  direct labels now remain on one line; all navigation links measure 44 px
+  high, the header remains 68 px, and neither page has horizontal overflow.
+- **Interaction:** all four graph states render the expected 30/36/36/36 edge
+  counts and matching copy. Direct selection, play/pause, selection during
+  playback, and End-key tab navigation passed with visible focus and no console
+  errors. The biology comparison stacks without clipping at phone width.
+- **Reflow:** a 1024 px viewport rendered at a 512 CSS-pixel equivalent for the
+  200% check without overflow or header growth. The 390 px and 320 px browser
+  journeys provide stricter narrow-layout coverage.
+- **External:** Gemini 3.7 Flash scored the baseline graph and biology papers
+  9.2/10 and 8.6/10, recommended retaining the dark editorial direction, and
+  agreed the narrow header was the only substantiated immediate visual fix. A
+  matched before/after review returned `fix_successful: true`, with no visible
+  regressions or remaining blockers. A hamburger suggestion was rejected as
+  needless complexity for three direct links.
+- **Automated:** the graph verifier regenerated the checked certificate byte-
+  for-byte. A fresh reduced biology run reproduced all selected feature
+  families and penalties plus every displayed point estimate. The verifier now
+  treats primary and secondary validation differences within `1e-5` as
+  numerical ties, then prefers the stronger ridge penalty; this prevents the
+  recorded CI-2A choice from changing across linear-algebra builds.
+- **Scope:** no scientific claim, displayed value, public finding, deployment
+  contract, or theme changed. Hosted-production browser review remains pending
+  until the owner deploys the two canonical website directories.
+
 ## 29 August 2026 — initial research and static explainer baseline
 
 - **Automated:** the standard-library graph verifier regenerated the checked-in

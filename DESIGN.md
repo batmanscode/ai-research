@@ -1,6 +1,6 @@
 # Design system
 
-Last updated: 29 August 2026
+Last updated: 30 August 2026
 
 ## Direction
 
@@ -9,6 +9,10 @@ scientific title. The family should feel like a careful research exhibit, not a
 generic AI dashboard: dark paper, restrained fluorescent accents, large
 editorial type, and evidence that becomes more concrete as the reader moves
 down the page.
+
+This root contract stays deliberately broad. It defines the family resemblance
+and review standard; each project-owned `DESIGN.md` is authoritative for that
+paper's reader promise, narrative, evidence boundary, and interactions.
 
 ## Voice
 
@@ -47,6 +51,8 @@ loading is unavailable. Information must remain legible without the web fonts.
 - Evidence counts appear as exact, visually grouped quantities.
 - On phone widths, navigation remains compact, charts stack, and no control may
   require horizontal scrolling.
+- Navigation labels stay short and on one line at the supported narrow width;
+  prefer a few direct links over a disclosure menu.
 
 ## Review standard
 
