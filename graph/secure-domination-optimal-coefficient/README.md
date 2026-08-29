@@ -112,6 +112,10 @@ finite hypothesis-mining evidence.
 
 ## Structural leads
 
+- For every dominating set (D) with nonempty outside graph,
+  \(\gamma_s(G)\leq |D|+\alpha(G-D)-1\). Hence every graph with a
+  dominating pair satisfies \(\gamma_s\leq\alpha+1\); the dominating-edge
+  branch is solved without a (P_5)-free assumption.
 - Any connected counterexample to coefficient one must contain an induced
   claw, triangle, \(C_4\), \(C_5\), paw, \(P_3\cup P_1\), and
   \(K_2\cup2K_1\).
@@ -124,6 +128,13 @@ finite hypothesis-mining evidence.
   to an explicit residual-coverage condition on the vertices left
   undominated by \(X\). No cluster structure is assumed for a singleton
   private region; such a region can contain an induced \(C_5\).
+- For an inclusion-minimal dominating clique \(K\), maximum-independent
+  residual choices in its singleton-private regions plus a dominating set of
+  the multi-\(K\)-neighbor region give the general bound recorded in
+  [`structure/dominating-set-residual.md`](structure/dominating-set-residual.md).
+  An infinite two-region family shows that charging those regions separately
+  against \(\alpha\) can fail by an unbounded amount; cross-region exchanges
+  are essential.
 - Joins, universal vertices, clique blow-ups, and the tested substitution
   families collapse rather than preserve the large ratio.
 
@@ -158,6 +169,7 @@ bound.
 | The extremal value at \(\alpha=3\) is four. | **Theorem**, by the published upper bound plus the exact witness. |
 | No \(\alpha=4,\gamma_s=6\) graph exists through order 17. | **Finite SAT evidence**; order 12 has a checked clausal proof, larger orders are solver-only. |
 | No \(\alpha=5,\gamma_s\geq7\) graph exists through order 16. | **Finite SAT evidence**; order 12 has a checked clausal proof, larger orders are solver-only. |
+| A dominating pair implies \(\gamma_s\leq\alpha+1\). | **Theorem**, from the general dominating-set residual completion bound. |
 | Minimum dominating clique at least three implies \(\gamma_s\leq\alpha\). | **Open structural subclaim**; exact untraced SAT supports it through order 15 at \(\alpha=4\) and order 14 at \(\alpha=5\). |
 | Connected graphs satisfy \(\gamma_s\leq\alpha+1\). | **Open candidate**, under active proof and counterexample attack. |
 | \(4/3\leq c_{\mathrm{opt}}\leq3/2\). | **Theorem**, from the exact witness and the published upper bound. |
@@ -174,6 +186,10 @@ bound.
 - [`structure/proof-fragments.md`](structure/proof-fragments.md) contains the
   proof-grade bad-cycle, dominating-cycle, dominating-path, and
   dominating-clique reductions.
+- [`structure/dominating-set-residual.md`](structure/dominating-set-residual.md)
+  proves the general dominating-set completion theorem and the solved
+  dominating-pair branch. Its direct Atlas audit is
+  [`referees/verify_dominating_set_residual.py`](referees/verify_dominating_set_residual.py).
 - [`structure/private-clique-obstructions.md`](structure/private-clique-obstructions.md)
   proves the complete-multipartite private-witness lemma and records exact
   counterexamples to discarded shortcuts. Run
@@ -195,8 +211,8 @@ pip install -r requirements.txt
 python test_encoding.py
 ```
 
-The structural verifier uses only the Python standard library. Operation
-checks additionally require NetworkX.
+The structural verifier uses only the Python standard library. Operation and
+Graph Atlas referee checks additionally require NetworkX.
 
 ## Primary sources
 
