@@ -100,3 +100,22 @@
   review is claimed. After owner deployment, inspect the public desktop/mobile
   pages, send those exact screenshots to Gemini 3.7 Flash as a second opinion,
   and deliver the captures and verdict through Telegram.
+
+## 29 August 2026 — graph claim-status clarification
+
+- **Scientific scope:** the report and visual paper now state explicitly that
+  the fixed 12-vertex graph and the resulting `4/3` lower bound are an exact
+  theorem/counterexample, not a conjecture.
+- **Published theorem:** the clarification records the numerical check
+  `4 <= (3/2) * 3 = 4.5`; the source paper's `3alpha/2` theorem remains valid.
+  Only the stronger coefficient-one candidate is refuted.
+- **Boundary:** global minimum order remains finite catalog/SAT evidence because
+  the repository contains neither the order-11 encoding nor a checkable UNSAT
+  trace. The exact coefficient in `[4/3, 3/2]` remains open.
+- **Independent review:** a separate claim-wording audit agreed with all three
+  classifications and identified the minimum-order and order-14 sentences that
+  were tightened in this revision.
+- **Visual gate:** the new status section reuses the existing responsive
+  three-card layout and adds no CSS or interaction. The surrounding canonical
+  paper has completed desktop, compact, phone, 320 px, and Gemini review as
+  recorded in the 30 August release pass above.

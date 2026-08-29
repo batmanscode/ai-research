@@ -13,9 +13,10 @@ under connectivity. The first concrete candidate tested was
 
 ## 2. Structural reductions
 
-Several reductions narrowed the search for a minimum counterexample. In
+Several reductions narrowed the search for a hypothetical minimum-order
+counterexample. In
 particular, cut vertices, universal vertices, complete joins, and reducible
-true-twin structure can be removed from a minimum counterexample. This made the
+true-twin structure can be removed from such a counterexample. This made the
 remaining target 2-connected, co-connected, and structurally rigid.
 
 These reductions are useful even though the coefficient-one statement turned
@@ -43,7 +44,7 @@ Instead of enumerating every graph at order 12, a SAT model encoded:
 3. \(\alpha=3\); and
 4. failure of every triple to be secure.
 
-The first full counterexample returned graph6 `KtiSYtlXqwmT`. Recognition
+The targeted SAT search returned graph6 `KtiSYtlXqwmT`. Recognition
 identified it as the complement of the icosahedron. This was then discarded as
 a solver-only result until a separate plain-set verifier reproduced every
 substantive property.
@@ -63,4 +64,3 @@ gives \(c_{\rm opt}\leq3/2\). A connected induced-\(P_5\)-free graph with
 \(\alpha=4\) and \(\gamma_s=6\) would prove \(3/2\) optimal. Exact SAT searches
 found no such graph through order 14. Those finite UNSAT results guide the next
 search, but they are not an all-orders theorem.
-
