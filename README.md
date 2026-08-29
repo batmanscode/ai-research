@@ -4,8 +4,7 @@ Two auditable research tracks developed from public open problems: an exact
 counterexample in secure domination and a corrected exploratory experiment on
 protein-fitness transfer.
 
-**Interactive explainer:**
-[batmanscode.github.io/ai-research](https://batmanscode.github.io/ai-research/)
+**Interactive explainer source:** [`site/index.html`](site/index.html)
 
 ## Results at a glance
 
@@ -45,6 +44,11 @@ biology/    corrected pipeline, results, preregistration, research log
 site/       lay explanation and interactive graph story
 findings/   source drafts for the two Emergent Mind reports
 ```
+
+Project truth and verification are routed through [`AGENTS.md`](AGENTS.md),
+[`SPEC_detailed.md`](SPEC_detailed.md), [`DESIGN.md`](DESIGN.md), and
+[`PLAYTEST.md`](PLAYTEST.md). Deployment is owner-managed; see
+[`DEPLOYMENT.md`](DEPLOYMENT.md).
 
 ## Integrity and scope
 

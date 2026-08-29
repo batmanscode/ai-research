@@ -28,7 +28,7 @@ the icosahedron in work on induced saturation. The contribution here is the
 secure-domination calculation and its coefficient lower bound. The exact
 coefficient between \(4/3\) and \(3/2\) remains open.
 
-- [Interactive explanation](https://batmanscode.github.io/ai-research/)
+- [Interactive explainer source](https://github.com/batmanscode/ai-research/blob/main/site/index.html)
 - [Proof and precise scope](https://github.com/batmanscode/ai-research/blob/main/graph/README.md)
 - [Independent exhaustive verifier](https://github.com/batmanscode/ai-research/blob/main/graph/verify_counterexample.py)
 - [Machine-readable certificate](https://github.com/batmanscode/ai-research/blob/main/graph/data/counterexample_certificate.json)
