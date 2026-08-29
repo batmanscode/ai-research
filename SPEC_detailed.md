@@ -38,7 +38,15 @@ For graph6 `KtiSYtlXqwmT`, the complement of the icosahedral graph:
 Therefore the proposed coefficient-one strengthening is false, and the best
 universal coefficient for the published connected class lies in `[4/3, 3/2]`.
 The exact coefficient remains open. The graph construction itself is not
-claimed as new.
+claimed as new. The published `3alpha/2` theorem remains valid because the
+example satisfies `4 <= 4.5`; only the stronger coefficient-one candidate is
+refuted.
+
+Status boundary: the existence and secure-domination calculation for this
+12-vertex graph are an exact theorem/counterexample, not a conjecture. The
+stronger statement that order 12 is globally minimum remains finite SAT
+evidence in this repository because no checkable unsatisfiability trace is
+included. The exact optimum coefficient also remains open.
 
 ## Biology result
 

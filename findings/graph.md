@@ -17,11 +17,21 @@ now satisfies
 \frac43\leq c\leq\frac32.
 \]
 
+The published \(3\alpha/2\) theorem remains valid: this example satisfies
+\(4\leq(3/2)\cdot3=4.5\). The counterexample rules out only the stronger
+coefficient-one candidate.
+
 The graph is encoded by graph6 string `KtiSYtlXqwmT`. A standard-library
 verifier checks all 792 five-vertex subsets, all 220 triples, and all 495
 four-sets. It finds no induced \(P_5\), no secure triple, and 435 secure
 four-sets. It also emits a machine-readable failure witness for every triple
 and a defense map for the secure set \(\{0,1,2,3\}\).
+
+This 12-vertex existence result is an exact counterexample theorem, not a
+conjecture. The separate claim that 12 is the smallest possible order is not
+needed for the result and is not asserted as a theorem here: searches exclude
+smaller orders, but the repository does not include a formally checkable SAT
+unsatisfiability trace.
 
 The graph construction itself is not new: Bonamy et al. use the complement of
 the icosahedron in work on induced saturation. The contribution here is the

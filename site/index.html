@@ -41,7 +41,7 @@
         <div class="interval" aria-label="known coefficient interval from four thirds to three halves">
           <span style="--x:0%">4/3</span><span style="--x:100%">3/2</span>
         </div>
-        <small>The exact optimum remains open.</small>
+        <small>The best universal coefficient remains open.</small>
       </aside>
     </section>
 
@@ -140,12 +140,36 @@
       <a class="button ghost" href="https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-p5-free/research-log.md">Read the full research log ↗</a>
     </section>
 
+    <section class="plain shell" aria-labelledby="status-title">
+      <div class="section-heading narrow">
+        <p class="eyebrow">The status, precisely</p>
+        <h2 id="status-title">The counterexample is proved. Two larger questions are not.</h2>
+      </div>
+      <div class="plain-grid">
+        <article>
+          <span class="plain-number">Proved</span>
+          <h3>The 12-vertex witness</h3>
+          <p>This exact graph has α = 3 and γ<sub>s</sub> = 4. That is a theorem established by exhaustive verification, not a conjecture. The published 3α/2 theorem still holds: 4 ≤ 4.5.</p>
+        </article>
+        <article>
+          <span class="plain-number">Evidence</span>
+          <h3>Smallest possible order</h3>
+          <p>Searches exclude smaller examples, but this repository does not include a checkable SAT proof trace. Minimum order is therefore not claimed as a theorem here.</p>
+        </article>
+        <article>
+          <span class="plain-number">Open</span>
+          <h3>The optimal coefficient</h3>
+          <p>The exact answer remains somewhere between 4/3 and 3/2. The counterexample fixes the lower end, not the final value.</p>
+        </article>
+      </div>
+    </section>
+
     <section class="open-gap shell">
       <div>
         <p class="eyebrow">What remains open</p>
         <h2>The answer lives somewhere between <span>4/3</span> and <span>3/2</span>.</h2>
       </div>
-      <p>The counterexample rules out coefficient 1. It does not show whether the published 3/2 bound is optimal. Finding an α = 4 graph with γ<sub>s</sub> = 6 would settle optimality; searches found none through order 14.</p>
+      <p>The counterexample rules out coefficient 1; it does not contradict the published 3/2 theorem or show that bound is optimal. Finding an α = 4 graph with γ<sub>s</sub> = 6 would settle optimality; targeted searches found no such graph through order 14.</p>
     </section>
 
     <section class="other-result shell">

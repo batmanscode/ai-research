@@ -27,7 +27,25 @@ the published upper bound give
 \boxed{\frac43\leq c_{\rm opt}\leq\frac32}.
 \]
 
+This does **not** contradict the published \(3\alpha/2\) theorem: for this
+graph, \(4\leq(3/2)\cdot3=4.5\). It only disproves the stronger
+coefficient-one candidate.
+
 The example is encoded by graph6 string `KtiSYtlXqwmT`.
+
+## Claim status
+
+The existence and calculation above are an **exact theorem/counterexample**, not
+a conjecture. Three claims must be kept separate:
+
+| Claim | Status in this repository |
+|---|---|
+| This specific 12-vertex graph is connected, induced-\(P_5\)-free, and satisfies \(\alpha=3\), \(\gamma_s=4\). | **Proved exactly** by the exhaustive verifier and certificate below. |
+| No smaller graph has the same counterexample property. | **Strong finite computational evidence**, but not promoted to a theorem here because the order-11 SAT proof trace is not included. |
+| The published \(3/2\) coefficient is optimal. | **Open.** The current rigorous interval is \([4/3,3/2]\). |
+
+Thus “12-vertex” describes the order of the proved witness. It does not, by
+itself, assert that 12 is the minimum possible order.
 
 ## Definitions
 
@@ -81,10 +99,10 @@ coefficient lower bound.
 Earlier exact graph-catalog enumeration found no counterexample through order
 10. A separate, symmetry-broken SAT encoding found every order-11 instance
 unsatisfiable for \(\alpha=3,\ldots,10\) with two CDCL solvers and recovered
-the icosahedral complement at order 12. That supports the statement that this
-is minimum-order, but the current reconstructed repository does not include a
-formally checked DRAT proof trace. The theorem above does not depend on the
-minimality claim.
+the icosahedral complement at order 12. That supports 12 as the smallest order
+found by the computation, but the current reconstructed repository includes
+neither that SAT encoding nor a formally checked DRAT proof trace. The theorem
+above does not depend on a minimum-order claim.
 
 ## Sources
 
