@@ -1,0 +1,30 @@
+{
+  "candidate": null,
+  "counts": {
+    "assignments": 1199511,
+    "no_secure_five": 0,
+    "skeletons": 637,
+    "weighted_alpha_four": 69769,
+    "within_order_limit": 68486
+  },
+  "scope": {
+    "max_order": 50,
+    "modules": {
+      "C5": {
+        "alpha": 2,
+        "order": 5
+      },
+      "IcoBar": {
+        "alpha": 3,
+        "order": 12
+      },
+      "K1": {
+        "alpha": 1,
+        "order": 1
+      }
+    },
+    "skeletons": "all connected P5-free graph-atlas graphs of order 2..7",
+    "substitution": "complete adjacency between modules exactly on skeleton edges"
+  },
+  "seconds": 32.57962918281555
+}

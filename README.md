@@ -13,6 +13,7 @@ domination and a corrected exploratory experiment on protein-fitness transfer.
 | track | result | status | start here |
 |---|---|---|---|
 | Graph theory | For the complement \(G\) of the icosahedral graph, \(\gamma_s(G)=4>3=\alpha(G)\). Thus the proposed coefficient-one strengthening is false and the best universal coefficient lies in \([4/3,3/2]\). | The 12-vertex example and its \(4/3\) lower bound are exact theorem/counterexample results—not conjectures. Minimum order is finite computational evidence; the optimum coefficient remains open. | [`graph/secure-domination-p5-free/`](graph/secure-domination-p5-free/) |
+| Graph coefficient continuation | The extremal value is exactly four when `alpha=3`, including an infinite connected family at ratio `4/3`. Exact SAT finds no counterexample to `gamma_s <= alpha+1` through order 17 for `alpha=4` and order 16 for `alpha=5`; order-12 instances carry independently checked DRUP proofs. | Active research, not a claimed all-orders solution. A stronger dominating-clique subclaim also survives exact finite search, and the precise collective-exchange bottleneck is documented. | [`graph/secure-domination-optimal-coefficient/`](graph/secure-domination-optimal-coefficient/) |
 | Protein fitness | A validation-selected 11–16 feature aggregate-chemistry ridge improves on native mutation count in all three FLIP2 Hydro held-backbone folds; within-count signal is positive in each. | Exploratory reconstruction, not untouched confirmation. A fourth backbone is preregistered. | [`biology/aggregate-chemistry-transfer/`](biology/aggregate-chemistry-transfer/) |
 
 ## Reproduce
@@ -63,6 +64,7 @@ collection. For a specific result, use that project's more precise citation
 instead:
 
 - [`graph/secure-domination-p5-free/CITATION.cff`](graph/secure-domination-p5-free/CITATION.cff)
+- [`graph/secure-domination-optimal-coefficient/CITATION.cff`](graph/secure-domination-optimal-coefficient/CITATION.cff)
 - [`biology/aggregate-chemistry-transfer/CITATION.cff`](biology/aggregate-chemistry-transfer/CITATION.cff)
 
 When a project receives a preprint or archive DOI, its project citation should

@@ -1,0 +1,56 @@
+{
+  "verdict": "PASS_WITH_WORDING_CORRECTIONS",
+  "date_utc": "2026-08-29",
+  "encoding_semantics": {
+    "connectedness": "PASS",
+    "exact_alpha": "PASS",
+    "induced_P5_free": "PASS",
+    "no_secure_target_set": "PASS",
+    "secure_upward_closure_use": "PASS",
+    "outside_type_sorting_lossless": "PASS"
+  },
+  "frontiers": {
+    "alpha4_no_secure5": {
+      "orders": [7, 17],
+      "status": "CONTIGUOUS_UNSAT_SOLVER_EVIDENCE",
+      "proof_traced_order": 12
+    },
+    "alpha5_no_secure6": {
+      "orders": [8, 16],
+      "status": "CONTIGUOUS_UNSAT_SOLVER_EVIDENCE",
+      "proof_traced_order": 12
+    }
+  },
+  "proof_checks": {
+    "alpha4_n12": {
+      "cnf_sha256": "4f5af48bc9688e1c239996695278fd22887aa2fed609b8441b8dca5594900196",
+      "drup_sha256": "1daa8da5a15820f8930b044d3754a21198f803eb59aa9d6881e05dadc3903f90",
+      "byte_identical_regeneration": true,
+      "rup_additions": 5375,
+      "non_rup_additions": 0,
+      "empty_clause_derived": true
+    },
+    "alpha5_n12": {
+      "cnf_sha256": "5b06303384d0a28a46554b8449f02e648ace8f1e813b352a06b651a0f20f47bf",
+      "drup_sha256": "0423170c3b54c80d7ecaac61332e3f712a5e36166ebf5cf9bcf4b3f7762e9318",
+      "byte_identical_regeneration": true,
+      "rup_additions": 12449,
+      "non_rup_additions": 0,
+      "empty_clause_derived": true
+    }
+  },
+  "direct_cross_checks": {
+    "bundled_random_assignments": 20000,
+    "bundled_status": "PASS",
+    "reviewer_exhaustive_assignments": 35328,
+    "reviewer_mismatches": 0,
+    "positive_icosahedral_complement_fixture": "PASS"
+  },
+  "publication_corrections": [
+    "Attribute alpha5 order16 to Glucose 4.2 rather than CaDiCaL.",
+    "Do not describe untraced higher-order runs as formal certificates.",
+    "Add a positive SAT fixture to the test suite.",
+    "Correct the stale proof-producer docstring.",
+    "Document historical clause-family key names and checksum working directory."
+  ]
+}

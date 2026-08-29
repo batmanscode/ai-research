@@ -1,0 +1,190 @@
+{
+  "clause_families": {
+    "domination_equivalence": 2200,
+    "failed_defense": 5940,
+    "failed_secure_set": 220,
+    "fixed_independent_set": 3,
+    "induced_p5_forbidden": 47520,
+    "no_larger_independent_set": 495,
+    "outside_nonempty_type": 9,
+    "outside_type_order": 168,
+    "reachability_final": 12,
+    "reachability_initial": 12,
+    "reachability_support": 132,
+    "reachability_witness": 2904,
+    "selected_clique": 66,
+    "selected_clique_domination": 276,
+    "undominated_equivalence": 7920
+  },
+  "clauses": 67877,
+  "constraints": {
+    "alpha_exactly": 3,
+    "connected": true,
+    "has_dominating_clique": true,
+    "induced_P5_free": true,
+    "minimal_counterexample_reductions": false,
+    "minimum_dominating_clique_size": 1,
+    "no_secure_set_of_size": 3,
+    "outside_type_order_symmetry_break": true
+  },
+  "edges": [
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      0,
+      10
+    ],
+    [
+      0,
+      11
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      1,
+      9
+    ],
+    [
+      1,
+      10
+    ],
+    [
+      1,
+      11
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      2,
+      10
+    ],
+    [
+      2,
+      11
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      8
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      3,
+      11
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      4,
+      11
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      5,
+      11
+    ],
+    [
+      6,
+      9
+    ],
+    [
+      6,
+      10
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      7,
+      10
+    ],
+    [
+      8,
+      9
+    ]
+  ],
+  "encoding_seconds": 0.49277305603027344,
+  "graph6": "KCV@|Xtyne^_",
+  "order": 12,
+  "proof_trace": null,
+  "solver": "cadical195",
+  "solver_seconds": 1.4327890872955322,
+  "solver_stats": {
+    "conflicts": 8117,
+    "decisions": 16414,
+    "propagations": 4988866,
+    "restarts": 362
+  },
+  "status": "SAT",
+  "variables": 5986
+}

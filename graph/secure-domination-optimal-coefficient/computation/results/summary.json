@@ -1,0 +1,1996 @@
+{
+  "alpha4_no_secure5": {
+    "10": {
+      "clause_families": {
+        "domination_equivalence": 1512,
+        "failed_defense": 6300,
+        "failed_secure_set": 252,
+        "fixed_independent_set": 6,
+        "induced_p5_forbidden": 15120,
+        "no_larger_independent_set": 252,
+        "outside_nonempty_type": 6,
+        "outside_type_order": 525,
+        "reachability_final": 10,
+        "reachability_initial": 10,
+        "reachability_support": 90,
+        "reachability_witness": 1620,
+        "undominated_equivalence": 7560
+      },
+      "clauses": 33263,
+      "constraints": {
+        "alpha_exactly": 4,
+        "connected": true,
+        "induced_P5_free": true,
+        "minimal_counterexample_reductions": false,
+        "no_secure_set_of_size": 5,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 0.3867380619049072,
+      "order": 10,
+      "proof_trace": null,
+      "solver": "cadical195",
+      "solver_seconds": 0.13612961769104004,
+      "solver_stats": {
+        "conflicts": 1593,
+        "decisions": 3398,
+        "propagations": 362042,
+        "restarts": 33
+      },
+      "status": "UNSAT",
+      "variables": 3727
+    },
+    "11": {
+      "clause_families": {
+        "domination_equivalence": 3234,
+        "failed_defense": 13860,
+        "failed_secure_set": 462,
+        "fixed_independent_set": 6,
+        "induced_p5_forbidden": 27720,
+        "no_larger_independent_set": 462,
+        "outside_nonempty_type": 7,
+        "outside_type_order": 630,
+        "reachability_final": 11,
+        "reachability_initial": 11,
+        "reachability_support": 110,
+        "reachability_witness": 2200,
+        "undominated_equivalence": 16632
+      },
+      "clauses": 65345,
+      "constraints": {
+        "alpha_exactly": 4,
+        "connected": true,
+        "induced_P5_free": true,
+        "minimal_counterexample_reductions": false,
+        "no_secure_set_of_size": 5,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 0.6098084449768066,
+      "order": 11,
+      "proof_trace": null,
+      "solver": "cadical195",
+      "solver_seconds": 0.43006086349487305,
+      "solver_stats": {
+        "conflicts": 2799,
+        "decisions": 6971,
+        "propagations": 1381831,
+        "restarts": 72
+      },
+      "status": "UNSAT",
+      "variables": 7282
+    },
+    "12": {
+      "clause_families": {
+        "domination_equivalence": 6336,
+        "failed_defense": 27720,
+        "failed_secure_set": 792,
+        "fixed_independent_set": 6,
+        "induced_p5_forbidden": 47520,
+        "no_larger_independent_set": 792,
+        "outside_nonempty_type": 8,
+        "outside_type_order": 735,
+        "reachability_final": 12,
+        "reachability_initial": 12,
+        "reachability_support": 132,
+        "reachability_witness": 2904,
+        "undominated_equivalence": 33264
+      },
+      "clauses": 120233,
+      "constraints": {
+        "alpha_exactly": 4,
+        "connected": true,
+        "induced_P5_free": true,
+        "minimal_counterexample_reductions": false,
+        "no_secure_set_of_size": 5,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 0.9035460948944092,
+      "order": 12,
+      "proof_trace": null,
+      "solver": "cadical195",
+      "solver_seconds": 2.1151680946350098,
+      "solver_stats": {
+        "conflicts": 7244,
+        "decisions": 16404,
+        "propagations": 8208749,
+        "restarts": 173
+      },
+      "status": "UNSAT",
+      "variables": 13542
+    },
+    "13": {
+      "clause_families": {
+        "domination_equivalence": 11583,
+        "failed_defense": 51480,
+        "failed_secure_set": 1287,
+        "fixed_independent_set": 6,
+        "induced_p5_forbidden": 77220,
+        "no_larger_independent_set": 1287,
+        "outside_nonempty_type": 9,
+        "outside_type_order": 840,
+        "reachability_final": 13,
+        "reachability_initial": 13,
+        "reachability_support": 156,
+        "reachability_witness": 3744,
+        "undominated_equivalence": 61776
+      },
+      "clauses": 209414,
+      "constraints": {
+        "alpha_exactly": 4,
+        "connected": true,
+        "induced_P5_free": true,
+        "minimal_counterexample_reductions": false,
+        "no_secure_set_of_size": 5,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 1.958533525466919,
+      "order": 13,
+      "proof_trace": null,
+      "solver": "cadical195",
+      "solver_seconds": 4.335813999176025,
+      "solver_stats": {
+        "conflicts": 12588,
+        "decisions": 30474,
+        "propagations": 18587769,
+        "restarts": 288
+      },
+      "status": "UNSAT",
+      "variables": 23998
+    },
+    "14": {
+      "clause_families": {
+        "domination_equivalence": 20020,
+        "failed_defense": 90090,
+        "failed_secure_set": 2002,
+        "fixed_independent_set": 6,
+        "induced_p5_forbidden": 120120,
+        "no_larger_independent_set": 2002,
+        "outside_nonempty_type": 10,
+        "outside_type_order": 945,
+        "reachability_final": 14,
+        "reachability_initial": 14,
+        "reachability_support": 182,
+        "reachability_witness": 4732,
+        "undominated_equivalence": 108108
+      },
+      "clauses": 348245,
+      "constraints": {
+        "alpha_exactly": 4,
+        "connected": true,
+        "induced_P5_free": true,
+        "minimal_counterexample_reductions": false,
+        "no_secure_set_of_size": 5,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 2.2812836170196533,
+      "order": 14,
+      "proof_trace": null,
+      "solver": "cadical195",
+      "solver_seconds": 23.963059663772583,
+      "solver_stats": {
+        "conflicts": 32823,
+        "decisions": 74219,
+        "propagations": 72751946,
+        "restarts": 1055
+      },
+      "status": "UNSAT",
+      "variables": 40691
+    },
+    "15": {
+      "clause_families": {
+        "domination_equivalence": 33033,
+        "failed_defense": 150150,
+        "failed_secure_set": 3003,
+        "fixed_independent_four": 6,
+        "induced_p5_forbidden": 180180,
+        "no_independent_five": 3003,
+        "outside_nonempty_type": 11,
+        "outside_type_order": 1050,
+        "reachability_final": 15,
+        "reachability_initial": 15,
+        "reachability_support": 210,
+        "reachability_witness": 5880,
+        "undominated_equivalence": 180180
+      },
+      "clauses": 556736,
+      "constraints": {
+        "alpha_exactly": 4,
+        "connected": true,
+        "induced_P5_free": true,
+        "no_secure_set_of_size": 5,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 3.5119853019714355,
+      "order": 15,
+      "proof_trace": null,
+      "solver": "cadical195",
+      "solver_seconds": 40.60718059539795,
+      "solver_stats": {
+        "conflicts": 50591,
+        "decisions": 129589,
+        "propagations": 172138237,
+        "restarts": 1298
+      },
+      "status": "UNSAT",
+      "variables": 66333
+    },
+    "16": {
+      "clause_families": {
+        "domination_equivalence": 52416,
+        "failed_defense": 240240,
+        "failed_secure_set": 4368,
+        "fixed_independent_four": 6,
+        "induced_p5_forbidden": 262080,
+        "no_independent_five": 4368,
+        "outside_nonempty_type": 12,
+        "outside_type_order": 1155,
+        "reachability_final": 16,
+        "reachability_initial": 16,
+        "reachability_support": 240,
+        "reachability_witness": 7200,
+        "undominated_equivalence": 288288
+      },
+      "clauses": 860405,
+      "constraints": {
+        "alpha_exactly": 4,
+        "connected": true,
+        "induced_P5_free": true,
+        "no_secure_set_of_size": 5,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 5.017859697341919,
+      "order": 16,
+      "proof_trace": null,
+      "solver": "cadical195",
+      "solver_seconds": 137.0382797718048,
+      "solver_stats": {
+        "conflicts": 128351,
+        "decisions": 309010,
+        "propagations": 651826865,
+        "restarts": 4610
+      },
+      "status": "UNSAT",
+      "variables": 104440
+    },
+    "17": {
+      "clause_families": {
+        "domination_equivalence": 80444,
+        "failed_defense": 371280,
+        "failed_secure_set": 6188,
+        "fixed_independent_four": 6,
+        "induced_p5_forbidden": 371280,
+        "no_independent_five": 6188,
+        "outside_nonempty_type": 13,
+        "outside_type_order": 1260,
+        "reachability_final": 17,
+        "reachability_initial": 17,
+        "reachability_support": 272,
+        "reachability_witness": 8704,
+        "undominated_equivalence": 445536
+      },
+      "clauses": 1291205,
+      "constraints": {
+        "alpha_exactly": 4,
+        "connected": true,
+        "induced_P5_free": true,
+        "no_secure_set_of_size": 5,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 6.907513380050659,
+      "order": 17,
+      "proof_trace": null,
+      "solver": "cadical195",
+      "solver_seconds": 367.74396777153015,
+      "solver_stats": {
+        "conflicts": 190205,
+        "decisions": 469016,
+        "propagations": 1394057040,
+        "restarts": 3848
+      },
+      "status": "UNSAT",
+      "variables": 159477
+    },
+    "7": {
+      "clause_families": {
+        "domination_equivalence": 63,
+        "failed_defense": 210,
+        "failed_secure_set": 21,
+        "fixed_independent_set": 6,
+        "induced_p5_forbidden": 1260,
+        "no_larger_independent_set": 21,
+        "outside_nonempty_type": 3,
+        "outside_type_order": 210,
+        "reachability_final": 7,
+        "reachability_initial": 7,
+        "reachability_support": 42,
+        "reachability_witness": 504,
+        "undominated_equivalence": 252
+      },
+      "clauses": 2606,
+      "constraints": {
+        "alpha_exactly": 4,
+        "connected": true,
+        "induced_P5_free": true,
+        "minimal_counterexample_reductions": false,
+        "no_secure_set_of_size": 5,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 0.02077507972717285,
+      "order": 7,
+      "proof_trace": null,
+      "solver": "cadical195",
+      "solver_seconds": 0.004769086837768555,
+      "solver_stats": {
+        "conflicts": 55,
+        "decisions": 86,
+        "propagations": 2620,
+        "restarts": 0
+      },
+      "status": "UNSAT",
+      "variables": 427
+    },
+    "8": {
+      "clause_families": {
+        "domination_equivalence": 224,
+        "failed_defense": 840,
+        "failed_secure_set": 56,
+        "fixed_independent_set": 6,
+        "induced_p5_forbidden": 3360,
+        "no_larger_independent_set": 56,
+        "outside_nonempty_type": 4,
+        "outside_type_order": 315,
+        "reachability_final": 8,
+        "reachability_initial": 8,
+        "reachability_support": 56,
+        "reachability_witness": 784,
+        "undominated_equivalence": 1008
+      },
+      "clauses": 6725,
+      "constraints": {
+        "alpha_exactly": 4,
+        "connected": true,
+        "induced_P5_free": true,
+        "minimal_counterexample_reductions": false,
+        "no_secure_set_of_size": 5,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 0.08891701698303223,
+      "order": 8,
+      "proof_trace": null,
+      "solver": "cadical195",
+      "solver_seconds": 0.01637887954711914,
+      "solver_stats": {
+        "conflicts": 242,
+        "decisions": 393,
+        "propagations": 16172,
+        "restarts": 1
+      },
+      "status": "UNSAT",
+      "variables": 876
+    },
+    "9": {
+      "clause_families": {
+        "domination_equivalence": 630,
+        "failed_defense": 2520,
+        "failed_secure_set": 126,
+        "fixed_independent_set": 6,
+        "induced_p5_forbidden": 7560,
+        "no_larger_independent_set": 126,
+        "outside_nonempty_type": 5,
+        "outside_type_order": 420,
+        "reachability_final": 9,
+        "reachability_initial": 9,
+        "reachability_support": 72,
+        "reachability_witness": 1152,
+        "undominated_equivalence": 3024
+      },
+      "clauses": 15659,
+      "constraints": {
+        "alpha_exactly": 4,
+        "connected": true,
+        "induced_P5_free": true,
+        "minimal_counterexample_reductions": false,
+        "no_secure_set_of_size": 5,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 0.09016871452331543,
+      "order": 9,
+      "proof_trace": null,
+      "solver": "cadical195",
+      "solver_seconds": 0.04211091995239258,
+      "solver_stats": {
+        "conflicts": 1038,
+        "decisions": 1714,
+        "propagations": 126067,
+        "restarts": 63
+      },
+      "status": "UNSAT",
+      "variables": 1827
+    }
+  },
+  "alpha5_no_secure6": {
+    "10": {
+      "clause_families": {
+        "domination_equivalence": 1050,
+        "failed_defense": 5040,
+        "failed_secure_set": 210,
+        "fixed_independent_set": 10,
+        "induced_p5_forbidden": 15120,
+        "no_larger_independent_set": 210,
+        "outside_nonempty_type": 5,
+        "outside_type_order": 1860,
+        "reachability_final": 10,
+        "reachability_initial": 10,
+        "reachability_support": 90,
+        "reachability_witness": 1620,
+        "undominated_equivalence": 5880
+      },
+      "clauses": 31115,
+      "constraints": {
+        "alpha_exactly": 5,
+        "connected": true,
+        "induced_P5_free": true,
+        "no_secure_set_of_size": 6,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 0.23891901969909668,
+      "order": 10,
+      "proof_trace": null,
+      "solver": "cadical195",
+      "solver_seconds": 0.1523139476776123,
+      "solver_stats": {
+        "conflicts": 3282,
+        "decisions": 4239,
+        "propagations": 540291,
+        "restarts": 59
+      },
+      "status": "UNSAT",
+      "variables": 2845
+    },
+    "11": {
+      "clause_families": {
+        "domination_equivalence": 2772,
+        "failed_defense": 13860,
+        "failed_secure_set": 462,
+        "fixed_independent_set": 10,
+        "induced_p5_forbidden": 27720,
+        "no_larger_independent_set": 462,
+        "outside_nonempty_type": 6,
+        "outside_type_order": 2325,
+        "reachability_final": 11,
+        "reachability_initial": 11,
+        "reachability_support": 110,
+        "reachability_witness": 2200,
+        "undominated_equivalence": 16170
+      },
+      "clauses": 66119,
+      "constraints": {
+        "alpha_exactly": 5,
+        "connected": true,
+        "induced_P5_free": true,
+        "no_secure_set_of_size": 6,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 0.5053555965423584,
+      "order": 11,
+      "proof_trace": null,
+      "solver": "cadical195",
+      "solver_seconds": 0.9155495166778564,
+      "solver_stats": {
+        "conflicts": 8218,
+        "decisions": 13174,
+        "propagations": 4569824,
+        "restarts": 397
+      },
+      "status": "UNSAT",
+      "variables": 6358
+    },
+    "12": {
+      "clause_families": {
+        "domination_equivalence": 6468,
+        "failed_defense": 33264,
+        "failed_secure_set": 924,
+        "fixed_independent_set": 10,
+        "induced_p5_forbidden": 47520,
+        "no_larger_independent_set": 924,
+        "outside_nonempty_type": 7,
+        "outside_type_order": 2790,
+        "reachability_final": 12,
+        "reachability_initial": 12,
+        "reachability_support": 132,
+        "reachability_witness": 2904,
+        "undominated_equivalence": 38808
+      },
+      "clauses": 133775,
+      "constraints": {
+        "alpha_exactly": 5,
+        "connected": true,
+        "induced_P5_free": true,
+        "no_secure_set_of_size": 6,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 0.9246094226837158,
+      "order": 12,
+      "proof_trace": null,
+      "solver": "cadical195",
+      "solver_seconds": 2.1441493034362793,
+      "solver_stats": {
+        "conflicts": 11300,
+        "decisions": 21763,
+        "propagations": 9181296,
+        "restarts": 304
+      },
+      "status": "UNSAT",
+      "variables": 13674
+    },
+    "13": {
+      "clause_families": {
+        "domination_equivalence": 13728,
+        "failed_defense": 72072,
+        "failed_secure_set": 1716,
+        "fixed_independent_set": 10,
+        "induced_p5_forbidden": 77220,
+        "no_larger_independent_set": 1716,
+        "outside_nonempty_type": 8,
+        "outside_type_order": 3255,
+        "reachability_final": 13,
+        "reachability_initial": 13,
+        "reachability_support": 156,
+        "reachability_witness": 3744,
+        "undominated_equivalence": 84084
+      },
+      "clauses": 257735,
+      "constraints": {
+        "alpha_exactly": 5,
+        "connected": true,
+        "induced_P5_free": true,
+        "no_secure_set_of_size": 6,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 1.7666985988616943,
+      "order": 13,
+      "proof_trace": null,
+      "solver": "cadical195",
+      "solver_seconds": 8.338048696517944,
+      "solver_stats": {
+        "conflicts": 22289,
+        "decisions": 46336,
+        "propagations": 33659298,
+        "restarts": 419
+      },
+      "status": "UNSAT",
+      "variables": 27859
+    },
+    "14": {
+      "clause_families": {
+        "domination_equivalence": 27027,
+        "failed_defense": 144144,
+        "failed_secure_set": 3003,
+        "fixed_independent_set": 10,
+        "induced_p5_forbidden": 120120,
+        "no_larger_independent_set": 3003,
+        "outside_nonempty_type": 9,
+        "outside_type_order": 3720,
+        "reachability_final": 14,
+        "reachability_initial": 14,
+        "reachability_support": 182,
+        "reachability_witness": 4732,
+        "undominated_equivalence": 168168
+      },
+      "clauses": 474146,
+      "constraints": {
+        "alpha_exactly": 5,
+        "connected": true,
+        "induced_P5_free": true,
+        "no_secure_set_of_size": 6,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 2.9131288528442383,
+      "order": 14,
+      "proof_trace": null,
+      "solver": "cadical195",
+      "solver_seconds": 31.258912801742554,
+      "solver_stats": {
+        "conflicts": 44405,
+        "decisions": 89647,
+        "propagations": 127310388,
+        "restarts": 783
+      },
+      "status": "UNSAT",
+      "variables": 53704
+    },
+    "15": {
+      "clause_families": {
+        "domination_equivalence": 50050,
+        "failed_defense": 270270,
+        "failed_secure_set": 5005,
+        "fixed_independent_set": 10,
+        "induced_p5_forbidden": 180180,
+        "no_larger_independent_set": 5005,
+        "outside_nonempty_type": 10,
+        "outside_type_order": 4185,
+        "reachability_final": 15,
+        "reachability_initial": 15,
+        "reachability_support": 210,
+        "reachability_witness": 5880,
+        "undominated_equivalence": 315315
+      },
+      "clauses": 836150,
+      "constraints": {
+        "alpha_exactly": 5,
+        "connected": true,
+        "induced_P5_free": true,
+        "no_secure_set_of_size": 6,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 4.767445802688599,
+      "order": 15,
+      "proof_trace": null,
+      "solver": "cadical195",
+      "solver_seconds": 177.668283700943,
+      "solver_stats": {
+        "conflicts": 140496,
+        "decisions": 283862,
+        "propagations": 750165612,
+        "restarts": 4085
+      },
+      "status": "UNSAT",
+      "variables": 98365
+    },
+    "16": {
+      "clause_families": {
+        "domination_equivalence": 88088,
+        "failed_defense": 480480,
+        "failed_secure_set": 8008,
+        "fixed_independent_set": 10,
+        "induced_p5_forbidden": 262080,
+        "no_larger_independent_set": 8008,
+        "outside_nonempty_type": 11,
+        "outside_type_order": 4650,
+        "reachability_final": 16,
+        "reachability_initial": 16,
+        "reachability_support": 240,
+        "reachability_witness": 7200,
+        "undominated_equivalence": 560560
+      },
+      "clauses": 1419367,
+      "constraints": {
+        "alpha_exactly": 5,
+        "connected": true,
+        "induced_P5_free": true,
+        "no_secure_set_of_size": 6,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 7.071732521057129,
+      "order": 16,
+      "proof_trace": null,
+      "solver": "glucose42",
+      "solver_seconds": 521.7416427135468,
+      "solver_stats": {
+        "conflicts": 315630,
+        "decisions": 725525,
+        "propagations": 2781231910,
+        "restarts": 557
+      },
+      "status": "UNSAT",
+      "variables": 172144
+    },
+    "8": {
+      "clause_families": {
+        "domination_equivalence": 84,
+        "failed_defense": 336,
+        "failed_secure_set": 28,
+        "fixed_independent_set": 10,
+        "induced_p5_forbidden": 3360,
+        "no_larger_independent_set": 28,
+        "outside_nonempty_type": 3,
+        "outside_type_order": 930,
+        "reachability_final": 8,
+        "reachability_initial": 8,
+        "reachability_support": 56,
+        "reachability_witness": 784,
+        "undominated_equivalence": 392
+      },
+      "clauses": 6027,
+      "constraints": {
+        "alpha_exactly": 5,
+        "connected": true,
+        "induced_P5_free": true,
+        "no_secure_set_of_size": 6,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 0.048837900161743164,
+      "order": 8,
+      "proof_trace": null,
+      "solver": "cadical195",
+      "solver_seconds": 0.0065457820892333984,
+      "solver_stats": {
+        "conflicts": 68,
+        "decisions": 125,
+        "propagations": 5155,
+        "restarts": 0
+      },
+      "status": "UNSAT",
+      "variables": 624
+    },
+    "9": {
+      "clause_families": {
+        "domination_equivalence": 336,
+        "failed_defense": 1512,
+        "failed_secure_set": 84,
+        "fixed_independent_set": 10,
+        "induced_p5_forbidden": 7560,
+        "no_larger_independent_set": 84,
+        "outside_nonempty_type": 4,
+        "outside_type_order": 1395,
+        "reachability_final": 9,
+        "reachability_initial": 9,
+        "reachability_support": 72,
+        "reachability_witness": 1152,
+        "undominated_equivalence": 1764
+      },
+      "clauses": 13991,
+      "constraints": {
+        "alpha_exactly": 5,
+        "connected": true,
+        "induced_P5_free": true,
+        "no_secure_set_of_size": 6,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 0.12791872024536133,
+      "order": 9,
+      "proof_trace": null,
+      "solver": "cadical195",
+      "solver_seconds": 0.035109758377075195,
+      "solver_stats": {
+        "conflicts": 496,
+        "decisions": 916,
+        "propagations": 51974,
+        "restarts": 2
+      },
+      "status": "UNSAT",
+      "variables": 1281
+    }
+  },
+  "conditional_minimal_reductions": {
+    "alpha4_n18": {
+      "clause_families": {
+        "biconnectivity_final": 306,
+        "biconnectivity_initial": 306,
+        "biconnectivity_support": 4896,
+        "biconnectivity_witness": 156672,
+        "co_reachability_final": 18,
+        "co_reachability_initial": 18,
+        "co_reachability_support": 306,
+        "co_reachability_witness": 10404,
+        "domination_equivalence": 119952,
+        "failed_defense": 556920,
+        "failed_secure_set": 8568,
+        "fixed_independent_set": 6,
+        "induced_p5_forbidden": 514080,
+        "no_larger_independent_set": 8568,
+        "outside_nonempty_type": 14,
+        "outside_type_order": 1365,
+        "reachability_final": 18,
+        "reachability_initial": 18,
+        "reachability_support": 306,
+        "reachability_witness": 10404,
+        "true_twin_distinguisher": 4896,
+        "true_twin_free": 153,
+        "undominated_equivalence": 668304
+      },
+      "clauses": 2066498,
+      "constraints": {
+        "alpha_exactly": 4,
+        "connected": true,
+        "induced_P5_free": true,
+        "minimal_counterexample_reductions": true,
+        "no_secure_set_of_size": 5,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 10.880032539367676,
+      "order": 18,
+      "proof_trace": null,
+      "solver": "glucose42",
+      "solver_seconds": 615.5137414932251,
+      "solver_stats": {
+        "conflicts": 262421,
+        "decisions": 834490,
+        "propagations": 3911964927,
+        "restarts": 682
+      },
+      "status": "UNSAT",
+      "variables": 328527
+    },
+    "scope": "UNSAT conditional on the separately proved minimum-counterexample reductions; generic n18 timed out"
+  },
+  "cross_solver": {
+    "alpha4_n12_glucose42": {
+      "clause_families": {
+        "domination_equivalence": 6336,
+        "failed_defense": 27720,
+        "failed_secure_set": 792,
+        "fixed_independent_four": 6,
+        "induced_p5_forbidden": 47520,
+        "no_independent_five": 792,
+        "outside_nonempty_type": 8,
+        "outside_type_order": 735,
+        "reachability_final": 12,
+        "reachability_initial": 12,
+        "reachability_support": 132,
+        "reachability_witness": 2904,
+        "undominated_equivalence": 33264
+      },
+      "clauses": 120233,
+      "constraints": {
+        "alpha_exactly": 4,
+        "connected": true,
+        "induced_P5_free": true,
+        "no_secure_set_of_size": 5,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 0.7678918838500977,
+      "order": 12,
+      "proof_trace": null,
+      "solver": "glucose42",
+      "solver_seconds": 0.7587902545928955,
+      "solver_stats": {
+        "conflicts": 5375,
+        "decisions": 16538,
+        "propagations": 4821763,
+        "restarts": 3
+      },
+      "status": "UNSAT",
+      "variables": 13542
+    },
+    "alpha4_n12_maplesat": {
+      "clause_families": {
+        "domination_equivalence": 6336,
+        "failed_defense": 27720,
+        "failed_secure_set": 792,
+        "fixed_independent_four": 6,
+        "induced_p5_forbidden": 47520,
+        "no_independent_five": 792,
+        "outside_nonempty_type": 8,
+        "outside_type_order": 735,
+        "reachability_final": 12,
+        "reachability_initial": 12,
+        "reachability_support": 132,
+        "reachability_witness": 2904,
+        "undominated_equivalence": 33264
+      },
+      "clauses": 120233,
+      "constraints": {
+        "alpha_exactly": 4,
+        "connected": true,
+        "induced_P5_free": true,
+        "no_secure_set_of_size": 5,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 0.7553327083587646,
+      "order": 12,
+      "proof_trace": null,
+      "solver": "maplesat",
+      "solver_seconds": 1.347977638244629,
+      "solver_stats": {
+        "conflicts": 8061,
+        "decisions": 24161,
+        "propagations": 0,
+        "restarts": 27
+      },
+      "status": "UNSAT",
+      "variables": 13542
+    },
+    "alpha5_n12_glucose42": {
+      "clause_families": {
+        "domination_equivalence": 6468,
+        "failed_defense": 33264,
+        "failed_secure_set": 924,
+        "fixed_independent_set": 10,
+        "induced_p5_forbidden": 47520,
+        "no_larger_independent_set": 924,
+        "outside_nonempty_type": 7,
+        "outside_type_order": 2790,
+        "reachability_final": 12,
+        "reachability_initial": 12,
+        "reachability_support": 132,
+        "reachability_witness": 2904,
+        "undominated_equivalence": 38808
+      },
+      "clauses": 133775,
+      "constraints": {
+        "alpha_exactly": 5,
+        "connected": true,
+        "induced_P5_free": true,
+        "no_secure_set_of_size": 6,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 0.7045228481292725,
+      "order": 12,
+      "proof_trace": null,
+      "solver": "glucose42",
+      "solver_seconds": 1.3223803043365479,
+      "solver_stats": {
+        "conflicts": 10570,
+        "decisions": 23094,
+        "propagations": 8130550,
+        "restarts": 7
+      },
+      "status": "UNSAT",
+      "variables": 13674
+    }
+  },
+  "dominating_clique_branch": {
+    "minimum_clique_size_3_alpha4_n15": {
+      "clause_families": {
+        "domination_equivalence": 16380,
+        "failed_defense": 60060,
+        "failed_secure_set": 1365,
+        "fixed_independent_set": 6,
+        "induced_p5_forbidden": 180180,
+        "no_dominating_edge": 2835,
+        "no_dominating_vertex": 15,
+        "no_larger_independent_set": 3003,
+        "outside_nonempty_type": 11,
+        "outside_type_order": 1050,
+        "reachability_final": 15,
+        "reachability_initial": 15,
+        "reachability_support": 210,
+        "reachability_witness": 5880,
+        "selected_clique": 105,
+        "selected_clique_domination": 435,
+        "undominated_equivalence": 75075
+      },
+      "clauses": 346640,
+      "constraints": {
+        "alpha_exactly": 4,
+        "connected": true,
+        "has_dominating_clique": true,
+        "induced_P5_free": true,
+        "minimal_counterexample_reductions": false,
+        "minimum_dominating_clique_size": 3,
+        "no_secure_set_of_size": 4,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 2.320711374282837,
+      "order": 15,
+      "proof_trace": null,
+      "solver": "glucose42",
+      "solver_seconds": 170.83415365219116,
+      "solver_stats": {
+        "conflicts": 475716,
+        "decisions": 721204,
+        "propagations": 975477449,
+        "restarts": 405
+      },
+      "status": "UNSAT",
+      "variables": 36255
+    },
+    "minimum_clique_size_3_alpha5_n14": {
+      "clause_families": {
+        "domination_equivalence": 20020,
+        "failed_defense": 90090,
+        "failed_secure_set": 2002,
+        "fixed_independent_set": 10,
+        "induced_p5_forbidden": 120120,
+        "no_dominating_edge": 2275,
+        "no_dominating_vertex": 14,
+        "no_larger_independent_set": 3003,
+        "outside_nonempty_type": 9,
+        "outside_type_order": 3720,
+        "reachability_final": 14,
+        "reachability_initial": 14,
+        "reachability_support": 182,
+        "reachability_witness": 4732,
+        "selected_clique": 91,
+        "selected_clique_domination": 378,
+        "undominated_equivalence": 108108
+      },
+      "clauses": 354782,
+      "constraints": {
+        "alpha_exactly": 5,
+        "connected": true,
+        "has_dominating_clique": true,
+        "induced_P5_free": true,
+        "minimal_counterexample_reductions": false,
+        "minimum_dominating_clique_size": 3,
+        "no_secure_set_of_size": 5,
+        "outside_type_order_symmetry_break": true
+      },
+      "encoding_seconds": 1.6381053924560547,
+      "order": 14,
+      "proof_trace": null,
+      "solver": "glucose42",
+      "solver_seconds": 139.5772042274475,
+      "solver_stats": {
+        "conflicts": 391133,
+        "decisions": 538415,
+        "propagations": 920510777,
+        "restarts": 299
+      },
+      "status": "UNSAT",
+      "variables": 41979
+    },
+    "positive_control_alpha3_n12": {
+      "clause_families": {
+        "domination_equivalence": 2200,
+        "failed_defense": 5940,
+        "failed_secure_set": 220,
+        "fixed_independent_set": 3,
+        "induced_p5_forbidden": 47520,
+        "no_larger_independent_set": 495,
+        "outside_nonempty_type": 9,
+        "outside_type_order": 168,
+        "reachability_final": 12,
+        "reachability_initial": 12,
+        "reachability_support": 132,
+        "reachability_witness": 2904,
+        "selected_clique": 66,
+        "selected_clique_domination": 276,
+        "undominated_equivalence": 7920
+      },
+      "clauses": 67877,
+      "constraints": {
+        "alpha_exactly": 3,
+        "connected": true,
+        "has_dominating_clique": true,
+        "induced_P5_free": true,
+        "minimal_counterexample_reductions": false,
+        "minimum_dominating_clique_size": 1,
+        "no_secure_set_of_size": 3,
+        "outside_type_order_symmetry_break": true
+      },
+      "edges": [
+        [
+          0,
+          3
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          9
+        ],
+        [
+          0,
+          10
+        ],
+        [
+          0,
+          11
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          1,
+          9
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          1,
+          11
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          3,
+          10
+        ],
+        [
+          3,
+          11
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          4,
+          11
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          5,
+          7
+        ],
+        [
+          5,
+          8
+        ],
+        [
+          5,
+          11
+        ],
+        [
+          6,
+          9
+        ],
+        [
+          6,
+          10
+        ],
+        [
+          7,
+          8
+        ],
+        [
+          7,
+          10
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "encoding_seconds": 0.49277305603027344,
+      "graph6": "KCV@|Xtyne^_",
+      "order": 12,
+      "proof_trace": null,
+      "solver": "cadical195",
+      "solver_seconds": 1.4327890872955322,
+      "solver_stats": {
+        "conflicts": 8117,
+        "decisions": 16414,
+        "propagations": 4988866,
+        "restarts": 362
+      },
+      "status": "SAT",
+      "variables": 5986
+    },
+    "proof_traces": null
+  },
+  "proof_traces": {
+    "alpha4_n12": {
+      "addition_lines": 5375,
+      "alpha": 4,
+      "check_seconds": 4.378363847732544,
+      "checker_propagator": "maplesat",
+      "deletion_lines_ignored": 23105,
+      "empty_clause_indices": [
+        5374
+      ],
+      "method": "Every retained addition is RUP by unit propagation; the trace derives the empty clause. Deletions are ignored.",
+      "non_rup_addition_indices": [],
+      "order": 12,
+      "original_clauses": 120233,
+      "original_variables": 13542,
+      "producer": "glucose42",
+      "proof_lines": 28480,
+      "secure_size": 5,
+      "solve_seconds": 1.8801794052124023,
+      "status": "PASS"
+    },
+    "alpha5_n12": {
+      "addition_lines": 12449,
+      "alpha": 5,
+      "check_seconds": 8.389360427856445,
+      "checker_propagator": "maplesat",
+      "deletion_lines_ignored": 19995,
+      "empty_clause_indices": [
+        12448
+      ],
+      "method": "Every retained addition is RUP by unit propagation; the trace derives the empty clause. Deletions are ignored.",
+      "non_rup_addition_indices": [],
+      "order": 12,
+      "original_clauses": 133775,
+      "original_variables": 13674,
+      "producer": "glucose42",
+      "proof_lines": 32444,
+      "secure_size": 6,
+      "solve_seconds": 4.030315637588501,
+      "status": "PASS"
+    },
+    "higher_orders": null
+  },
+  "secondary_gamma_le_alpha_evidence": {
+    "alpha4_no_secure4": {
+      "10": {
+        "clause_families": {
+          "domination_equivalence": 1470,
+          "failed_defense": 5040,
+          "failed_secure_set": 210,
+          "fixed_independent_set": 6,
+          "induced_p5_forbidden": 15120,
+          "no_larger_independent_set": 252,
+          "outside_nonempty_type": 6,
+          "outside_type_order": 525,
+          "reachability_final": 10,
+          "reachability_initial": 10,
+          "reachability_support": 90,
+          "reachability_witness": 1620,
+          "undominated_equivalence": 6300
+        },
+        "clauses": 30659,
+        "constraints": {
+          "alpha_exactly": 4,
+          "connected": true,
+          "induced_P5_free": true,
+          "minimal_counterexample_reductions": false,
+          "no_secure_set_of_size": 4,
+          "outside_type_order_symmetry_break": true
+        },
+        "encoding_seconds": 0.46022486686706543,
+        "order": 10,
+        "proof_trace": null,
+        "solver": "glucose42",
+        "solver_seconds": 0.525219202041626,
+        "solver_stats": {
+          "conflicts": 4382,
+          "decisions": 8257,
+          "propagations": 1335730,
+          "restarts": 6
+        },
+        "status": "UNSAT",
+        "variables": 3685
+      },
+      "11": {
+        "clause_families": {
+          "domination_equivalence": 2640,
+          "failed_defense": 9240,
+          "failed_secure_set": 330,
+          "fixed_independent_set": 6,
+          "induced_p5_forbidden": 27720,
+          "no_larger_independent_set": 462,
+          "outside_nonempty_type": 7,
+          "outside_type_order": 630,
+          "reachability_final": 11,
+          "reachability_initial": 11,
+          "reachability_support": 110,
+          "reachability_witness": 2200,
+          "undominated_equivalence": 11550
+        },
+        "clauses": 54917,
+        "constraints": {
+          "alpha_exactly": 4,
+          "connected": true,
+          "induced_P5_free": true,
+          "minimal_counterexample_reductions": false,
+          "no_secure_set_of_size": 4,
+          "outside_type_order_symmetry_break": true
+        },
+        "encoding_seconds": 0.8893659114837646,
+        "order": 11,
+        "proof_trace": null,
+        "solver": "glucose42",
+        "solver_seconds": 5.080968856811523,
+        "solver_stats": {
+          "conflicts": 20621,
+          "decisions": 33695,
+          "propagations": 9790622,
+          "restarts": 30
+        },
+        "status": "UNSAT",
+        "variables": 6226
+      },
+      "12": {
+        "clause_families": {
+          "domination_equivalence": 4455,
+          "failed_defense": 15840,
+          "failed_secure_set": 495,
+          "fixed_independent_set": 6,
+          "induced_p5_forbidden": 47520,
+          "no_larger_independent_set": 792,
+          "outside_nonempty_type": 8,
+          "outside_type_order": 735,
+          "reachability_final": 12,
+          "reachability_initial": 12,
+          "reachability_support": 132,
+          "reachability_witness": 2904,
+          "undominated_equivalence": 19800
+        },
+        "clauses": 92711,
+        "constraints": {
+          "alpha_exactly": 4,
+          "connected": true,
+          "induced_P5_free": true,
+          "minimal_counterexample_reductions": false,
+          "no_secure_set_of_size": 4,
+          "outside_type_order_symmetry_break": true
+        },
+        "encoding_seconds": 1.4577264785766602,
+        "order": 12,
+        "proof_trace": null,
+        "solver": "glucose42",
+        "solver_seconds": 15.33606743812561,
+        "solver_stats": {
+          "conflicts": 72391,
+          "decisions": 107088,
+          "propagations": 52816211,
+          "restarts": 67
+        },
+        "status": "UNSAT",
+        "variables": 10077
+      },
+      "13": {
+        "clause_families": {
+          "domination_equivalence": 7150,
+          "failed_defense": 25740,
+          "failed_secure_set": 715,
+          "fixed_independent_set": 6,
+          "induced_p5_forbidden": 77220,
+          "no_larger_independent_set": 1287,
+          "outside_nonempty_type": 9,
+          "outside_type_order": 840,
+          "reachability_final": 13,
+          "reachability_initial": 13,
+          "reachability_support": 156,
+          "reachability_witness": 3744,
+          "undominated_equivalence": 32175
+        },
+        "clauses": 149068,
+        "constraints": {
+          "alpha_exactly": 4,
+          "connected": true,
+          "induced_P5_free": true,
+          "minimal_counterexample_reductions": false,
+          "no_secure_set_of_size": 4,
+          "outside_type_order_symmetry_break": true
+        },
+        "encoding_seconds": 1.5802221298217773,
+        "order": 13,
+        "proof_trace": null,
+        "solver": "glucose42",
+        "solver_seconds": 38.021679639816284,
+        "solver_stats": {
+          "conflicts": 163301,
+          "decisions": 240890,
+          "propagations": 166961235,
+          "restarts": 236
+        },
+        "status": "UNSAT",
+        "variables": 15704
+      },
+      "14": {
+        "clause_families": {
+          "domination_equivalence": 11011,
+          "failed_defense": 40040,
+          "failed_secure_set": 1001,
+          "fixed_independent_set": 6,
+          "induced_p5_forbidden": 120120,
+          "no_larger_independent_set": 2002,
+          "outside_nonempty_type": 10,
+          "outside_type_order": 945,
+          "reachability_final": 14,
+          "reachability_initial": 14,
+          "reachability_support": 182,
+          "reachability_witness": 4732,
+          "undominated_equivalence": 50050
+        },
+        "clauses": 230127,
+        "constraints": {
+          "alpha_exactly": 4,
+          "connected": true,
+          "induced_P5_free": true,
+          "minimal_counterexample_reductions": false,
+          "no_secure_set_of_size": 4,
+          "outside_type_order_symmetry_break": true
+        },
+        "encoding_seconds": 2.316215753555298,
+        "order": 14,
+        "proof_trace": null,
+        "solver": "glucose42",
+        "solver_seconds": 134.8507890701294,
+        "solver_stats": {
+          "conflicts": 447800,
+          "decisions": 653001,
+          "propagations": 661636407,
+          "restarts": 759
+        },
+        "status": "UNSAT",
+        "variables": 23674
+      },
+      "6": {
+        "clause_families": {
+          "domination_equivalence": 45,
+          "failed_defense": 120,
+          "failed_secure_set": 15,
+          "fixed_independent_set": 6,
+          "induced_p5_forbidden": 360,
+          "no_larger_independent_set": 6,
+          "outside_nonempty_type": 2,
+          "outside_type_order": 105,
+          "reachability_final": 6,
+          "reachability_initial": 6,
+          "reachability_support": 30,
+          "reachability_witness": 300,
+          "undominated_equivalence": 150
+        },
+        "clauses": 1151,
+        "constraints": {
+          "alpha_exactly": 4,
+          "connected": true,
+          "induced_P5_free": true,
+          "minimal_counterexample_reductions": false,
+          "no_secure_set_of_size": 4,
+          "outside_type_order_symmetry_break": true
+        },
+        "encoding_seconds": 0.013284683227539062,
+        "order": 6,
+        "proof_trace": null,
+        "solver": "glucose42",
+        "solver_seconds": 0.0017147064208984375,
+        "solver_stats": {
+          "conflicts": 15,
+          "decisions": 102,
+          "propagations": 724,
+          "restarts": 1
+        },
+        "status": "UNSAT",
+        "variables": 276
+      },
+      "7": {
+        "clause_families": {
+          "domination_equivalence": 140,
+          "failed_defense": 420,
+          "failed_secure_set": 35,
+          "fixed_independent_set": 6,
+          "induced_p5_forbidden": 1260,
+          "no_larger_independent_set": 21,
+          "outside_nonempty_type": 3,
+          "outside_type_order": 210,
+          "reachability_final": 7,
+          "reachability_initial": 7,
+          "reachability_support": 42,
+          "reachability_witness": 504,
+          "undominated_equivalence": 525
+        },
+        "clauses": 3180,
+        "constraints": {
+          "alpha_exactly": 4,
+          "connected": true,
+          "induced_P5_free": true,
+          "minimal_counterexample_reductions": false,
+          "no_secure_set_of_size": 4,
+          "outside_type_order_symmetry_break": true
+        },
+        "encoding_seconds": 0.02953481674194336,
+        "order": 7,
+        "proof_trace": null,
+        "solver": "glucose42",
+        "solver_seconds": 0.009531021118164062,
+        "solver_stats": {
+          "conflicts": 240,
+          "decisions": 455,
+          "propagations": 14872,
+          "restarts": 1
+        },
+        "status": "UNSAT",
+        "variables": 567
+      },
+      "8": {
+        "clause_families": {
+          "domination_equivalence": 350,
+          "failed_defense": 1120,
+          "failed_secure_set": 70,
+          "fixed_independent_set": 6,
+          "induced_p5_forbidden": 3360,
+          "no_larger_independent_set": 56,
+          "outside_nonempty_type": 4,
+          "outside_type_order": 315,
+          "reachability_final": 8,
+          "reachability_initial": 8,
+          "reachability_support": 56,
+          "reachability_witness": 784,
+          "undominated_equivalence": 1400
+        },
+        "clauses": 7537,
+        "constraints": {
+          "alpha_exactly": 4,
+          "connected": true,
+          "induced_P5_free": true,
+          "minimal_counterexample_reductions": false,
+          "no_secure_set_of_size": 4,
+          "outside_type_order_symmetry_break": true
+        },
+        "encoding_seconds": 0.11038875579833984,
+        "order": 8,
+        "proof_trace": null,
+        "solver": "glucose42",
+        "solver_seconds": 0.03964638710021973,
+        "solver_stats": {
+          "conflicts": 868,
+          "decisions": 1479,
+          "propagations": 88075,
+          "restarts": 1
+        },
+        "status": "UNSAT",
+        "variables": 1114
+      },
+      "9": {
+        "clause_families": {
+          "domination_equivalence": 756,
+          "failed_defense": 2520,
+          "failed_secure_set": 126,
+          "fixed_independent_set": 6,
+          "induced_p5_forbidden": 7560,
+          "no_larger_independent_set": 126,
+          "outside_nonempty_type": 5,
+          "outside_type_order": 420,
+          "reachability_final": 9,
+          "reachability_initial": 9,
+          "reachability_support": 72,
+          "reachability_witness": 1152,
+          "undominated_equivalence": 3150
+        },
+        "clauses": 15911,
+        "constraints": {
+          "alpha_exactly": 4,
+          "connected": true,
+          "induced_P5_free": true,
+          "minimal_counterexample_reductions": false,
+          "no_secure_set_of_size": 4,
+          "outside_type_order_symmetry_break": true
+        },
+        "encoding_seconds": 0.22646045684814453,
+        "order": 9,
+        "proof_trace": null,
+        "solver": "glucose42",
+        "solver_seconds": 0.10249733924865723,
+        "solver_stats": {
+          "conflicts": 1542,
+          "decisions": 3036,
+          "propagations": 250664,
+          "restarts": 2
+        },
+        "status": "UNSAT",
+        "variables": 2079
+      }
+    },
+    "alpha5_no_secure5": {
+      "10": {
+        "clause_families": {
+          "domination_equivalence": 1512,
+          "failed_defense": 6300,
+          "failed_secure_set": 252,
+          "fixed_independent_set": 10,
+          "induced_p5_forbidden": 15120,
+          "no_larger_independent_set": 210,
+          "outside_nonempty_type": 5,
+          "outside_type_order": 1860,
+          "reachability_final": 10,
+          "reachability_initial": 10,
+          "reachability_support": 90,
+          "reachability_witness": 1620,
+          "undominated_equivalence": 7560
+        },
+        "clauses": 34559,
+        "constraints": {
+          "alpha_exactly": 5,
+          "connected": true,
+          "induced_P5_free": true,
+          "minimal_counterexample_reductions": false,
+          "no_secure_set_of_size": 5,
+          "outside_type_order_symmetry_break": true
+        },
+        "encoding_seconds": 0.315310001373291,
+        "order": 10,
+        "proof_trace": null,
+        "solver": "cadical195",
+        "solver_seconds": 0.36206960678100586,
+        "solver_stats": {
+          "conflicts": 5022,
+          "decisions": 7077,
+          "propagations": 1825151,
+          "restarts": 127
+        },
+        "status": "UNSAT",
+        "variables": 3727
+      },
+      "11": {
+        "clause_families": {
+          "domination_equivalence": 3234,
+          "failed_defense": 13860,
+          "failed_secure_set": 462,
+          "fixed_independent_set": 10,
+          "induced_p5_forbidden": 27720,
+          "no_larger_independent_set": 462,
+          "outside_nonempty_type": 6,
+          "outside_type_order": 2325,
+          "reachability_final": 11,
+          "reachability_initial": 11,
+          "reachability_support": 110,
+          "reachability_witness": 2200,
+          "undominated_equivalence": 16632
+        },
+        "clauses": 67043,
+        "constraints": {
+          "alpha_exactly": 5,
+          "connected": true,
+          "induced_P5_free": true,
+          "minimal_counterexample_reductions": false,
+          "no_secure_set_of_size": 5,
+          "outside_type_order_symmetry_break": true
+        },
+        "encoding_seconds": 0.38580989837646484,
+        "order": 11,
+        "proof_trace": null,
+        "solver": "cadical195",
+        "solver_seconds": 1.363722562789917,
+        "solver_stats": {
+          "conflicts": 13986,
+          "decisions": 19891,
+          "propagations": 7752224,
+          "restarts": 163
+        },
+        "status": "UNSAT",
+        "variables": 7282
+      },
+      "12": {
+        "clause_families": {
+          "domination_equivalence": 6336,
+          "failed_defense": 27720,
+          "failed_secure_set": 792,
+          "fixed_independent_set": 10,
+          "induced_p5_forbidden": 47520,
+          "no_larger_independent_set": 924,
+          "outside_nonempty_type": 7,
+          "outside_type_order": 2790,
+          "reachability_final": 12,
+          "reachability_initial": 12,
+          "reachability_support": 132,
+          "reachability_witness": 2904,
+          "undominated_equivalence": 33264
+        },
+        "clauses": 122423,
+        "constraints": {
+          "alpha_exactly": 5,
+          "connected": true,
+          "induced_P5_free": true,
+          "minimal_counterexample_reductions": false,
+          "no_secure_set_of_size": 5,
+          "outside_type_order_symmetry_break": true
+        },
+        "encoding_seconds": 0.8500406742095947,
+        "order": 12,
+        "proof_trace": null,
+        "solver": "cadical195",
+        "solver_seconds": 9.572372913360596,
+        "solver_stats": {
+          "conflicts": 58310,
+          "decisions": 81660,
+          "propagations": 52590931,
+          "restarts": 653
+        },
+        "status": "UNSAT",
+        "variables": 13542
+      },
+      "13": {
+        "clause_families": {
+          "domination_equivalence": 11583,
+          "failed_defense": 51480,
+          "failed_secure_set": 1287,
+          "fixed_independent_set": 10,
+          "induced_p5_forbidden": 77220,
+          "no_larger_independent_set": 1716,
+          "outside_nonempty_type": 8,
+          "outside_type_order": 3255,
+          "reachability_final": 13,
+          "reachability_initial": 13,
+          "reachability_support": 156,
+          "reachability_witness": 3744,
+          "undominated_equivalence": 61776
+        },
+        "clauses": 212261,
+        "constraints": {
+          "alpha_exactly": 5,
+          "connected": true,
+          "induced_P5_free": true,
+          "minimal_counterexample_reductions": false,
+          "no_secure_set_of_size": 5,
+          "outside_type_order_symmetry_break": true
+        },
+        "encoding_seconds": 1.7081775665283203,
+        "order": 13,
+        "proof_trace": null,
+        "solver": "cadical195",
+        "solver_seconds": 70.39056301116943,
+        "solver_stats": {
+          "conflicts": 210301,
+          "decisions": 339157,
+          "propagations": 322212045,
+          "restarts": 6516
+        },
+        "status": "UNSAT",
+        "variables": 23998
+      },
+      "7": {
+        "clause_families": {
+          "domination_equivalence": 63,
+          "failed_defense": 210,
+          "failed_secure_set": 21,
+          "fixed_independent_set": 10,
+          "induced_p5_forbidden": 1260,
+          "no_larger_independent_set": 7,
+          "outside_nonempty_type": 2,
+          "outside_type_order": 465,
+          "reachability_final": 7,
+          "reachability_initial": 7,
+          "reachability_support": 42,
+          "reachability_witness": 504,
+          "undominated_equivalence": 252
+        },
+        "clauses": 2850,
+        "constraints": {
+          "alpha_exactly": 5,
+          "connected": true,
+          "induced_P5_free": true,
+          "minimal_counterexample_reductions": false,
+          "no_secure_set_of_size": 5,
+          "outside_type_order_symmetry_break": true
+        },
+        "encoding_seconds": 0.03342270851135254,
+        "order": 7,
+        "proof_trace": null,
+        "solver": "cadical195",
+        "solver_seconds": 0.006110429763793945,
+        "solver_stats": {
+          "conflicts": 47,
+          "decisions": 84,
+          "propagations": 1972,
+          "restarts": 0
+        },
+        "status": "UNSAT",
+        "variables": 427
+      },
+      "8": {
+        "clause_families": {
+          "domination_equivalence": 224,
+          "failed_defense": 840,
+          "failed_secure_set": 56,
+          "fixed_independent_set": 10,
+          "induced_p5_forbidden": 3360,
+          "no_larger_independent_set": 28,
+          "outside_nonempty_type": 3,
+          "outside_type_order": 930,
+          "reachability_final": 8,
+          "reachability_initial": 8,
+          "reachability_support": 56,
+          "reachability_witness": 784,
+          "undominated_equivalence": 1008
+        },
+        "clauses": 7315,
+        "constraints": {
+          "alpha_exactly": 5,
+          "connected": true,
+          "induced_P5_free": true,
+          "minimal_counterexample_reductions": false,
+          "no_secure_set_of_size": 5,
+          "outside_type_order_symmetry_break": true
+        },
+        "encoding_seconds": 0.13245558738708496,
+        "order": 8,
+        "proof_trace": null,
+        "solver": "cadical195",
+        "solver_seconds": 0.022974729537963867,
+        "solver_stats": {
+          "conflicts": 348,
+          "decisions": 550,
+          "propagations": 27944,
+          "restarts": 0
+        },
+        "status": "UNSAT",
+        "variables": 876
+      },
+      "9": {
+        "clause_families": {
+          "domination_equivalence": 630,
+          "failed_defense": 2520,
+          "failed_secure_set": 126,
+          "fixed_independent_set": 10,
+          "induced_p5_forbidden": 7560,
+          "no_larger_independent_set": 84,
+          "outside_nonempty_type": 4,
+          "outside_type_order": 1395,
+          "reachability_final": 9,
+          "reachability_initial": 9,
+          "reachability_support": 72,
+          "reachability_witness": 1152,
+          "undominated_equivalence": 3024
+        },
+        "clauses": 16595,
+        "constraints": {
+          "alpha_exactly": 5,
+          "connected": true,
+          "induced_P5_free": true,
+          "minimal_counterexample_reductions": false,
+          "no_secure_set_of_size": 5,
+          "outside_type_order_symmetry_break": true
+        },
+        "encoding_seconds": 0.12668132781982422,
+        "order": 9,
+        "proof_trace": null,
+        "solver": "cadical195",
+        "solver_seconds": 0.10869503021240234,
+        "solver_stats": {
+          "conflicts": 2481,
+          "decisions": 2839,
+          "propagations": 272884,
+          "restarts": 44
+        },
+        "status": "UNSAT",
+        "variables": 1827
+      }
+    }
+  },
+  "structured": {
+    "icosahedral_false_twins_weights_1_to_3": {
+      "counts": {
+        "alpha_four": 68,
+        "no_secure_five": 0,
+        "weight_vectors": 531441
+      },
+      "first_extremal": null,
+      "search": "all false-twin weights in [1,3]^12",
+      "smallest_seen_with_secure_five": {
+        "secure_five": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "weights": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
+    },
+    "known_module_compositions": {
+      "candidate": null,
+      "counts": {
+        "assignments": 1199511,
+        "no_secure_five": 0,
+        "skeletons": 637,
+        "weighted_alpha_four": 69769,
+        "within_order_limit": 68486
+      },
+      "scope": {
+        "max_order": 50,
+        "modules": {
+          "C5": {
+            "alpha": 2,
+            "order": 5
+          },
+          "IcoBar": {
+            "alpha": 3,
+            "order": 12
+          },
+          "K1": {
+            "alpha": 1,
+            "order": 1
+          }
+        },
+        "skeletons": "all connected P5-free graph-atlas graphs of order 2..7",
+        "substitution": "complete adjacency between modules exactly on skeleton edges"
+      },
+      "seconds": 32.57962918281555
+    },
+    "stable_substitutions": {
+      "best_example": {
+        "order": 5,
+        "secure_five_examples_found_before_stop": [
+          [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        ],
+        "skeleton_graph6": "Bo",
+        "weights": [
+          1,
+          1,
+          3
+        ]
+      },
+      "candidate": null,
+      "counts": {
+        "alpha_four": 69769,
+        "atlas_graphs": 1251,
+        "connected_p5free_skeletons": 637,
+        "no_secure_five": 0,
+        "weight_vectors": 1199511
+      },
+      "scope": {
+        "maximum_result_order": 21,
+        "skeletons": "all graph-atlas connected induced-P5-free graphs of orders 2..7",
+        "substitution": "each vertex replaced by an independent set of size 1..3"
+      },
+      "seconds": 21.64019751548767
+    }
+  }
+}

@@ -42,6 +42,25 @@ claimed as new. The published `3alpha/2` theorem remains valid because the
 example satisfies `4 <= 4.5`; only the stronger coefficient-one candidate is
 refuted.
 
+The separate `graph/secure-domination-optimal-coefficient/` continuation now
+records the next rigorous boundary:
+
+- the extremal secure-domination value at `alpha=3` is exactly four;
+- the ratio `4/3` occurs in the infinite connected family `B[K_t]`;
+- no `alpha=4` graph without a secure five-set was found through order 17;
+- no `alpha=5` graph without a secure six-set was found through order 16;
+- with minimum dominating-clique size at least three, no `gamma_s > alpha`
+  graph was found through order 15 at `alpha=4` or order 14 at `alpha=5`;
+- both order-12 UNSAT formulas have retained CNF/DRUP traces independently
+  checked through the empty clause;
+- the bad-cycle, dominating-cycle, favorable dominating-path,
+  private-witness, and dominating-clique reductions are theorem-level; and
+- `gamma_s <= alpha+1` and the exact optimum coefficient remain open.
+
+The continuation is an active research package, not a third claimed solved
+paper. It has no deployable visual paper yet; one should be created only when
+the global bound is proved or an exact global counterexample is found.
+
 Status boundary: the existence and secure-domination calculation for this
 12-vertex graph are an exact theorem/counterexample, not a conjecture. The
 stronger statement that order 12 is globally minimum remains finite SAT
@@ -95,6 +114,9 @@ automatic deployment workflow. See `DEPLOYMENT.md`.
 ## Known limitations and open gates
 
 - The graph coefficient between `4/3` and `3/2` is unresolved.
+- The proof-carrying finite coefficient searches do not imply an all-orders
+  theorem; higher-order frontier runs beyond order 12 retain solver results
+  but not proof traces.
 - Minimum-order SAT evidence is described honestly but no formally checked DRAT
   trace is included in this reconstruction.
 - The biology result has no untouched fourth backbone or wet-lab confirmation.
