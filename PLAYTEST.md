@@ -54,10 +54,11 @@ credential values; report only pass/fail or filenames needing inspection.
 
 ## Website scenario
 
-Run the graph scenario with `graph/secure-domination-p5-free/website/` as the
-static root and the biology scenario with
-`biology/aggregate-chemistry-transfer/website/` as the static root. Neither may
-rely on its sibling site being mounted beside it.
+The project-owned `website/` directories remain valid independent static roots.
+For the canonical combined release, build the root Dockerfile and run the graph
+scenario at `/secure-domination-p5-free/` and the biology scenario at
+`/aggregate-chemistry-transfer/`. Each paper must resolve every first-party
+asset inside its own path prefix rather than through its sibling.
 
 1. Confirm the hero states `gamma_s = 4 > 3 = alpha` and the coefficient gap.
 2. Select Shape, Flip, Three, and Four. Confirm edge counts 30, 36, 36, 36;
@@ -69,6 +70,8 @@ rely on its sibling site being mounted beside it.
    all three within-count values, native cores, and the exploratory warning.
 6. On both websites, confirm no unexpected console errors, broken first-party requests, clipped
    text, or horizontal document overflow.
+7. Confirm an unknown deployment path returns `404`. The combined deployment
+   deliberately provides no root research homepage or application health route.
 
 Repeat at approximately 1440×900, 1024×768, 390×844, and 320×568. At 200%
 zoom, verify usable reflow. Keyboard through skip link, tabs, play control, and
