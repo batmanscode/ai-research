@@ -72,8 +72,9 @@ rely on its sibling site being mounted beside it.
 
 Repeat at approximately 1440×900, 1024×768, 390×844, and 320×568. At 200%
 zoom, verify usable reflow. Keyboard through skip link, tabs, play control, and
-links. Confirm visible focus and that reduced-motion preference removes
-nonessential transition duration.
+links; verify Left/Right and Home/End move and select graph tabs. Confirm visible
+focus and that reduced-motion preference removes nonessential transition
+duration.
 
 Browser emulation does not complete human screen-reader or physical-device
 testing.

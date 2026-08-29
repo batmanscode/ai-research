@@ -36,6 +36,10 @@
   the graph animation passed JavaScript syntax validation.
 - **Design:** each project now owns a `DESIGN.md` that fixes its narrative,
   visual semantics, interaction rules, evidence hierarchy, and claim boundary.
+- **External/source review:** Gemini 3.7 Flash returned `PASS` on the exact split
+  source. Its applicable suggestion—complete ARIA tab keyboard behavior—was
+  implemented with Left/Right/Home/End navigation; an inapplicable `noopener`
+  suggestion was rejected because no reviewed link opens a new browsing context.
 - **Open gate:** the local visual-preview bridge was unavailable in this
   environment. The underlying layouts and graph/biology visuals are unchanged
   from the previously reviewed versions apart from paper-specific navigation;

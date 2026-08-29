@@ -100,10 +100,28 @@
     copy.innerHTML = `<h3>${step.title}</h3><p>${step.body}</p><p class="callout">${step.callout}</p>`;
     label.textContent = step.label; count.textContent = step.edgeCount;
     legend.innerHTML = step.legend.map(([color,text]) => `<span class="legend-dot" style="--dot:${color}">${text}</span>`).join('');
-    tabs.forEach((tab,i) => tab.setAttribute('aria-selected',String(i===index)));
+    tabs.forEach((tab,i) => {
+      const selected = i === index;
+      tab.setAttribute('aria-selected', String(selected));
+      tab.tabIndex = selected ? 0 : -1;
+    });
   }
 
-  tabs.forEach(tab => tab.addEventListener('click',() => { stop(); render(Number(tab.dataset.step)); }));
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('click',() => { stop(); render(Number(tab.dataset.step)); });
+    tab.addEventListener('keydown', event => {
+      let next = null;
+      if (event.key === 'ArrowRight') next = (index + 1) % tabs.length;
+      if (event.key === 'ArrowLeft') next = (index - 1 + tabs.length) % tabs.length;
+      if (event.key === 'Home') next = 0;
+      if (event.key === 'End') next = tabs.length - 1;
+      if (next === null) return;
+      event.preventDefault();
+      stop();
+      render(next);
+      tabs[next].focus();
+    });
+  });
   function stop() { if (timer) window.clearInterval(timer); timer=null; play.textContent='▶ Play story'; }
   play.addEventListener('click',() => {
     if (timer) { stop(); return; }
