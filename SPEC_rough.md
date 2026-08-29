@@ -53,3 +53,14 @@ This file preserves owner intent and major decisions. It is append-only.
 - Keep goose illustrations optional and subordinate to the research. Prefer a
   small colophon or marginal mark over a mascot competing with a paper's title,
   problem, or evidence.
+
+## Changes 29/08/2026 — optimal-coefficient continuation
+
+- Keep the proved 12-vertex counterexample in its finished named project.
+- Continue the all-orders connected coefficient question in the separate
+  `graph/secure-domination-optimal-coefficient/` project and branch.
+- Treat `gamma_s <= alpha + 1` as a high-value theorem/counterexample fork:
+  proving it makes the sharp multiplicative coefficient `4/3`, while a
+  certified counterexample redirects the bound.
+- Do not merge or externally publish a claimed global solution until its proof
+  or counterexample certificate survives an independent audit.

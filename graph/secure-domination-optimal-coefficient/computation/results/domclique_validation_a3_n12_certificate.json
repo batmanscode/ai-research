@@ -1,0 +1,2573 @@
+{
+  "alpha": 3,
+  "connected": true,
+  "degree_sequence": [
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6
+  ],
+  "edges": [
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      0,
+      10
+    ],
+    [
+      0,
+      11
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      1,
+      9
+    ],
+    [
+      1,
+      10
+    ],
+    [
+      1,
+      11
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      2,
+      10
+    ],
+    [
+      2,
+      11
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      3,
+      8
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      3,
+      11
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      4,
+      9
+    ],
+    [
+      4,
+      11
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      5,
+      11
+    ],
+    [
+      6,
+      9
+    ],
+    [
+      6,
+      10
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      7,
+      10
+    ],
+    [
+      8,
+      9
+    ]
+  ],
+  "example_defense_map": {
+    "10": [
+      {
+        "defender": 0,
+        "swapped_set": [
+          1,
+          2,
+          3,
+          10
+        ]
+      },
+      {
+        "defender": 1,
+        "swapped_set": [
+          0,
+          2,
+          3,
+          10
+        ]
+      },
+      {
+        "defender": 2,
+        "swapped_set": [
+          0,
+          1,
+          3,
+          10
+        ]
+      },
+      {
+        "defender": 3,
+        "swapped_set": [
+          0,
+          1,
+          2,
+          10
+        ]
+      }
+    ],
+    "11": [
+      {
+        "defender": 0,
+        "swapped_set": [
+          1,
+          2,
+          3,
+          11
+        ]
+      },
+      {
+        "defender": 1,
+        "swapped_set": [
+          0,
+          2,
+          3,
+          11
+        ]
+      },
+      {
+        "defender": 2,
+        "swapped_set": [
+          0,
+          1,
+          3,
+          11
+        ]
+      },
+      {
+        "defender": 3,
+        "swapped_set": [
+          0,
+          1,
+          2,
+          11
+        ]
+      }
+    ],
+    "4": [
+      {
+        "defender": 1,
+        "swapped_set": [
+          0,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "defender": 3,
+        "swapped_set": [
+          0,
+          1,
+          2,
+          4
+        ]
+      }
+    ],
+    "5": [
+      {
+        "defender": 0,
+        "swapped_set": [
+          1,
+          2,
+          3,
+          5
+        ]
+      },
+      {
+        "defender": 1,
+        "swapped_set": [
+          0,
+          2,
+          3,
+          5
+        ]
+      }
+    ],
+    "6": [
+      {
+        "defender": 2,
+        "swapped_set": [
+          0,
+          1,
+          3,
+          6
+        ]
+      },
+      {
+        "defender": 3,
+        "swapped_set": [
+          0,
+          1,
+          2,
+          6
+        ]
+      }
+    ],
+    "7": [
+      {
+        "defender": 0,
+        "swapped_set": [
+          1,
+          2,
+          3,
+          7
+        ]
+      },
+      {
+        "defender": 2,
+        "swapped_set": [
+          0,
+          1,
+          3,
+          7
+        ]
+      }
+    ],
+    "8": [
+      {
+        "defender": 1,
+        "swapped_set": [
+          0,
+          2,
+          3,
+          8
+        ]
+      },
+      {
+        "defender": 2,
+        "swapped_set": [
+          0,
+          1,
+          3,
+          8
+        ]
+      },
+      {
+        "defender": 3,
+        "swapped_set": [
+          0,
+          1,
+          2,
+          8
+        ]
+      }
+    ],
+    "9": [
+      {
+        "defender": 0,
+        "swapped_set": [
+          1,
+          2,
+          3,
+          9
+        ]
+      },
+      {
+        "defender": 1,
+        "swapped_set": [
+          0,
+          2,
+          3,
+          9
+        ]
+      },
+      {
+        "defender": 2,
+        "swapped_set": [
+          0,
+          1,
+          3,
+          9
+        ]
+      }
+    ]
+  },
+  "example_secure_set": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "gamma_s": 4,
+  "graph6": "KCV@|Xtyne^_",
+  "induced_p5_count": 0,
+  "induced_p5s": [],
+  "maximum_independent_sets": [
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      0,
+      1,
+      6
+    ],
+    [
+      0,
+      2,
+      4
+    ],
+    [
+      0,
+      4,
+      8
+    ],
+    [
+      0,
+      6,
+      8
+    ],
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      1,
+      3,
+      7
+    ],
+    [
+      1,
+      6,
+      7
+    ],
+    [
+      2,
+      3,
+      5
+    ],
+    [
+      2,
+      4,
+      5
+    ],
+    [
+      3,
+      5,
+      9
+    ],
+    [
+      3,
+      7,
+      9
+    ],
+    [
+      4,
+      5,
+      10
+    ],
+    [
+      4,
+      8,
+      10
+    ],
+    [
+      5,
+      9,
+      10
+    ],
+    [
+      6,
+      7,
+      11
+    ],
+    [
+      6,
+      8,
+      11
+    ],
+    [
+      7,
+      9,
+      11
+    ],
+    [
+      8,
+      10,
+      11
+    ],
+    [
+      9,
+      10,
+      11
+    ]
+  ],
+  "order": 12,
+  "target_failure_size": 3,
+  "target_set_failure_count": 220,
+  "target_set_failures": {
+    "0,1,10": {
+      "attacked": 4,
+      "failures": [
+        {
+          "defender": 1,
+          "missed": [
+            8
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,1,11": {
+      "kind": "not_dominating",
+      "missed": [
+        6
+      ]
+    },
+    "0,1,2": {
+      "attacked": 5,
+      "failures": [
+        {
+          "defender": 0,
+          "missed": [
+            3
+          ]
+        },
+        {
+          "defender": 1,
+          "missed": [
+            4
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,1,3": {
+      "kind": "not_dominating",
+      "missed": [
+        2
+      ]
+    },
+    "0,1,4": {
+      "kind": "not_dominating",
+      "missed": [
+        2
+      ]
+    },
+    "0,1,5": {
+      "kind": "not_dominating",
+      "missed": [
+        2
+      ]
+    },
+    "0,1,6": {
+      "attacked": 3,
+      "failures": [
+        {
+          "defender": 0,
+          "missed": [
+            7
+          ]
+        },
+        {
+          "defender": 6,
+          "missed": [
+            2
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,1,7": {
+      "kind": "not_dominating",
+      "missed": [
+        6
+      ]
+    },
+    "0,1,8": {
+      "kind": "not_dominating",
+      "missed": [
+        6
+      ]
+    },
+    "0,1,9": {
+      "attacked": 3,
+      "failures": [
+        {
+          "defender": 0,
+          "missed": [
+            7
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,10,11": {
+      "kind": "not_dominating",
+      "missed": [
+        8
+      ]
+    },
+    "0,2,10": {
+      "kind": "not_dominating",
+      "missed": [
+        4
+      ]
+    },
+    "0,2,11": {
+      "attacked": 6,
+      "failures": [
+        {
+          "defender": 2,
+          "missed": [
+            8
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,2,3": {
+      "kind": "not_dominating",
+      "missed": [
+        1
+      ]
+    },
+    "0,2,4": {
+      "attacked": 3,
+      "failures": [
+        {
+          "defender": 0,
+          "missed": [
+            5
+          ]
+        },
+        {
+          "defender": 4,
+          "missed": [
+            1
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,2,5": {
+      "kind": "not_dominating",
+      "missed": [
+        4
+      ]
+    },
+    "0,2,6": {
+      "kind": "not_dominating",
+      "missed": [
+        1
+      ]
+    },
+    "0,2,7": {
+      "kind": "not_dominating",
+      "missed": [
+        1
+      ]
+    },
+    "0,2,8": {
+      "kind": "not_dominating",
+      "missed": [
+        4
+      ]
+    },
+    "0,2,9": {
+      "attacked": 3,
+      "failures": [
+        {
+          "defender": 0,
+          "missed": [
+            5
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,3,10": {
+      "attacked": 1,
+      "failures": [
+        {
+          "defender": 10,
+          "missed": [
+            2
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,3,11": {
+      "attacked": 1,
+      "failures": [
+        {
+          "defender": 11,
+          "missed": [
+            2
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,3,4": {
+      "kind": "not_dominating",
+      "missed": [
+        2
+      ]
+    },
+    "0,3,5": {
+      "kind": "not_dominating",
+      "missed": [
+        2
+      ]
+    },
+    "0,3,6": {
+      "kind": "not_dominating",
+      "missed": [
+        1
+      ]
+    },
+    "0,3,7": {
+      "kind": "not_dominating",
+      "missed": [
+        1
+      ]
+    },
+    "0,3,8": {
+      "attacked": 1,
+      "failures": [
+        {
+          "defender": 8,
+          "missed": [
+            2
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,3,9": {
+      "attacked": 1,
+      "failures": [
+        {
+          "defender": 9,
+          "missed": [
+            2
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,4,10": {
+      "kind": "not_dominating",
+      "missed": [
+        8
+      ]
+    },
+    "0,4,11": {
+      "kind": "not_dominating",
+      "missed": [
+        8
+      ]
+    },
+    "0,4,5": {
+      "kind": "not_dominating",
+      "missed": [
+        2
+      ]
+    },
+    "0,4,6": {
+      "kind": "not_dominating",
+      "missed": [
+        8
+      ]
+    },
+    "0,4,7": {
+      "attacked": 1,
+      "failures": [
+        {
+          "defender": 4,
+          "missed": [
+            6
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,4,8": {
+      "attacked": 1,
+      "failures": [
+        {
+          "defender": 4,
+          "missed": [
+            6
+          ]
+        },
+        {
+          "defender": 8,
+          "missed": [
+            2
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,4,9": {
+      "attacked": 5,
+      "failures": [
+        {
+          "defender": 0,
+          "missed": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,5,10": {
+      "kind": "not_dominating",
+      "missed": [
+        4
+      ]
+    },
+    "0,5,11": {
+      "attacked": 1,
+      "failures": [
+        {
+          "defender": 5,
+          "missed": [
+            6
+          ]
+        },
+        {
+          "defender": 11,
+          "missed": [
+            2
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,5,6": {
+      "attacked": 2,
+      "failures": [
+        {
+          "defender": 6,
+          "missed": [
+            4
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,5,7": {
+      "attacked": 1,
+      "failures": [
+        {
+          "defender": 5,
+          "missed": [
+            6
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,5,8": {
+      "kind": "not_dominating",
+      "missed": [
+        4
+      ]
+    },
+    "0,5,9": {
+      "attacked": 2,
+      "failures": [
+        {
+          "defender": 9,
+          "missed": [
+            4
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,6,10": {
+      "kind": "not_dominating",
+      "missed": [
+        8
+      ]
+    },
+    "0,6,11": {
+      "kind": "not_dominating",
+      "missed": [
+        8
+      ]
+    },
+    "0,6,7": {
+      "kind": "not_dominating",
+      "missed": [
+        1
+      ]
+    },
+    "0,6,8": {
+      "attacked": 2,
+      "failures": [
+        {
+          "defender": 6,
+          "missed": [
+            4
+          ]
+        },
+        {
+          "defender": 8,
+          "missed": [
+            1
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,6,9": {
+      "attacked": 7,
+      "failures": [
+        {
+          "defender": 0,
+          "missed": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,7,10": {
+      "attacked": 1,
+      "failures": [
+        {
+          "defender": 10,
+          "missed": [
+            6
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,7,11": {
+      "kind": "not_dominating",
+      "missed": [
+        6
+      ]
+    },
+    "0,7,8": {
+      "kind": "not_dominating",
+      "missed": [
+        6
+      ]
+    },
+    "0,7,9": {
+      "attacked": 1,
+      "failures": [
+        {
+          "defender": 9,
+          "missed": [
+            6
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,8,10": {
+      "kind": "not_dominating",
+      "missed": [
+        4
+      ]
+    },
+    "0,8,11": {
+      "kind": "not_dominating",
+      "missed": [
+        6
+      ]
+    },
+    "0,8,9": {
+      "attacked": 10,
+      "failures": [
+        {
+          "defender": 0,
+          "missed": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,9,10": {
+      "attacked": 4,
+      "failures": [
+        {
+          "defender": 9,
+          "missed": [
+            8
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,9,11": {
+      "attacked": 6,
+      "failures": [
+        {
+          "defender": 9,
+          "missed": [
+            8
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,10,11": {
+      "attacked": 6,
+      "failures": [
+        {
+          "defender": 10,
+          "missed": [
+            7
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,2,10": {
+      "attacked": 4,
+      "failures": [
+        {
+          "defender": 1,
+          "missed": [
+            5
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,2,11": {
+      "attacked": 6,
+      "failures": [
+        {
+          "defender": 2,
+          "missed": [
+            7
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,2,3": {
+      "attacked": 4,
+      "failures": [
+        {
+          "defender": 1,
+          "missed": [
+            5
+          ]
+        },
+        {
+          "defender": 3,
+          "missed": [
+            0
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,2,4": {
+      "kind": "not_dominating",
+      "missed": [
+        0
+      ]
+    },
+    "1,2,5": {
+      "kind": "not_dominating",
+      "missed": [
+        3
+      ]
+    },
+    "1,2,6": {
+      "kind": "not_dominating",
+      "missed": [
+        0
+      ]
+    },
+    "1,2,7": {
+      "kind": "not_dominating",
+      "missed": [
+        3
+      ]
+    },
+    "1,2,8": {
+      "kind": "not_dominating",
+      "missed": [
+        0
+      ]
+    },
+    "1,2,9": {
+      "kind": "not_dominating",
+      "missed": [
+        3
+      ]
+    },
+    "1,3,10": {
+      "attacked": 5,
+      "failures": [
+        {
+          "defender": 1,
+          "missed": [
+            9
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,3,11": {
+      "kind": "not_dominating",
+      "missed": [
+        7
+      ]
+    },
+    "1,3,4": {
+      "kind": "not_dominating",
+      "missed": [
+        2
+      ]
+    },
+    "1,3,5": {
+      "kind": "not_dominating",
+      "missed": [
+        2
+      ]
+    },
+    "1,3,6": {
+      "kind": "not_dominating",
+      "missed": [
+        7
+      ]
+    },
+    "1,3,7": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 3,
+          "missed": [
+            6
+          ]
+        },
+        {
+          "defender": 7,
+          "missed": [
+            2
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,3,8": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 3,
+          "missed": [
+            6
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,3,9": {
+      "kind": "not_dominating",
+      "missed": [
+        7
+      ]
+    },
+    "1,4,10": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 10,
+          "missed": [
+            2
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,4,11": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 11,
+          "missed": [
+            2
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,4,5": {
+      "kind": "not_dominating",
+      "missed": [
+        2
+      ]
+    },
+    "1,4,6": {
+      "kind": "not_dominating",
+      "missed": [
+        0
+      ]
+    },
+    "1,4,7": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 7,
+          "missed": [
+            2
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,4,8": {
+      "kind": "not_dominating",
+      "missed": [
+        0
+      ]
+    },
+    "1,4,9": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 9,
+          "missed": [
+            2
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,5,10": {
+      "attacked": 2,
+      "failures": [
+        {
+          "defender": 10,
+          "missed": [
+            3
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,5,11": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 5,
+          "missed": [
+            6
+          ]
+        },
+        {
+          "defender": 11,
+          "missed": [
+            2
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,5,6": {
+      "attacked": 2,
+      "failures": [
+        {
+          "defender": 6,
+          "missed": [
+            3
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,5,7": {
+      "kind": "not_dominating",
+      "missed": [
+        3
+      ]
+    },
+    "1,5,8": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 5,
+          "missed": [
+            6
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,5,9": {
+      "kind": "not_dominating",
+      "missed": [
+        3
+      ]
+    },
+    "1,6,10": {
+      "attacked": 8,
+      "failures": [
+        {
+          "defender": 1,
+          "missed": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,6,11": {
+      "kind": "not_dominating",
+      "missed": [
+        7
+      ]
+    },
+    "1,6,7": {
+      "attacked": 2,
+      "failures": [
+        {
+          "defender": 6,
+          "missed": [
+            3
+          ]
+        },
+        {
+          "defender": 7,
+          "missed": [
+            0
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,6,8": {
+      "kind": "not_dominating",
+      "missed": [
+        0
+      ]
+    },
+    "1,6,9": {
+      "kind": "not_dominating",
+      "missed": [
+        7
+      ]
+    },
+    "1,7,10": {
+      "attacked": 9,
+      "failures": [
+        {
+          "defender": 1,
+          "missed": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,7,11": {
+      "kind": "not_dominating",
+      "missed": [
+        6
+      ]
+    },
+    "1,7,8": {
+      "kind": "not_dominating",
+      "missed": [
+        6
+      ]
+    },
+    "1,7,9": {
+      "kind": "not_dominating",
+      "missed": [
+        3
+      ]
+    },
+    "1,8,10": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 10,
+          "missed": [
+            6
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,8,11": {
+      "kind": "not_dominating",
+      "missed": [
+        6
+      ]
+    },
+    "1,8,9": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 9,
+          "missed": [
+            6
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,9,10": {
+      "attacked": 3,
+      "failures": [
+        {
+          "defender": 10,
+          "missed": [
+            7
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,9,11": {
+      "kind": "not_dominating",
+      "missed": [
+        7
+      ]
+    },
+    "2,10,11": {
+      "attacked": 4,
+      "failures": [
+        {
+          "defender": 11,
+          "missed": [
+            5
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,3,10": {
+      "kind": "not_dominating",
+      "missed": [
+        5
+      ]
+    },
+    "2,3,11": {
+      "attacked": 7,
+      "failures": [
+        {
+          "defender": 2,
+          "missed": [
+            9
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,3,4": {
+      "kind": "not_dominating",
+      "missed": [
+        5
+      ]
+    },
+    "2,3,5": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 3,
+          "missed": [
+            4
+          ]
+        },
+        {
+          "defender": 5,
+          "missed": [
+            1
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,3,6": {
+      "kind": "not_dominating",
+      "missed": [
+        1
+      ]
+    },
+    "2,3,7": {
+      "kind": "not_dominating",
+      "missed": [
+        1
+      ]
+    },
+    "2,3,8": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 3,
+          "missed": [
+            4
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,3,9": {
+      "kind": "not_dominating",
+      "missed": [
+        5
+      ]
+    },
+    "2,4,10": {
+      "kind": "not_dominating",
+      "missed": [
+        5
+      ]
+    },
+    "2,4,11": {
+      "attacked": 8,
+      "failures": [
+        {
+          "defender": 2,
+          "missed": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,4,5": {
+      "attacked": 1,
+      "failures": [
+        {
+          "defender": 4,
+          "missed": [
+            3
+          ]
+        },
+        {
+          "defender": 5,
+          "missed": [
+            0
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,4,6": {
+      "kind": "not_dominating",
+      "missed": [
+        0
+      ]
+    },
+    "2,4,7": {
+      "attacked": 1,
+      "failures": [
+        {
+          "defender": 4,
+          "missed": [
+            3
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,4,8": {
+      "kind": "not_dominating",
+      "missed": [
+        0
+      ]
+    },
+    "2,4,9": {
+      "kind": "not_dominating",
+      "missed": [
+        5
+      ]
+    },
+    "2,5,10": {
+      "kind": "not_dominating",
+      "missed": [
+        4
+      ]
+    },
+    "2,5,11": {
+      "attacked": 9,
+      "failures": [
+        {
+          "defender": 2,
+          "missed": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,5,6": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 5,
+          "missed": [
+            1
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,5,7": {
+      "kind": "not_dominating",
+      "missed": [
+        3
+      ]
+    },
+    "2,5,8": {
+      "kind": "not_dominating",
+      "missed": [
+        4
+      ]
+    },
+    "2,5,9": {
+      "kind": "not_dominating",
+      "missed": [
+        3
+      ]
+    },
+    "2,6,10": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 10,
+          "missed": [
+            1
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,6,11": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 11,
+          "missed": [
+            1
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,6,7": {
+      "kind": "not_dominating",
+      "missed": [
+        1
+      ]
+    },
+    "2,6,8": {
+      "kind": "not_dominating",
+      "missed": [
+        0
+      ]
+    },
+    "2,6,9": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 9,
+          "missed": [
+            1
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,7,10": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 7,
+          "missed": [
+            4
+          ]
+        },
+        {
+          "defender": 10,
+          "missed": [
+            1
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,7,11": {
+      "attacked": 1,
+      "failures": [
+        {
+          "defender": 11,
+          "missed": [
+            3
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,7,8": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 7,
+          "missed": [
+            4
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,7,9": {
+      "kind": "not_dominating",
+      "missed": [
+        3
+      ]
+    },
+    "2,8,10": {
+      "kind": "not_dominating",
+      "missed": [
+        4
+      ]
+    },
+    "2,8,11": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 11,
+          "missed": [
+            4
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,8,9": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 9,
+          "missed": [
+            4
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,9,10": {
+      "kind": "not_dominating",
+      "missed": [
+        5
+      ]
+    },
+    "2,9,11": {
+      "attacked": 3,
+      "failures": [
+        {
+          "defender": 11,
+          "missed": [
+            5
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,10,11": {
+      "kind": "not_dominating",
+      "missed": [
+        9
+      ]
+    },
+    "3,4,10": {
+      "kind": "not_dominating",
+      "missed": [
+        5
+      ]
+    },
+    "3,4,11": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 3,
+          "missed": [
+            8
+          ]
+        },
+        {
+          "defender": 11,
+          "missed": [
+            2
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,4,5": {
+      "kind": "not_dominating",
+      "missed": [
+        2
+      ]
+    },
+    "3,4,6": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 3,
+          "missed": [
+            8
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,4,7": {
+      "attacked": 2,
+      "failures": [
+        {
+          "defender": 7,
+          "missed": [
+            5
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,4,8": {
+      "attacked": 2,
+      "failures": [
+        {
+          "defender": 8,
+          "missed": [
+            5
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,4,9": {
+      "kind": "not_dominating",
+      "missed": [
+        5
+      ]
+    },
+    "3,5,10": {
+      "kind": "not_dominating",
+      "missed": [
+        9
+      ]
+    },
+    "3,5,11": {
+      "kind": "not_dominating",
+      "missed": [
+        9
+      ]
+    },
+    "3,5,6": {
+      "attacked": 1,
+      "failures": [
+        {
+          "defender": 5,
+          "missed": [
+            7
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,5,7": {
+      "kind": "not_dominating",
+      "missed": [
+        9
+      ]
+    },
+    "3,5,8": {
+      "attacked": 4,
+      "failures": [
+        {
+          "defender": 3,
+          "missed": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,5,9": {
+      "attacked": 1,
+      "failures": [
+        {
+          "defender": 5,
+          "missed": [
+            7
+          ]
+        },
+        {
+          "defender": 9,
+          "missed": [
+            2
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,6,10": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 3,
+          "missed": [
+            8
+          ]
+        },
+        {
+          "defender": 10,
+          "missed": [
+            1
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,6,11": {
+      "kind": "not_dominating",
+      "missed": [
+        7
+      ]
+    },
+    "3,6,7": {
+      "kind": "not_dominating",
+      "missed": [
+        1
+      ]
+    },
+    "3,6,8": {
+      "attacked": 1,
+      "failures": [
+        {
+          "defender": 8,
+          "missed": [
+            7
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,6,9": {
+      "kind": "not_dominating",
+      "missed": [
+        7
+      ]
+    },
+    "3,7,10": {
+      "kind": "not_dominating",
+      "missed": [
+        9
+      ]
+    },
+    "3,7,11": {
+      "kind": "not_dominating",
+      "missed": [
+        9
+      ]
+    },
+    "3,7,8": {
+      "attacked": 6,
+      "failures": [
+        {
+          "defender": 3,
+          "missed": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,7,9": {
+      "attacked": 2,
+      "failures": [
+        {
+          "defender": 7,
+          "missed": [
+            5
+          ]
+        },
+        {
+          "defender": 9,
+          "missed": [
+            1
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,8,10": {
+      "attacked": 5,
+      "failures": [
+        {
+          "defender": 8,
+          "missed": [
+            9
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,8,11": {
+      "attacked": 7,
+      "failures": [
+        {
+          "defender": 8,
+          "missed": [
+            9
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,8,9": {
+      "attacked": 10,
+      "failures": [
+        {
+          "defender": 3,
+          "missed": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,9,10": {
+      "kind": "not_dominating",
+      "missed": [
+        5
+      ]
+    },
+    "3,9,11": {
+      "kind": "not_dominating",
+      "missed": [
+        7
+      ]
+    },
+    "4,10,11": {
+      "kind": "not_dominating",
+      "missed": [
+        8
+      ]
+    },
+    "4,5,10": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 5,
+          "missed": [
+            8
+          ]
+        },
+        {
+          "defender": 10,
+          "missed": [
+            2
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,5,11": {
+      "kind": "not_dominating",
+      "missed": [
+        10
+      ]
+    },
+    "4,5,6": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 5,
+          "missed": [
+            8
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,5,7": {
+      "attacked": 3,
+      "failures": [
+        {
+          "defender": 4,
+          "missed": [
+            9
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,5,8": {
+      "kind": "not_dominating",
+      "missed": [
+        10
+      ]
+    },
+    "4,5,9": {
+      "kind": "not_dominating",
+      "missed": [
+        10
+      ]
+    },
+    "4,6,10": {
+      "kind": "not_dominating",
+      "missed": [
+        8
+      ]
+    },
+    "4,6,11": {
+      "kind": "not_dominating",
+      "missed": [
+        8
+      ]
+    },
+    "4,6,7": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 7,
+          "missed": [
+            8
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,6,8": {
+      "kind": "not_dominating",
+      "missed": [
+        0
+      ]
+    },
+    "4,6,9": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 9,
+          "missed": [
+            8
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,7,10": {
+      "attacked": 9,
+      "failures": [
+        {
+          "defender": 4,
+          "missed": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,7,11": {
+      "attacked": 8,
+      "failures": [
+        {
+          "defender": 7,
+          "missed": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,7,8": {
+      "attacked": 6,
+      "failures": [
+        {
+          "defender": 4,
+          "missed": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,7,9": {
+      "attacked": 5,
+      "failures": [
+        {
+          "defender": 7,
+          "missed": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,8,10": {
+      "attacked": 2,
+      "failures": [
+        {
+          "defender": 8,
+          "missed": [
+            5
+          ]
+        },
+        {
+          "defender": 10,
+          "missed": [
+            0
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,8,11": {
+      "kind": "not_dominating",
+      "missed": [
+        10
+      ]
+    },
+    "4,8,9": {
+      "kind": "not_dominating",
+      "missed": [
+        10
+      ]
+    },
+    "4,9,10": {
+      "kind": "not_dominating",
+      "missed": [
+        5
+      ]
+    },
+    "4,9,11": {
+      "kind": "not_dominating",
+      "missed": [
+        10
+      ]
+    },
+    "5,10,11": {
+      "kind": "not_dominating",
+      "missed": [
+        9
+      ]
+    },
+    "5,6,10": {
+      "attacked": 8,
+      "failures": [
+        {
+          "defender": 5,
+          "missed": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "5,6,11": {
+      "attacked": 9,
+      "failures": [
+        {
+          "defender": 6,
+          "missed": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "5,6,7": {
+      "attacked": 3,
+      "failures": [
+        {
+          "defender": 6,
+          "missed": [
+            9
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "5,6,8": {
+      "attacked": 4,
+      "failures": [
+        {
+          "defender": 6,
+          "missed": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "5,6,9": {
+      "attacked": 7,
+      "failures": [
+        {
+          "defender": 5,
+          "missed": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "5,7,10": {
+      "kind": "not_dominating",
+      "missed": [
+        9
+      ]
+    },
+    "5,7,11": {
+      "kind": "not_dominating",
+      "missed": [
+        9
+      ]
+    },
+    "5,7,8": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 5,
+          "missed": [
+            6
+          ]
+        },
+        {
+          "defender": 7,
+          "missed": [
+            4
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "5,7,9": {
+      "kind": "not_dominating",
+      "missed": [
+        3
+      ]
+    },
+    "5,8,10": {
+      "kind": "not_dominating",
+      "missed": [
+        4
+      ]
+    },
+    "5,8,11": {
+      "kind": "not_dominating",
+      "missed": [
+        10
+      ]
+    },
+    "5,8,9": {
+      "kind": "not_dominating",
+      "missed": [
+        10
+      ]
+    },
+    "5,9,10": {
+      "attacked": 2,
+      "failures": [
+        {
+          "defender": 9,
+          "missed": [
+            4
+          ]
+        },
+        {
+          "defender": 10,
+          "missed": [
+            3
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "5,9,11": {
+      "kind": "not_dominating",
+      "missed": [
+        10
+      ]
+    },
+    "6,10,11": {
+      "kind": "not_dominating",
+      "missed": [
+        8
+      ]
+    },
+    "6,7,10": {
+      "kind": "not_dominating",
+      "missed": [
+        11
+      ]
+    },
+    "6,7,11": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 7,
+          "missed": [
+            8
+          ]
+        },
+        {
+          "defender": 11,
+          "missed": [
+            1
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "6,7,8": {
+      "kind": "not_dominating",
+      "missed": [
+        11
+      ]
+    },
+    "6,7,9": {
+      "kind": "not_dominating",
+      "missed": [
+        11
+      ]
+    },
+    "6,8,10": {
+      "kind": "not_dominating",
+      "missed": [
+        11
+      ]
+    },
+    "6,8,11": {
+      "attacked": 1,
+      "failures": [
+        {
+          "defender": 8,
+          "missed": [
+            7
+          ]
+        },
+        {
+          "defender": 11,
+          "missed": [
+            0
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "6,8,9": {
+      "kind": "not_dominating",
+      "missed": [
+        11
+      ]
+    },
+    "6,9,10": {
+      "kind": "not_dominating",
+      "missed": [
+        11
+      ]
+    },
+    "6,9,11": {
+      "kind": "not_dominating",
+      "missed": [
+        7
+      ]
+    },
+    "7,10,11": {
+      "kind": "not_dominating",
+      "missed": [
+        9
+      ]
+    },
+    "7,8,10": {
+      "kind": "not_dominating",
+      "missed": [
+        11
+      ]
+    },
+    "7,8,11": {
+      "kind": "not_dominating",
+      "missed": [
+        6
+      ]
+    },
+    "7,8,9": {
+      "kind": "not_dominating",
+      "missed": [
+        11
+      ]
+    },
+    "7,9,10": {
+      "kind": "not_dominating",
+      "missed": [
+        11
+      ]
+    },
+    "7,9,11": {
+      "attacked": 1,
+      "failures": [
+        {
+          "defender": 9,
+          "missed": [
+            6
+          ]
+        },
+        {
+          "defender": 11,
+          "missed": [
+            3
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "8,10,11": {
+      "attacked": 0,
+      "failures": [
+        {
+          "defender": 10,
+          "missed": [
+            6
+          ]
+        },
+        {
+          "defender": 11,
+          "missed": [
+            4
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "8,9,10": {
+      "kind": "not_dominating",
+      "missed": [
+        11
+      ]
+    },
+    "8,9,11": {
+      "kind": "not_dominating",
+      "missed": [
+        10
+      ]
+    },
+    "9,10,11": {
+      "attacked": 3,
+      "failures": [
+        {
+          "defender": 10,
+          "missed": [
+            7
+          ]
+        },
+        {
+          "defender": 11,
+          "missed": [
+            5
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    }
+  }
+}

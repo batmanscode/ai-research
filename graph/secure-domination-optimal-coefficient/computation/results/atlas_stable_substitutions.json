@@ -1,0 +1,34 @@
+{
+  "best_example": {
+    "order": 5,
+    "secure_five_examples_found_before_stop": [
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    ],
+    "skeleton_graph6": "Bo",
+    "weights": [
+      1,
+      1,
+      3
+    ]
+  },
+  "candidate": null,
+  "counts": {
+    "alpha_four": 69769,
+    "atlas_graphs": 1251,
+    "connected_p5free_skeletons": 637,
+    "no_secure_five": 0,
+    "weight_vectors": 1199511
+  },
+  "scope": {
+    "maximum_result_order": 21,
+    "skeletons": "all graph-atlas connected induced-P5-free graphs of orders 2..7",
+    "substitution": "each vertex replaced by an independent set of size 1..3"
+  },
+  "seconds": 21.64019751548767
+}

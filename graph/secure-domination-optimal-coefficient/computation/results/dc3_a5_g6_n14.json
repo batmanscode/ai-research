@@ -1,0 +1,45 @@
+{
+  "clause_families": {
+    "domination_equivalence": 20020,
+    "failed_defense": 90090,
+    "failed_secure_set": 2002,
+    "fixed_independent_set": 10,
+    "induced_p5_forbidden": 120120,
+    "no_dominating_edge": 2275,
+    "no_dominating_vertex": 14,
+    "no_larger_independent_set": 3003,
+    "outside_nonempty_type": 9,
+    "outside_type_order": 3720,
+    "reachability_final": 14,
+    "reachability_initial": 14,
+    "reachability_support": 182,
+    "reachability_witness": 4732,
+    "selected_clique": 91,
+    "selected_clique_domination": 378,
+    "undominated_equivalence": 108108
+  },
+  "clauses": 354782,
+  "constraints": {
+    "alpha_exactly": 5,
+    "connected": true,
+    "has_dominating_clique": true,
+    "induced_P5_free": true,
+    "minimal_counterexample_reductions": false,
+    "minimum_dominating_clique_size": 3,
+    "no_secure_set_of_size": 5,
+    "outside_type_order_symmetry_break": true
+  },
+  "encoding_seconds": 1.6381053924560547,
+  "order": 14,
+  "proof_trace": null,
+  "solver": "glucose42",
+  "solver_seconds": 139.5772042274475,
+  "solver_stats": {
+    "conflicts": 391133,
+    "decisions": 538415,
+    "propagations": 920510777,
+    "restarts": 299
+  },
+  "status": "UNSAT",
+  "variables": 41979
+}

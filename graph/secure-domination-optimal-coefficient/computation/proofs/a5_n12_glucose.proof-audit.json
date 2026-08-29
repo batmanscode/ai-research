@@ -1,0 +1,20 @@
+{
+  "addition_lines": 12449,
+  "alpha": 5,
+  "check_seconds": 8.389360427856445,
+  "checker_propagator": "maplesat",
+  "deletion_lines_ignored": 19995,
+  "empty_clause_indices": [
+    12448
+  ],
+  "method": "Every retained addition is RUP by unit propagation; the trace derives the empty clause. Deletions are ignored.",
+  "non_rup_addition_indices": [],
+  "order": 12,
+  "original_clauses": 133775,
+  "original_variables": 13674,
+  "producer": "glucose42",
+  "proof_lines": 32444,
+  "secure_size": 6,
+  "solve_seconds": 4.030315637588501,
+  "status": "PASS"
+}
