@@ -4,7 +4,7 @@ Last updated: 29 August 2026
 
 ## Direction
 
-The explainer should feel like a careful research exhibit, not a generic AI
+Each visual paper should feel like a careful research exhibit, not a generic AI
 dashboard: dark paper, restrained fluorescent accents, large editorial type,
 and evidence that becomes more concrete as the reader moves down the page.
 

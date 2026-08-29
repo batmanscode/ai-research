@@ -4,6 +4,8 @@
 
 **Design contract:** [`DESIGN.md`](DESIGN.md)
 
+**Published finding:** [Emergent Mind research findings](https://www.emergentmind.com/open-problems/mechanisms-one-hot-protein-representation-performance#research-findings)
+
 ## Status
 
 This is a **reconstructed exploratory analysis**, not an untouched external

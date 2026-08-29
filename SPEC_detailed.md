@@ -85,8 +85,8 @@ workflow. See `DEPLOYMENT.md`.
 - Minimum-order SAT evidence is described honestly but no formally checked DRAT
   trace is included in this reconstruction.
 - The biology result has no untouched fourth backbone or wet-lab confirmation.
-- A production-host browser pass remains pending until the owner deploys the
-  static site.
+- Production-host browser passes remain pending until the owner deploys both
+  visual papers.
 - Human screen-reader and device testing are not claimed.
 
 ## Acceptance criteria
@@ -95,5 +95,5 @@ workflow. See `DEPLOYMENT.md`.
 - Biology point estimates and selections regenerate from public data.
 - Claims and caveats agree across root, domain, site, and finding documents.
 - All tracked artifact checksums pass and no credentials appear in the commit.
-- The static site works at desktop, compact, phone, and narrow widths once
+- Both visual papers work at desktop, compact, phone, and narrow widths once
   hosted, with no broken first-party assets or critical console errors.

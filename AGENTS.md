@@ -13,8 +13,9 @@ reproducible, and exploratory results visibly exploratory.
 5. `playtest/RESULTS.md` — durable evidence and unresolved gates.
 6. `SPEC_rough.md` — append-only owner intent and decision history.
 
-`README.md` is the short entry point. `findings/` contains publication source
-drafts, not a second source of scientific truth.
+`README.md` is the short entry point. `findings/README.md` records publication
+status and IDs; the sibling finding bodies are submission sources, not a second
+source of scientific truth.
 
 ## Boundaries
 
@@ -31,8 +32,8 @@ drafts, not a second source of scientific truth.
   the owner explicitly requests it.
 - Treat `graph/<project>/` and `biology/<project>/` as independent projects.
   Each owns its scientific report, evidence, `DESIGN.md`, and `website/`.
-- Keep `site/` as a compatibility copy until its already-published source links
-  are deliberately retired.
+- Keep `site/` as a compatibility copy for previously shared or cached paths;
+  canonical links belong to the named project directories.
 - Publish external findings only after the corresponding source tree and links
   are stable.
 

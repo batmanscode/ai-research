@@ -4,6 +4,8 @@
 
 **Design contract:** [`DESIGN.md`](DESIGN.md)
 
+**Published finding:** [Emergent Mind research findings](https://www.emergentmind.com/open-problems/improve-secure-domination-bound-connected-p5-free-graphs#research-findings)
+
 ## Result
 
 Let \(I\) be the icosahedral graph and let \(G=\overline I\). Then

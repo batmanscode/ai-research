@@ -39,7 +39,15 @@ Both visual papers are dependency-free. Deploy
 `graph/secure-domination-p5-free/website/` and
 `biology/aggregate-chemistry-transfer/website/` independently with any static
 host. The original `site/` paths remain as compatibility copies for published
-source links.
+or cached links; canonical links use the named project directories.
+
+## Published findings
+
+- [Secure-domination counterexample](https://www.emergentmind.com/open-problems/improve-secure-domination-bound-connected-p5-free-graphs#research-findings)
+- [Aggregate-chemistry transfer experiment](https://www.emergentmind.com/open-problems/mechanisms-one-hot-protein-representation-performance#research-findings)
+
+Publication IDs, canonical source links, and status are recorded in
+[`findings/README.md`](findings/README.md).
 
 ## Repository map
 
@@ -47,7 +55,7 @@ source links.
 graph/      category index and named graph-theory projects
 biology/    category index and named biological projects
 site/       compatibility copy of the original combined explainer
-findings/   source drafts for the two Emergent Mind reports
+findings/   publication index and source bodies for the Emergent Mind reports
 ```
 
 Project truth and verification are routed through [`AGENTS.md`](AGENTS.md),

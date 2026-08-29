@@ -30,3 +30,5 @@ This file preserves owner intent and major decisions. It is append-only.
 - Give every paper its own descriptively named project folder, project-level
   `DESIGN.md`, and independently deployable noob-first visual website. Use the
   portfolio as a research index linking to the complete paper sites.
+- Both Emergent Mind findings were published after the repository links became
+  stable, then updated to the final named project paths.

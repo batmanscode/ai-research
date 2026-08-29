@@ -18,8 +18,8 @@ at a domain root or a subpath and require no build step, server runtime, secret,
 database, or environment variable.
 
 `site/` is the original combined explainer and remains only as a compatibility
-source for already-published links. New deployments should use the paper-owned
-directories above.
+source for previously shared or cached links. Canonical and new deployment
+links should use the paper-owned directories above.
 
 ## Host contract
 
@@ -36,4 +36,4 @@ After deployment, run the relevant website scenario in `PLAYTEST.md` against
 each production URL. Verify desktop and mobile states, graph steps where
 applicable, console and first-party requests, external source links, and the
 biology caveat. Only then add production URLs to the portfolio, repository
-metadata, or external finding submissions.
+metadata, or the already-published external findings.
