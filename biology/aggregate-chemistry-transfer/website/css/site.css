@@ -47,7 +47,7 @@ button { font: inherit; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; letter-spacing: -.02em; }
 .brand-mark { display: inline-grid; place-items: center; width: 32px; height: 32px; border: 1px solid var(--acid); border-radius: 50%; color: var(--acid); font: 500 11px/1 DM Mono, monospace; }
 .topbar nav { display: flex; gap: 8px; }
-.topbar nav a { padding: 8px 13px; border-radius: 999px; color: var(--muted); font-size: 14px; }
+.topbar nav a { display: inline-flex; min-height: 44px; align-items: center; padding: 8px 13px; border-radius: 999px; color: var(--muted); font-size: 14px; white-space: nowrap; }
 .topbar nav a:hover, .topbar nav a.active { background: #1a2021; color: var(--ink); }
 
 .hero { display: grid; grid-template-columns: 1.7fr .8fr; gap: 80px; align-items: end; padding-block: 110px 92px; }
