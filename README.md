@@ -5,7 +5,7 @@ counterexample in secure domination and a corrected exploratory experiment on
 protein-fitness transfer.
 
 **Interactive explainer:**
-[batmanscode.github.io/verified-open-problem-results](https://batmanscode.github.io/verified-open-problem-results/)
+[batmanscode.github.io/ai-research](https://batmanscode.github.io/ai-research/)
 
 ## Results at a glance
 
@@ -68,4 +68,3 @@ and its [CC-BY 4.0 data](https://zenodo.org/records/18433203).
 
 Repository code and original prose are MIT-licensed. Upstream datasets retain
 their own licenses and are downloaded rather than redistributed.
-

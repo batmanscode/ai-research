@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A corrected exploratory FLIP2 experiment on cross-backbone protein fitness prediction.">
+  <title>Aggregate Chemistry Across Protein Backbones</title>
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body class="biology-page">
+  <a class="skip-link" href="#main">Skip to the report</a>
+  <header class="topbar">
+    <a class="brand" href="index.html"><span class="brand-mark">OP</span><span>Open Problem Lab</span></a>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Graph result</a>
+      <a class="active" href="biology.html">Biology result</a>
+      <a href="https://github.com/batmanscode/ai-research">Repository ↗</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="bio-hero shell">
+      <p class="eyebrow">Reconstructed exploratory analysis · FLIP2 Hydro</p>
+      <h1>Small chemistry features transfer.<br><em>Position labels do not.</em></h1>
+      <p class="lede">A corrected, validation-selected ridge model ranks variants on three unseen protein backbones using only mutation burden and aggregate physicochemical changes.</p>
+      <div class="caveat"><strong>Important:</strong> the public test landscapes influenced the broader research path. These are descriptive results, not untouched confirmation.</div>
+    </section>
+
+    <section class="bio-chart shell" aria-labelledby="bio-chart-title">
+      <div class="section-heading">
+        <p class="eyebrow">Held-backbone Spearman ρ</p>
+        <h2 id="bio-chart-title">The invariant model improves on mutation count in all three folds.</h2>
+      </div>
+      <div class="bar-chart" role="img" aria-label="For FYN-SH3 baseline 0.253, model 0.411, official best 0.444. For CspA baseline 0.056, model 0.246, official best 0.151. For CI-2A baseline 0.293, model 0.476, official best 0.394.">
+        <div class="chart-legend"><span class="base">Native count</span><span class="ours">Aggregate model</span><span class="official">Published best</span></div>
+        <div class="chart-row"><b>FYN-SH3<small>P06241 · n=9,972</small></b><div class="track"><i class="base" style="--w:44.9%">0.253</i><i class="ours" style="--w:72.9%">0.411</i><i class="official" style="--w:78.8%">0.444</i></div></div>
+        <div class="chart-row"><b>CspA<small>P0A9X9 · n=8,500</small></b><div class="track"><i class="base" style="--w:10%">0.056</i><i class="ours" style="--w:43.6%">0.246</i><i class="official" style="--w:26.8%">0.151</i></div></div>
+        <div class="chart-row"><b>CI-2A<small>P01053 · n=6,463</small></b><div class="track"><i class="base" style="--w:52%">0.293</i><i class="ours" style="--w:84.4%">0.476</i><i class="official" style="--w:69.9%">0.394</i></div></div>
+      </div>
+      <p class="chart-note">The model is below the published best on FYN-SH3 and above the published table value on CspA and CI-2A. This is not an official leaderboard submission.</p>
+    </section>
+
+    <section class="bio-correction shell">
+      <div class="correction-card">
+        <p class="eyebrow">The correction</p>
+        <h2>`VVVVVVV` was not the wild type.</h2>
+        <p>The first analysis counted non-valine residues. Canonical mapping showed that the all-valine sequence is an engineered anchor. The analysis was retracted and rebuilt with the native cores.</p>
+      </div>
+      <div class="core-table" role="table" aria-label="Correct native core sequences">
+        <div role="row"><span role="columnheader">Protein</span><span role="columnheader">Native core</span></div>
+        <div role="row"><span>FYN-SH3</span><code>FLFFIIV</code></div>
+        <div role="row"><span>CI-2A</span><code>VIIVLVI</code></div>
+        <div role="row"><span>CspA</span><code>VIVVVFV</code></div>
+      </div>
+    </section>
+
+    <section class="signal shell">
+      <div class="section-heading narrow">
+        <p class="eyebrow">Not merely mutation burden</p>
+        <h2>Chemistry still ranks variants within the same mutation count.</h2>
+      </div>
+      <div class="signal-grid">
+        <div><strong>0.389</strong><span>FYN-SH3</span><small>within-count ρ</small></div>
+        <div><strong>0.272</strong><span>CspA</span><small>within-count ρ</small></div>
+        <div><strong>0.395</strong><span>CI-2A</span><small>within-count ρ</small></div>
+      </div>
+      <p class="center-note">All three within-stratum permutation tests: p = 1/1001.</p>
+    </section>
+
+    <section class="method shell">
+      <div>
+        <p class="eyebrow">The useful inductive bias</p>
+        <h2>Aggregate first. Transfer second.</h2>
+        <p>The seven randomized sites are buried, but their ordinal positions are not homologous across these unrelated folds. The model therefore summarizes property changes without assigning a common “site 1” or “site 7.”</p>
+      </div>
+      <div class="method-flow" aria-label="Method flow">
+        <span>7 core residues</span><b>→</b><span>signed + absolute property changes</span><b>→</b><span>11–16 invariant features</span><b>→</b><span>ridge ranking</span>
+      </div>
+      <blockquote><strong>Useful failure:</strong> adding naive position-specific 3D features reduced held-backbone performance in all three folds.</blockquote>
+    </section>
+
+    <section class="next-study shell">
+      <div>
+        <p class="eyebrow">The evidence boundary</p>
+        <h2>A fourth backbone is the decisive experiment.</h2>
+      </div>
+      <ol>
+        <li><span>01</span>Freeze the current features, penalty grid, and metrics before labels.</li>
+        <li><span>02</span>Assay 1,000–2,000 QC-passing variants across mutation-count strata.</li>
+        <li><span>03</span>Use at least three independently prepared biological replicate libraries.</li>
+        <li><span>04</span>Report the result whether it confirms or falsifies transfer.</li>
+      </ol>
+      <div class="next-actions"><a class="button primary" href="https://github.com/batmanscode/ai-research/blob/main/biology/fourth_backbone_preregistration.md">Read the preregistration ↗</a><a class="button ghost" href="https://github.com/batmanscode/ai-research/blob/main/biology/native_core_transfer.py">Run the analysis ↗</a></div>
+    </section>
+  </main>
+  <footer><div class="shell footer-grid"><div><span class="brand-mark">OP</span><p>Verified results, useful failures, and reproducible evidence.</p></div><div><h2>Research</h2><a href="index.html">Graph result</a><a href="biology.html">Biology result</a></div><div><h2>Artifacts</h2><a href="https://github.com/batmanscode/ai-research/blob/main/biology/README.md">Full report ↗</a><a href="https://flip.protein.properties/">FLIP2 benchmark ↗</a></div></div></footer>
+</body>
+</html>

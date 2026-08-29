@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this repository, cite the repository and the relevant source paper."
+title: "Verified open-problem results: secure domination and cross-backbone protein fitness"
+type: software
+version: 1.0.0
+date-released: 2026-08-29
+authors:
+  - name: "Open Problem Lab contributors"
+repository-code: "https://github.com/batmanscode/ai-research"
+url: "https://batmanscode.github.io/ai-research/"
+license: MIT

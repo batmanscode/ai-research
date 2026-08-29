@@ -1,0 +1,2674 @@
+{
+  "automorphism_group_order": 120,
+  "conclusion": "connected and induced-P5-free, with gamma_s=4>3=alpha",
+  "connected": true,
+  "degree_sequence": [
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6
+  ],
+  "dominating_edges": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      4,
+      10
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      6,
+      11
+    ]
+  ],
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      1,
+      8
+    ],
+    [
+      1,
+      9
+    ],
+    [
+      1,
+      10
+    ],
+    [
+      1,
+      11
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      2,
+      11
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      3,
+      10
+    ],
+    [
+      3,
+      11
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      4,
+      8
+    ],
+    [
+      4,
+      10
+    ],
+    [
+      5,
+      6
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      5,
+      9
+    ],
+    [
+      5,
+      10
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      9
+    ],
+    [
+      6,
+      11
+    ],
+    [
+      7,
+      8
+    ],
+    [
+      7,
+      9
+    ],
+    [
+      8,
+      11
+    ],
+    [
+      9,
+      10
+    ],
+    [
+      10,
+      11
+    ]
+  ],
+  "example_defense_map": {
+    "10": {
+      "valid_defenses": [
+        {
+          "defender": 1,
+          "swapped_set": [
+            0,
+            2,
+            3,
+            10
+          ]
+        },
+        {
+          "defender": 3,
+          "swapped_set": [
+            0,
+            1,
+            2,
+            10
+          ]
+        }
+      ]
+    },
+    "11": {
+      "valid_defenses": [
+        {
+          "defender": 1,
+          "swapped_set": [
+            0,
+            2,
+            3,
+            11
+          ]
+        },
+        {
+          "defender": 2,
+          "swapped_set": [
+            0,
+            1,
+            3,
+            11
+          ]
+        },
+        {
+          "defender": 3,
+          "swapped_set": [
+            0,
+            1,
+            2,
+            11
+          ]
+        }
+      ]
+    },
+    "4": {
+      "valid_defenses": [
+        {
+          "defender": 0,
+          "swapped_set": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "defender": 2,
+          "swapped_set": [
+            0,
+            1,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    "5": {
+      "valid_defenses": [
+        {
+          "defender": 0,
+          "swapped_set": [
+            1,
+            2,
+            3,
+            5
+          ]
+        },
+        {
+          "defender": 3,
+          "swapped_set": [
+            0,
+            1,
+            2,
+            5
+          ]
+        }
+      ]
+    },
+    "6": {
+      "valid_defenses": [
+        {
+          "defender": 0,
+          "swapped_set": [
+            1,
+            2,
+            3,
+            6
+          ]
+        }
+      ]
+    },
+    "7": {
+      "valid_defenses": [
+        {
+          "defender": 1,
+          "swapped_set": [
+            0,
+            2,
+            3,
+            7
+          ]
+        },
+        {
+          "defender": 3,
+          "swapped_set": [
+            0,
+            1,
+            2,
+            7
+          ]
+        }
+      ]
+    },
+    "8": {
+      "valid_defenses": [
+        {
+          "defender": 1,
+          "swapped_set": [
+            0,
+            2,
+            3,
+            8
+          ]
+        },
+        {
+          "defender": 2,
+          "swapped_set": [
+            0,
+            1,
+            3,
+            8
+          ]
+        }
+      ]
+    },
+    "9": {
+      "valid_defenses": [
+        {
+          "defender": 1,
+          "swapped_set": [
+            0,
+            2,
+            3,
+            9
+          ]
+        },
+        {
+          "defender": 2,
+          "swapped_set": [
+            0,
+            1,
+            3,
+            9
+          ]
+        }
+      ]
+    }
+  },
+  "example_secure_four_set": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "five_subsets_checked": 792,
+  "graph6": "KtiSYtlXqwmT",
+  "independence_number": 3,
+  "induced_p5_count": 0,
+  "maximum_independent_sets": [
+    [
+      0,
+      7,
+      10
+    ],
+    [
+      0,
+      7,
+      11
+    ],
+    [
+      0,
+      8,
+      9
+    ],
+    [
+      0,
+      8,
+      10
+    ],
+    [
+      0,
+      9,
+      11
+    ],
+    [
+      1,
+      2,
+      5
+    ],
+    [
+      1,
+      2,
+      6
+    ],
+    [
+      1,
+      3,
+      4
+    ],
+    [
+      1,
+      3,
+      6
+    ],
+    [
+      1,
+      4,
+      5
+    ],
+    [
+      2,
+      5,
+      7
+    ],
+    [
+      2,
+      6,
+      10
+    ],
+    [
+      2,
+      7,
+      10
+    ],
+    [
+      3,
+      4,
+      9
+    ],
+    [
+      3,
+      6,
+      8
+    ],
+    [
+      3,
+      8,
+      9
+    ],
+    [
+      4,
+      5,
+      11
+    ],
+    [
+      4,
+      9,
+      11
+    ],
+    [
+      5,
+      7,
+      11
+    ],
+    [
+      6,
+      8,
+      10
+    ]
+  ],
+  "name": "complement of the icosahedral graph",
+  "order": 12,
+  "recognized_as_complement_icosahedron": true,
+  "secure_domination_number": 4,
+  "secure_four_set_count": 435,
+  "secure_triple_count": 0,
+  "size": 36,
+  "triple_certificates": {
+    "0,1,10": {
+      "attacked_vertex": 2,
+      "failed_defenses": [
+        {
+          "defender": 0,
+          "missed_vertices": [
+            6
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,1,11": {
+      "attacked_vertex": 4,
+      "failed_defenses": [
+        {
+          "defender": 0,
+          "missed_vertices": [
+            5
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,1,2": {
+      "attacked_vertex": 7,
+      "failed_defenses": [
+        {
+          "defender": 1,
+          "missed_vertices": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,1,3": {
+      "attacked_vertex": 8,
+      "failed_defenses": [
+        {
+          "defender": 1,
+          "missed_vertices": [
+            9
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,1,4": {
+      "attacked_vertex": 9,
+      "failed_defenses": [
+        {
+          "defender": 1,
+          "missed_vertices": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,1,5": {
+      "attacked_vertex": 7,
+      "failed_defenses": [
+        {
+          "defender": 1,
+          "missed_vertices": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,1,6": {
+      "attacked_vertex": 8,
+      "failed_defenses": [
+        {
+          "defender": 1,
+          "missed_vertices": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,1,7": {
+      "attacked_vertex": 2,
+      "failed_defenses": [
+        {
+          "defender": 0,
+          "missed_vertices": [
+            5
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,1,8": {
+      "attacked_vertex": 3,
+      "failed_defenses": [
+        {
+          "defender": 0,
+          "missed_vertices": [
+            6
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,1,9": {
+      "attacked_vertex": 3,
+      "failed_defenses": [
+        {
+          "defender": 0,
+          "missed_vertices": [
+            4
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,10,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        7
+      ]
+    },
+    "0,2,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        7
+      ]
+    },
+    "0,2,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        7
+      ]
+    },
+    "0,2,3": {
+      "attacked_vertex": 1,
+      "failed_defenses": [
+        {
+          "defender": 0,
+          "missed_vertices": [
+            6
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,2,4": {
+      "attacked_vertex": 1,
+      "failed_defenses": [
+        {
+          "defender": 0,
+          "missed_vertices": [
+            5
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,2,5": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        7
+      ]
+    },
+    "0,2,6": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        10
+      ]
+    },
+    "0,2,7": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        10
+      ]
+    },
+    "0,2,8": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        10
+      ]
+    },
+    "0,2,9": {
+      "attacked_vertex": 7,
+      "failed_defenses": [
+        {
+          "defender": 9,
+          "missed_vertices": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,3,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        8
+      ]
+    },
+    "0,3,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        9
+      ]
+    },
+    "0,3,4": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        9
+      ]
+    },
+    "0,3,5": {
+      "attacked_vertex": 1,
+      "failed_defenses": [
+        {
+          "defender": 0,
+          "missed_vertices": [
+            4
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,3,6": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        8
+      ]
+    },
+    "0,3,7": {
+      "attacked_vertex": 8,
+      "failed_defenses": [
+        {
+          "defender": 7,
+          "missed_vertices": [
+            9
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,3,8": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        9
+      ]
+    },
+    "0,3,9": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        8
+      ]
+    },
+    "0,4,10": {
+      "attacked_vertex": 9,
+      "failed_defenses": [
+        {
+          "defender": 10,
+          "missed_vertices": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,4,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        9
+      ]
+    },
+    "0,4,5": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        11
+      ]
+    },
+    "0,4,6": {
+      "attacked_vertex": 1,
+      "failed_defenses": [
+        {
+          "defender": 0,
+          "missed_vertices": [
+            3
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,4,7": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        11
+      ]
+    },
+    "0,4,8": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        9
+      ]
+    },
+    "0,4,9": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        11
+      ]
+    },
+    "0,5,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        7
+      ]
+    },
+    "0,5,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        7
+      ]
+    },
+    "0,5,6": {
+      "attacked_vertex": 1,
+      "failed_defenses": [
+        {
+          "defender": 0,
+          "missed_vertices": [
+            2
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,5,7": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        11
+      ]
+    },
+    "0,5,8": {
+      "attacked_vertex": 7,
+      "failed_defenses": [
+        {
+          "defender": 8,
+          "missed_vertices": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,5,9": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        11
+      ]
+    },
+    "0,6,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        8
+      ]
+    },
+    "0,6,11": {
+      "attacked_vertex": 8,
+      "failed_defenses": [
+        {
+          "defender": 11,
+          "missed_vertices": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,6,7": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        10
+      ]
+    },
+    "0,6,8": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        10
+      ]
+    },
+    "0,6,9": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        8
+      ]
+    },
+    "0,7,10": {
+      "attacked_vertex": 5,
+      "failed_defenses": [
+        {
+          "defender": 0,
+          "missed_vertices": [
+            2
+          ]
+        },
+        {
+          "defender": 10,
+          "missed_vertices": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,7,11": {
+      "attacked_vertex": 2,
+      "failed_defenses": [
+        {
+          "defender": 0,
+          "missed_vertices": [
+            5
+          ]
+        },
+        {
+          "defender": 11,
+          "missed_vertices": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,7,8": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        10
+      ]
+    },
+    "0,7,9": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        11
+      ]
+    },
+    "0,8,10": {
+      "attacked_vertex": 2,
+      "failed_defenses": [
+        {
+          "defender": 0,
+          "missed_vertices": [
+            6
+          ]
+        },
+        {
+          "defender": 8,
+          "missed_vertices": [
+            7
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,8,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        9
+      ]
+    },
+    "0,8,9": {
+      "attacked_vertex": 4,
+      "failed_defenses": [
+        {
+          "defender": 0,
+          "missed_vertices": [
+            3
+          ]
+        },
+        {
+          "defender": 8,
+          "missed_vertices": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "0,9,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        8
+      ]
+    },
+    "0,9,11": {
+      "attacked_vertex": 3,
+      "failed_defenses": [
+        {
+          "defender": 0,
+          "missed_vertices": [
+            4
+          ]
+        },
+        {
+          "defender": 11,
+          "missed_vertices": [
+            8
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,10,11": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 1,
+          "missed_vertices": [
+            7
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,2,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        6
+      ]
+    },
+    "1,2,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        5
+      ]
+    },
+    "1,2,3": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        6
+      ]
+    },
+    "1,2,4": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        5
+      ]
+    },
+    "1,2,5": {
+      "attacked_vertex": 3,
+      "failed_defenses": [
+        {
+          "defender": 2,
+          "missed_vertices": [
+            4
+          ]
+        },
+        {
+          "defender": 5,
+          "missed_vertices": [
+            6
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,2,6": {
+      "attacked_vertex": 4,
+      "failed_defenses": [
+        {
+          "defender": 2,
+          "missed_vertices": [
+            3
+          ]
+        },
+        {
+          "defender": 6,
+          "missed_vertices": [
+            5
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,2,7": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        5
+      ]
+    },
+    "1,2,8": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        6
+      ]
+    },
+    "1,2,9": {
+      "attacked_vertex": 3,
+      "failed_defenses": [
+        {
+          "defender": 2,
+          "missed_vertices": [
+            4
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,3,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        6
+      ]
+    },
+    "1,3,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        4
+      ]
+    },
+    "1,3,4": {
+      "attacked_vertex": 2,
+      "failed_defenses": [
+        {
+          "defender": 3,
+          "missed_vertices": [
+            5
+          ]
+        },
+        {
+          "defender": 4,
+          "missed_vertices": [
+            6
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,3,5": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        4
+      ]
+    },
+    "1,3,6": {
+      "attacked_vertex": 5,
+      "failed_defenses": [
+        {
+          "defender": 3,
+          "missed_vertices": [
+            2
+          ]
+        },
+        {
+          "defender": 6,
+          "missed_vertices": [
+            4
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,3,7": {
+      "attacked_vertex": 2,
+      "failed_defenses": [
+        {
+          "defender": 3,
+          "missed_vertices": [
+            5
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,3,8": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        6
+      ]
+    },
+    "1,3,9": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        4
+      ]
+    },
+    "1,4,10": {
+      "attacked_vertex": 2,
+      "failed_defenses": [
+        {
+          "defender": 4,
+          "missed_vertices": [
+            6
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,4,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        5
+      ]
+    },
+    "1,4,5": {
+      "attacked_vertex": 6,
+      "failed_defenses": [
+        {
+          "defender": 4,
+          "missed_vertices": [
+            2
+          ]
+        },
+        {
+          "defender": 5,
+          "missed_vertices": [
+            3
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,4,6": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        3
+      ]
+    },
+    "1,4,7": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        5
+      ]
+    },
+    "1,4,8": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        3
+      ]
+    },
+    "1,4,9": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        3
+      ]
+    },
+    "1,5,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        2
+      ]
+    },
+    "1,5,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        4
+      ]
+    },
+    "1,5,6": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        2
+      ]
+    },
+    "1,5,7": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        2
+      ]
+    },
+    "1,5,8": {
+      "attacked_vertex": 3,
+      "failed_defenses": [
+        {
+          "defender": 5,
+          "missed_vertices": [
+            6
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,5,9": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        4
+      ]
+    },
+    "1,6,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        2
+      ]
+    },
+    "1,6,11": {
+      "attacked_vertex": 4,
+      "failed_defenses": [
+        {
+          "defender": 6,
+          "missed_vertices": [
+            5
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,6,7": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        2
+      ]
+    },
+    "1,6,8": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        3
+      ]
+    },
+    "1,6,9": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        3
+      ]
+    },
+    "1,7,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        2
+      ]
+    },
+    "1,7,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        5
+      ]
+    },
+    "1,7,8": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 1,
+          "missed_vertices": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,7,9": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 1,
+          "missed_vertices": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,8,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        6
+      ]
+    },
+    "1,8,11": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 1,
+          "missed_vertices": [
+            9
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,8,9": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        3
+      ]
+    },
+    "1,9,10": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 1,
+          "missed_vertices": [
+            8
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "1,9,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        4
+      ]
+    },
+    "2,10,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        7
+      ]
+    },
+    "2,3,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        6
+      ]
+    },
+    "2,3,11": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 2,
+          "missed_vertices": [
+            9
+          ]
+        },
+        {
+          "defender": 3,
+          "missed_vertices": [
+            7
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,3,4": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        1
+      ]
+    },
+    "2,3,5": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        1
+      ]
+    },
+    "2,3,6": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        1
+      ]
+    },
+    "2,3,7": {
+      "attacked_vertex": 1,
+      "failed_defenses": [
+        {
+          "defender": 7,
+          "missed_vertices": [
+            6
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,3,8": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        6
+      ]
+    },
+    "2,3,9": {
+      "attacked_vertex": 1,
+      "failed_defenses": [
+        {
+          "defender": 9,
+          "missed_vertices": [
+            6
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,4,10": {
+      "attacked_vertex": 1,
+      "failed_defenses": [
+        {
+          "defender": 10,
+          "missed_vertices": [
+            5
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,4,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        5
+      ]
+    },
+    "2,4,5": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        1
+      ]
+    },
+    "2,4,6": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        1
+      ]
+    },
+    "2,4,7": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        5
+      ]
+    },
+    "2,4,8": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 2,
+          "missed_vertices": [
+            9
+          ]
+        },
+        {
+          "defender": 4,
+          "missed_vertices": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,4,9": {
+      "attacked_vertex": 1,
+      "failed_defenses": [
+        {
+          "defender": 9,
+          "missed_vertices": [
+            5
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,5,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        7
+      ]
+    },
+    "2,5,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        7
+      ]
+    },
+    "2,5,6": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        1
+      ]
+    },
+    "2,5,7": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 2,
+          "missed_vertices": [
+            11
+          ]
+        },
+        {
+          "defender": 5,
+          "missed_vertices": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,5,8": {
+      "attacked_vertex": 6,
+      "failed_defenses": [
+        {
+          "defender": 5,
+          "missed_vertices": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,5,9": {
+      "attacked_vertex": 4,
+      "failed_defenses": [
+        {
+          "defender": 2,
+          "missed_vertices": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,6,10": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 2,
+          "missed_vertices": [
+            8
+          ]
+        },
+        {
+          "defender": 6,
+          "missed_vertices": [
+            7
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,6,11": {
+      "attacked_vertex": 5,
+      "failed_defenses": [
+        {
+          "defender": 6,
+          "missed_vertices": [
+            7
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,6,7": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        10
+      ]
+    },
+    "2,6,8": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        10
+      ]
+    },
+    "2,6,9": {
+      "attacked_vertex": 3,
+      "failed_defenses": [
+        {
+          "defender": 2,
+          "missed_vertices": [
+            8
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,7,10": {
+      "attacked_vertex": 1,
+      "failed_defenses": [
+        {
+          "defender": 7,
+          "missed_vertices": [
+            6
+          ]
+        },
+        {
+          "defender": 10,
+          "missed_vertices": [
+            5
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,7,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        5
+      ]
+    },
+    "2,7,8": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        10
+      ]
+    },
+    "2,7,9": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 2,
+          "missed_vertices": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,8,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        6
+      ]
+    },
+    "2,8,11": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 2,
+          "missed_vertices": [
+            9
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,8,9": {
+      "attacked_vertex": 6,
+      "failed_defenses": [
+        {
+          "defender": 9,
+          "missed_vertices": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,9,10": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 2,
+          "missed_vertices": [
+            8
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "2,9,11": {
+      "attacked_vertex": 5,
+      "failed_defenses": [
+        {
+          "defender": 9,
+          "missed_vertices": [
+            7
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,10,11": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 3,
+          "missed_vertices": [
+            7
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,4,10": {
+      "attacked_vertex": 6,
+      "failed_defenses": [
+        {
+          "defender": 4,
+          "missed_vertices": [
+            8
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,4,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        9
+      ]
+    },
+    "3,4,5": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        1
+      ]
+    },
+    "3,4,6": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        1
+      ]
+    },
+    "3,4,7": {
+      "attacked_vertex": 5,
+      "failed_defenses": [
+        {
+          "defender": 3,
+          "missed_vertices": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,4,8": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        9
+      ]
+    },
+    "3,4,9": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 3,
+          "missed_vertices": [
+            11
+          ]
+        },
+        {
+          "defender": 4,
+          "missed_vertices": [
+            8
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,5,10": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 3,
+          "missed_vertices": [
+            7
+          ]
+        },
+        {
+          "defender": 5,
+          "missed_vertices": [
+            8
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,5,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        4
+      ]
+    },
+    "3,5,6": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        1
+      ]
+    },
+    "3,5,7": {
+      "attacked_vertex": 1,
+      "failed_defenses": [
+        {
+          "defender": 7,
+          "missed_vertices": [
+            4
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,5,8": {
+      "attacked_vertex": 1,
+      "failed_defenses": [
+        {
+          "defender": 8,
+          "missed_vertices": [
+            4
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,5,9": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        4
+      ]
+    },
+    "3,6,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        8
+      ]
+    },
+    "3,6,11": {
+      "attacked_vertex": 4,
+      "failed_defenses": [
+        {
+          "defender": 6,
+          "missed_vertices": [
+            9
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,6,7": {
+      "attacked_vertex": 2,
+      "failed_defenses": [
+        {
+          "defender": 3,
+          "missed_vertices": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,6,8": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 3,
+          "missed_vertices": [
+            10
+          ]
+        },
+        {
+          "defender": 6,
+          "missed_vertices": [
+            9
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,6,9": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        8
+      ]
+    },
+    "3,7,10": {
+      "attacked_vertex": 6,
+      "failed_defenses": [
+        {
+          "defender": 7,
+          "missed_vertices": [
+            8
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,7,11": {
+      "attacked_vertex": 4,
+      "failed_defenses": [
+        {
+          "defender": 7,
+          "missed_vertices": [
+            9
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,7,8": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 3,
+          "missed_vertices": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,7,9": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 3,
+          "missed_vertices": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,8,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        6
+      ]
+    },
+    "3,8,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        9
+      ]
+    },
+    "3,8,9": {
+      "attacked_vertex": 1,
+      "failed_defenses": [
+        {
+          "defender": 8,
+          "missed_vertices": [
+            4
+          ]
+        },
+        {
+          "defender": 9,
+          "missed_vertices": [
+            6
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "3,9,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        8
+      ]
+    },
+    "3,9,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        4
+      ]
+    },
+    "4,10,11": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 4,
+          "missed_vertices": [
+            7
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,5,10": {
+      "attacked_vertex": 2,
+      "failed_defenses": [
+        {
+          "defender": 4,
+          "missed_vertices": [
+            7
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,5,11": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 4,
+          "missed_vertices": [
+            7
+          ]
+        },
+        {
+          "defender": 5,
+          "missed_vertices": [
+            9
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,5,6": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        1
+      ]
+    },
+    "4,5,7": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        11
+      ]
+    },
+    "4,5,8": {
+      "attacked_vertex": 3,
+      "failed_defenses": [
+        {
+          "defender": 5,
+          "missed_vertices": [
+            9
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,5,9": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        11
+      ]
+    },
+    "4,6,10": {
+      "attacked_vertex": 1,
+      "failed_defenses": [
+        {
+          "defender": 10,
+          "missed_vertices": [
+            3
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,6,11": {
+      "attacked_vertex": 1,
+      "failed_defenses": [
+        {
+          "defender": 11,
+          "missed_vertices": [
+            3
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,6,7": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 4,
+          "missed_vertices": [
+            10
+          ]
+        },
+        {
+          "defender": 6,
+          "missed_vertices": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,6,8": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        3
+      ]
+    },
+    "4,6,9": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        3
+      ]
+    },
+    "4,7,10": {
+      "attacked_vertex": 5,
+      "failed_defenses": [
+        {
+          "defender": 10,
+          "missed_vertices": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,7,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        5
+      ]
+    },
+    "4,7,8": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 4,
+          "missed_vertices": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,7,9": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        11
+      ]
+    },
+    "4,8,10": {
+      "attacked_vertex": 3,
+      "failed_defenses": [
+        {
+          "defender": 10,
+          "missed_vertices": [
+            9
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,8,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        9
+      ]
+    },
+    "4,8,9": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        3
+      ]
+    },
+    "4,9,10": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 4,
+          "missed_vertices": [
+            8
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "4,9,11": {
+      "attacked_vertex": 1,
+      "failed_defenses": [
+        {
+          "defender": 9,
+          "missed_vertices": [
+            5
+          ]
+        },
+        {
+          "defender": 11,
+          "missed_vertices": [
+            3
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "5,10,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        7
+      ]
+    },
+    "5,6,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        2
+      ]
+    },
+    "5,6,11": {
+      "attacked_vertex": 1,
+      "failed_defenses": [
+        {
+          "defender": 11,
+          "missed_vertices": [
+            2
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "5,6,7": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        2
+      ]
+    },
+    "5,6,8": {
+      "attacked_vertex": 1,
+      "failed_defenses": [
+        {
+          "defender": 8,
+          "missed_vertices": [
+            2
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "5,6,9": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 5,
+          "missed_vertices": [
+            8
+          ]
+        },
+        {
+          "defender": 6,
+          "missed_vertices": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "5,7,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        2
+      ]
+    },
+    "5,7,11": {
+      "attacked_vertex": 1,
+      "failed_defenses": [
+        {
+          "defender": 7,
+          "missed_vertices": [
+            4
+          ]
+        },
+        {
+          "defender": 11,
+          "missed_vertices": [
+            2
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "5,7,8": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 5,
+          "missed_vertices": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "5,7,9": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        11
+      ]
+    },
+    "5,8,10": {
+      "attacked_vertex": 2,
+      "failed_defenses": [
+        {
+          "defender": 8,
+          "missed_vertices": [
+            7
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "5,8,11": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 5,
+          "missed_vertices": [
+            9
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "5,8,9": {
+      "attacked_vertex": 4,
+      "failed_defenses": [
+        {
+          "defender": 8,
+          "missed_vertices": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "5,9,10": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 5,
+          "missed_vertices": [
+            8
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "5,9,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        4
+      ]
+    },
+    "6,10,11": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 6,
+          "missed_vertices": [
+            7
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "6,7,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        2
+      ]
+    },
+    "6,7,11": {
+      "attacked_vertex": 2,
+      "failed_defenses": [
+        {
+          "defender": 11,
+          "missed_vertices": [
+            10
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "6,7,8": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        10
+      ]
+    },
+    "6,7,9": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 6,
+          "missed_vertices": [
+            11
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "6,8,10": {
+      "attacked_vertex": 1,
+      "failed_defenses": [
+        {
+          "defender": 8,
+          "missed_vertices": [
+            2
+          ]
+        },
+        {
+          "defender": 10,
+          "missed_vertices": [
+            3
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "6,8,11": {
+      "attacked_vertex": 0,
+      "failed_defenses": [
+        {
+          "defender": 6,
+          "missed_vertices": [
+            9
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "6,8,9": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        3
+      ]
+    },
+    "6,9,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        8
+      ]
+    },
+    "6,9,11": {
+      "attacked_vertex": 3,
+      "failed_defenses": [
+        {
+          "defender": 11,
+          "missed_vertices": [
+            8
+          ]
+        }
+      ],
+      "kind": "bad_attack"
+    },
+    "7,10,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        0
+      ]
+    },
+    "7,8,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        0
+      ]
+    },
+    "7,8,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        0
+      ]
+    },
+    "7,8,9": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        0
+      ]
+    },
+    "7,9,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        0
+      ]
+    },
+    "7,9,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        0
+      ]
+    },
+    "8,10,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        0
+      ]
+    },
+    "8,9,10": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        0
+      ]
+    },
+    "8,9,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        0
+      ]
+    },
+    "9,10,11": {
+      "kind": "not_dominating",
+      "missed_vertices": [
+        0
+      ]
+    }
+  },
+  "triple_failure_counts": {
+    "bad_attack": 100,
+    "not_dominating": 120
+  },
+  "triple_orbits": [
+    {
+      "failure": {
+        "attacked_vertex": 7,
+        "failed_defenses": [
+          {
+            "defender": 1,
+            "missed_vertices": [
+              10
+            ]
+          }
+        ],
+        "kind": "bad_attack"
+      },
+      "representative": [
+        0,
+        1,
+        2
+      ],
+      "size": 60
+    },
+    {
+      "failure": {
+        "attacked_vertex": 1,
+        "failed_defenses": [
+          {
+            "defender": 0,
+            "missed_vertices": [
+              6
+            ]
+          }
+        ],
+        "kind": "bad_attack"
+      },
+      "representative": [
+        0,
+        2,
+        3
+      ],
+      "size": 20
+    },
+    {
+      "failure": {
+        "kind": "not_dominating",
+        "missed_vertices": [
+          7
+        ]
+      },
+      "representative": [
+        0,
+        2,
+        5
+      ],
+      "size": 60
+    },
+    {
+      "failure": {
+        "kind": "not_dominating",
+        "missed_vertices": [
+          10
+        ]
+      },
+      "representative": [
+        0,
+        2,
+        7
+      ],
+      "size": 60
+    },
+    {
+      "failure": {
+        "attacked_vertex": 5,
+        "failed_defenses": [
+          {
+            "defender": 0,
+            "missed_vertices": [
+              2
+            ]
+          },
+          {
+            "defender": 10,
+            "missed_vertices": [
+              11
+            ]
+          }
+        ],
+        "kind": "bad_attack"
+      },
+      "representative": [
+        0,
+        7,
+        10
+      ],
+      "size": 20
+    }
+  ],
+  "vertices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11
+  ]
+}

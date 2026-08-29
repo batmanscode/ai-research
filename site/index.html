@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="An interactive explanation of a 12-vertex counterexample in secure domination.">
+  <title>The Icosahedral Counterexample</title>
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the explanation</a>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Open Problem Lab home">
+      <span class="brand-mark">OP</span><span>Open Problem Lab</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a class="active" href="index.html">Graph result</a>
+      <a href="biology.html">Biology result</a>
+      <a href="https://github.com/batmanscode/ai-research">Repository ↗</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Verified counterexample · 12 vertices</p>
+        <h1>Three guards look sufficient.<br><em>They aren’t.</em></h1>
+        <p class="lede">A highly symmetric graph—the complement of an icosahedron—breaks the most natural strengthening of a published secure-domination bound.</p>
+        <div class="result-equation" aria-label="secure domination number four is greater than independence number three">
+          <span>γ<sub>s</sub>(G)</span><b>= 4</b><i>&gt;</i><span>α(G)</span><b>= 3</b>
+        </div>
+        <div class="hero-actions">
+          <a class="button primary" href="#explore">See why</a>
+          <a class="button ghost" href="https://github.com/batmanscode/ai-research/blob/main/graph/README.md">Read the proof ↗</a>
+        </div>
+      </div>
+      <aside class="hero-note">
+        <span class="note-number">4/3</span>
+        <p>Any universal coefficient must now be at least this large.</p>
+        <div class="interval" aria-label="known coefficient interval from four thirds to three halves">
+          <span style="--x:0%">4/3</span><span style="--x:100%">3/2</span>
+        </div>
+        <small>The exact optimum remains open.</small>
+      </aside>
+    </section>
+
+    <section id="explore" class="explorer shell" aria-labelledby="explorer-title">
+      <div class="section-heading">
+        <p class="eyebrow">Interactive proof sketch</p>
+        <h2 id="explorer-title">Flip the icosahedron. Test the guards.</h2>
+      </div>
+      <div class="explorer-grid">
+        <div class="graph-stage">
+          <div class="stage-topline">
+            <span id="stage-label">01 · Start with the icosahedron</span>
+            <button id="play-story" class="icon-button" type="button" aria-label="Play the four-step story">▶ Play story</button>
+          </div>
+          <svg id="graph" viewBox="0 0 500 500" role="img" aria-labelledby="graph-title graph-desc">
+            <title id="graph-title">Interactive 12-vertex graph</title>
+            <desc id="graph-desc">The display switches between an icosahedron, its complement, a failed three-guard set, and a successful four-guard set.</desc>
+            <defs>
+              <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"></path>
+              </marker>
+            </defs>
+            <g id="edge-layer"></g>
+            <g id="annotation-layer"></g>
+            <g id="node-layer"></g>
+          </svg>
+          <div class="stage-legend" id="stage-legend" aria-live="polite"></div>
+        </div>
+        <div class="story-panel">
+          <div class="step-tabs" role="tablist" aria-label="Proof steps">
+            <button role="tab" aria-selected="true" data-step="0"><span>01</span>Shape</button>
+            <button role="tab" aria-selected="false" data-step="1"><span>02</span>Flip</button>
+            <button role="tab" aria-selected="false" data-step="2"><span>03</span>Three</button>
+            <button role="tab" aria-selected="false" data-step="3"><span>04</span>Four</button>
+          </div>
+          <article id="step-copy" aria-live="polite"></article>
+          <dl class="live-stats">
+            <div><dt>Vertices</dt><dd>12</dd></div>
+            <div><dt>Edges</dt><dd id="edge-count">30</dd></div>
+            <div><dt>Symmetries</dt><dd>120</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="plain shell">
+      <div class="section-heading narrow">
+        <p class="eyebrow">In plain English</p>
+        <h2>A guard must be able to move without exposing anyone.</h2>
+      </div>
+      <div class="plain-grid">
+        <article>
+          <span class="plain-number">1</span>
+          <h3>Cover</h3>
+          <p>Every unguarded point must touch at least one guard. That is ordinary domination.</p>
+        </article>
+        <article>
+          <span class="plain-number">2</span>
+          <h3>Respond</h3>
+          <p>If any unguarded point is attacked, an adjacent guard moves there.</p>
+        </article>
+        <article>
+          <span class="plain-number">3</span>
+          <h3>Stay covered</h3>
+          <p>After the move, every point must still touch a guard. That extra condition is security.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="evidence shell">
+      <div class="evidence-copy">
+        <p class="eyebrow">Exhaustive certificate</p>
+        <h2>Every small possibility was checked.</h2>
+        <p>The claim does not rest on a picture. A plain-set verifier checks all relevant vertex subsets and records a witness whenever three guards fail.</p>
+        <a class="text-link" href="https://github.com/batmanscode/ai-research/blob/main/graph/data/counterexample_certificate.json">Open the machine-readable certificate ↗</a>
+      </div>
+      <div class="evidence-grid" aria-label="Exact verification counts">
+        <div><strong>792</strong><span>five-vertex subsets</span><small>zero induced P₅s</small></div>
+        <div><strong>220</strong><span>three-vertex sets</span><small>zero secure triples</small></div>
+        <div><strong>495</strong><span>four-vertex sets</span><small>435 are secure</small></div>
+        <div><strong>5</strong><span>triple orbits</span><small>under 120 symmetries</small></div>
+      </div>
+    </section>
+
+    <section class="trail shell">
+      <div class="section-heading">
+        <p class="eyebrow">How it was found</p>
+        <h2>The failed ideas mattered.</h2>
+      </div>
+      <ol class="timeline">
+        <li><span>01</span><div><h3>Small graphs agreed</h3><p>Every eligible graph through order 10 obeyed γ<sub>s</sub> ≤ α, so the stronger statement looked plausible.</p></div></li>
+        <li><span>02</span><div><h3>False shortcuts broke</h3><p>Maximum independent sets, dominating paths, and a tempting dominating-edge lemma all failed as general proof routes.</p></div></li>
+        <li><span>03</span><div><h3>SAT targeted the residue</h3><p>The search encoded α = 3, P₅-freeness, connectivity, and failure of every triple—without enumerating every graph.</p></div></li>
+        <li><span>04</span><div><h3>Symmetry revealed the object</h3><p>The 12-vertex model was recognized as the complement of an icosahedron, then independently verified without the SAT clauses.</p></div></li>
+      </ol>
+      <a class="button ghost" href="https://github.com/batmanscode/ai-research/blob/main/graph/research-log.md">Read the full research log ↗</a>
+    </section>
+
+    <section class="open-gap shell">
+      <div>
+        <p class="eyebrow">What remains open</p>
+        <h2>The answer lives somewhere between <span>4/3</span> and <span>3/2</span>.</h2>
+      </div>
+      <p>The counterexample rules out coefficient 1. It does not show whether the published 3/2 bound is optimal. Finding an α = 4 graph with γ<sub>s</sub> = 6 would settle optimality; searches found none through order 14.</p>
+    </section>
+
+    <section class="other-result shell">
+      <div>
+        <p class="eyebrow">A second research track</p>
+        <h2>Can tiny chemistry features transfer between proteins?</h2>
+        <p>A corrected FLIP2 experiment suggests they can—but the result is exploratory until tested on an untouched fourth backbone.</p>
+      </div>
+      <div class="mini-bars" aria-label="Model Spearman correlations across three proteins">
+        <div><span>FYN-SH3</span><i style="--value:72%">0.411</i></div>
+        <div><span>CspA</span><i style="--value:43%">0.246</i></div>
+        <div><span>CI-2A</span><i style="--value:84%">0.476</i></div>
+      </div>
+      <a class="button primary" href="biology.html">Explore the biology result</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-grid">
+      <div><span class="brand-mark">OP</span><p>Verified results, useful failures, and reproducible evidence.</p></div>
+      <div><h2>Research</h2><a href="index.html">Graph result</a><a href="biology.html">Biology result</a></div>
+      <div><h2>Artifacts</h2><a href="https://github.com/batmanscode/ai-research">GitHub repository ↗</a><a href="https://www.emergentmind.com/open-problems/improve-secure-domination-bound-connected-p5-free-graphs">Emergent Mind problem ↗</a></div>
+    </div>
+  </footer>
+  <script src="js/graph-story.js"></script>
+</body>
+</html>
