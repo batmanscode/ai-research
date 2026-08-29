@@ -29,6 +29,9 @@
 - **Scope:** no scientific claim, displayed value, public finding, deployment
   contract, or theme changed. Hosted-production browser review remains pending
   until the owner deploys the two canonical website directories.
+- **Follow-up:** each entry point now declares the same inline SG favicon. This
+  removes the browser's automatic `/favicon.ico` 404 without adding a deployed
+  asset, request, build step, or runtime dependency.
 
 ## 29 August 2026 — initial research and static explainer baseline
 
