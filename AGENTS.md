@@ -39,6 +39,7 @@ source of scientific truth.
   `website/`.
 - Keep `site/` as a compatibility copy for previously shared or cached paths;
   canonical links belong to the named project directories.
+- all projects should be in their own folders in the same way as the others are unless there's a valid reason
 - Publish external findings only after the corresponding source tree and links
   are stable.
 
