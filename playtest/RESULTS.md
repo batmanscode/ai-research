@@ -1,5 +1,34 @@
 # Durable verification results
 
+## 30 August 2026 — one lightweight path-based deployment
+
+- **Architecture:** the canonical release now uses one repository-root
+  Dockerfile and the unprivileged nginx image's default static configuration on
+  port 8080. It copies only the two papers' public assets into
+  `/secure-domination-p5-free/` and `/aggregate-chemistry-transfer/`; it adds no
+  root nginx configuration, homepage, health endpoint, runtime secret, or
+  application dependency.
+- **Route check:** a staged mirror of the image filesystem returned `200` for
+  both paper entry points and every copied CSS, JavaScript, and image asset.
+  Paths without a trailing slash normalized to their directory URLs, and an
+  unknown path returned `404`.
+- **Browser:** both prefixed routes loaded with their expected titles, Manrope
+  styling, no horizontal overflow, and clean warning/error consoles. The graph
+  rendered 12 nodes; selecting Three produced three guards, one exposed vertex,
+  and “Every triple fails.”
+- **Automated:** every Dockerfile `COPY` source exists and targets only the
+  static nginx root. Both HTML entry points resolve all relative first-party
+  references inside their own route prefixes. The graph certificate regenerated
+  byte-for-byte, graph JavaScript passed syntax validation, and the final diff
+  passed whitespace, checksum, and credential-pattern checks.
+- **Open gate:** this host has no Docker-compatible runtime, so the actual image
+  build and nginx response headers remain for the first Coolify build. The
+  production URLs must not be called live until Coolify serves both routes and
+  the hosted browser scenario passes.
+- **Scope:** no visual source, result, scientific claim, citation, or Emergent
+  Mind finding changed. A new Gemini review or external finding update is not
+  needed for this deployment-only release.
+
 ## 30 August 2026 — brighter papers and contribution-first titles
 
 - **Editorial:** the graph paper now leads with the exact theorem-level

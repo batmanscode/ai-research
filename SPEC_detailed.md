@@ -106,9 +106,10 @@ motion handling. External links point to stable repository or source URLs.
 
 ## Deployment
 
-Deployment is owner-managed. The canonical deploy roots are the two project
-`website/` directories; each contains a minimal Coolify-compatible Dockerfile
-serving through unprivileged nginx on port 3000. The repository contains no
+Deployment is owner-managed. The canonical release uses the root Dockerfile to
+serve both project-owned `website/` sources beneath stable path prefixes in one
+Coolify application. It uses the unprivileged nginx image's default static
+configuration on port 8080, with no root homepage, custom health endpoint, or
 automatic deployment workflow. See `DEPLOYMENT.md`.
 
 ## Known limitations and open gates

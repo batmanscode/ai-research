@@ -1,90 +1,115 @@
 # Deployment
 
 Deployment is intentionally owner-managed. No GitHub Actions deployment
-workflow is included. The canonical papers are not published through GitHub
-Pages or ChatGPT Sites; the owner deploys them as Coolify applications.
+workflow is included. The canonical visual papers are served together from one
+small Coolify application; the portfolio owns the separate research index.
+
+## Public route contract
+
+The root Dockerfile publishes only the two paper directories:
+
+| Paper | Route |
+|---|---|
+| Secure domination | `/secure-domination-p5-free/` |
+| Protein transfer | `/aggregate-chemistry-transfer/` |
+
+### Deriving a URL before deployment
+
+The host comes from the domain attached in Coolify. The path comes directly
+from the destination directory in the root Dockerfile:
+
+```text
+COPY ... /usr/share/nginx/html/<paper-slug>/
+                                  ↓
+https://<coolify-domain>/<paper-slug>/
+```
+
+For example, copying the graph paper into
+`/usr/share/nginx/html/secure-domination-p5-free/` fixes its path as
+`/secure-domination-p5-free/`. With `research.sillygoose.fyi` attached, its
+planned URL is therefore
+`https://research.sillygoose.fyi/secure-domination-p5-free/` before the first
+deployment occurs.
+
+The route is explicit; nginx does not derive it from the source project folder
+or paper title. For a new paper, choose a stable lowercase slug, copy its public
+files into the matching destination directory, and add that route to the table
+above. The trailing slash remains canonical because the route names a directory
+whose entry point is `index.html`.
+
+The deployment has no root homepage. The base nginx image handles static files,
+directory indexes, and missing paths with its default behavior; this repository
+does not carry a root `nginx.conf`, application health endpoint, or Docker
+`HEALTHCHECK`.
+
+Each paper keeps relative first-party asset paths, so the trailing slash is part
+of its canonical URL. A request without it is normalized to the directory URL
+by nginx.
 
 ## Coolify contract
 
-Deploy the same GitHub repository twice as two independent Coolify resources.
-Each resource uses the Dockerfile inside its own website folder, following the
-same unprivileged-nginx contract as the portfolio repository.
+Create one GitHub-App application with these settings:
 
-| Setting | Secure-domination paper | Protein-transfer paper |
-|---|---|---|
-| Repository | `https://github.com/batmanscode/ai-research` | same |
-| Branch | `main` | `main` |
-| Build pack | Dockerfile | Dockerfile |
-| Base Directory | `/graph/secure-domination-p5-free/website` | `/biology/aggregate-chemistry-transfer/website` |
-| Dockerfile | `/Dockerfile` | `/Dockerfile` |
-| Port Exposes | `3000` | `3000` |
-| Port Mappings | empty | empty |
-| Health-check path | `/` | `/` |
-| Environment variables | none | none |
-| Persistent storage | none | none |
+| Setting | Value |
+|---|---|
+| Repository | `https://github.com/batmanscode/ai-research` |
+| Branch | `main` |
+| Build pack | Dockerfile |
+| Base Directory | `/` |
+| Dockerfile | `/Dockerfile` |
+| Port Exposes | `8080` |
+| Port Mappings | empty |
+| Environment variables | none |
+| Persistent storage | none |
 
-The Dockerfile path is relative to the selected Base Directory. Do not point
-both domains at one resource: each paper is a complete domain-root website with
-its own `index.html` and first-party assets.
+Attach the research subdomain to that resource. For
+`research.sillygoose.fyi`, the intended paper URLs are:
 
-In Coolify:
+- `https://research.sillygoose.fyi/secure-domination-p5-free/`
+- `https://research.sillygoose.fyi/aggregate-chemistry-transfer/`
 
-1. Create a GitHub-App application from `batmanscode/ai-research`.
-2. Select **Dockerfile** and enter the first Base Directory from the table.
-3. Keep Dockerfile Location as `/Dockerfile`, expose `3000`, leave host port
-   mappings empty, set the paper's domain, and deploy.
-4. Repeat as a second application with the other Base Directory and domain.
+Do not publish those URLs as live until both production routes and their assets
+have been checked. Auto Deploy is optional: leave it off for manual releases,
+or enable it when every push to `main` should refresh the paper collection.
 
-Auto Deploy is optional. Leave it off for manual releases, or enable it on both
-GitHub-App resources when every push to `main` should redeploy both papers.
-The images deliberately have no Dockerfile `HEALTHCHECK`; Coolify owns the
-deployment health check, as it does for the portfolio.
+## Image contract
 
-## Deployable sources
+The root image uses the same unprivileged nginx family as the portfolio, but it
+does not need the portfolio's host routing, SPA fallback, or cache rules. The
+Dockerfile therefore uses the base image's default static configuration and
+copies only each paper's public HTML, CSS, JavaScript, and images.
 
-Each paper is also an ordinary independent static website:
+The papers have no application build, runtime model call, secret, database, or
+environment variable. `site/` remains a compatibility source for previously
+shared or cached links and is not copied into the canonical deployment image.
 
-| Paper | Publish directory | Entry point |
-|---|---|---|
-| Secure domination | `graph/secure-domination-p5-free/website/` | `index.html` |
-| Protein transfer | `biology/aggregate-chemistry-transfer/website/` | `index.html` |
-
-Each directory contains its own first-party styles, scripts, or images. The
-checked-in Dockerfile adds only the nginx serving layer; the papers themselves
-have no application build, runtime model call, secret, database, or environment
-variable.
-
-`site/` is the original combined explainer and remains only as a compatibility
-source for previously shared or cached links. Canonical and new deployment
-links should use the paper-owned directories above.
-
-## Host contract
-
-- Serve `index.html` for the publish root.
-- Preserve the selected paper directory's `css/`, `js/`, or `assets/` paths.
-- Serve UTF-8 HTML/CSS/JS and `image/png` with correct content types.
-- HTTPS is recommended for public deployment.
-- Do not inject analytics, cookies, runtime model calls, or user tracking as
-  part of the default research release.
+The Dockerfiles inside the individual `website/` directories remain temporary
+rollback options for the first combined release. They are not the canonical
+Coolify path and are not runtime redundancy. Remove them after the combined
+production deployment is verified unless standalone paper domains are still
+useful.
 
 ## Release check
 
-After deployment, run the relevant website scenario in `PLAYTEST.md` against
-each production URL. Verify desktop and mobile states, graph steps where
-applicable, console and first-party requests, external source links, and the
-biology caveat. Only then add production URLs to the portfolio, repository
-metadata, or the already-published external findings.
+After deployment, run the hosted website scenario in `PLAYTEST.md` against both
+paper URLs. Verify desktop and mobile states, graph steps where applicable,
+console and first-party requests, external source links, and the biology caveat.
+Only then add the production URLs to the portfolio or repository metadata.
 
-Local container checks:
+When a local Docker runtime is available:
 
 ```bash
-docker build -t silly-goose-graph graph/secure-domination-p5-free/website
-docker run --rm -p 3000:3000 silly-goose-graph
-
-docker build -t silly-goose-biology biology/aggregate-chemistry-transfer/website
-docker run --rm -p 3001:3000 silly-goose-biology
+docker build -t silly-goose-research .
+docker run --rm -p 8080:8080 silly-goose-research
 ```
 
-The second command in each pair is foregrounded; stop it with Ctrl+C before
-reusing the terminal. In another terminal, check `http://127.0.0.1:3000/` or
-`http://127.0.0.1:3001/` respectively.
+In another terminal, open both canonical paths or check them directly:
+
+```bash
+curl -I http://127.0.0.1:8080/secure-domination-p5-free/
+curl -I http://127.0.0.1:8080/aggregate-chemistry-transfer/
+curl -I http://127.0.0.1:8080/not-a-paper
+```
+
+The paper routes and first-party assets should return `200`; the unknown path
+should return `404`.

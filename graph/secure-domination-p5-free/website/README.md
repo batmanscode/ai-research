@@ -1,9 +1,10 @@
 # Deploy the graph visual paper
 
-This directory is a self-contained Coolify build context. Use Dockerfile build
-pack, Base Directory `/graph/secure-domination-p5-free/website`, Dockerfile
-`/Dockerfile`, internal port `3000`, empty Port Mappings, and health path `/`.
-It needs no build command, environment variable, database, or sibling website.
+This directory remains a self-contained static root and rollback build context.
+The canonical Coolify release now uses the repository-root Dockerfile and serves
+this paper at `/secure-domination-p5-free/`. Use this directory's Dockerfile on
+port `3000` only for a standalone or rollback deployment. It needs no build
+command, environment variable, database, or sibling website.
 
 ```text
 index.html

@@ -64,3 +64,16 @@ This file preserves owner intent and major decisions. It is append-only.
   certified counterexample redirects the bound.
 - Do not merge or externally publish a claimed global solution until its proof
   or counterexample certificate survives an independent audit.
+
+## Changes 30/08/2026 — unified deployment
+
+- Replace the two canonical Coolify applications with one lightweight root
+  Docker image that serves every paper beneath its own stable path on the
+  research subdomain. The portfolio will own the separate research index, so
+  this deployment needs no root homepage.
+- Keep the combined image minimal: use the unprivileged nginx image's default
+  static configuration, do not add a root `nginx.conf`, custom health endpoint,
+  or Docker `HEALTHCHECK`, and let unknown static paths fail normally.
+- Retain the individual paper Dockerfiles only as temporary rollback options
+  through the first combined production release; remove them afterward unless
+  standalone paper domains remain useful.
