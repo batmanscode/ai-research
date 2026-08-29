@@ -1,11 +1,11 @@
 cff-version: 1.2.0
-message: "If you use this repository, cite the repository and the relevant source paper."
-title: "Verified open-problem results: secure domination and cross-backbone protein fitness"
+message: "If you use this repository, cite the repository and the relevant project citation."
+title: "Silly Goose Labs AI research: secure domination and cross-backbone protein fitness"
 type: software
 version: 1.0.0
 date-released: 2026-08-29
 authors:
-  - name: "Open Problem Lab contributors"
+  - name: "Silly Goose Labs contributors"
 repository-code: "https://github.com/batmanscode/ai-research"
 url: "https://github.com/batmanscode/ai-research"
 license: MIT

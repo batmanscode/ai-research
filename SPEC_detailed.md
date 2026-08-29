@@ -2,7 +2,8 @@
 
 Last updated: 29 August 2026
 
-This is the current product, research, and technical truth for `ai-research`.
+This is the current product, research, and technical truth for `ai-research`,
+published under the Silly Goose Labs umbrella brand.
 
 ## Purpose
 
@@ -19,8 +20,9 @@ independently deployable, lay-facing visual paper for each result.
   preregistration, design contract, and visual paper.
 - `site/` — compatibility copy of the original two-page static explainer.
 - `findings/` — Markdown source for external finding submissions.
-- Root documents — project routing, owner intent, current truth, design,
-  validation, deployment, citation, licensing, and file integrity.
+- Root documents — project routing, owner intent, current truth, shared design,
+  validation, deployment, repository-level citation, licensing, and file
+  integrity. Each named project also owns its result-specific citation.
 
 ## Graph result
 
@@ -76,8 +78,9 @@ motion handling. External links point to stable repository or source URLs.
 ## Deployment
 
 Deployment is owner-managed. The canonical deploy roots are the two project
-`website/` directories; the repository contains no automatic deployment
-workflow. See `DEPLOYMENT.md`.
+`website/` directories; each contains a minimal Coolify-compatible Dockerfile
+serving through unprivileged nginx on port 3000. The repository contains no
+automatic deployment workflow. See `DEPLOYMENT.md`.
 
 ## Known limitations and open gates
 

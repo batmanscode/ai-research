@@ -6,6 +6,8 @@
 
 **Published finding:** [Emergent Mind research findings](https://www.emergentmind.com/open-problems/mechanisms-one-hot-protein-representation-performance#research-findings)
 
+**Citation:** [`CITATION.cff`](CITATION.cff)
+
 ## Status
 
 This is a **reconstructed exploratory analysis**, not an untouched external

@@ -3,6 +3,10 @@
 This repository publishes auditable research. Keep claims precise, evidence
 reproducible, and exploratory results visibly exploratory.
 
+Silly Goose Labs is the umbrella brand. Keep each project's scientific title
+precise in reports, citations, and deployment metadata; do not replace result
+names with the umbrella label.
+
 ## Read the right truth
 
 1. `SPEC_detailed.md` — current repository, result, and interaction truth.
@@ -31,7 +35,8 @@ source of scientific truth.
 - Deployment is owner-managed. Do not add or run automatic deployment unless
   the owner explicitly requests it.
 - Treat `graph/<project>/` and `biology/<project>/` as independent projects.
-  Each owns its scientific report, evidence, `DESIGN.md`, and `website/`.
+  Each owns its scientific report, evidence, `CITATION.cff`, `DESIGN.md`, and
+  `website/`.
 - Keep `site/` as a compatibility copy for previously shared or cached paths;
   canonical links belong to the named project directories.
 - Publish external findings only after the corresponding source tree and links

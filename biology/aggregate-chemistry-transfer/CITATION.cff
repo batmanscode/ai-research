@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this analysis, cite this project, FLIP2, and the underlying Hydro dataset."
+title: "Aggregate chemistry transfer across FLIP2 Hydro protein backbones"
+type: software
+version: 1.0.0
+date-released: 2026-08-29
+authors:
+  - name: "Silly Goose Labs contributors"
+repository-code: "https://github.com/batmanscode/ai-research/tree/main/biology/aggregate-chemistry-transfer"
+url: "https://github.com/batmanscode/ai-research/tree/main/biology/aggregate-chemistry-transfer"
+license: MIT
+keywords:
+  - protein fitness
+  - FLIP2
+  - domain generalization
+  - physicochemical features

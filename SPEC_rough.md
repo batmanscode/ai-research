@@ -32,3 +32,13 @@ This file preserves owner intent and major decisions. It is append-only.
   portfolio as a research index linking to the complete paper sites.
 - Both Emergent Mind findings were published after the repository links became
   stable, then updated to the final named project paths.
+- Use “Silly Goose Labs” as the public umbrella brand while retaining precise
+  scientific titles and descriptively named project folders.
+- Keep one global repository citation and one result-specific citation inside
+  each project; prefer a project DOI later when a formal archive exists.
+- Deploy the two visual papers as separate Coolify applications from their own
+  `website/` Base Directories and Dockerfiles. Do not publish them through
+  GitHub Pages or ChatGPT Sites.
+- Perform final desktop/mobile screenshot review against the public deployment,
+  with direct inspection first and Gemini 3.7 Flash as a second opinion; send
+  useful captures and results to Telegram.

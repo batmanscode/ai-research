@@ -4,9 +4,11 @@ Last updated: 29 August 2026
 
 ## Direction
 
-Each visual paper should feel like a careful research exhibit, not a generic AI
-dashboard: dark paper, restrained fluorescent accents, large editorial type,
-and evidence that becomes more concrete as the reader moves down the page.
+Silly Goose Labs is the umbrella brand; each visual paper keeps its precise
+scientific title. The family should feel like a careful research exhibit, not a
+generic AI dashboard: dark paper, restrained fluorescent accents, large
+editorial type, and evidence that becomes more concrete as the reader moves
+down the page.
 
 ## Voice
 

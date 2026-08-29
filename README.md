@@ -1,8 +1,8 @@
-# Verified open-problem results
+# Silly Goose Labs · AI research
 
-Two auditable research tracks developed from public open problems: an exact
-counterexample in secure domination and a corrected exploratory experiment on
-protein-fitness transfer.
+An extensible home for auditable, AI-assisted research. The first two tracks
+developed from public open problems: an exact counterexample in secure
+domination and a corrected exploratory experiment on protein-fitness transfer.
 
 **Independent visual papers:**
 [graph counterexample](graph/secure-domination-p5-free/website/index.html) ·
@@ -47,7 +47,25 @@ or cached links; canonical links use the named project directories.
 - [Aggregate-chemistry transfer experiment](https://www.emergentmind.com/open-problems/mechanisms-one-hot-protein-representation-performance#research-findings)
 
 Publication IDs, canonical source links, and status are recorded in
-[`findings/README.md`](findings/README.md).
+[`findings/README.md`](findings/README.md). The sibling Markdown files are the
+finding bodies submitted to Emergent Mind; they are not dumps of the complete
+API payload, whose IDs and public URLs are tracked in that index.
+
+Open-problem discovery, literature navigation, and finding publication used
+the wonderful [Emergent Mind skills and API](https://www.emergentmind.com/skills).
+Those tools helped organize and publish the work; the repository's code,
+certificates, results, and scoped claims remain the auditable evidence.
+
+## Citation
+
+Use the root [`CITATION.cff`](CITATION.cff) for the repository as a whole and
+the relevant project's citation for a specific result:
+
+- [`graph/secure-domination-p5-free/CITATION.cff`](graph/secure-domination-p5-free/CITATION.cff)
+- [`biology/aggregate-chemistry-transfer/CITATION.cff`](biology/aggregate-chemistry-transfer/CITATION.cff)
+
+When a project receives a preprint or archive DOI, its project citation should
+be updated to prefer that permanent scholarly record.
 
 ## Repository map
 
@@ -65,7 +83,9 @@ Project truth and verification are routed through [`AGENTS.md`](AGENTS.md),
 
 ## Integrity and scope
 
-- Generated outputs are recorded in [`CHECKSUMS.sha256`](CHECKSUMS.sha256).
+- The release-wide [`CHECKSUMS.sha256`](CHECKSUMS.sha256) detects accidental
+  changes or corruption when the repository is exported outside Git. It is an
+  integrity manifest, not a signature or a deployment requirement.
 - The graph construction was already known in another context; its
   secure-domination calculation and resulting lower bound are the contribution
   described here.
