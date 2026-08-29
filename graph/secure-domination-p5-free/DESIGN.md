@@ -1,14 +1,14 @@
 ---
 version: 1
-name: The Icosahedral Counterexample
+name: A 4/3 Lower Bound for Secure Domination in Connected P5-Free Graphs
 description: A visual paper that turns an exact secure-domination counterexample into a four-step guard story.
 colors:
-  background: "#0B0F10"
-  panel: "#121718"
-  text: "#F4F1EA"
-  proof: "#D9FF6F"
-  failure: "#FF826E"
-  construction: "#AE9CFF"
+  background: "#F9F8F4"
+  panel: "#FFFDF8"
+  text: "#1E201D"
+  proof: "#2A5438"
+  failure: "#9E3A2B"
+  construction: "#65569C"
 typography:
   display: "Newsreader, Georgia, serif"
   body: "Manrope, system-ui, sans-serif"
@@ -25,18 +25,20 @@ remains open—without reading the formal certificate first.
 
 ## Narrative
 
-1. Introduce ordinary domination as placing guards.
-2. Add the secure-exchange rule: a guard may move only if coverage survives.
-3. Start with the familiar icosahedron and flip edges to form its complement.
-4. Show one certified attack that defeats three guards.
-5. Show a secure four-guard set and the exact `4 > 3` conclusion.
-6. Separate the theorem from finite minimality evidence and the open
+1. Lead with the theorem-level contribution: the universal coefficient is at
+   least `4/3`.
+2. Introduce ordinary domination as placing guards.
+3. Add the secure-exchange rule: a guard may move only if coverage survives.
+4. Start with the familiar icosahedron and flip edges to form its complement.
+5. Show one certified attack that defeats three guards.
+6. Show a secure four-guard set and the exact `4 > 3` conclusion.
+7. Separate the theorem from finite minimality evidence and the open
    coefficient interval.
 
 ## Visual language
 
-- Acid green identifies successful guards and proved conclusions.
-- Coral identifies an attack, exposed vertex, or failed exchange.
+- Forest green identifies successful guards and proved conclusions.
+- Madder red identifies an attack, exposed vertex, or failed exchange.
 - Violet distinguishes construction/complement states.
 - Every state has a text legend; color never carries the proof alone.
 - The graph visualization is generated from exact adjacency data. Decorative

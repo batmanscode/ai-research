@@ -24,28 +24,28 @@
       title:'A familiar solid, flattened.',
       body:'The ordinary icosahedral graph connects the corners joined by an edge of the solid. It has 12 vertices, 30 edges, and 120 symmetries.',
       callout:'The counterexample uses exactly the opposite adjacency relation.',
-      legend:[['#dfe4df','vertex'],['#4c5658','icosahedral edge']]
+      legend:[['#3f4942','vertex'],['#747c76','icosahedral edge']]
     },
     {
       label:'02 · Take the complement', edges:G_EDGES, edgeCount:36,
       title:'Keep every missing edge instead.',
       body:'In the complement, two vertices are adjacent precisely when they were not adjacent in the icosahedron. The new graph has 36 edges; the six coral edges are dominating pairs.',
-      callout:'It is connected and contains no induced path on five vertices.', matching:true,
-      legend:[['#dfe4df','vertex'],['#4c5658','complement edge'],['#ff826e','dominating edge']]
+      callout:'It is connected and has no induced five-point path (P₅).', matching:true,
+      legend:[['#3f4942','vertex'],['#747c76','complement edge'],['#9e3a2b','dominating edge']]
     },
     {
       label:'03 · Try three guards', edges:G_EDGES, edgeCount:36,
       title:'Every triple fails.',
       body:'Here guards 0, 1, and 2 cover the graph. But if vertex 7 is attacked and guard 1 moves to defend it, vertex 10 becomes exposed. Exhaustive verification finds a failure for all 220 triples.',
       callout:'120 triples fail to dominate at all; the other 100 dominate but fail the security exchange.', guards:[0,1,2], attack:7, exposed:10, arrow:[1,7], dim:true,
-      legend:[['#d9ff6f','guard'],['#ff826e','attacked vertex'],['#ae9cff','newly exposed']]
+      legend:[['#2a5438','guard'],['#9e3a2b','attacked vertex'],['#65569c','newly exposed']]
     },
     {
       label:'04 · Four guards suffice', edges:G_EDGES, edgeCount:36,
       title:'The fourth guard closes the gap.',
       body:'The set {0, 1, 2, 3} is secure. For example, if vertex 10 is attacked, guard 1 can move there and the exchanged set still dominates every vertex.',
       callout:'No secure triple exists and a secure four-set does, so the secure domination number is exactly 4.', guards:[0,1,2,3], attack:10, arrow:[1,10],
-      legend:[['#d9ff6f','guard'],['#ff826e','attack answered safely']]
+      legend:[['#2a5438','guard'],['#9e3a2b','attack answered safely']]
     }
   ];
 
