@@ -91,9 +91,10 @@ secure-domination obstruction with a dominating edge.
   cases have a secure four-set.
 - Private representatives of an inclusion-minimal dominating clique induce a
   complete multipartite graph.
-- Relative to a dominating clique, every single-clique-neighbor region is a
-  cluster graph, and security reduces exactly to a collective residual-coverage
-  condition.
+- Relative to a dominating clique, security reduces exactly to a collective
+  residual-coverage condition. No cluster structure follows for a
+  single-clique-neighbor region: the cone-`C5` family gives an immediate
+  counterexample to that discarded shortcut.
 
 ## 7. False or incomplete routes
 
@@ -146,3 +147,16 @@ converged on the same conclusion: no counterexample to
 `gamma_s <= alpha+1` was found, but the all-orders collective-selection lemma
 was not proved. The separate project is therefore frozen as a reproducible
 active-research milestone rather than promoted to a solved theorem.
+
+## 11. Structural correction, 29 August 2026
+
+During the continued proof search, the claimed cluster structure of each
+singleton private region `P_k` was found to be false. If `a-b-c` is an
+induced path inside `P_k`, the formerly displayed walk
+`ell-k-a-b-c` has chords `kb` and `kc`; it is not an induced `P5`. In the
+already verified cone-`C5` family, each `P_k` is itself a `C5`.
+
+This correction removes the component-representative consequence but does
+not affect the exact residual-security equivalence, the computational
+frontiers, the coefficient interval, the alpha-three theorem, or the
+operation results.

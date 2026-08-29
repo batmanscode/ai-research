@@ -164,6 +164,18 @@ def cone_c5_family(t):
 
 def verify_cone_family_instance(t=3):
     adj = cone_c5_family(t)
+    K = sum(1 << v for v in range(t))
+    private_regions = []
+    for k in range(t):
+        region = tuple(
+            v for v in range(t, len(adj))
+            if adj[v] & K == 1 << k
+        )
+        private_regions.append({
+            "hub": k,
+            "vertices": region,
+            "is_induced_c5": induced_c5(adj, region),
+        })
     return {
         "t": t,
         "n": len(adj),
@@ -171,6 +183,51 @@ def verify_cone_family_instance(t=3):
         "p5_free": p5_free(adj),
         "alpha": alpha(adj),
         "gamma_s": gamma_s(adj),
+        "private_regions": private_regions,
+    }
+
+
+def residual_condition(adj, K, X):
+    closed_X = X
+    for x in range(len(adj)):
+        if X >> x & 1:
+            closed_X |= adj[x]
+    for v in range(len(adj)):
+        if (K | X) >> v & 1:
+            continue
+        if adj[v] & X:
+            continue
+        defended = False
+        for k in range(len(adj)):
+            if not (K >> k & 1 and adj[v] >> k & 1):
+                continue
+            P_k = 0
+            for z in range(len(adj)):
+                if not (K >> z & 1) and adj[z] & K == 1 << k:
+                    P_k |= 1 << z
+            U_k = P_k & ~closed_X
+            if U_k & ~(adj[v] | 1 << v) == 0:
+                defended = True
+                break
+        if not defended:
+            return False
+    return True
+
+
+def verify_residual_criterion_on_two_cones():
+    adj = cone_c5_family(2)
+    K = 0b11
+    outside = list(range(2, len(adj)))
+    mismatches = []
+    for choice in range(1 << len(outside)):
+        X = sum(1 << outside[i] for i in range(len(outside)) if choice >> i & 1)
+        direct = secure(adj, K | X)
+        reduced = residual_condition(adj, K, X)
+        if direct != reduced:
+            mismatches.append({"X": X, "direct": direct, "reduced": reduced})
+    return {
+        "sets_checked": 1 << len(outside),
+        "mismatches": mismatches,
     }
 
 
@@ -180,6 +237,7 @@ if __name__ == "__main__":
         "biconnected_fixed_choice_counterexample":
             verify_biconnected_fixed_choice_counterexample(),
         "three_cone_c5_modules": verify_cone_family_instance(3),
+        "residual_criterion_two_cones": verify_residual_criterion_on_two_cones(),
     }
     assert results["c5_shortcut_counterexample"]["connected"]
     assert results["c5_shortcut_counterexample"]["p5_free"]
@@ -192,4 +250,9 @@ if __name__ == "__main__":
     assert not results["biconnected_fixed_choice_counterexample"]["I_plus_1_secure"]
     assert results["three_cone_c5_modules"]["alpha"][0] == 6
     assert results["three_cone_c5_modules"]["gamma_s"][0] == 6
+    assert all(
+        region["is_induced_c5"]
+        for region in results["three_cone_c5_modules"]["private_regions"]
+    )
+    assert not results["residual_criterion_two_cones"]["mismatches"]
     print(json.dumps(results, indent=2))

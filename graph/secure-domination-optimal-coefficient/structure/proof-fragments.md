@@ -113,14 +113,12 @@ Thus neither `i` nor `j` defends the attack at `v`, so `I` is not secure.
 
 This identifies the obstruction exactly: an *`I`-isolated 5-cycle*.
 
-## Lemma 5: exact reduction inside a dominating clique
+## Lemma 5: exact residual criterion inside a dominating clique
 
 Let `K` be a dominating clique of a `P5`-free graph, with `|K|>=2`.  For
 `k in K`, put
 
 `P_k={z outside K : N(z) intersect K={k}}`.
-
-Then each `G[P_k]` is a disjoint union of cliques.
 
 For any `X subseteq V(G)\K`, put `S=K union X` and
 
@@ -132,10 +130,6 @@ neighbor in `X`, there is some `k in N(v) intersect K` such that
 `U_k\{v} subseteq N(v)`.
 
 ### Proof
-
-If `a-b-c` were an induced `P3` in some `P_k`, choose
-`ell in K\{k}`.  Then `ell-k-a-b-c` is an induced `P5`.  Hence every
-`P_k` is `P3`-free, equivalently a cluster graph.
 
 Since `K` dominates, every newly added guard in `X` has empty external
 private neighborhood relative to `S`.  Therefore any outside vertex with a
@@ -149,17 +143,19 @@ Thus swapping `k` for `v` preserves domination exactly when every member of
 `U_k` other than the attacked vertex itself is adjacent to `v`.  This is the
 displayed condition.
 
-### Collective selection consequence
+### Correction to a discarded structural shortcut
 
-If `P_k` has `a_k` clique components, selecting one vertex from all but one
-component makes `U_k` a clique.  Doing this for every `k` automatically
-settles every attack belonging to a singleton-`K` region.  What remains is
-the precise bottleneck for the dominating-clique branch:
+An earlier version incorrectly claimed that every `G[P_k]` is a cluster
+graph. The proposed path `ell-k-a-b-c` is not induced: because
+`a,b,c in P_k`, the hub `k` is adjacent to all three and creates the chords
+`kb` and `kc`. The cone-`C5` family recorded below is an immediate
+counterexample, since its private region at each hub is an induced `C5`.
 
-> select the component representatives so that every undominated vertex
-> with at least two neighbors in `K` is complete to `U_k` for at least one
-> of its neighboring clique guards, while keeping
-> `|K|+|X| <= alpha+1`.
+Accordingly, the displayed residual criterion is exact, but it supplies no
+cluster decomposition of `P_k`. The live bottleneck is to choose `X` so that
+for every vertex with no neighbor in `X`, one neighboring clique guard `k`
+has residual set `U_k\{v}` complete to the attack, while keeping
+`|K|+|X| <= alpha+1`.
 
 The multi-`K` condition cannot be omitted.  In graph6 `Jhf]gF]@?@?`, the
 minimum dominating clique `K={1,5,6,8}` has four singleton private regions,
@@ -175,7 +171,7 @@ desired `alpha+1` bound whenever `alpha >= 4`; the published
 `3 alpha / 2` theorem handles `alpha=3`.
 
 The remaining bottleneck is therefore the dominating-clique branch and,
-specifically, the collective representative-selection condition in Lemma 5.
+specifically, the collective residual-coverage condition in Lemma 5.
 The tempting stronger claim that one can always add a single clique vertex to
 a fixed maximum independent set is false; the exact biconnected witness
 `LkdB{DEaseKoWg` is documented and independently checked in
