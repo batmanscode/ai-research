@@ -34,9 +34,8 @@ cd biology
 python3 native_core_transfer.py
 ```
 
-The website is dependency-free. Open `site/index.html`, or serve `site/` with
-any static server. GitHub Pages deployment is defined in
-`.github/workflows/pages.yml`.
+The website is dependency-free. Open `site/index.html`, or deploy the `site/`
+directory with any static host.
 
 ## Repository map
 
