@@ -120,10 +120,10 @@ finite hypothesis-mining evidence.
   endpoints in a maximum independent set \(I\), then \(I\cup\{b\}\) is secure.
 - External private-neighbor representatives of an inclusion-minimal
   dominating clique induce a complete multipartite graph.
-- For a dominating clique \(K\), every region whose vertices see exactly one
-  fixed member of \(K\) is a disjoint union of cliques. Security of a set
-  \(K\cup X\) is equivalent to an explicit coverage condition on the parts
-  left undominated by \(X\).
+- For a dominating clique \(K\), security of a set \(K\cup X\) is equivalent
+  to an explicit residual-coverage condition on the vertices left
+  undominated by \(X\). No cluster structure is assumed for a singleton
+  private region; such a region can contain an induced \(C_5\).
 - Joins, universal vertices, clique blow-ups, and the tested substitution
   families collapse rather than preserve the large ratio.
 
@@ -136,6 +136,13 @@ representatives that simultaneously cover all multi-clique-neighbor attacks
 within the \(\alpha+1\) budget. Several simpler local statements are false;
 their smallest checked obstructions are retained so the failed routes are not
 repeated.
+
+An earlier draft incorrectly claimed that every singleton private region of a
+dominating clique is a cluster graph. The cone-\(C_5\) family in this package
+contradicts that claim, and the faulty path argument overlooked chords from
+the hub. The false sublemma and its component-selection consequence have been
+removed; the exact residual-security criterion, which follows directly from
+external private neighborhoods, is unaffected.
 
 An exact infinite family makes the word “collective” essential: take a clique
 of \(t\) hubs and attach a private induced \(C_5\) to each hub. Every maximum
@@ -174,6 +181,9 @@ bound.
 - [`operations/proof-note.md`](operations/proof-note.md) proves the operation
   results, including the infinite \(B[K_t]\) family; the independent audit is
   [`referees/operations-audit.md`](referees/operations-audit.md).
+- [`referees/structural-correction.md`](referees/structural-correction.md)
+  documents the removed private-region cluster claim, its cone-\(C_5\)
+  counterexample, the surviving exact criterion, and a dependency audit.
 
 Install the SAT dependencies only when running the computational portfolio:
 
