@@ -48,6 +48,29 @@ vertex `v` outside `S`.
 Every outside attack has a valid defender, so `S` is secure. Its order is
 `|D|+|I|-1`, proving the bound. \(\square\)
 
+## Outside-domination completion
+
+The same setup gives a complementary bound:
+
+\[
+\gamma_s(G)\leq |D|+\gamma(G-D).
+\]
+
+Let `X` dominate `G-D`. Then `D union X` is secure. Indeed, every outside
+attack has a neighbor in `X`. That added guard can defend the attack because
+removing it leaves the original dominating set `D` intact. Minimizing `X`
+proves the inequality.
+
+Together, the two completions give
+
+\[
+\boxed{\gamma_s(G)\leq |D|+
+\min\{\gamma(G-D),\alpha(G-D)-1\}}
+\]
+
+when `G-D` is nonempty. The first term exploits edges across the outside
+graph; the second needs only a maximum independent set.
+
 ## Consequences for the open problem
 
 1. If `G` has domination number at most two, then
@@ -59,7 +82,8 @@ Every outside attack has a valid defender, so `S` is secure. Its order is
    In particular, the entire dominating-edge branch is solved. This is a
    theorem for arbitrary graphs, not merely induced-`P5`-free graphs.
 2. If `D` is a dominating set of order three and
-   `alpha(G-D)<=alpha(G)-1`, the same candidate bound follows.
+   either `alpha(G-D)<=alpha(G)-1` or
+   `gamma(G-D)<=alpha(G)-2`, the same candidate bound follows.
 3. The icosahedral-complement witness has a dominating edge and
    `(alpha,gamma_s)=(3,4)`, so the corollary is tight.
 
@@ -114,18 +138,19 @@ edge between `A` and `B`. This graph is connected and induced-`P5`-free,
 
 Thus the separate-region excess over `alpha+1` is unbounded. The candidate
 bound itself is not threatened: for `x in A` and `y in B`, the four-set
-`{a,b,x,y}` is secure. Cross-region edges create the guard saving that
-independent local accounting misses.
+`{a,b,x,y}` is secure. Equivalently, `{x,y}` dominates `G-K`, so the
+outside-domination completion gives the four-set immediately. Cross-region
+edges create the guard saving that independent local accounting misses.
 
 ## Verification
 
 [`../referees/verify_dominating_set_residual.py`](../referees/verify_dominating_set_residual.py)
 checks the displayed construction directly for every dominating set, every
 maximum independent set of its outside graph, and every omitted independent
-vertex in the complete NetworkX Graph Atlas. It also checks all 5,830 local
-choices produced by the clique refinement over 2,425 inclusion-minimal
-dominating cliques. It does not call either residual argument when testing
-security.
+vertex in the complete NetworkX Graph Atlas. It checks another 163,903
+outside-domination completions, plus all 5,830 local choices produced by the
+clique refinement over 2,425 inclusion-minimal dominating cliques. It does
+not call any derived residual criterion when testing security.
 
 The maximum-independent residual observation is closely related to standard
 external-private-neighborhood lemmas in secure-domination theory. No novelty

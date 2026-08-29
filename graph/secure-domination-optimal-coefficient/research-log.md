@@ -172,6 +172,12 @@ independent set outside `D` and omit one member; the still-undominated
 outside residual must be a clique, which makes every attack defendable. The
 construction was then checked directly over the complete Graph Atlas.
 
+A complementary construction takes a dominating set of `G-D` instead. It
+gives `gamma_s(G) <= |D| + gamma(G-D)` because every attack then has an
+added guard as a defender while `D` remains intact. Another 163,903 direct
+Atlas constructions passed. The combined minimum of the domination and
+independence-residual terms is the useful working bound.
+
 Consequently, every graph with a dominating pair satisfies
 `gamma_s <= alpha+1`. This closes the dominating-edge branch that repeatedly
 appeared in the finite obstruction mining. It does not close the full
@@ -189,3 +195,21 @@ tempting next inequality that the sum of private-region independence numbers
 is at most `alpha+1`; its gap is unbounded even though a cross-region secure
 four-set keeps the target bound true. Future work must exploit those cross
 edges rather than budget each private region independently.
+
+## 13. Cut-vertex theorem
+
+The earlier minimal-counterexample reduction has been replaced by a stronger
+all-orders theorem: every connected induced-`P5`-free graph with a cut vertex
+satisfies `gamma_s <= alpha+1`. At an articulation `x`, at most one component
+of `G-x` can contain a nonneighbor of `x`. The deep component has no induced
+`P4` rooted at `x`, forcing every first-layer vertex to be complete or
+anticomplete to each second-layer component.
+
+That module structure supports an explicit anchor-group construction. It
+builds a secure set on the deep side within its independence budget and keeps
+the side dominated even if the articulation guard moves. Maximum independent
+sets on the shallow components then glue without defender conflicts. The
+construction passed every relevant Graph Atlas articulation choice and a
+seeded random stress portfolio. A separate implementation checked 5,001
+proof-permitted choices over 2,196 rooted Atlas instances. Therefore every
+counterexample to the candidate bound must be 2-connected.

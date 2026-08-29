@@ -112,10 +112,14 @@ finite hypothesis-mining evidence.
 
 ## Structural leads
 
-- For every dominating set (D) with nonempty outside graph,
-  \(\gamma_s(G)\leq |D|+\alpha(G-D)-1\). Hence every graph with a
-  dominating pair satisfies \(\gamma_s\leq\alpha+1\); the dominating-edge
-  branch is solved without a (P_5)-free assumption.
+- Every connected induced-\(P_5\)-free graph with a cut vertex satisfies
+  \(\gamma_s\leq\alpha+1\). The proof gives an explicit secure set and
+  shows that every counterexample to the candidate bound must be
+  2-connected; this is an all-orders theorem, not a minimality assumption.
+- For every dominating set \(D\) with nonempty outside graph,
+  \(\gamma_s(G)\leq |D|+\min\{\gamma(G-D),\alpha(G-D)-1\}\). Hence every
+  graph with a dominating pair satisfies \(\gamma_s\leq\alpha+1\); the
+  dominating-edge branch is solved without a \(P_5\)-free assumption.
 - Any connected counterexample to coefficient one must contain an induced
   claw, triangle, \(C_4\), \(C_5\), paw, \(P_3\cup P_1\), and
   \(K_2\cup2K_1\).
@@ -170,6 +174,7 @@ bound.
 | No \(\alpha=4,\gamma_s=6\) graph exists through order 17. | **Finite SAT evidence**; order 12 has a checked clausal proof, larger orders are solver-only. |
 | No \(\alpha=5,\gamma_s\geq7\) graph exists through order 16. | **Finite SAT evidence**; order 12 has a checked clausal proof, larger orders are solver-only. |
 | A dominating pair implies \(\gamma_s\leq\alpha+1\). | **Theorem**, from the general dominating-set residual completion bound. |
+| A cut vertex implies \(\gamma_s\leq\alpha+1\) in a connected induced-\(P_5\)-free graph. | **Theorem**, by the constructive rooted-completion argument. |
 | Minimum dominating clique at least three implies \(\gamma_s\leq\alpha\). | **Open structural subclaim**; exact untraced SAT supports it through order 15 at \(\alpha=4\) and order 14 at \(\alpha=5\). |
 | Connected graphs satisfy \(\gamma_s\leq\alpha+1\). | **Open candidate**, under active proof and counterexample attack. |
 | \(4/3\leq c_{\mathrm{opt}}\leq3/2\). | **Theorem**, from the exact witness and the published upper bound. |
@@ -190,6 +195,11 @@ bound.
   proves the general dominating-set completion theorem and the solved
   dominating-pair branch. Its direct Atlas audit is
   [`referees/verify_dominating_set_residual.py`](referees/verify_dominating_set_residual.py).
+- [`structure/cut-vertices.md`](structure/cut-vertices.md) proves the
+  cut-vertex theorem. The constructive audit is
+  [`referees/verify_cut_vertex.py`](referees/verify_cut_vertex.py), with a
+  [separate exhaustive audit](referees/cut-vertex-audit.md) and seeded stress
+  test beside it.
 - [`structure/private-clique-obstructions.md`](structure/private-clique-obstructions.md)
   proves the complete-multipartite private-witness lemma and records exact
   counterexamples to discarded shortcuts. Run

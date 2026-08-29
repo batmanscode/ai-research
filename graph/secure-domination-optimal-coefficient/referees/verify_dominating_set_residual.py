@@ -135,6 +135,7 @@ def main() -> None:
     graphs = 0
     dominating_sets = 0
     constructions = 0
+    domination_constructions = 0
     minimal_cliques = 0
     private_constructions = 0
     for graph in nx.graph_atlas_g():
@@ -149,6 +150,22 @@ def main() -> None:
                 if not outside or not dominates(graph, dominating):
                     continue
                 dominating_sets += 1
+                for outside_dominating in minimum_dominating_sets(
+                    graph, outside
+                ):
+                    domination_constructions += 1
+                    if not secure(graph, dominating | outside_dominating):
+                        raise AssertionError(
+                            {
+                                "graph6": nx.to_graph6_bytes(
+                                    graph, header=False
+                                ).decode().strip(),
+                                "dominating": sorted(dominating),
+                                "outside_dominating": sorted(
+                                    outside_dominating
+                                ),
+                            }
+                        )
                 for independent in maximum_independent_sets(graph, outside):
                     for omitted in independent:
                         selected = dominating | (independent - {omitted})
@@ -173,6 +190,7 @@ def main() -> None:
                 "graphs": graphs,
                 "dominating_sets": dominating_sets,
                 "constructions": constructions,
+                "outside_domination_constructions": domination_constructions,
                 "minimal_dominating_cliques": minimal_cliques,
                 "private_constructions": private_constructions,
                 "failures": 0,
