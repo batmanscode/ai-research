@@ -42,3 +42,14 @@ This file preserves owner intent and major decisions. It is append-only.
 - Perform final desktop/mobile screenshot review against the public deployment,
   with direct inspection first and Gemini 3.7 Flash as a second opinion; send
   useful captures and results to Telegram.
+
+## Changes 30/08/2026
+
+- Rename the public umbrella brand to “Silly Goose Research Labs”; keep the
+  shorter `SG` mark as the compact visual signature.
+- Keep the root citation for the repository as a collection and one precise
+  citation inside each project. A reader citing one result should use its
+  project citation rather than being asked to cite both levels by default.
+- Keep goose illustrations optional and subordinate to the research. Prefer a
+  small colophon or marginal mark over a mascot competing with a paper's title,
+  problem, or evidence.

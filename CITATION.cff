@@ -1,11 +1,11 @@
 cff-version: 1.2.0
-message: "If you use this repository, cite the repository and the relevant project citation."
-title: "Silly Goose Labs AI research: secure domination and cross-backbone protein fitness"
+message: "If you use this repository as a collection, cite this record. For a specific result, use that project's citation instead."
+title: "Silly Goose Research Labs AI research: secure domination and cross-backbone protein fitness"
 type: software
-version: 1.0.0
-date-released: 2026-08-29
+version: 1.0.1
+date-released: 2026-08-30
 authors:
-  - name: "Silly Goose Labs contributors"
+  - name: "Silly Goose Research Labs contributors"
 repository-code: "https://github.com/batmanscode/ai-research"
 url: "https://github.com/batmanscode/ai-research"
 license: MIT

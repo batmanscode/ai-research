@@ -1,11 +1,11 @@
 cff-version: 1.2.0
 message: "If you use this result, cite this project and the Gupta et al. source paper."
-title: "A 12-vertex counterexample in secure domination of connected induced-P5-free graphs"
+title: "A 4/3 lower bound for secure domination in connected induced-P5-free graphs"
 type: software
-version: 1.0.0
-date-released: 2026-08-29
+version: 1.0.1
+date-released: 2026-08-30
 authors:
-  - name: "Silly Goose Labs contributors"
+  - name: "Silly Goose Research Labs contributors"
 repository-code: "https://github.com/batmanscode/ai-research/tree/main/graph/secure-domination-p5-free"
 url: "https://github.com/batmanscode/ai-research/tree/main/graph/secure-domination-p5-free"
 license: MIT

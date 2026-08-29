@@ -156,3 +156,26 @@
   three-card layout and adds no CSS or interaction. The surrounding canonical
   paper has completed desktop, compact, phone, 320 px, and Gemini review as
   recorded in the 30 August release pass above.
+
+## 30 August 2026 — Research Labs name and citation routing
+
+- **Brand:** active documentation, citation metadata, canonical papers, and
+  compatibility entry points use `Silly Goose Research Labs`. The earlier
+  `Silly Goose Labs` entries above and in `SPEC_rough.md` remain historical
+  records of the superseded decision.
+- **Citation:** the root CFF now describes the repository-level collection;
+  each project CFF carries the contribution-first title for its own result. A
+  result user is directed to the project record instead of being asked to cite
+  both levels by default.
+- **Mascot decision:** Storyboard and Portfolio goose references were inspected.
+  No new asset was added: a hero mascot would compete with the theorem/finding,
+  while the existing compact `SG` mark already supplies enough family identity.
+- **Responsive visual check:** at 1280 px, the full 235 px brand label and paper
+  navigation do not overlap. At 320 px, the existing compact-header rule hides
+  only the visible label, preserves the full accessible name, keeps every nav
+  target 44 px tall, and leaves both documents at exactly 320 px with no
+  horizontal overflow.
+- **Gemini second opinion:** Gemini 3.7 Flash returned `pass`. It found the full
+  name credible, the header balanced and non-SaaS, the `SG` circle sufficient,
+  and a large hero goose likely to distract from the theorem and exploratory
+  finding. The working agent independently reached the same conclusion.

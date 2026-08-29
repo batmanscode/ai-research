@@ -3,9 +3,9 @@
 This repository publishes auditable research. Keep claims precise, evidence
 reproducible, and exploratory results visibly exploratory.
 
-Silly Goose Labs is the umbrella brand. Keep each project's scientific title
-precise in reports, citations, and deployment metadata; do not replace result
-names with the umbrella label.
+Silly Goose Research Labs is the umbrella brand. Keep each project's
+scientific title precise in reports, citations, and deployment metadata; do
+not replace result names with the umbrella label.
 
 ## Read the right truth
 
