@@ -1,5 +1,42 @@
 # Durable verification results
 
+## 30 August 2026 — brighter papers and contribution-first titles
+
+- **Editorial:** the graph paper now leads with the exact theorem-level
+  contribution, “A 4/3 Lower Bound for Secure Domination,” and identifies the
+  connected `P5`-free class before the guard explanation. The biology paper
+  leads with the bounded exploratory finding, “Aggregate Chemistry Transfers
+  Across Three Protein Backbones,” then asks the transfer problem in ordinary
+  language before introducing metrics.
+- **Theme:** both papers moved from black/neon presentation to warm ivory paper,
+  deep ink, and forest result accents. Powder/slate blue marks exploratory
+  context and mutation-count baselines; madder remains reserved for attacks,
+  failures, and corrections; violet remains comparison/exposure. The result is
+  intentionally closer to an illustrated research note than a SaaS page.
+- **Manual/browser:** desktop and phone openings, the interactive graph, and the
+  biology chart were directly inspected. At 320 px both documents have
+  `scrollWidth = 320`, the sticky header remains 68 px, every navigation target
+  remains 44 px high, the long titles reflow without clipping, and the biology
+  chart stays inside its 292 px content width. Both pages have clean browser
+  consoles.
+- **Interaction:** Shape, Flip, Three, and Four still render 30/36/36/36 edges
+  with the expected copy and legends. Playback changes to Pause; directly
+  selecting Three stops playback and restores the Play label.
+- **Automated:** the graph verifier again regenerated the checked certificate
+  byte-for-byte. A fresh reduced biology run reproduced every selected feature
+  family, feature count, ridge penalty, and all displayed point estimates at
+  three decimals.
+- **External:** Gemini 3.7 Flash reviewed the final desktop and phone captures
+  and passed both title scopes, both problem introductions, the palette, and
+  mobile reflow with no blockers. Its remaining comments were rejected after
+  direct review: madder on `>` intentionally marks the failed coefficient-one
+  claim; the 320 px header fits without wrapping; and the biology whitespace is
+  editorial breathing room, not a missing KPI card. Matched final captures were
+  delivered through the authorized Telegram channel.
+- **Scope:** no displayed statistic, certificate, scientific claim, deployment
+  contract, or public finding changed. No Emergent Mind update is needed; the
+  pages now describe the existing theorem and exploratory finding more clearly.
+
 ## 30 August 2026 — minimal paper review and reproducible model selection
 
 - **Manual/browser:** both canonical papers were inspected at desktop,
