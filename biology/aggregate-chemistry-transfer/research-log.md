@@ -50,9 +50,17 @@ the public test labels had already influenced the broader research path, these
 remain exploratory results even though per-fold hyperparameters are selected
 using training-side validation only.
 
-## 6. Next decisive experiment
+## 6. Numerical tie-breaking
+
+A cross-platform rerun found that the two best CI-2A ridge penalties can swap
+order when validation scores move by less than `1e-5` across linear-algebra
+builds. The selection rule now treats both primary and secondary validation
+scores inside that tolerance as tied, then prefers the stronger ridge penalty.
+This makes the recorded choice reproducible without changing any displayed
+result or claim.
+
+## 7. Next decisive experiment
 
 Freeze the current representation and evaluation code, then run it once on a
 new protein before inspecting labels. That experiment—not another bootstrap on
 the same three backbones—is the clean evidence boundary.
-

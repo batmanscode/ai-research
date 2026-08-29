@@ -1,6 +1,6 @@
 # Detailed specification
 
-Last updated: 29 August 2026
+Last updated: 30 August 2026
 
 This is the current product, research, and technical truth for `ai-research`,
 published under the Silly Goose Labs umbrella brand.
@@ -44,7 +44,9 @@ claimed as new.
 
 The FLIP2 Hydro analysis uses correct native cores `FLFFIIV`, `VIVVVFV`, and
 `VIIVLVI`. Within each official held-backbone fold, feature family and ridge
-penalty are chosen using training-side validation.
+penalty are chosen using training-side validation. Primary and secondary
+validation scores within `1e-5` are numerical ties; the stronger ridge penalty
+wins so the recorded choice is stable across linear-algebra builds.
 
 | Held backbone | Native-count rho | Aggregate model rho | Within-count rho |
 |---|---:|---:|---:|

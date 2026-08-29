@@ -86,7 +86,9 @@ python3 native_core_transfer.py
 ```
 
 Dependencies are listed in the repository-level `requirements.txt`. The exact
-output used here is `results/analysis.json`.
+output used here is `results/analysis.json`. Validation metrics within `1e-5`
+are treated as numerical ties; the stronger ridge penalty wins so platform-
+level linear-algebra noise cannot change the recorded model choice.
 
 ## Publication boundary
 

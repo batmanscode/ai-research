@@ -47,6 +47,7 @@ PROPERTIES = {
 }
 ALPHAS = [0.01, 0.1, 1.0, 10.0, 100.0, 1000.0, 10000.0]
 FEATURE_SETS = ["signed_absdiff", "count_signed_absdiff", "all_aggregate"]
+SCORE_TOLERANCE = 1e-5
 OFFICIAL_BEST = {
     "P06241": {"rho": 0.444, "model": "SaProt-650M likelihood"},
     "P0A9X9": {"rho": 0.151, "model": "Dayhoff likelihood"},
@@ -141,13 +142,28 @@ def select_model(training: pd.DataFrame, validation: pd.DataFrame) -> tuple[str,
                 "validation_macro_full_spearman": float(np.mean(full_scores)),
             }
             trace.append(record)
-            key = (
-                record["validation_macro_within_count_spearman"],
-                record["validation_macro_full_spearman"],
-                -alpha,
+            if best is None:
+                best = (record, feature_set, alpha)
+                continue
+
+            best_record, _, best_alpha = best
+            within_delta = (
+                record["validation_macro_within_count_spearman"]
+                - best_record["validation_macro_within_count_spearman"]
             )
-            if best is None or key > best[0]:
-                best = (key, feature_set, alpha)
+            full_delta = (
+                record["validation_macro_full_spearman"]
+                - best_record["validation_macro_full_spearman"]
+            )
+            better = within_delta > SCORE_TOLERANCE
+            if abs(within_delta) <= SCORE_TOLERANCE:
+                better = full_delta > SCORE_TOLERANCE
+                if abs(full_delta) <= SCORE_TOLERANCE:
+                    # Numerically tied validation scores can move by a few ulps
+                    # across BLAS builds. Prefer the more regularized ridge.
+                    better = alpha > best_alpha
+            if better:
+                best = (record, feature_set, alpha)
     assert best is not None
     return best[1], best[2], trace
 
