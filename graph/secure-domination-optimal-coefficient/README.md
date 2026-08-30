@@ -143,6 +143,14 @@ finite hypothesis-mining evidence.
   An infinite two-region family shows that charging those regions separately
   against \(\alpha\) can fail by an unbounded amount; cross-region exchanges
   are essential.
+- When deleting a dominating clique leaves several components, rooted
+  completions can be glued through a small set of clique guards.  The
+  [component-gluing theorems](structure/clique-component-gluing.md) give the
+  exact budgets \(\alpha(G-K)+|R|\) for mobile root covers and
+  \(\alpha(G-K)+|R|-m\) when \(m\) components are assigned pairwise-disjoint
+  reserved root blocks.  They close every configuration with
+  \(|R|-m\leq\alpha(G)-\alpha(G-K)+1\).  For each clique vertex, at most one
+  attached outside component can fail to be complete to it.
 - Joins, universal vertices, clique blow-ups, and the tested substitution
   families collapse rather than preserve the large ratio.
 
@@ -180,6 +188,7 @@ bound.
 | A dominating pair implies \(\gamma_s\leq\alpha+1\). | **Theorem**, from the general dominating-set residual completion bound. |
 | A cut vertex implies \(\gamma_s\leq\alpha+1\) in a connected induced-\(P_5\)-free graph. | **Theorem**, by the constructive rooted-completion argument. |
 | A dominating induced \(P_3\) implies \(\gamma_s\leq\alpha+1\) when \(\alpha\geq3\). | **Theorem**, by the minimum-weight equality construction. |
+| A clique-separator root cover with \(m\) disjoint saved blocks satisfies \(\gamma_s\leq\alpha(G-K)+|R|-m\). | **Theorem**, by rooted and residual completion gluing. |
 | Minimum dominating clique at least three implies \(\gamma_s\leq\alpha\). | **Open structural subclaim**; exact untraced SAT supports it through order 15 at \(\alpha=4\) and order 14 at \(\alpha=5\). |
 | Connected graphs satisfy \(\gamma_s\leq\alpha+1\). | **Open candidate**, under active proof and counterexample attack. |
 | \(4/3\leq c_{\mathrm{opt}}\leq3/2\). | **Theorem**, from the exact witness and the published upper bound. |
@@ -211,6 +220,12 @@ bound.
   with two [independent](referees/dominating-p3-audit-a.md)
   [referee notes](referees/dominating-p3-audit-b.md) and a seeded stress test
   beside it.
+- [`structure/clique-component-gluing.md`](structure/clique-component-gluing.md)
+  proves the root-cover, reserved-root, and disjoint-block gluing theorems for
+  disconnected clique residuals.  Its direct Atlas/random checker is
+  [`referees/verify_clique_component_gluing.py`](referees/verify_clique_component_gluing.py),
+  and the independent proof review is
+  [`referees/clique-component-gluing-audit.md`](referees/clique-component-gluing-audit.md).
 - [`structure/private-clique-obstructions.md`](structure/private-clique-obstructions.md)
   proves the complete-multipartite private-witness lemma and records exact
   counterexamples to discarded shortcuts. Run

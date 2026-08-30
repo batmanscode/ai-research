@@ -236,3 +236,36 @@ dominating clique or a dominating induced `P3`. The `alpha+1` candidate is
 therefore reduced to dominating cliques; orders one and two are already
 closed by the general completion theorem. The sole remaining structural core
 is a dominating clique of order at least three.
+
+## 15. Clique-component gluing
+
+Let `K` be a dominating clique and let `H=G-K` have at least two connected
+components.  Three all-orders gluing theorems now convert attachment covers
+into explicit secure dominating sets.  A mobile root cover `R` costs at most
+`alpha(H)+|R|`.  If designated components are dominated by pairwise-disjoint
+reserved root blocks and the other components use only mobile roots, each
+designated component saves one guard, giving
+
+`gamma_s(G) <= alpha(H)+|R|-m`,
+
+where `m` is the number of saved components.  Since a clique changes
+independence by only `Delta=alpha(G)-alpha(H) in {0,1}`, every such cover with
+`|R|-m<=Delta+1` proves the target `alpha+1` bound.
+
+The proof uses the rooted completion from the cut-vertex theorem.  A clique
+root touching two outside components cannot start an induced rooted `P4`, or
+a neighbor in the second component would extend it to an induced `P5`.
+Rootless local domination then prevents shared-root failures.  The reserved
+blocks use the general residual-completion theorem and are kept immobile for
+all other components.  A further structural lemma shows that each fixed
+clique vertex is incomplete to at most one outside component to which it
+attaches.
+
+A clean-room referee passed every exchange and edge case.  The direct checker
+found zero failures among 21,942 basic, 25,495 one-saving, 37,947 singleton-
+block, and 57,722 general block constructions in the complete Graph Atlas,
+plus 267,692 corresponding randomized constructions.  These counts validate
+the constructions but are not proof ingredients.  The remaining disconnected
+clique branch is therefore an explicit attachment-hypergraph obstruction:
+every low-mobile root cover and disjoint saved-block system must fail its
+budget inequality.
