@@ -140,13 +140,14 @@ The project upgrades a claim only when one of two things happens:
 
 Everything else remains a conjecture, finite evidence, or a failed route.
 
-## 10. Current stopping boundary
+## 10. Previous checkpoint boundary
 
-Independent proof, counterexample, operation, SAT, and referee tracks all
-converged on the same conclusion: no counterexample to
-`gamma_s <= alpha+1` was found, but the all-orders collective-selection lemma
-was not proved. The separate project is therefore frozen as a reproducible
-active-research milestone rather than promoted to a solved theorem.
+At the first reproducible checkpoint, independent proof, counterexample,
+operation, SAT, and referee tracks had found no counterexample to
+`gamma_s <= alpha+1`, but had not proved the all-orders collective-selection
+lemma.  Sections 11 onward record the continuing work past that checkpoint;
+the project is active, not frozen, and no open candidate is promoted to a
+theorem without a complete proof.
 
 ## 11. Structural correction, 29 August 2026
 
@@ -269,3 +270,30 @@ the constructions but are not proof ingredients.  The remaining disconnected
 clique branch is therefore an explicit attachment-hypergraph obstruction:
 every low-mobile root cover and disjoint saved-block system must fail its
 budget inequality.
+
+## 16. Triangle private-region reductions
+
+Fix a dominating triangle `K={a,b,c}` and write `P_a,P_b,P_c` for vertices
+whose unique neighbour on `K` is the indicated hub.  A new all-orders theorem
+shows that an edge between two distinct private regions forces a dominating
+induced `P3`.  The proof starts with a private cross edge, repeatedly turns a
+hypothetical missed path into an induced `C5`, and uses anticomplete cycle
+witnesses to force a final induced `P5`.  The independently refereed proof
+therefore closes this branch through the already proved dominating-path
+theorem.
+
+The unresolved triangle core can consequently assume that `P_a,P_b,P_c` are
+pairwise anticomplete.  Its remaining interactions pass through `M`, the
+vertices adjacent to at least two hubs.  A second lemma handles one such
+interaction: if `m in M_{ij}` sees `y in P_i`, then `y-m-k_j` is an induced
+path that dominates everything outside `P_i`.  When dominating paths have
+already been excluded, this forces an independent witness in `P_i` missed by
+both `m` and `y`.
+
+Direct Graph Atlas checks passed all 521 private-cross-edge instances and all
+1,277 multi/private tuples.  A separate CNF model forbidding every dominating
+induced `P3` in the cross-edge setting was UNSAT through order 14; those
+untraced runs are finite corroboration only.  The remaining task is global:
+combine the local independent-witness charges across `M` without double
+counting, or exploit the alternative one-hub residual completion when the
+naive charge is insufficient.

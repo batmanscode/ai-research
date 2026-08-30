@@ -1,0 +1,23 @@
+{
+  "constraints": {
+    "dominating_triangle": [0, 1, 2],
+    "induced_P5_free": true,
+    "no_dominating_induced_P3": true,
+    "private_cross_edge": [3, 4],
+    "private_vertices": {"0": 3, "1": 4, "2": 5}
+  },
+  "runs": [
+    {"clauses": 976, "order": 6, "status": "UNSAT", "variables": 195},
+    {"clauses": 2642, "order": 7, "status": "UNSAT", "variables": 441},
+    {"clauses": 6066, "order": 8, "status": "UNSAT", "variables": 868},
+    {"clauses": 12367, "order": 9, "status": "UNSAT", "variables": 1548},
+    {"clauses": 23060, "order": 10, "status": "UNSAT", "variables": 2565},
+    {"clauses": 40116, "order": 11, "status": "UNSAT", "variables": 4015},
+    {"clauses": 66022, "order": 12, "status": "UNSAT", "variables": 6006},
+    {"clauses": 103841, "order": 13, "status": "UNSAT", "variables": 8658},
+    {"clauses": 157272, "order": 14, "status": "UNSAT", "variables": 12103}
+  ],
+  "scope": "finite corroboration only; no retained proof traces",
+  "status": "PASS"
+}
+
