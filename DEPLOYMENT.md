@@ -6,11 +6,12 @@ small Coolify application; the portfolio owns the separate research index.
 
 ## Public route contract
 
-The root Dockerfile publishes only the two paper directories:
+The root Dockerfile publishes only the three paper directories:
 
 | Paper | Route |
 |---|---|
 | Secure domination | `/secure-domination-p5-free/` |
+| Sharp secure-domination coefficient | `/secure-domination-optimal-coefficient/` |
 | Protein transfer | `/aggregate-chemistry-transfer/` |
 
 ### Deriving a URL before deployment
@@ -66,6 +67,7 @@ Attach the research subdomain to that resource. For
 `research.sillygoose.fyi`, the intended paper URLs are:
 
 - `https://research.sillygoose.fyi/secure-domination-p5-free/`
+- `https://research.sillygoose.fyi/secure-domination-optimal-coefficient/`
 - `https://research.sillygoose.fyi/aggregate-chemistry-transfer/`
 
 Do not publish those URLs as live until both production routes and their assets
@@ -103,10 +105,11 @@ docker build -t silly-goose-research .
 docker run --rm -p 8080:8080 silly-goose-research
 ```
 
-In another terminal, open both canonical paths or check them directly:
+In another terminal, open all canonical paths or check them directly:
 
 ```bash
 curl -I http://127.0.0.1:8080/secure-domination-p5-free/
+curl -I http://127.0.0.1:8080/secure-domination-optimal-coefficient/
 curl -I http://127.0.0.1:8080/aggregate-chemistry-transfer/
 curl -I http://127.0.0.1:8080/not-a-paper
 ```

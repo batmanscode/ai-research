@@ -16,4 +16,5 @@ nginx.conf
 ```
 
 The animation uses exact graph data rather than a decorative approximation.
-The formal proof and verifier live one directory above.
+The formal proof and verifier live one directory above. The companion sharp-
+coefficient paper is deployed at `/secure-domination-optimal-coefficient/`.

@@ -42,6 +42,14 @@ The two sharp ingredients are:
 The 12-vertex graph does not contradict the published upper bound:
 \(4\leq9/2\). It refutes only the stronger coefficient-one proposal.
 
+## Visual paper
+
+The standalone noob-first site in [`website/`](website/) explains the guard
+game, the exhaustive case split, the decisive private cross-edge closure, and
+how the universal upper proof meets the exact 12-vertex lower witness. The
+planned combined-deployment route is
+`/secure-domination-optimal-coefficient/`; deployment remains owner-managed.
+
 ## A fully solved slice
 
 Since \(\gamma_s\) is integral, the published theorem gives

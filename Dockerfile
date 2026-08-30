@@ -13,6 +13,11 @@ COPY graph/secure-domination-p5-free/website/favicon.png /usr/share/nginx/html/s
 COPY graph/secure-domination-p5-free/website/css /usr/share/nginx/html/secure-domination-p5-free/css
 COPY graph/secure-domination-p5-free/website/js /usr/share/nginx/html/secure-domination-p5-free/js
 
+COPY graph/secure-domination-optimal-coefficient/website/index.html /usr/share/nginx/html/secure-domination-optimal-coefficient/
+COPY graph/secure-domination-optimal-coefficient/website/favicon.png /usr/share/nginx/html/secure-domination-optimal-coefficient/
+COPY graph/secure-domination-optimal-coefficient/website/css /usr/share/nginx/html/secure-domination-optimal-coefficient/css
+COPY graph/secure-domination-optimal-coefficient/website/js /usr/share/nginx/html/secure-domination-optimal-coefficient/js
+
 COPY biology/aggregate-chemistry-transfer/website/index.html /usr/share/nginx/html/aggregate-chemistry-transfer/
 COPY biology/aggregate-chemistry-transfer/website/favicon.png /usr/share/nginx/html/aggregate-chemistry-transfer/
 COPY biology/aggregate-chemistry-transfer/website/css /usr/share/nginx/html/aggregate-chemistry-transfer/css

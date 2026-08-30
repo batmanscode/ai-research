@@ -2,30 +2,28 @@
 
 ## Status
 
-This is an active research package, not yet a finished visual paper. A public
-website should not imply that the exact coefficient has been solved. The
-project becomes a separately deployable paper site only after a global upper
-bound or exact counterexample survives independent audit.
+This is a finished visual paper for the independently audited all-orders
+theorem `gamma_s(G) <= alpha(G)+1`, hence `c_opt=4/3`, on connected
+induced-`P5`-free graphs with `alpha>=3`. The published `3alpha/2` theorem
+remains correct but nonoptimal. Conventional external peer review remains
+pending and must stay visible.
 
-## Future noob-first story
+## Noob-first story
 
-1. Introduce guards, attacks, and one-for-one swaps with a tiny interactive
-   graph before showing notation.
-2. Explain the known interval `4/3 <= c_opt <= 3/2` as a gap between one exact
-   connected family and one published universal theorem.
-3. Let the reader move from `alpha=3` to the unresolved `alpha=4` slice; show
-   why a hypothetical `(4,6)` graph would settle sharpness.
-4. Separate theorem, proof-certified finite search, untraced solver evidence,
-   and conjecture through persistent labels—not color alone.
-5. Turn failed proof routes into a short “why the obvious ideas break” gallery,
-   using the exact graph6 witnesses and the collective cone-`C5` family.
-6. Finish at the precise collective-selection condition, making the open step
-   visible rather than hiding it behind “future work.”
+1. Lead with the closed gap and define secure guarding in ordinary language.
+2. State the additive theorem and the `alpha>=3` arithmetic that yields `4/3`.
+3. Use a deterministic six-step proof map: Bacsó--Tuza split; path; small
+   cliques; triangles; larger no-cross-edge cliques; cross-edge back to path.
+4. Pair the universal upper proof with the exact 12-vertex lower witness.
+5. Keep failed routes short and useful: they explain why the final structural
+   split was needed, without making obsolete searches look like dependencies.
+6. End with exact scope: the coefficient is solved; equality classification,
+   minimum witness order, and conventional peer review are not.
 
 ## Visual language
 
-- Reuse the dark Silly Goose Research Labs paper shell and graph colors from the sibling
-  counterexample site so the projects read as one research family.
+- Reuse the warm-paper Silly Goose Research Labs shell and graph colors from
+  the sibling counterexample site so the projects read as one research family.
 - Reserve red for a failed defense or disproved shortcut, green for a verified
   defense, and amber for finite evidence. Every state also gets a text label.
 - Prefer SVG/Canvas for exact graphs and proof states; do not use generated art
@@ -37,7 +35,7 @@ bound or exact counterexample survives independent audit.
 
 ## Review gate
 
-Before deployment, inspect desktop and mobile screenshots directly, verify all
-displayed numbers against the machine-readable results, then use Gemini Flash
-as a secondary visual/communication review. The working researcher makes the
-final judgment.
+Before deployment, inspect desktop and mobile screenshots directly, exercise
+all six proof-map states, verify every displayed number against the checked
+results, then use Gemini Flash as a secondary visual/communication review. The
+working researcher makes the final judgment.

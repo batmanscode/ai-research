@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A visual explanation of the sharp 4/3 secure-domination theorem for connected induced-P5-free graphs with independence number at least three.">
+  <title>The Sharp 4/3 Secure-Domination Theorem</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the explanation</a>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Silly Goose Research Labs theorem paper home">
+      <span class="brand-mark">SG</span><span class="brand-name">Silly Goose Research Labs</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a class="active" href="index.html">Explainer</a>
+      <a href="https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/optimal-four-thirds-theorem.md">Proof ↗</a>
+      <a href="https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/research-log.md">Log ↗</a>
+      <a href="https://github.com/batmanscode/ai-research">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow">Solved theorem · connected induced-P₅-free graphs · α ≥ 3</p>
+        <h1>The answer is<br><em>exactly 4/3.</em></h1>
+        <p class="lede">How many guards does a network need if every guard must be able to answer an attack without leaving the rest exposed? A published upper bound was 3/2 times a natural graph parameter. The sharp multiplier is smaller: 4/3.</p>
+        <div class="result-equation" aria-label="secure domination number is at most alpha plus one, which is at most four alpha over three">
+          <span>γ<sub>s</sub>(G)</span><b>≤ α(G) + 1</b><i>≤</i><b>4α(G) / 3</b>
+        </div>
+        <p class="equation-key"><strong>γ<sub>s</sub></strong> is the fewest secure guards. <strong>α</strong> is the largest group of mutually nonadjacent vertices. The statement assumes α ≥ 3.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#proof-map">Walk through the proof</a>
+          <a class="button ghost" href="/secure-domination-p5-free/">Meet the sharp example ↗</a>
+        </div>
+      </div>
+      <aside class="hero-note" aria-label="The old coefficient gap is now closed">
+        <p class="mini-label">Old knowledge</p>
+        <div class="old-interval"><span>4/3</span><i></i><span>3/2</span></div>
+        <p class="mini-label">New theorem</p>
+        <div class="closed-value"><strong>4/3</strong><span>lower witness meets upper proof</span></div>
+        <small>The published 3α/2 theorem remains correct. This result proves its coefficient was not optimal on this class.</small>
+      </aside>
+    </section>
+
+    <section class="plain shell" aria-labelledby="problem-title">
+      <div class="section-heading narrow">
+        <p class="eyebrow">First, the game</p>
+        <h2 id="problem-title">A secure guard has to move—and leave no hole behind.</h2>
+      </div>
+      <div class="plain-grid">
+        <article><span class="plain-number">1</span><h3>Cover</h3><p>Every unguarded vertex touches a guard. This is ordinary domination.</p></article>
+        <article><span class="plain-number">2</span><h3>Answer</h3><p>When an unguarded vertex is attacked, one adjacent guard swaps into it.</p></article>
+        <article><span class="plain-number">3</span><h3>Stay safe</h3><p>After that swap, every vertex must still be covered. The smallest team that always can do this is γ<sub>s</sub>.</p></article>
+      </div>
+      <p class="p5-note"><strong>What does P₅-free mean?</strong> The network contains no five-vertex route whose only links are the four consecutive ones. That missing pattern forces surprisingly strong global structure.</p>
+    </section>
+
+    <section id="proof-map" class="proof shell" aria-labelledby="proof-title">
+      <div class="section-heading proof-heading">
+        <div>
+          <p class="eyebrow">Interactive proof map</p>
+          <h2 id="proof-title">Every possible graph walks through one of these doors.</h2>
+        </div>
+        <button id="play-proof" class="icon-button" type="button" aria-label="Play the six-step proof map">▶ Play proof</button>
+      </div>
+      <div class="proof-grid">
+        <div class="proof-stage">
+          <svg id="proof-svg" viewBox="0 0 820 470" role="img" aria-labelledby="map-title map-desc">
+            <title id="map-title">Case map for the sharp four-thirds theorem</title>
+            <desc id="map-desc">A connected induced-P5-free graph has a dominating three-vertex path or a dominating clique. Each path and clique case is closed by one of the proved lemmas.</desc>
+            <defs>
+              <marker id="map-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z"></path></marker>
+            </defs>
+            <g id="proof-lines"></g>
+            <g id="proof-nodes"></g>
+          </svg>
+          <ol class="mobile-map" aria-label="Proof branches in reading order">
+            <li>Connected P₅-free graph</li>
+            <li>Dominating P₃ <b>or</b> dominating clique</li>
+            <li>Path, clique 1–2, and triangle branches close</li>
+            <li>Large clique: no cross-edge closes directly</li>
+            <li>Cross-edge forces a dominating P₃</li>
+            <li>Every branch reaches γ<sub>s</sub> ≤ α + 1</li>
+          </ol>
+          <div class="map-legend"><span><i class="dot current"></i>current step</span><span><i class="dot solved"></i>closed branch</span><span><i class="dot pending"></i>not opened yet</span></div>
+        </div>
+        <div class="proof-panel">
+          <div class="step-tabs" role="tablist" aria-label="Proof-map steps">
+            <button role="tab" aria-selected="true" data-step="0"><span>01</span>Start</button>
+            <button role="tab" aria-selected="false" data-step="1"><span>02</span>Split</button>
+            <button role="tab" aria-selected="false" data-step="2"><span>03</span>Path</button>
+            <button role="tab" aria-selected="false" data-step="3"><span>04</span>Cliques</button>
+            <button role="tab" aria-selected="false" data-step="4"><span>05</span>Bridge</button>
+            <button role="tab" aria-selected="false" data-step="5"><span>06</span>Done</button>
+          </div>
+          <article id="proof-copy" aria-live="polite"></article>
+          <div class="proof-boundary"><strong>Logical dependency</strong><span>The all-orders proof does not depend on bounded SAT searches. Computation checks examples and local lemmas only.</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="meeting shell" aria-labelledby="meeting-title">
+      <div class="section-heading narrow">
+        <p class="eyebrow">Why 4/3 is exact</p>
+        <h2 id="meeting-title">A ceiling is only sharp when something touches it.</h2>
+      </div>
+      <div class="meeting-grid">
+        <article class="bound-card lower">
+          <span class="card-tag">Exact lower witness</span>
+          <div class="big-ratio">4 ÷ 3</div>
+          <h3>The icosahedral complement needs four guards although α = 3.</h3>
+          <p>An exhaustive verifier checks all 220 triples and finds no secure one; 435 four-sets are secure.</p>
+          <a href="/secure-domination-p5-free/">Explore the 12-vertex graph ↗</a>
+        </article>
+        <div class="meet-mark" aria-hidden="true">=</div>
+        <article class="bound-card upper">
+          <span class="card-tag">All-orders upper proof</span>
+          <div class="big-ratio">α + 1</div>
+          <h3>No graph in the class can require more than one guard beyond α.</h3>
+          <p>For α ≥ 3, α + 1 ≤ 4α/3. So every graph stays at or below the witness ratio.</p>
+          <a href="https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/optimal-four-thirds-theorem.md">Read the formal assembly ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="trail shell">
+      <div class="section-heading">
+        <p class="eyebrow">How the proof was found</p>
+        <h2>The wrong turns left useful landmarks.</h2>
+      </div>
+      <ol class="timeline">
+        <li><span>01</span><div><h3>The stronger guess failed</h3><p>The 12-vertex witness disproved γ<sub>s</sub> ≤ α, but exposed the sharp lower ratio 4/3.</p></div></li>
+        <li><span>02</span><div><h3>Easy graph structures fell away</h3><p>Cut vertices, dominating pairs, and dominating three-vertex paths were proved to satisfy γ<sub>s</sub> ≤ α + 1.</p></div></li>
+        <li><span>03</span><div><h3>Cliques became the whole battlefield</h3><p>Triangles were closed first. Larger minimal dominating cliques split into private regions and multi-hub neighbours.</p></div></li>
+        <li><span>04</span><div><h3>A tempting edge lemma broke</h3><p>A 12-vertex SAT witness killed the claim that every dominating edge extends directly to a secure triple. The proof target was changed instead of forced.</p></div></li>
+        <li><span>05</span><div><h3>The last cross edge became a path</h3><p>A private-region edge forces one hub plus its two endpoints to dominate the graph. That drops the final case back into the solved path branch.</p></div></li>
+      </ol>
+      <a class="button ghost" href="https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/research-log.md">Read the full research log ↗</a>
+    </section>
+
+    <section class="evidence shell" aria-labelledby="evidence-title">
+      <div class="evidence-copy">
+        <p class="eyebrow">Evidence boundary</p>
+        <h2 id="evidence-title">A proof, corroboration, and one honest gate.</h2>
+        <p>The theorem is an all-orders mathematical argument. Three independent proof reviews reconstructed its crucial cross-edge case. Finite computation is supporting evidence, not the logical foundation.</p>
+      </div>
+      <div class="evidence-grid" aria-label="Verification summary">
+        <div><strong>3</strong><span>independent proof reviews</span><small>all passed after precision fixes</small></div>
+        <div><strong>11,264</strong><span>exact local models</span><small>structural checker, zero failures</small></div>
+        <div><strong>648</strong><span>cross-edge checks</span><small>each produced the dominating P₃</small></div>
+        <div><strong>Pending</strong><span>conventional peer review</span><small>the repository is the auditable preprint package</small></div>
+      </div>
+    </section>
+
+    <section class="scope shell">
+      <div>
+        <p class="eyebrow">Solved—and not claimed beyond scope</p>
+        <h2>The coefficient question is closed for the published connected α ≥ 3 class.</h2>
+      </div>
+      <ul>
+        <li><strong>Solved:</strong> the best universal coefficient is 4/3.</li>
+        <li><strong>Still open here:</strong> a clean classification of every equality graph.</li>
+        <li><strong>Finite evidence only:</strong> whether the 12-vertex witness is minimum order.</li>
+        <li><strong>Outside the theorem:</strong> α = 2, disconnected graphs, or graphs containing an induced P₅.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-grid">
+      <div><span class="brand-mark">SG</span><p>A Silly Goose Research Labs visual paper. Exact claims, reproducible evidence, visible limits.</p></div>
+      <div><h2>This paper</h2><a href="index.html">Interactive explainer</a><a href="https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/README.md">Report and scope ↗</a><a href="https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/CITATION.cff">Citation ↗</a></div>
+      <div><h2>Sources</h2><a href="https://arxiv.org/abs/2503.08088">Published-bound paper ↗</a><a href="https://doi.org/10.1007/BF02352694">Bacsó–Tuza theorem ↗</a><a href="https://www.emergentmind.com/open-problems/improve-secure-domination-bound-connected-p5-free-graphs#research-findings">Emergent Mind finding ↗</a></div>
+    </div>
+  </footer>
+  <script src="js/proof-map.js"></script>
+</body>
+</html>

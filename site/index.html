@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="A certified 12-vertex counterexample establishing a 4/3 lower bound for secure domination in connected P5-free graphs.">
+  <meta name="description" content="The certified 12-vertex witness behind the sharp 4/3 secure-domination coefficient for connected P5-free graphs.">
   <title>A 4/3 Lower Bound for Secure Domination in Connected P5-Free Graphs</title>
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="stylesheet" href="css/site.css">
@@ -26,7 +26,7 @@
       <div class="hero-copy">
         <p class="eyebrow">Exact theorem · Connected P₅-free graphs</p>
         <h1>A 4/3 lower bound<br><em>for secure domination.</em></h1>
-        <p class="lede">Secure guards must answer attacks without leaving the network exposed. A certified 12-vertex counterexample proves that the best universal multiplier for this family of graphs is at least 4/3.</p>
+        <p class="lede">Secure guards must answer attacks without leaving the network exposed. This certified 12-vertex graph proves that the best universal multiplier is at least 4/3; a companion all-orders theorem now proves it is exactly 4/3.</p>
         <div class="result-equation" aria-label="secure domination number four is greater than independence number three">
           <span>γ<sub>s</sub>(G)</span><b>= 4</b><i>&gt;</i><span>α(G)</span><b>= 3</b>
         </div>
@@ -38,11 +38,11 @@
       </div>
       <aside class="hero-note">
         <span class="note-number">4/3</span>
-        <p>Any universal coefficient must now be at least this large.</p>
-        <div class="interval" aria-label="known coefficient interval from four thirds to three halves">
-          <span style="--x:0%">4/3</span><span style="--x:100%">3/2</span>
+        <p>This witness supplies the sharp lower endpoint.</p>
+        <div class="interval" aria-label="sharp coefficient four thirds compared with the older three halves upper bound">
+          <span style="--x:0%">4/3 exact</span><span style="--x:100%">3/2 old</span>
         </div>
-        <small>The best universal coefficient remains open.</small>
+        <small>The companion proof closes the former gap at 4/3.</small>
       </aside>
     </section>
 
@@ -144,7 +144,7 @@
     <section class="plain shell" aria-labelledby="status-title">
       <div class="section-heading narrow">
         <p class="eyebrow">The status, precisely</p>
-        <h2 id="status-title">The counterexample is proved. Two larger questions are not.</h2>
+        <h2 id="status-title">The counterexample and sharp coefficient are proved.</h2>
       </div>
       <div class="plain-grid">
         <article>
@@ -158,19 +158,19 @@
           <p>Searches exclude smaller examples, but this repository does not include a checkable SAT proof trace. Minimum order is therefore not claimed as a theorem here.</p>
         </article>
         <article>
-          <span class="plain-number">Open</span>
+          <span class="plain-number">Proved</span>
           <h3>The optimal coefficient</h3>
-          <p>The exact answer remains somewhere between 4/3 and 3/2. The counterexample fixes the lower end, not the final value.</p>
+          <p>A companion all-orders proof gives γ<sub>s</sub> ≤ α + 1 ≤ 4α/3 for α ≥ 3. This witness attains 4/3, so the coefficient is exact.</p>
         </article>
       </div>
     </section>
 
     <section class="open-gap shell">
       <div>
-        <p class="eyebrow">What remains open</p>
-        <h2>The answer lives somewhere between <span>4/3</span> and <span>3/2</span>.</h2>
+        <p class="eyebrow">The sequel</p>
+        <h2>The former gap closes at <span>4/3</span>.</h2>
       </div>
-      <p>The counterexample rules out coefficient 1; it does not contradict the published 3/2 theorem or show that bound is optimal. Finding an α = 4 graph with γ<sub>s</sub> = 6 would settle optimality; targeted searches found no such graph through order 14.</p>
+      <p>The counterexample ruled out coefficient 1 without contradicting the published 3/2 theorem. The continuation proves the matching upper bound for every connected induced-P₅-free graph with α ≥ 3. <a class="text-link" href="/secure-domination-optimal-coefficient/">Walk through the sharp theorem ↗</a></p>
     </section>
 
     <section class="other-result shell">
@@ -191,7 +191,7 @@
   <footer>
     <div class="shell footer-grid">
       <div><span class="brand-mark">SG</span><p>Verified results, useful failures, and reproducible evidence.</p></div>
-      <div><h2>Research</h2><a href="index.html">Graph result</a><a href="biology.html">Biology result</a></div>
+      <div><h2>Research</h2><a href="index.html">Graph witness</a><a href="/secure-domination-optimal-coefficient/">Sharp theorem ↗</a><a href="biology.html">Biology result</a></div>
       <div><h2>Artifacts</h2><a href="https://github.com/batmanscode/ai-research">GitHub repository ↗</a><a href="https://www.emergentmind.com/open-problems/improve-secure-domination-bound-connected-p5-free-graphs#research-findings">Published Emergent Mind finding ↗</a></div>
     </div>
   </footer>

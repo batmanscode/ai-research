@@ -25,9 +25,10 @@ source of scientific truth.
 
 - Never commit credentials, sessions, raw private conversations, or external-
   model payloads.
-- Do not strengthen the graph result beyond the exact certified theorem. The
-  coefficient-one strengthening is false; the optimum in `[4/3, 3/2]` remains
-  open.
+- Do not strengthen the graph result beyond the exact certified theorem. For
+  connected induced-`P5`-free graphs with `alpha>=3`, the proved bound is
+  `gamma_s<=alpha+1` and the optimal coefficient is exactly `4/3`. The
+  published `3alpha/2` theorem remains true but nonoptimal on this class.
 - Do not describe the biology analysis as untouched confirmation, a causal
   mechanism, or an official leaderboard result.
 - Keep `SPEC_rough.md` append-only. Update live documents only when their truth

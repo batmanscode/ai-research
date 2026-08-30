@@ -72,8 +72,11 @@ records the next rigorous boundary:
 - the exhaustive Bacsó--Tuza assembly proves `gamma_s <= alpha+1` and the
   exact optimum coefficient `4/3`.
 
-The continuation is now a solved theorem package. Its dedicated visual paper
-is the next release artifact; production deployment remains owner-managed.
+The continuation is now a solved theorem package with its own noob-first
+interactive visual paper at
+`graph/secure-domination-optimal-coefficient/website/`. The planned combined
+route is `/secure-domination-optimal-coefficient/`; production deployment
+remains owner-managed.
 
 Status boundary: the existence and secure-domination calculation for this
 12-vertex graph are an exact theorem/counterexample, not a conjecture. The
@@ -109,20 +112,25 @@ domination in plain language and contains
 a four-step SVG story: icosahedron, complement, failed triple, secure four-set.
 Tabs and an optional timed playback control change the exact graph state.
 
+`graph/secure-domination-optimal-coefficient/website/index.html` explains the
+sharp `4/3` theorem with a deterministic six-step proof map: the Bacsó--Tuza
+split, path theorem, small and triangular cliques, larger pairwise-private
+cliques, and the cross-edge return to a dominating path.
+
 `biology/aggregate-chemistry-transfer/website/index.html` explains the corrected
 reference state, three held-backbone comparisons, within-count signal,
 invariance hypothesis, failed position-specific structural transfer, and
 evidence boundary.
 
 Each paper owns its first-party assets and can be deployed without the other.
-Both pages use relative first-party assets, semantic headings, a skip link,
+All three pages use relative first-party assets, semantic headings, a skip link,
 responsive layouts, visible text labels in addition to color, and reduced-
 motion handling. External links point to stable repository or source URLs.
 
 ## Deployment
 
 Deployment is owner-managed. The canonical release uses the root Dockerfile to
-serve both project-owned `website/` sources beneath stable path prefixes in one
+serve all three project-owned `website/` sources beneath stable path prefixes in one
 Coolify application. It uses the unprivileged nginx image's default static
 configuration on port 8080, with no root homepage, custom health endpoint, or
 automatic deployment workflow. See `DEPLOYMENT.md`.
