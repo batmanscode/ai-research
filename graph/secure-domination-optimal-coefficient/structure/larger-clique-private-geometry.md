@@ -17,8 +17,9 @@ are nonempty.  This note proves two all-orders results.
 1. If the (P_i) are pairwise anticomplete, then
    (gamma_s(G)\leq\alpha(G)+1), for every (t\geq3).
 2. If (t\geq4), all private-region cross edges and nonedges admit one
-   globally compatible partition.  This rigidifies, but does not yet close,
-   the remaining multi-part cross-edge branch.
+   globally compatible partition.  The subsequent
+   [cross-edge closure](optimal-four-thirds-theorem.md) uses that partition
+   to finish the multi-part branch and prove the sharp global theorem.
 
 ## 1. The bad multi-neighbour completion
 
@@ -290,14 +291,15 @@ unrestricted, even between vertices assigned to the same global cross part.
 Equation (13) is not a claim that the whole induced graph (G[P]) is an
 ordinary complete multipartite graph.
 
-## 6. Exact remaining branch
+## 6. Cross-edge branch and subsequent closure
 
 The pairwise-anticomplete private branch is solved for every clique order.
 For (t\geq4), the only private-region geometry left has at least two global
 cross parts.  Every cross-region pair in different parts is an edge, while
 every cross-region pair in one part is a nonedge.
 
-The remaining exchange must simultaneously control arbitrary within-region
-edges, the multi-neighbour set (M), and parts that do not meet every private
-region.  No claim that this multi-part cross-edge branch is solved is made
-here.
+The [sharp four-thirds theorem](optimal-four-thirds-theorem.md) closes this
+branch.  A cross edge (xy), together with one endpoint hub, forms a
+dominating induced (P_3): the global partition forces every third private
+region to see both endpoints and excludes the endpoint part from the opposite
+private region, while a separate induced-path argument covers (M).

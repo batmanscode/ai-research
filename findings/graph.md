@@ -1,4 +1,4 @@
-# A counterexample and structural reductions narrow secure domination in P5-free graphs
+# The sharp secure-domination coefficient for connected P5-free graphs
 
 Let \(I\) be the icosahedral graph and \(G=\overline I\). Exact exhaustive
 verification gives
@@ -9,12 +9,13 @@ G\text{ connected and induced-}P_5\text{-free},\qquad
 \]
 
 Therefore the natural strengthening \(\gamma_s(G)\leq\alpha(G)\) is false for
-connected induced-\(P_5\)-free graphs with \(\alpha\geq3\). Together with the
-published \(3\alpha/2\) upper bound, the best universal coefficient \(c\)
-now satisfies
+connected induced-\(P_5\)-free graphs with \(\alpha\geq3\).  The continuation
+now proves the sharp all-orders bound
 
 \[
-\frac43\leq c\leq\frac32.
+\gamma_s(G)\leq\alpha(G)+1,
+\qquad
+c_{\mathrm{opt}}=\frac43.
 \]
 
 The published \(3\alpha/2\) theorem remains valid: this example satisfies
@@ -35,8 +36,9 @@ unsatisfiability trace.
 
 The graph construction itself is not new: Bonamy et al. use the complement of
 the icosahedron in work on induced saturation. The contribution here is the
-secure-domination calculation and its coefficient lower bound. The exact
-coefficient between \(4/3\) and \(3/2\) remains open.
+secure-domination calculation, the structural proof, and the resulting sharp
+coefficient.  The published \(3\alpha/2\) theorem remains valid but is not
+optimal on the connected \(\alpha\geq3\) class.
 
 ## Structural progress after the counterexample
 
@@ -74,9 +76,7 @@ tight icosahedral complement, and 366,730 non-Atlas constructions.
 
 The Bacsó–Tuza structure theorem says that every connected induced-\(P_5\)-free
 graph has a dominating clique or a dominating induced \(P_3\). Consequently,
-the global \(\alpha+1\) candidate is now reduced to one structural core:
-inclusion-minimal dominating cliques of order at least four. This is genuine progress, not a
-solution of the remaining clique branch or of the exact coefficient.
+the dominating-path theorem and the clique results below exhaust the class.
 
 Inside that clique core, two further reductions are now proof-grade.  Rooted
 secure completions can be glued across disconnected components of `G-K`, with
@@ -102,10 +102,18 @@ nested, have order at most two, and the two-hub case supplies one extra common
 hub saving, proving `gamma_s(G)<=alpha(G)+1` for every clique order.  When
 `|K|>=4`, the private cross-edge geometry also has one globally compatible
 partition: between distinct private regions, adjacency is exactly membership
-in different global cross parts.  The only remaining core is the multi-part
-cross-edge exchange, with arbitrary within-region edges and multi-hub
-neighbours.  These are independently refereed all-orders results, not a
-solution of that final core.
+in different global cross parts.  A final cross-edge lemma closes that core:
+every third private region sees both endpoints; the endpoint part cannot meet
+the opposite private region; and all multi-hub neighbours are covered.
+Therefore one endpoint hub together with the cross edge is a dominating
+induced `P3`.  The no-cross-edge alternative is exactly the solved pairwise-
+private branch.
+
+Combining these cases with Bacsó--Tuza proves
+`gamma_s(G)<=alpha(G)+1` for every connected induced-`P5`-free graph with
+`alpha>=3`.  Since `alpha+1<=4alpha/3` and the icosahedral complement attains
+`4/3`, the coefficient is exactly `4/3`.  Multiple independent referees
+passed the all-orders proof; finite audits are corroborating only.
 
 - [Interactive visual paper](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-p5-free/website/index.html)
 - [Proof and precise scope](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-p5-free/README.md)
@@ -122,4 +130,5 @@ solution of that final core.
 - [Full dominating-triangle theorem](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/triangle-bad-m.md)
 - [Connected residual and higher-order clique reductions](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/connected-clique-residual.md)
 - [Pairwise-private closure and global cross-partition theorem](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/larger-clique-private-geometry.md)
+- [Sharp four-thirds theorem](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/optimal-four-thirds-theorem.md)
 - [Bacsó–Tuza structural theorem](https://doi.org/10.1007/BF02352694)

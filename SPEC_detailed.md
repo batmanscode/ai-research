@@ -35,9 +35,10 @@ For graph6 `KtiSYtlXqwmT`, the complement of the icosahedral graph:
 - 435 secure four-sets, including `{0,1,2,3}`;
 - secure domination number `gamma_s = 4`.
 
-Therefore the proposed coefficient-one strengthening is false, and the best
-universal coefficient for the published connected class lies in `[4/3, 3/2]`.
-The exact coefficient remains open. The graph construction itself is not
+Therefore the proposed coefficient-one strengthening is false.  The
+continuation project now proves that the best universal coefficient for the
+published connected class with `alpha>=3` is exactly `4/3`. The graph
+construction itself is not
 claimed as new. The published `3alpha/2` theorem remains valid because the
 example satisfies `4 <= 4.5`; only the stronger coefficient-one candidate is
 refuted.
@@ -66,17 +67,20 @@ records the next rigorous boundary:
 - for clique order at least four, one global cross partition determines every
   edge and nonedge between distinct private regions; within-region edges
   remain unrestricted; and
-- `gamma_s <= alpha+1` and the exact optimum coefficient remain open.
+- every private-cross-edge branch at a larger dominating clique collapses to
+  a dominating induced `P3`; and
+- the exhaustive Bacsó--Tuza assembly proves `gamma_s <= alpha+1` and the
+  exact optimum coefficient `4/3`.
 
-The continuation is an active research package, not a third claimed solved
-paper. It has no deployable visual paper yet; one should be created only when
-the global bound is proved or an exact global counterexample is found.
+The continuation is now a solved theorem package. Its dedicated visual paper
+is the next release artifact; production deployment remains owner-managed.
 
 Status boundary: the existence and secure-domination calculation for this
 12-vertex graph are an exact theorem/counterexample, not a conjecture. The
 stronger statement that order 12 is globally minimum remains finite SAT
 evidence in this repository because no checkable unsatisfiability trace is
-included. The exact optimum coefficient also remains open.
+included. The exact optimum coefficient is now proved to be `4/3` in the
+continuation project.
 
 ## Biology result
 
@@ -125,9 +129,8 @@ automatic deployment workflow. See `DEPLOYMENT.md`.
 
 ## Known limitations and open gates
 
-- The graph coefficient between `4/3` and `3/2` is unresolved.
-- The remaining Bacsó--Tuza core is the multi-part private cross-edge exchange
-  for an inclusion-minimal dominating clique of order at least four.
+- The sharp graph coefficient theorem has not yet undergone conventional
+  external peer review, despite multiple independent proof audits.
 - The proof-carrying finite coefficient searches do not imply an all-orders
   theorem; higher-order frontier runs beyond order 12 retain solver results
   but not proof traces.

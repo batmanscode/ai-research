@@ -57,10 +57,11 @@ triple plus a complete defense map for a secure four-set. Symmetry compresses
 the 220 triples into five orbits, but the machine-readable certificate keeps
 all 220 cases.
 
-## 6. What remains open
+## 6. Subsequent resolution
 
-The counterexample establishes \(c_{\rm opt}\geq4/3\). The published theorem
-gives \(c_{\rm opt}\leq3/2\). A connected induced-\(P_5\)-free graph with
-\(\alpha=4\) and \(\gamma_s=6\) would prove \(3/2\) optimal. Exact SAT searches
-found no such graph through order 14. Those finite UNSAT results guide the next
-search, but they are not an all-orders theorem.
+This counterexample establishes \(c_{\rm opt}\geq4/3\).  The sibling
+`secure-domination-optimal-coefficient` project subsequently proves the
+all-orders bound \(\gamma_s\leq\alpha+1\) for connected induced-\(P_5\)-free
+graphs with \(\alpha\geq3\).  Hence \(c_{\rm opt}=4/3\) exactly.  The earlier
+finite UNSAT searches were useful proof guidance but are not dependencies of
+that theorem.

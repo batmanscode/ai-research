@@ -20,11 +20,13 @@ G\text{ is connected and induced-}P_5\text{-free},\qquad
 Consequently the natural coefficient-one strengthening
 \(\gamma_s(G)\leq\alpha(G)\) is false for connected induced-\(P_5\)-free
 graphs with \(\alpha\geq3\). If \(c_{\rm opt}\) denotes the best universal
-coefficient in \(\gamma_s(G)\leq c\alpha(G)\) for that class, this example and
-the published upper bound give
+coefficient in \(\gamma_s(G)\leq c\alpha(G)\) for that class, this example
+gives the sharp lower bound.  The
+[continuation theorem](../secure-domination-optimal-coefficient/) proves the
+matching upper bound:
 
 \[
-\boxed{\frac43\leq c_{\rm opt}\leq\frac32}.
+\boxed{c_{\rm opt}=\frac43}.
 \]
 
 This does **not** contradict the published \(3\alpha/2\) theorem: for this
@@ -42,7 +44,7 @@ a conjecture. Three claims must be kept separate:
 |---|---|
 | This specific 12-vertex graph is connected, induced-\(P_5\)-free, and satisfies \(\alpha=3\), \(\gamma_s=4\). | **Proved exactly** by the exhaustive verifier and certificate below. |
 | No smaller graph has the same counterexample property. | **Strong finite computational evidence**, but not promoted to a theorem here because the order-11 SAT proof trace is not included. |
-| The published \(3/2\) coefficient is optimal. | **Open.** The current rigorous interval is \([4/3,3/2]\). |
+| The optimal coefficient on the connected \(\alpha\geq3\) class. | **Exactly \(4/3\)**, by the continuation's \(\alpha+1\) theorem and this equality witness. |
 
 Thus “12-vertex” describes the order of the proved witness. It does not, by
 itself, assert that 12 is the minimum possible order.
@@ -85,9 +87,9 @@ Gupta, Henning, Maniya, and Pradhan proved
 \(\gamma_s(G)\leq3\alpha(G)/2\) for every induced-\(P_5\)-free graph and asked
 whether connectivity together with \(\alpha\geq3\) permits a better bound.
 This example answers one important subquestion: the coefficient cannot be
-reduced all the way to 1. It does **not** decide whether the published
-coefficient \(3/2\) can be improved to a value strictly between \(4/3\) and
-\(3/2\).
+reduced all the way to 1, and it supplies the sharp lower endpoint.  The
+continuation project now proves \(\gamma_s\leq\alpha+1\), showing that the
+published coefficient improves all the way to the exact value \(4/3\).
 
 The graph construction itself is not claimed as new. Bonamy et al. previously
 used the complement of the icosahedron as a \(P_5\)-induced-saturated graph.
