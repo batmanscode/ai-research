@@ -163,6 +163,13 @@ finite hypothesis-mining evidence.
   [multi-region absorption lemma](structure/triangle-multi-absorption.md)
   turns every such edge into a concrete independent-witness charge in that
   region; globally coupling those charges is still open.
+- For any nonempty clique `K`, a secure set of `G-K` lifts through one clique
+  hub.  Degawa--Saito's theorem therefore closes every case in which `G-K`
+  is induced-`C5`-free.  In the remaining triangle branch, the
+  [bad-multi-neighbour completion](structure/triangle-bad-m.md) replaces all
+  of `M` by an explicit obstruction set `B_X`.  If the three private regions
+  already contribute `alpha(G)` independent vertices, `B_X` is a clique and
+  one extra guard proves `gamma_s<=alpha+1`.
 - Joins, universal vertices, clique blow-ups, and the tested substitution
   families collapse rather than preserve the large ratio.
 
@@ -170,7 +177,9 @@ The remaining proof bottleneck is now entirely a collective packing/exchange
 problem on the dominating-clique side of the standard connected-
 \(P_5\)-free structural split.  For a triangle core, singleton-private
 regions may be assumed pairwise anticomplete, so the unresolved coupling is
-concentrated in the multi-neighbour region.  A minimum dominating clique of
+concentrated in the multi-neighbour region.  It must also have an induced
+`C5` in `G-K` and strict independence gain beyond the three private regions.
+A minimum dominating clique of
 size at most two already gives
 \(\gamma_s\leq\alpha+1\) from the general
 \(\gamma_s\leq\gamma+\alpha-1\) bound. Larger cliques require selecting
@@ -206,6 +215,8 @@ bound.
 | A clique-separator root cover with \(m\) disjoint saved blocks satisfies \(\gamma_s\leq\alpha(G-K)+|R|-m\). | **Theorem**, by rooted and residual completion gluing. |
 | A private cross edge at a dominating triangle forces a dominating induced \(P_3\). | **Theorem**, by the induced-\(C_5\) witness argument and independent referee audit. |
 | A multi/private edge at a dominating triangle leaves undominated vertices only in its source private region. | **Theorem**, by the multi-region absorption lemma. |
+| A clique with induced-`C5`-free outside graph satisfies \(\gamma_s\leq\alpha+1\). | **Theorem**, by the one-hub lift and Degawa--Saito. |
+| A dominating triangle with private budget \(\sum_k\alpha(P_k)=\alpha(G)\) satisfies \(\gamma_s\leq\alpha+1\). | **Theorem**, by the bad-`M` completion and tight-budget clique lemma. |
 | Minimum dominating clique at least three implies \(\gamma_s\leq\alpha\). | **Open structural subclaim**; exact untraced SAT supports it through order 15 at \(\alpha=4\) and order 14 at \(\alpha=5\). |
 | Connected graphs satisfy \(\gamma_s\leq\alpha+1\). | **Open candidate**, under active proof and counterexample attack. |
 | \(4/3\leq c_{\mathrm{opt}}\leq3/2\). | **Theorem**, from the exact witness and the published upper bound. |
@@ -254,6 +265,18 @@ bound.
 - [`structure/triangle-multi-absorption.md`](structure/triangle-multi-absorption.md)
   proves the local multi/private absorption lemma.  Its direct Atlas audit is
   [`referees/verify_triangle_multi_absorption.py`](referees/verify_triangle_multi_absorption.py).
+- [`structure/triangle-bad-m.md`](structure/triangle-bad-m.md) proves the
+  one-hub `C5`-free residual corollary, bad-`M` completion, and tight-budget
+  triangle theorem.  The independent proof audit is
+  [`referees/triangle-bad-m-audit.md`](referees/triangle-bad-m-audit.md), and
+  [`referees/verify_triangle_bad_m.py`](referees/verify_triangle_bad_m.py)
+  exercises 11,473 independently generated constructions including
+  nonvacuous tight examples.
+- The exact 10-vertex counterexample to a discarded global packing shortcut
+  is checked by
+  [`referees/verify_triangle_packing_obstruction.py`](referees/verify_triangle_packing_obstruction.py)
+  and documented in its
+  [independent audit](referees/triangle-packing-obstruction-audit.md).
 - [`structure/private-clique-obstructions.md`](structure/private-clique-obstructions.md)
   proves the complete-multipartite private-witness lemma and records exact
   counterexamples to discarded shortcuts. Run
