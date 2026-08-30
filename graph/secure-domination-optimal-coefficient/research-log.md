@@ -369,3 +369,49 @@ other checked 12,848 residual choices and 13,016 independent bad sets across
 the complete Graph Atlas and 2,000 larger `P5`-free random cores.  The proof
 has no computational dependency.  The remaining Bacsó--Tuza branch is an
 inclusion-minimal dominating clique of order at least four.
+
+## 19. Connected residual and the higher-order clique obstruction
+
+Let `K` be a dominating clique in a smallest counterexample and suppose
+`H=G-K` is connected.  Since `K` is a clique, deleting it changes the
+independence number by at most one.  A secure set of `H` lifts through one
+hub of `K`; combining this with smallest-counterexample minimality forces
+
+`alpha(H)=alpha(G)` and `gamma_s(H)=alpha(H)+1`.
+
+Thus the connected residual preserves the full independence number and
+carries exactly one unit of secure-domination excess.  It must contain an
+induced `C5`, and every maximum independent set of `H` dominates every hub.
+An earlier attempt to type the resulting bad cycles silently applied a dense
+attachment lemma to hubs not known to touch the cycle.  An explicit
+13-vertex model exposed the gap.  All typed-cycle counts and the resulting
+`n>=18` claim were withdrawn; none enters the current theorem chain.
+
+The triangle bad-set construction does extend meaningfully to a dominating
+clique of arbitrary order `t` when its singleton-private regions are
+pairwise anticomplete.  For an independent set in the exact bad set, every
+active vertex is anticomplete to private residual cliques at seen hubs and
+complete to all but one of the private residual cliques at missed hubs.
+Two active vertices with incomparable missed-hub sets expose an induced
+`P5`, so those sets are nested.
+
+If `f` is the size of the largest active missed set, an exact independent-set
+count and the bad-set completion give
+
+`gamma_s(G) <= alpha(G)+f`, with `0<=f<=t-2`.
+
+This recovers the full triangle theorem at `t=3` and closes every larger
+pairwise-private instance with `f<=1`.  A local `K4` construction shows that
+`f=2` is possible in a `P5`-free graph; it has cut vertices and therefore
+lies outside the remaining global core.  Any all-orders exclusion of `f>=2`
+must genuinely use 2-connectivity or the clique-component machinery.
+
+In the complementary cross-edge geometry, every arbitrary choice of one
+private witness per hub induces a complete multipartite graph: an edge
+missed by a third witness creates an induced `P5` through their private hubs.
+The statement is per transversal.  A single compatible global partition of
+all private vertices has not been established.
+
+An independent referee checked every induced-path chord, the nesting
+quantifiers, and the `alpha+f` accounting.  These are all-orders reductions,
+not a proof of the remaining `|K|>=4` case.

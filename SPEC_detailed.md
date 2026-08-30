@@ -53,8 +53,16 @@ records the next rigorous boundary:
   graph was found through order 15 at `alpha=4` or order 14 at `alpha=5`;
 - both order-12 UNSAT formulas have retained CNF/DRUP traces independently
   checked through the empty clause;
-- the bad-cycle, dominating-cycle, favorable dominating-path,
-  private-witness, and dominating-clique reductions are theorem-level; and
+- the cut-vertex, dominating-pair, dominating-induced-`P3`, and full
+  dominating-triangle branches satisfy `gamma_s <= alpha+1` by all-orders
+  proofs;
+- by the Bacsó--Tuza split, only inclusion-minimal dominating cliques of order
+  at least four remain;
+- a connected residual behind a smallest counterexample satisfies
+  `alpha(G-K)=alpha(G)` and `gamma_s(G-K)=alpha(G-K)+1`;
+- in the pairwise-private larger-clique branch, active missed-hub sets are
+  nested and give the parameterized theorem `gamma_s <= alpha+f`; every
+  arbitrary private transversal is complete multipartite; and
 - `gamma_s <= alpha+1` and the exact optimum coefficient remain open.
 
 The continuation is an active research package, not a third claimed solved

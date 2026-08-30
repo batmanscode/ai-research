@@ -172,6 +172,15 @@ finite hypothesis-mining evidence.
   fits the `alpha+1` budget.  Consequently, every connected induced-`P5`-free
   graph with `alpha>=3` and a dominating triangle satisfies the candidate
   bound.
+- If a smallest counterexample has a dominating clique `K` with connected
+  residual `H=G-K`, then the residual is exactly tight:
+  `alpha(H)=alpha(G)` and `gamma_s(H)=alpha(H)+1`.  In the pairwise-
+  anticomplete private-region branch for `|K|=t`, active bad vertices have
+  nested missed-hub sets.  If the largest such set has size `f`, the
+  [higher-order clique reduction](structure/connected-clique-residual.md)
+  gives `gamma_s(G)<=alpha(G)+f`.  Thus only `f>=2` can remain when `t>=4`.
+  Every arbitrary private transversal is complete multipartite, sharply
+  constraining the complementary cross-edge branch.
 - Joins, universal vertices, clique blow-ups, and the tested substitution
   families collapse rather than preserve the large ratio.
 
@@ -217,6 +226,9 @@ bound.
 | A clique with induced-`C5`-free outside graph satisfies \(\gamma_s\leq\alpha+1\). | **Theorem**, by the one-hub lift and Degawa--Saito. |
 | A dominating triangle with private budget \(\sum_k\alpha(P_k)=\alpha(G)\) satisfies \(\gamma_s\leq\alpha+1\). | **Theorem**, by the bad-`M` completion and tight-budget clique lemma. |
 | A dominating triangle implies \(\gamma_s\leq\alpha+1\) for connected induced-\(P_5\)-free graphs with \(\alpha\geq3\). | **Theorem**, by the global common-two lemma plus the solved pair/path/cross-edge branches. |
+| A connected residual behind a smallest counterexample satisfies \(\alpha(G-K)=\alpha(G)\) and \(\gamma_s(G-K)=\alpha(G-K)+1\). | **Theorem**, by the one-hub lift and smallest-counterexample equality. |
+| In the pairwise-private \(K_t\) branch, nested active missed sets of maximum size \(f\) imply \(\gamma_s\leq\alpha+f\). | **Theorem**; the target follows in this branch when \(f\leq1\), while \(f\geq2\) remains open. |
+| Every arbitrary transversal of singleton-private regions is complete multipartite. | **Theorem**; the partition is per transversal, not yet one global partition of all private vertices. |
 | Minimum dominating clique at least three implies \(\gamma_s\leq\alpha\). | **Open structural subclaim**; exact untraced SAT supports it through order 15 at \(\alpha=4\) and order 14 at \(\alpha=5\). |
 | Connected graphs satisfy \(\gamma_s\leq\alpha+1\). | **Open candidate**, under active proof and counterexample attack. |
 | \(4/3\leq c_{\mathrm{opt}}\leq3/2\). | **Theorem**, from the exact witness and the published upper bound. |
@@ -280,6 +292,12 @@ bound.
   [`referees/verify_dominating_triangle.py`](referees/verify_dominating_triangle.py)
   checks 12,848 residual choices and 13,016 independent bad sets across the
   Graph Atlas and 2,000 larger `P5`-free random cores.
+- [`structure/connected-clique-residual.md`](structure/connected-clique-residual.md)
+  proves the connected-residual equality, nested missed-hub reduction,
+  parameterized `alpha+f` bound, and per-transversal complete-multipartite
+  theorem for the remaining larger-clique core.  The line-by-line independent
+  review is
+  [`referees/connected-clique-residual-audit.md`](referees/connected-clique-residual-audit.md).
 - The exact 10-vertex counterexample to a discarded global packing shortcut
   is checked by
   [`referees/verify_triangle_packing_obstruction.py`](referees/verify_triangle_packing_obstruction.py)
