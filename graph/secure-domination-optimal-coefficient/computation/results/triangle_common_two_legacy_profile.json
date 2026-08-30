@@ -1,0 +1,209 @@
+{
+  "counterexamples": [],
+  "profile_sets_per_failed_clique": 127,
+  "rows": [
+    {
+      "U0_candidate_profiles": 0,
+      "U1_candidate_profiles": 0,
+      "survivors": 0,
+      "types": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "U0_candidate_profiles": 0,
+      "U1_candidate_profiles": 1,
+      "survivors": 0,
+      "types": [
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "U0_candidate_profiles": 1,
+      "U1_candidate_profiles": 0,
+      "survivors": 0,
+      "types": [
+        3,
+        3,
+        6
+      ]
+    },
+    {
+      "U0_candidate_profiles": 0,
+      "U1_candidate_profiles": 0,
+      "survivors": 0,
+      "types": [
+        3,
+        3,
+        7
+      ]
+    },
+    {
+      "U0_candidate_profiles": 0,
+      "U1_candidate_profiles": 7,
+      "survivors": 0,
+      "types": [
+        3,
+        5,
+        5
+      ]
+    },
+    {
+      "U0_candidate_profiles": 1,
+      "U1_candidate_profiles": 1,
+      "survivors": 0,
+      "types": [
+        3,
+        5,
+        6
+      ]
+    },
+    {
+      "U0_candidate_profiles": 0,
+      "U1_candidate_profiles": 4,
+      "survivors": 0,
+      "types": [
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "U0_candidate_profiles": 7,
+      "U1_candidate_profiles": 0,
+      "survivors": 0,
+      "types": [
+        3,
+        6,
+        6
+      ]
+    },
+    {
+      "U0_candidate_profiles": 4,
+      "U1_candidate_profiles": 0,
+      "survivors": 0,
+      "types": [
+        3,
+        6,
+        7
+      ]
+    },
+    {
+      "U0_candidate_profiles": 2,
+      "U1_candidate_profiles": 2,
+      "survivors": 0,
+      "types": [
+        3,
+        7,
+        7
+      ]
+    },
+    {
+      "U0_candidate_profiles": 0,
+      "U1_candidate_profiles": 127,
+      "survivors": 0,
+      "types": [
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "U0_candidate_profiles": 1,
+      "U1_candidate_profiles": 7,
+      "survivors": 0,
+      "types": [
+        5,
+        5,
+        6
+      ]
+    },
+    {
+      "U0_candidate_profiles": 0,
+      "U1_candidate_profiles": 112,
+      "survivors": 0,
+      "types": [
+        5,
+        5,
+        7
+      ]
+    },
+    {
+      "U0_candidate_profiles": 7,
+      "U1_candidate_profiles": 1,
+      "survivors": 0,
+      "types": [
+        5,
+        6,
+        6
+      ]
+    },
+    {
+      "U0_candidate_profiles": 4,
+      "U1_candidate_profiles": 4,
+      "survivors": 0,
+      "types": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "U0_candidate_profiles": 2,
+      "U1_candidate_profiles": 100,
+      "survivors": 0,
+      "types": [
+        5,
+        7,
+        7
+      ]
+    },
+    {
+      "U0_candidate_profiles": 127,
+      "U1_candidate_profiles": 0,
+      "survivors": 0,
+      "types": [
+        6,
+        6,
+        6
+      ]
+    },
+    {
+      "U0_candidate_profiles": 112,
+      "U1_candidate_profiles": 0,
+      "survivors": 0,
+      "types": [
+        6,
+        6,
+        7
+      ]
+    },
+    {
+      "U0_candidate_profiles": 100,
+      "U1_candidate_profiles": 2,
+      "survivors": 0,
+      "types": [
+        6,
+        7,
+        7
+      ]
+    },
+    {
+      "U0_candidate_profiles": 90,
+      "U1_candidate_profiles": 90,
+      "survivors": 0,
+      "types": [
+        7,
+        7,
+        7
+      ]
+    }
+  ],
+  "status": "UNSAT",
+  "type_multisets": 20
+}
+

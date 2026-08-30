@@ -165,24 +165,23 @@ finite hypothesis-mining evidence.
   region; globally coupling those charges is still open.
 - For any nonempty clique `K`, a secure set of `G-K` lifts through one clique
   hub.  Degawa--Saito's theorem therefore closes every case in which `G-K`
-  is induced-`C5`-free.  In the remaining triangle branch, the
+  is induced-`C5`-free.  In the triangle branch, the
   [bad-multi-neighbour completion](structure/triangle-bad-m.md) replaces all
-  of `M` by an explicit obstruction set `B_X`.  If the three private regions
-  already contribute `alpha(G)` independent vertices, `B_X` is a clique and
-  one extra guard proves `gamma_s<=alpha+1`.
+  of `M` by an explicit obstruction set `B_X`.  The global common-two lemma
+  proves `alpha(B_X)<=alpha(G)-sum_k alpha(P_k)+1`, so the completion always
+  fits the `alpha+1` budget.  Consequently, every connected induced-`P5`-free
+  graph with `alpha>=3` and a dominating triangle satisfies the candidate
+  bound.
 - Joins, universal vertices, clique blow-ups, and the tested substitution
   families collapse rather than preserve the large ratio.
 
 The remaining proof bottleneck is now entirely a collective packing/exchange
-problem on the dominating-clique side of the standard connected-
-\(P_5\)-free structural split.  For a triangle core, singleton-private
-regions may be assumed pairwise anticomplete, so the unresolved coupling is
-concentrated in the multi-neighbour region.  It must also have an induced
-`C5` in `G-K` and strict independence gain beyond the three private regions.
-A minimum dominating clique of
-size at most two already gives
+problem for inclusion-minimal dominating cliques of order at least four.  By
+the Bacsó--Tuza split, the dominating-path branch is solved; a minimum
+dominating clique of size at most two already gives
 \(\gamma_s\leq\alpha+1\) from the general
-\(\gamma_s\leq\gamma+\alpha-1\) bound. Larger cliques require selecting
+\(\gamma_s\leq\gamma+\alpha-1\) bound; and the common-two theorem closes
+order three.  Larger cliques require selecting
 representatives that simultaneously cover all multi-clique-neighbor attacks
 within the \(\alpha+1\) budget. Several simpler local statements are false;
 their smallest checked obstructions are retained so the failed routes are not
@@ -217,6 +216,7 @@ bound.
 | A multi/private edge at a dominating triangle leaves undominated vertices only in its source private region. | **Theorem**, by the multi-region absorption lemma. |
 | A clique with induced-`C5`-free outside graph satisfies \(\gamma_s\leq\alpha+1\). | **Theorem**, by the one-hub lift and Degawa--Saito. |
 | A dominating triangle with private budget \(\sum_k\alpha(P_k)=\alpha(G)\) satisfies \(\gamma_s\leq\alpha+1\). | **Theorem**, by the bad-`M` completion and tight-budget clique lemma. |
+| A dominating triangle implies \(\gamma_s\leq\alpha+1\) for connected induced-\(P_5\)-free graphs with \(\alpha\geq3\). | **Theorem**, by the global common-two lemma plus the solved pair/path/cross-edge branches. |
 | Minimum dominating clique at least three implies \(\gamma_s\leq\alpha\). | **Open structural subclaim**; exact untraced SAT supports it through order 15 at \(\alpha=4\) and order 14 at \(\alpha=5\). |
 | Connected graphs satisfy \(\gamma_s\leq\alpha+1\). | **Open candidate**, under active proof and counterexample attack. |
 | \(4/3\leq c_{\mathrm{opt}}\leq3/2\). | **Theorem**, from the exact witness and the published upper bound. |
@@ -266,12 +266,20 @@ bound.
   proves the local multi/private absorption lemma.  Its direct Atlas audit is
   [`referees/verify_triangle_multi_absorption.py`](referees/verify_triangle_multi_absorption.py).
 - [`structure/triangle-bad-m.md`](structure/triangle-bad-m.md) proves the
-  one-hub `C5`-free residual corollary, bad-`M` completion, and tight-budget
-  triangle theorem.  The independent proof audit is
-  [`referees/triangle-bad-m-audit.md`](referees/triangle-bad-m-audit.md), and
+  one-hub `C5`-free residual corollary, bad-`M` completion, global common-two
+  lemma, and full dominating-triangle theorem.  Independent proof audits are
+  [`referees/triangle-bad-m-audit.md`](referees/triangle-bad-m-audit.md) and
+  [`referees/triangle-global-common-two-audit.md`](referees/triangle-global-common-two-audit.md),
+  with a second clean-room review in
+  [`referees/dominating-triangle-audit.md`](referees/dominating-triangle-audit.md).
   [`referees/verify_triangle_bad_m.py`](referees/verify_triangle_bad_m.py)
   exercises 11,473 independently generated constructions including
   nonvacuous tight examples.
+- [`referees/verify_triangle_global_common_two.py`](referees/verify_triangle_global_common_two.py)
+  audits all path templates and 1,523 independent incidence instances;
+  [`referees/verify_dominating_triangle.py`](referees/verify_dominating_triangle.py)
+  checks 12,848 residual choices and 13,016 independent bad sets across the
+  Graph Atlas and 2,000 larger `P5`-free random cores.
 - The exact 10-vertex counterexample to a discarded global packing shortcut
   is checked by
   [`referees/verify_triangle_packing_obstruction.py`](referees/verify_triangle_packing_obstruction.py)

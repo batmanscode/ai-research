@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "atlas_graphs": 1253,
+  "bad_m_cases": 2099,
+  "common_two_sets": 13016,
+  "direct_full_graph_checks": 2403,
+  "dominating_triangles": 9014,
+  "empty_private_cases": 6809,
+  "nonempty_bad_choices": 136,
+  "private_cross_edge_cases": 106,
+  "random_attempts": 7205,
+  "random_p5free": 2000,
+  "residual_choices": 12848,
+  "seen_region_checks": 314,
+  "three_hub_bad_vertices": 8
+}
+

@@ -1,4 +1,4 @@
-# A counterexample and two reductions narrow secure domination in P5-free graphs
+# A counterexample and structural reductions narrow secure domination in P5-free graphs
 
 Let \(I\) be the icosahedral graph and \(G=\overline I\). Exact exhaustive
 verification gives
@@ -75,29 +75,24 @@ tight icosahedral complement, and 366,730 non-Atlas constructions.
 The Bacsó–Tuza structure theorem says that every connected induced-\(P_5\)-free
 graph has a dominating clique or a dominating induced \(P_3\). Consequently,
 the global \(\alpha+1\) candidate is now reduced to one structural core:
-dominating cliques of order at least three. This is genuine progress, not a
+inclusion-minimal dominating cliques of order at least four. This is genuine progress, not a
 solution of the remaining clique branch or of the exact coefficient.
 
 Inside that clique core, two further reductions are now proof-grade.  Rooted
 secure completions can be glued across disconnected components of `G-K`, with
 one guard saved for every component assigned a disjoint reserved root block.
 For a dominating triangle, any edge between two distinct singleton-private
-regions forces a dominating induced \(P_3\), and hence the \(\alpha+1\)
-bound.  The only still-unresolved triangle residue therefore has pairwise
-anticomplete private regions; all cross-region coupling passes through
-vertices adjacent to at least two triangle hubs.  A local absorption lemma
-shows that every multi/private edge already dominates everything outside its
-source private region, but the global packing of those local witnesses is not
-yet proved.
+regions forces a dominating induced \(P_3\).  In the complementary
+pairwise-anticomplete branch, the global common-two lemma bounds the exact bad
+multi-neighbour set within the remaining independence budget.  These cases,
+together with the dominating-pair branch, prove
+\(\gamma_s(G)\leq\alpha(G)+1\) for every dominating triangle.
 
-The triangle residue has since narrowed again.  A one-hub lift combined with
-Degawa--Saito removes every case in which `G-K` is induced-`C5`-free.  For the
-remaining cases, a bad-multi-neighbour completion pays only for the attacks
-that defeat every private-region clique defender.  If the three private
-regions already account for all of `alpha(G)`, those bad attacks necessarily
-form a clique, so one additional guard proves the `alpha+1` bound.  Thus any
-surviving triangle counterexample must have an induced `C5` outside the
-triangle and strict independence gain beyond the three private regions.
+A one-hub lift combined with Degawa--Saito separately removes every case in
+which `G-K` is induced-`C5`-free.  The stronger common-two proof needs no such
+case split and closes every private-budget gap.  Two clean-room referees
+passed the hand proof; its computation is corroborating rather than a logical
+dependency.
 
 - [Interactive visual paper](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-p5-free/website/index.html)
 - [Proof and precise scope](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-p5-free/README.md)
@@ -111,5 +106,5 @@ triangle and strict independence gain beyond the three private regions.
 - [Clique-component gluing theorems](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/clique-component-gluing.md)
 - [Triangle private-cross-edge theorem](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/triangle-private-cross-edge.md)
 - [Triangle multi-region absorption lemma](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/triangle-multi-absorption.md)
-- [Triangle bad-multi-neighbour and tight-budget theorems](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/triangle-bad-m.md)
+- [Full dominating-triangle theorem](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/triangle-bad-m.md)
 - [Bacsó–Tuza structural theorem](https://doi.org/10.1007/BF02352694)
