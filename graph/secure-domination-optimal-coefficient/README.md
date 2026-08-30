@@ -178,22 +178,26 @@ finite hypothesis-mining evidence.
   anticomplete private-region branch for `|K|=t`, active bad vertices have
   nested missed-hub sets.  If the largest such set has size `f`, the
   [higher-order clique reduction](structure/connected-clique-residual.md)
-  gives `gamma_s(G)<=alpha(G)+f`.  Thus only `f>=2` can remain when `t>=4`.
-  Every arbitrary private transversal is complete multipartite, sharply
-  constraining the complementary cross-edge branch.
+  gives `gamma_s(G)<=alpha(G)+f`.  A sharper
+  [larger-clique theorem](structure/larger-clique-private-geometry.md) proves
+  `f<=2` and saves one further hub when `f=2`, closing the entire pairwise-
+  anticomplete private branch at `alpha+1`.  For `|K|>=4`, one global cross
+  partition simultaneously controls every private transversal.
 - Joins, universal vertices, clique blow-ups, and the tested substitution
   families collapse rather than preserve the large ratio.
 
-The remaining proof bottleneck is now entirely a collective packing/exchange
-problem for inclusion-minimal dominating cliques of order at least four.  By
+The remaining proof bottleneck is now the multi-part private cross-edge
+exchange for inclusion-minimal dominating cliques of order at least four.  By
 the Bacsó--Tuza split, the dominating-path branch is solved; a minimum
 dominating clique of size at most two already gives
 \(\gamma_s\leq\alpha+1\) from the general
 \(\gamma_s\leq\gamma+\alpha-1\) bound; and the common-two theorem closes
-order three.  Larger cliques require selecting
-representatives that simultaneously cover all multi-clique-neighbor attacks
-within the \(\alpha+1\) budget. Several simpler local statements are false;
-their smallest checked obstructions are retained so the failed routes are not
+order three; the pairwise-anticomplete private branch is also solved at every
+larger order.  The surviving geometry has at least two global cross parts and
+requires selecting representatives that simultaneously exploit its complete
+cross edges and cover all multi-clique-neighbor attacks within the
+\(\alpha+1\) budget. Several simpler local statements are false; their
+smallest checked obstructions are retained so the failed routes are not
 repeated.
 
 An earlier draft incorrectly claimed that every singleton private region of a
@@ -227,8 +231,8 @@ bound.
 | A dominating triangle with private budget \(\sum_k\alpha(P_k)=\alpha(G)\) satisfies \(\gamma_s\leq\alpha+1\). | **Theorem**, by the bad-`M` completion and tight-budget clique lemma. |
 | A dominating triangle implies \(\gamma_s\leq\alpha+1\) for connected induced-\(P_5\)-free graphs with \(\alpha\geq3\). | **Theorem**, by the global common-two lemma plus the solved pair/path/cross-edge branches. |
 | A connected residual behind a smallest counterexample satisfies \(\alpha(G-K)=\alpha(G)\) and \(\gamma_s(G-K)=\alpha(G-K)+1\). | **Theorem**, by the one-hub lift and smallest-counterexample equality. |
-| In the pairwise-private \(K_t\) branch, nested active missed sets of maximum size \(f\) imply \(\gamma_s\leq\alpha+f\). | **Theorem**; the target follows in this branch when \(f\leq1\), while \(f\geq2\) remains open. |
-| Every arbitrary transversal of singleton-private regions is complete multipartite. | **Theorem**; the partition is per transversal, not yet one global partition of all private vertices. |
+| Pairwise-anticomplete private regions imply \(\gamma_s\leq\alpha+1\) for every inclusion-minimal dominating clique order. | **Theorem**, by nested missed sets, the \(f\leq2\) exclusion, and the two-hub common saving. |
+| For \(|K|\geq4\), one global partition determines every cross-region private edge and nonedge. | **Theorem**; within-region adjacency remains unrestricted. |
 | Minimum dominating clique at least three implies \(\gamma_s\leq\alpha\). | **Open structural subclaim**; exact untraced SAT supports it through order 15 at \(\alpha=4\) and order 14 at \(\alpha=5\). |
 | Connected graphs satisfy \(\gamma_s\leq\alpha+1\). | **Open candidate**, under active proof and counterexample attack. |
 | \(4/3\leq c_{\mathrm{opt}}\leq3/2\). | **Theorem**, from the exact witness and the published upper bound. |
@@ -298,6 +302,11 @@ bound.
   theorem for the remaining larger-clique core.  The line-by-line independent
   review is
   [`referees/connected-clique-residual-audit.md`](referees/connected-clique-residual-audit.md).
+- [`structure/larger-clique-private-geometry.md`](structure/larger-clique-private-geometry.md)
+  closes the pairwise-private branch for every clique order and proves the
+  global cross-partition theorem for order at least four.  Its independent
+  audit is
+  [`referees/larger-clique-private-geometry-audit.md`](referees/larger-clique-private-geometry-audit.md).
 - The exact 10-vertex counterexample to a discarded global packing shortcut
   is checked by
   [`referees/verify_triangle_packing_obstruction.py`](referees/verify_triangle_packing_obstruction.py)

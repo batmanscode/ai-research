@@ -60,9 +60,12 @@ records the next rigorous boundary:
   at least four remain;
 - a connected residual behind a smallest counterexample satisfies
   `alpha(G-K)=alpha(G)` and `gamma_s(G-K)=alpha(G-K)+1`;
-- in the pairwise-private larger-clique branch, active missed-hub sets are
-  nested and give the parameterized theorem `gamma_s <= alpha+f`; every
-  arbitrary private transversal is complete multipartite; and
+- the pairwise-anticomplete private-region branch is solved for every
+  dominating-clique order: active missed-hub sets are nested, have order at
+  most two, and the two-hub case yields the final saving;
+- for clique order at least four, one global cross partition determines every
+  edge and nonedge between distinct private regions; within-region edges
+  remain unrestricted; and
 - `gamma_s <= alpha+1` and the exact optimum coefficient remain open.
 
 The continuation is an active research package, not a third claimed solved
@@ -123,6 +126,8 @@ automatic deployment workflow. See `DEPLOYMENT.md`.
 ## Known limitations and open gates
 
 - The graph coefficient between `4/3` and `3/2` is unresolved.
+- The remaining Bacsó--Tuza core is the multi-part private cross-edge exchange
+  for an inclusion-minimal dominating clique of order at least four.
 - The proof-carrying finite coefficient searches do not imply an all-orders
   theorem; higher-order frontier runs beyond order 12 retain solver results
   but not proof traces.
