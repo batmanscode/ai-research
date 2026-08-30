@@ -213,3 +213,26 @@ construction passed every relevant Graph Atlas articulation choice and a
 seeded random stress portfolio. A separate implementation checked 5,001
 proof-permitted choices over 2,196 rooted Atlas instances. Therefore every
 counterexample to the candidate bound must be 2-connected.
+
+## 14. Dominating-path theorem
+
+The whole dominating-induced-`P3` branch is now closed for `alpha>=3`. The
+general residual bound handles `alpha(G-D)<=alpha(G)-1`. In the equality
+case, choose a maximum independent set of `G-D` minimizing total attachment
+degree into the three-vertex path, omit its two highest-attachment members,
+and retain the path. Any failed attack creates singleton-attachment witnesses
+and an alternative maximum independent set. Minimum weight forces a short
+degree inequality; induced-`P5`-freeness eliminates every remaining equality
+pattern.
+
+The exact construction passed 1,991 complete-Atlas choices, 240 choices on
+the tight icosahedral complement, and 14,659 constructions in a 100,000-trial
+seeded stress test. Fresh clean-room referees independently checked the
+witness bookkeeping, weight inequality, all induced-path chord exclusions,
+and enlargement contradictions.
+
+By the Bacsó–Tuza theorem, every connected induced-`P5`-free graph has a
+dominating clique or a dominating induced `P3`. The `alpha+1` candidate is
+therefore reduced to dominating cliques; orders one and two are already
+closed by the general completion theorem. The sole remaining structural core
+is a dominating clique of order at least three.
