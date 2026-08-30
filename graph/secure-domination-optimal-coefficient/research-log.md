@@ -462,3 +462,45 @@ Two independent proof audits passed both all-orders statements.  A smallest
 transversal-profile enumeration found eight abstract partition conflicts;
 all eight create an induced `P5` once the private-hub structure is restored,
 matching the hand proof.
+
+## 21. Full solution: the sharp coefficient is four thirds
+
+The global cross partition collapses the last multi-part branch more strongly
+than the provisional residual accounting suggested.  Let `xy` be a cross
+edge with `x in P_i` and `y in P_j`.
+
+First, every vertex in a third private region sees both `x` and `y`.  The
+private-transversal rule gives at least one adjacency; a one-sided adjacency,
+together with a fourth hub, creates the induced path
+
+`k_h-k_i-x-y-z`.
+
+Second, the global cross part of `x` cannot meet `P_j`.  Otherwise choose
+`z in P_j` in that part and a witness `w` in a third private region.  The
+double-adjacency lemma places `w` in a part different from both endpoint
+parts, so `zw` is a cross edge.  Reapplying double adjacency to `zw` forces
+`xz` to be an edge, contradicting that `x,z` share a global cross part.
+Symmetrically, the part of `y` does not meet `P_i`.
+
+Third, every multi-hub neighbour missing `k_i` sees `x` or `y`: otherwise a
+second suitable hub neighbour gives
+
+`m-k_a-k_i-x-y`.
+
+Therefore `k_i-x-y` is a dominating induced `P3`.  The already proved
+dominating-path theorem closes every private-cross-edge case.  If no private
+cross edge exists, the pairwise-private theorem applies.  Thus every
+dominating clique of order at least four is solved; orders one and two follow
+from the residual bound, and triangles from the common-two theorem.
+
+The Bacsó--Tuza theorem supplies a dominating clique or a dominating induced
+`P3` in every connected induced-`P5`-free graph.  Hence, for `alpha>=3`,
+
+`gamma_s(G) <= alpha(G)+1`.
+
+Since `alpha+1 <= 4alpha/3` and the complement of the icosahedron has
+`(alpha,gamma_s)=(3,4)`, the optimal coefficient is exactly `4/3`.
+Independent clean-room referees reconstructed the cross-edge closure and the
+full outer case split; a separate exact K4 audit checked 11,328 assignments,
+including 420 oriented private cross edges, with zero failed constructed
+dominating paths.  The computation corroborates but is not used by the proof.

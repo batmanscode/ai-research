@@ -196,14 +196,15 @@ For a dominating `P3`, if `alpha(G-D)<=alpha(G)-1`, this is at most
 same bound. Thus the entire dominating-induced-`P3` branch is closed.
 
 The standard connected-`P5`-free structure theorem supplies either a
-dominating clique or a dominating `P3`.  Consequently, the still-open
-`gamma_s<=alpha+1` candidate is reduced to the dominating-clique branch
-(and dominating cliques of order at most two are already handled by the
-general completion lemma).
+dominating clique or a dominating `P3`.  At this stage of the proof, the
+`gamma_s<=alpha+1` candidate was reduced to the dominating-clique branch
+(and dominating cliques of order at most two were already handled by the
+general completion lemma).  The subsequent
+[`optimal-four-thirds-theorem.md`](optimal-four-thirds-theorem.md) closes
+every remaining clique case.
 
-This does **not** disprove the published `3 alpha / 2` theorem.  It improves
-the bound on one structural branch and leaves the clique-core branch as the
-remaining obstacle.
+This does **not** disprove the published `3 alpha / 2` theorem.  It is the
+path-branch ingredient in the later sharp improvement.
 
 ## Independent checks and failed shortcuts
 

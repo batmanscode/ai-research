@@ -5,8 +5,8 @@ evidence, research history, design contract, and deployable visual paper.
 
 | Project | Result | Visual paper |
 |---|---|---|
-| [`secure-domination-p5-free/`](secure-domination-p5-free/) | An exact 12-vertex counterexample proves the coefficient-one strengthening false and raises the universal lower bound to `4/3`; minimum order is finite evidence and the optimum remains in `[4/3, 3/2]`. | [`website/`](secure-domination-p5-free/website/) |
-| [`secure-domination-optimal-coefficient/`](secure-domination-optimal-coefficient/) | Active continuation: the `alpha=3` slice is exact; cut vertices, dominating paths, dominating triangles, and every pairwise-private larger clique satisfy `gamma_s <= alpha+1`; the remaining core is a globally partitioned multi-part private cross-edge exchange. | Not yet a finished visual paper; the exact coefficient remains open. |
+| [`secure-domination-p5-free/`](secure-domination-p5-free/) | An exact 12-vertex counterexample proves the coefficient-one strengthening false and gives the sharp lower bound `4/3`; minimum order remains finite evidence. | [`website/`](secure-domination-p5-free/website/) |
+| [`secure-domination-optimal-coefficient/`](secure-domination-optimal-coefficient/) | Every connected induced-`P5`-free graph with `alpha>=3` satisfies `gamma_s<=alpha+1`, so the optimal coefficient is exactly `4/3`. | Solved theorem package; dedicated visual paper is the next release artifact. |
 
 The project-specific name leaves room for future graph work without turning
 this category directory into one indefinitely growing paper.

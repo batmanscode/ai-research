@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "cross_edges": 648,
+  "dominating_p3_checks": 648,
+  "exact_models": 11264,
+  "multi_missed_hub_checks": 48,
+  "p5free_cross_graphs": 84,
+  "part_exclusion_checks": 1296,
+  "random_attempts": 7503,
+  "random_p5free_cross_graphs": 50,
+  "third_region_vertices": 1497
+}

@@ -1,6 +1,6 @@
 # The optimal secure-domination coefficient
 
-This is the active continuation of the proved
+This project completes the continuation of the proved
 [12-vertex counterexample](../secure-domination-p5-free/). It asks for the
 best constant \(c\) such that every connected induced-\(P_5\)-free graph with
 \(\alpha(G)\geq3\) satisfies
@@ -9,18 +9,35 @@ best constant \(c\) such that every connected induced-\(P_5\)-free graph with
 \gamma_s(G)\leq c\,\alpha(G).
 \]
 
-## Current rigorous boundary
+## Main theorem
 
 \[
-\boxed{\frac43\leq c_{\mathrm{opt}}\leq\frac32}.
+\boxed{c_{\mathrm{opt}}=\frac43}.
 \]
 
-The two endpoints come from different theorems:
+For every connected induced-\(P_5\)-free graph with \(\alpha(G)\geq3\),
+
+\[
+\boxed{\gamma_s(G)\leq\alpha(G)+1.}
+\]
+
+Since \(\alpha+1\leq4\alpha/3\) on this domain, the upper coefficient is
+\(4/3\).  It is sharp because the complement of the icosahedral graph has
+\((\alpha,\gamma_s)=(3,4)\).
+
+The theorem improves the published \(3\alpha/2\) bound; it does not
+contradict it.  The proof uses the Bacsó--Tuza dominating-clique/path split,
+closes every clique order and private-region geometry, and has passed multiple
+independent line-by-line audits.  Conventional external peer review remains
+pending.
+
+The two sharp ingredients are:
 
 - **Lower endpoint:** the complement of the icosahedral graph is connected,
   induced-\(P_5\)-free, and has \((\alpha,\gamma_s)=(3,4)\).
-- **Upper endpoint:** Gupta, Henning, Maniya, and Pradhan proved
-  \(\gamma_s\leq3\alpha/2\) for every induced-\(P_5\)-free graph.
+- **Upper theorem:** the all-orders proof in
+  [`structure/optimal-four-thirds-theorem.md`](structure/optimal-four-thirds-theorem.md)
+  gives \(\gamma_s\leq\alpha+1\).
 
 The 12-vertex graph does not contradict the published upper bound:
 \(4\leq9/2\). It refutes only the stronger coefficient-one proposal.
@@ -50,25 +67,22 @@ formula and an exact weak-Roman calculation, independently audited in this
 project. Thus the sharp \(4/3\) ratio already occurs in an infinite connected
 family, although only at independence number three.
 
-## High-value theorem/counterexample fork
+## The resolved theorem/counterexample fork
 
-The strongest live candidate is
+The former live candidate
 
 \[
 \gamma_s(G)\leq\alpha(G)+1.
 \]
 
-For \(\alpha\geq3\), this would imply
+is now a theorem.  For \(\alpha\geq3\), it implies
 \(\gamma_s/\alpha\leq4/3\). The icosahedral complement would then make the
-coefficient \(4/3\) sharp. A connected induced-\(P_5\)-free graph with
-\(\gamma_s\geq\alpha+2\) would refute this route and become the next exact
-counterexample target.
+coefficient \(4/3\) sharp.  The exhaustive and structured counterexample
+searches found no refutation because none exists.
 
-The first unresolved slice is \(\alpha=4\):
-
-- a graph with \((\alpha,\gamma_s)=(4,6)\) proves \(3/2\) optimal;
-- a proof that every such connected graph has \(\gamma_s\leq5\) is a genuine
-  new theorem, but does not by itself settle all \(\alpha\).
+At \(\alpha=4\), the theorem gives \(\gamma_s\leq5\), ruling out the former
+\((4,6)\) target.  More generally, the published coefficient \(3/2\) is not
+optimal under connectivity and \(\alpha\geq3\).
 
 ## Equality restrictions inherited from the published proof
 
@@ -155,14 +169,15 @@ finite hypothesis-mining evidence.
   regions, then the graph has a dominating induced \(P_3\).  The
   [triangle private-cross-edge theorem](structure/triangle-private-cross-edge.md)
   therefore closes that entire branch by the dominating-path theorem.  In the
-  still-open triangle residue, the three singleton-private regions are
+  formerly unresolved triangle residue, the three singleton-private regions are
   pairwise anticomplete and every remaining cross-region interaction passes
   through vertices with at least two triangle neighbours.
 - A multi-neighbour/private edge at a dominating triangle yields an induced
   \(P_3\) that dominates everything outside one private region.  The
   [multi-region absorption lemma](structure/triangle-multi-absorption.md)
   turns every such edge into a concrete independent-witness charge in that
-  region; globally coupling those charges is still open.
+  region.  That local route alone did not finish the branch; the later global
+  common-two proof did.
 - For any nonempty clique `K`, a secure set of `G-K` lifts through one clique
   hub.  Degawa--Saito's theorem therefore closes every case in which `G-K`
   is induced-`C5`-free.  In the triangle branch, the
@@ -183,22 +198,23 @@ finite hypothesis-mining evidence.
   `f<=2` and saves one further hub when `f=2`, closing the entire pairwise-
   anticomplete private branch at `alpha+1`.  For `|K|>=4`, one global cross
   partition simultaneously controls every private transversal.
+- If a larger minimal dominating clique has any cross edge between two
+  private regions, that edge and one endpoint hub form a dominating induced
+  `P3`.  The global cross partition forces all third private regions to see
+  both edge endpoints and excludes the endpoint part from the opposite
+  private region; an induced-path argument also covers every multi-hub
+  neighbour.  Together with the pairwise-private branch, this closes every
+  dominating clique.
 - Joins, universal vertices, clique blow-ups, and the tested substitution
   families collapse rather than preserve the large ratio.
 
-The remaining proof bottleneck is now the multi-part private cross-edge
-exchange for inclusion-minimal dominating cliques of order at least four.  By
-the Bacsó--Tuza split, the dominating-path branch is solved; a minimum
-dominating clique of size at most two already gives
-\(\gamma_s\leq\alpha+1\) from the general
-\(\gamma_s\leq\gamma+\alpha-1\) bound; and the common-two theorem closes
-order three; the pairwise-anticomplete private branch is also solved at every
-larger order.  The surviving geometry has at least two global cross parts and
-requires selecting representatives that simultaneously exploit its complete
-cross edges and cover all multi-clique-neighbor attacks within the
-\(\alpha+1\) budget. Several simpler local statements are false; their
-smallest checked obstructions are retained so the failed routes are not
-repeated.
+The former proof bottleneck is closed.  By the Bacsó--Tuza split, a connected
+induced-`P5`-free graph has a dominating induced path or a dominating clique.
+The path branch was solved directly.  Dominating cliques of order at most two
+follow from the general residual bound; triangles follow from the common-two
+theorem.  At larger order, the pairwise-private theorem handles the no-cross-
+edge case, while any private cross edge forces a dominating induced path.
+These cases exhaust the class and prove the sharp four-thirds theorem.
 
 An earlier draft incorrectly claimed that every singleton private region of a
 dominating clique is a cluster graph. The cone-\(C_5\) family in this package
@@ -233,10 +249,9 @@ bound.
 | A connected residual behind a smallest counterexample satisfies \(\alpha(G-K)=\alpha(G)\) and \(\gamma_s(G-K)=\alpha(G-K)+1\). | **Theorem**, by the one-hub lift and smallest-counterexample equality. |
 | Pairwise-anticomplete private regions imply \(\gamma_s\leq\alpha+1\) for every inclusion-minimal dominating clique order. | **Theorem**, by nested missed sets, the \(f\leq2\) exclusion, and the two-hub common saving. |
 | For \(|K|\geq4\), one global partition determines every cross-region private edge and nonedge. | **Theorem**; within-region adjacency remains unrestricted. |
-| Minimum dominating clique at least three implies \(\gamma_s\leq\alpha\). | **Open structural subclaim**; exact untraced SAT supports it through order 15 at \(\alpha=4\) and order 14 at \(\alpha=5\). |
-| Connected graphs satisfy \(\gamma_s\leq\alpha+1\). | **Open candidate**, under active proof and counterexample attack. |
-| \(4/3\leq c_{\mathrm{opt}}\leq3/2\). | **Theorem**, from the exact witness and the published upper bound. |
-| The exact value of \(c_{\mathrm{opt}}\). | **Open.** It could be either endpoint or a value strictly between them. |
+| A private cross edge at a dominating clique of order at least four forces a dominating induced \(P_3\). | **Theorem**, by double adjacency, global cross-part exclusion, and multi-neighbour coverage. |
+| Connected induced-\(P_5\)-free graphs with \(\alpha\geq3\) satisfy \(\gamma_s\leq\alpha+1\). | **Theorem**, by the exhaustive Bacsó--Tuza path/clique assembly. |
+| \(c_{\mathrm{opt}}=4/3\) on the connected \(\alpha\geq3\) class. | **Theorem**, from the \(\alpha+1\) upper bound and the exact icosahedral-complement witness. |
 
 ## Reproduce and audit
 
@@ -307,6 +322,14 @@ bound.
   global cross-partition theorem for order at least four.  Its independent
   audit is
   [`referees/larger-clique-private-geometry-audit.md`](referees/larger-clique-private-geometry-audit.md).
+- [`structure/optimal-four-thirds-theorem.md`](structure/optimal-four-thirds-theorem.md)
+  proves the private-cross-edge closure, assembles every Bacsó--Tuza branch,
+  and derives the sharp coefficient.  Independent final-theorem audits are
+  [`referees/optimal-four-thirds-audit-a.md`](referees/optimal-four-thirds-audit-a.md)
+  and
+  [`referees/optimal-four-thirds-audit-b.md`](referees/optimal-four-thirds-audit-b.md).
+  The latter's direct checker is
+  [`referees/verify_optimal_four_thirds.py`](referees/verify_optimal_four_thirds.py).
 - The exact 10-vertex counterexample to a discarded global packing shortcut
   is checked by
   [`referees/verify_triangle_packing_obstruction.py`](referees/verify_triangle_packing_obstruction.py)
@@ -344,3 +367,6 @@ Graph Atlas referee checks additionally require NetworkX.
 - S. Degawa and A. Saito,
   [*A note on secure domination in \(C_5\)-free graphs*](https://doi.org/10.1016/j.dam.2023.03.016),
   *Discrete Applied Mathematics* 333 (2023), 82–83.
+- G. Bacsó and Zs. Tuza,
+  [*Dominating cliques in \(P_5\)-free graphs*](https://doi.org/10.1007/BF02352694),
+  *Periodica Mathematica Hungarica* 21 (1990), 303–308.
