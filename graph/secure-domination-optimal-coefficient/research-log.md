@@ -235,8 +235,8 @@ and enlargement contradictions.
 By the Bacsó–Tuza theorem, every connected induced-`P5`-free graph has a
 dominating clique or a dominating induced `P3`. The `alpha+1` candidate is
 therefore reduced to dominating cliques; orders one and two are already
-closed by the general completion theorem. The sole remaining structural core
-is a dominating clique of order at least three.
+closed by the general completion theorem.  At this stage the remaining core
+began at order three; Section 18 subsequently closes the triangle case.
 
 ## 15. Clique-component gluing
 
@@ -322,9 +322,10 @@ satisfies `gamma_s<=alpha+1`.
 A separate unconditional one-hub lift sends every secure set of `G-K`
 through any one clique vertex.  Degawa--Saito's coefficient-one theorem for
 induced-`C5`-free graphs therefore closes every residual without an induced
-`C5`.  The remaining triangle obstruction must simultaneously have
-`p<=alpha-1`, contain an induced `C5` in `G-K`, and defeat the bad-set budget
-for every residual choice.
+`C5`.  At this intermediate stage, the apparent triangle obstruction had to
+satisfy `p<=alpha-1`, contain an induced `C5` in `G-K`, and defeat the
+bad-set budget for every residual choice.  Section 18 removes that apparent
+residue with the global common-two lemma.
 
 The clean-room proof referee passed both arguments after requiring explicit
 nonempty-private and closed-neighbourhood conventions.  Its independent
@@ -333,3 +334,38 @@ portfolio checked 11,473 residual constructions with zero failures, including
 It also confirmed that a tempting arbitrary-`M` packing inequality is false
 on the 10-vertex graph6 instance `I{OeEAg}?`; that graph satisfies the target
 bound and refutes only the proof strategy.
+
+## 18. Full dominating-triangle theorem
+
+The tight-budget proof extends without an equality assumption.  Every bad
+multi-neighbour is anticomplete to each private residual clique whose hub it
+sees.  For a two-hub vertex, any mixed adjacency produces the induced path
+`u-v-m-j-k`; for a vertex complete to the triangle, a badness witness at a
+second hub produces `u-v-m-j-w`.
+
+For an independent set `J` in the bad set, call a residual clique failed if
+it has no vertex anticomplete to all of `J`.  Failure at `U_i` forces an edge
+from `U_i` to a member of `J` whose exact hub type is `K-{i}`.  Two failed
+cliques `U_i,U_j` would then produce
+
+`u_i-m_i-k-m_j-u_j`,
+
+an induced `P5`.  Thus two residual cliques always have simultaneous common
+witnesses.  Combining those witnesses with `J` and the retained private
+guards proves
+
+`alpha(B_X) <= alpha(G)-p+1`.
+
+Since a maximum independent set dominates its induced graph, the bad-set
+completion yields `gamma_s(G)<=alpha(G)+1` for every private-budget gap.
+Empty private regions reduce to a dominating pair; a private cross edge
+reduces to the solved dominating-`P3` branch.  Therefore every connected
+induced-`P5`-free graph with `alpha>=3` and a dominating triangle satisfies
+the candidate bound.
+
+Two independent proof referees passed the all-orders argument.  One audit
+checked all 18 path templates and 1,523 abstract incidence instances; the
+other checked 12,848 residual choices and 13,016 independent bad sets across
+the complete Graph Atlas and 2,000 larger `P5`-free random cores.  The proof
+has no computational dependency.  The remaining Bacsó--Tuza branch is an
+inclusion-minimal dominating clique of order at least four.

@@ -1,0 +1,40 @@
+{
+  "legacy_rows_match_retained_json": true,
+  "legacy_type_multisets": 20,
+  "note": "Finite checks support but do not replace the all-orders proof.",
+  "path_template_checks": 18,
+  "singleton_abstract_rows": [
+    {
+      "J_size": 1,
+      "abstract_instances": 7,
+      "common_two_failures": 0,
+      "p5free_instances": 7
+    },
+    {
+      "J_size": 2,
+      "abstract_instances": 31,
+      "common_two_failures": 0,
+      "p5free_instances": 28
+    },
+    {
+      "J_size": 3,
+      "abstract_instances": 111,
+      "common_two_failures": 0,
+      "p5free_instances": 86
+    },
+    {
+      "J_size": 4,
+      "abstract_instances": 351,
+      "common_two_failures": 0,
+      "p5free_instances": 227
+    },
+    {
+      "J_size": 5,
+      "abstract_instances": 1023,
+      "common_two_failures": 0,
+      "p5free_instances": 545
+    }
+  ],
+  "status": "PASS"
+}
+

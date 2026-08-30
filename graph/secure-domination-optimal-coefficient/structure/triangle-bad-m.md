@@ -1,15 +1,18 @@
 # Bad multi-neighbours at a dominating triangle
 
 This note continues the dominating-triangle branch after the
-[private-cross-edge theorem](triangle-private-cross-edge.md).  It proves two
-all-orders reductions:
+[private-cross-edge theorem](triangle-private-cross-edge.md).  It proves three
+all-orders results:
 
 1. if the outside graph of any nonempty clique is induced-`C5`-free, the
    `alpha+1` bound follows by a one-hub lift; and
-2. in the unresolved triangle branch, the case in which the three private
-   regions already account for all of `alpha(G)` satisfies the bound.
+2. an exact bad-multi-neighbour completion replaces the entire multi-region
+   by a smaller obstruction set; and
+3. a global common-two lemma closes every private-budget value, proving the
+   `alpha+1` bound for all connected induced-`P5`-free graphs with a
+   dominating triangle and `alpha>=3`.
 
-Neither statement solves the remaining loose-budget, `C5`-bearing residue.
+The global `alpha+1` candidate remains open only beyond the triangle branch.
 
 ## One-hub lift and the `C5`-free residual
 
@@ -171,6 +174,96 @@ number zero for an empty bad set and one for a nonempty clique, gives
 \gamma_s(G)\leq p+1=\alpha(G)+1.
 \]
 
+## Global common-two lemma
+
+The tight proof has an equality-free form.
+
+> **Seen-region anticompleteness.**  For every `m in B_X` and every hub
+> `i in N(m) intersect K`, the vertex `m` is anticomplete to `U_i`.
+
+By badness choose `u in U_i` missed by `m`, and suppose `m` sees some
+`v in U_i`.  Since `U_i` is a clique, `uv` is an edge.  If `m` has exactly
+two hub neighbours `{i,j}`, with third hub `k`, then
+
+\[
+u-v-m-j-k
+\]
+
+is induced: privacy removes all edges from `u,v` to `j,k`, while `um` and
+`mk` are absent.  If `m` sees all three hubs, choose `j!=i` and a badness
+witness `w in U_j-N(m)`.  Then
+
+\[
+u-v-m-j-w
+\]
+
+is induced; the two residual cliques lie in distinct pairwise-anticomplete
+private regions, and privacy plus the chosen misses remove every chord.
+Both cases contradict induced-`P5`-freeness.
+
+> **Global common-two lemma.**  Every independent set `J` of `G[B_X]` has
+> two distinct indices `r,s` for which `U_r` and `U_s` each contain a vertex
+> anticomplete to all of `J`.
+
+Call `U_i` failed if it has no such common witness.  Failure implies that
+some `u_i in U_i` has a neighbour `m_i in J`.  Seen-region
+anticompleteness says `m_i` cannot see hub `i`; since it is a
+multi-neighbour vertex of a triangle, its exact hub type is `K-{i}`.
+
+If two different cliques `U_i,U_j` failed, let `k` be the third hub.  The
+corresponding `m_i,m_j` are nonadjacent because `J` is independent, and
+
+\[
+u_i-m_i-k-m_j-u_j
+\]
+
+is an induced `P5`.  Indeed, `u_i,u_j` have distinct private types;
+`m_j` sees `i` and is therefore anticomplete to `U_i`; `m_i` sees `j` and
+is anticomplete to `U_j`; and the private vertices miss hub `k`.  Thus at
+most one residual clique fails.
+
+Let `J` now be a maximum independent set of `G[B_X]`.  With common witnesses
+`u_r,u_s`, the set
+
+\[
+X\cup J\cup\{u_r,u_s\}
+\]
+
+is independent: `J` misses `X` by the definition of `B_X`; the two witnesses
+miss `J` and the closed neighbourhood of `X`; and distinct private regions
+are anticomplete.  It has order `(p-3)+alpha(G[B_X])+2`.  Therefore
+
+\[
+\alpha(G[B_X])\leq\alpha(G)-p+1.
+\]
+
+A maximum independent set dominates its induced graph; with the conventions
+`alpha(empty)=gamma(empty)=0`, this also covers an empty bad set.  Combining
+the last inequality with (BM) yields
+
+\[
+\gamma_s(G)\leq p+\gamma(G[B_X])
+\leq p+\alpha(G[B_X])\leq\alpha(G)+1. \tag{2}
+\]
+
+This proof is all-orders and has no computational dependency.
+
+## Dominating-triangle theorem
+
+> **Theorem.**  Let `G` be a connected induced-`P5`-free graph with
+> `alpha(G)>=3`.  If `G` has a dominating triangle, then
+> \[
+> \gamma_s(G)\leq\alpha(G)+1.
+> \]
+
+Fix a dominating triangle `K`.  If some private region `P_i` is empty, the
+other two hubs form a dominating pair, so the already proved dominating-pair
+theorem applies.  If two distinct nonempty private regions have a cross edge,
+the private-cross-edge theorem supplies a dominating induced `P3`, so the
+dominating-path theorem applies.  Otherwise the private regions are nonempty
+and pairwise anticomplete, and (2) proves the result.  The cases are
+exhaustive.
+
 ## A discarded global packing shortcut
 
 The direct attempt to pay for all of `gamma(M)` with an arbitrary independent
@@ -194,27 +287,25 @@ is `C5`-free, so the one-hub route gives a secure set of size six even though
 the graph itself has a secure four-set.  The independent checker and retained
 certificate make this failed route reproducible.
 
-## Exact remaining triangle residue
+## Exact remaining global branch
 
-After these results, a counterexample in the dominating-triangle branch must
-satisfy all of the following:
-
-- the singleton-private regions are nonempty and pairwise anticomplete;
-- `H=G-K` contains an induced `C5`;
-- `p<=alpha(G)-1`; and
-- for every permitted choice of the `I_k,x_k`, inequality (1) fails.
-
-The live question is therefore no longer arbitrary coupling through all of
-`M`: it is whether the independence gain outside the private regions can pay
-for the domination number of the much smaller bad set `B_X`, in a residual
-that necessarily contains an induced `C5`.
+Together with the Bacsó--Tuza dominating-clique-or-`P3` theorem and the
+already solved dominating-pair and dominating-path cases, the result removes
+every dominating clique of order at most three.  Any counterexample to the
+global `alpha+1` candidate must now have an inclusion-minimal dominating
+clique of order at least four.  This note does not claim that larger-clique
+branch is solved.
 
 ## Reproduce and audit
 
 - `../referees/triangle-bad-m-audit.md` is the independent line-by-line
   referee report.
+- `../referees/triangle-global-common-two-audit.md` independently audits the
+  all-orders common-two proof and theorem scope.
 - `../referees/verify_triangle_bad_m.py` independently checks 11,473 residual
   constructions and includes explicit nonvacuous tight examples.
+- `../referees/verify_triangle_global_common_two.py` checks the path templates,
+  legacy finite abstraction, and 1,523 independent incidence instances.
 - `../referees/verify_triangle_packing_obstruction.py` checks the discarded
   packing inequality witness by the definitions.
 - The retained machine-readable outputs are in `../computation/results/`.
