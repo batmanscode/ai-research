@@ -1,4 +1,4 @@
-# A 12-vertex counterexample raises the coefficient floor to 4/3
+# A counterexample and two reductions narrow secure domination in P5-free graphs
 
 Let \(I\) be the icosahedral graph and \(G=\overline I\). Exact exhaustive
 verification gives
@@ -38,7 +38,52 @@ the icosahedron in work on induced saturation. The contribution here is the
 secure-domination calculation and its coefficient lower bound. The exact
 coefficient between \(4/3\) and \(3/2\) remains open.
 
+## Structural progress after the counterexample
+
+The follow-up project now proves three all-orders bounds relevant to the
+stronger candidate
+
+\[
+\gamma_s(G)\leq\alpha(G)+1.
+\]
+
+First, for every dominating set \(D\) with nonempty outside graph,
+
+\[
+\gamma_s(G)\leq |D|+
+\min\{\gamma(G-D),\alpha(G-D)-1\}.
+\]
+
+In particular, every graph with a dominating pair satisfies the candidate
+bound, without any \(P_5\)-free assumption.
+
+Second, every connected induced-\(P_5\)-free graph with a cut vertex satisfies
+\(\gamma_s(G)\leq\alpha(G)+1\). The proof is constructive: it decomposes the
+unique possible deep articulation component into boundary modules, completes
+them within the independence budget, and glues maximum independent sets from
+the shallow components. An independent implementation exhaustively checked
+all 5,001 proof-permitted choices over 2,196 rooted Atlas instances.
+
+Third, every connected induced-\(P_5\)-free graph with \(\alpha\geq3\) and a
+dominating induced \(P_3\) satisfies the same bound. In the only tight residual
+case, a minimum-weight maximum independent set is modified by omitting its two
+highest-attachment vertices. Two clean-room proof referees passed the
+argument; direct checks covered 1,991 Atlas constructions, 240 choices on the
+tight icosahedral complement, and 366,730 non-Atlas constructions.
+
+The Bacsó–Tuza structure theorem says that every connected induced-\(P_5\)-free
+graph has a dominating clique or a dominating induced \(P_3\). Consequently,
+the global \(\alpha+1\) candidate is now reduced to one structural core:
+dominating cliques of order at least three. This is genuine progress, not a
+solution of the remaining clique branch or of the exact coefficient.
+
 - [Interactive visual paper](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-p5-free/website/index.html)
 - [Proof and precise scope](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-p5-free/README.md)
 - [Independent exhaustive verifier](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-p5-free/verify_counterexample.py)
 - [Machine-readable certificate](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-p5-free/data/counterexample_certificate.json)
+- [Optimal-coefficient continuation](https://github.com/batmanscode/ai-research/tree/main/graph/secure-domination-optimal-coefficient)
+- [Cut-vertex theorem and constructive proof](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/cut-vertices.md)
+- [Independent cut-vertex audit](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/referees/cut-vertex-audit.md)
+- [Dominating-path theorem and proof](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/dominating-p3.md)
+- [Two independent dominating-path audits](https://github.com/batmanscode/ai-research/tree/main/graph/secure-domination-optimal-coefficient/referees)
+- [Bacsó–Tuza structural theorem](https://doi.org/10.1007/BF02352694)

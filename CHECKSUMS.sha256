@@ -25,9 +25,9 @@ fe7af3f5ebd7f949473dfaf138f7f4e5c9fc1fc563327b1a6438ca657c12acaf  ./biology/aggr
 c09c973a459b2baa9fd951656cf040e16469182bb1f4bc0f5409a9b238bc6304  ./biology/aggregate-chemistry-transfer/website/favicon.png
 dca3c2200ec8f985ffde6b0b0adcac2489a812df97006b542061ec7760402749  ./biology/aggregate-chemistry-transfer/website/index.html
 06dacb83778d522c55415a46420bf1e0561fbdec574aa1d0f694d7db99f46caa  ./biology/aggregate-chemistry-transfer/website/nginx.conf
-cfe1152f14e89ddf535c14813e981a476a2aed1263b42cd91fc81593f049b16f  ./findings/README.md
+aef9375d8705c22be3c94c4a6acc307e6dd38376638ab8234404454a23d87feb  ./findings/README.md
 a060830d68c5272b9e07424a8eff4237a2d308740d3ae2918a132a61f9cdeb03  ./findings/biology.md
-0fa1f7abfe31b390efb6dc35bc9dff200ab022c07aeb0e78047c90bf39b4bc69  ./findings/graph.md
+3fa030a8c584e9f72c45cb88b234849eea89d6ae025b5da3c9f19918a253e75e  ./findings/graph.md
 7028f77eb49da26d9d59e0955dc12ccd5b8529c2a5de6f5531b921fbd870f5fc  ./graph/README.md
 714b1430fbcfadafb4751fbe6143b6d46edd1937b181cc233fcb8602d8aee288  ./graph/secure-domination-optimal-coefficient/CHECKSUMS.sha256
 63aa7dd24ffe9cf99ac0df23aacb3ddf474bfd66c4918e78cfbba3b61c9ba74c  ./graph/secure-domination-optimal-coefficient/CITATION.cff
