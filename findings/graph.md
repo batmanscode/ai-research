@@ -90,6 +90,15 @@ shows that every multi/private edge already dominates everything outside its
 source private region, but the global packing of those local witnesses is not
 yet proved.
 
+The triangle residue has since narrowed again.  A one-hub lift combined with
+Degawa--Saito removes every case in which `G-K` is induced-`C5`-free.  For the
+remaining cases, a bad-multi-neighbour completion pays only for the attacks
+that defeat every private-region clique defender.  If the three private
+regions already account for all of `alpha(G)`, those bad attacks necessarily
+form a clique, so one additional guard proves the `alpha+1` bound.  Thus any
+surviving triangle counterexample must have an induced `C5` outside the
+triangle and strict independence gain beyond the three private regions.
+
 - [Interactive visual paper](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-p5-free/website/index.html)
 - [Proof and precise scope](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-p5-free/README.md)
 - [Independent exhaustive verifier](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-p5-free/verify_counterexample.py)
@@ -102,4 +111,5 @@ yet proved.
 - [Clique-component gluing theorems](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/clique-component-gluing.md)
 - [Triangle private-cross-edge theorem](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/triangle-private-cross-edge.md)
 - [Triangle multi-region absorption lemma](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/triangle-multi-absorption.md)
+- [Triangle bad-multi-neighbour and tight-budget theorems](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/triangle-bad-m.md)
 - [Bacsó–Tuza structural theorem](https://doi.org/10.1007/BF02352694)

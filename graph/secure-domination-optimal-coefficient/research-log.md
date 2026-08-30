@@ -297,3 +297,39 @@ untraced runs are finite corroboration only.  The remaining task is global:
 combine the local independent-witness charges across `M` without double
 counting, or exploit the alternative one-hub residual completion when the
 naive charge is insufficient.
+
+## 17. Bad multi-neighbours and the tight triangle budget
+
+The triangle residue admits a sharper completion than paying to dominate all
+of `M`.  After choosing a maximum independent set in each private region and
+omitting one representative, each surviving private residual is a nonempty
+clique.  The set `B_X` consists exactly of multi-neighbour attacks that miss
+the retained independent guards and defeat every adjacent clique hub.  A
+dominating set of `B_X`, together with the triangle and the retained private
+guards, is secure.  This gives
+
+`gamma_s(G) <= p + gamma(B_X)`,
+
+where `p` is the sum of the three private-region independence numbers.
+
+When `p=alpha(G)`, every bad vertex has exactly two hub neighbours, is
+anticomplete to the two corresponding private residual cliques, and complete
+to the third.  Bad vertices of distinct hub types must be adjacent or expose
+an induced `P5`; a nonadjacent same-type pair would enlarge the independent
+set beyond `p`.  Hence `B_X` is a clique and the full tight-budget branch
+satisfies `gamma_s<=alpha+1`.
+
+A separate unconditional one-hub lift sends every secure set of `G-K`
+through any one clique vertex.  Degawa--Saito's coefficient-one theorem for
+induced-`C5`-free graphs therefore closes every residual without an induced
+`C5`.  The remaining triangle obstruction must simultaneously have
+`p<=alpha-1`, contain an induced `C5` in `G-K`, and defeat the bad-set budget
+for every residual choice.
+
+The clean-room proof referee passed both arguments after requiring explicit
+nonempty-private and closed-neighbourhood conventions.  Its independent
+portfolio checked 11,473 residual constructions with zero failures, including
+332 tight bad-vertex checks and crafted same-type/different-type examples.
+It also confirmed that a tempting arbitrary-`M` packing inequality is false
+on the 10-vertex graph6 instance `I{OeEAg}?`; that graph satisfies the target
+bound and refutes only the proof strategy.

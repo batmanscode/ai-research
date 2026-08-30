@@ -1,0 +1,117 @@
+{
+  "crafted_tight_examples": {
+    "different_type_pair": {
+      "X": [
+        3,
+        5,
+        8
+      ],
+      "Y": [
+        9
+      ],
+      "alpha": 6,
+      "bad": [
+        9,
+        10
+      ],
+      "bad_is_empty_or_clique": true,
+      "corollary_ok": true,
+      "p": 6,
+      "p5_free": true,
+      "residual": {
+        "0": [
+          4
+        ],
+        "1": [
+          6
+        ],
+        "2": [
+          7
+        ]
+      },
+      "secure": true,
+      "tight": true,
+      "tight_clique_ok": true,
+      "tight_ok": true
+    },
+    "one": {
+      "X": [
+        3,
+        5,
+        8
+      ],
+      "Y": [
+        9
+      ],
+      "alpha": 6,
+      "bad": [
+        9
+      ],
+      "bad_is_empty_or_clique": true,
+      "corollary_ok": true,
+      "p": 6,
+      "p5_free": true,
+      "residual": {
+        "0": [
+          4
+        ],
+        "1": [
+          6
+        ],
+        "2": [
+          7
+        ]
+      },
+      "secure": true,
+      "tight": true,
+      "tight_clique_ok": true,
+      "tight_ok": true
+    },
+    "same_type_pair": {
+      "X": [
+        3,
+        5,
+        8
+      ],
+      "Y": [
+        9
+      ],
+      "alpha": 6,
+      "bad": [
+        9,
+        10
+      ],
+      "bad_is_empty_or_clique": true,
+      "corollary_ok": true,
+      "p": 6,
+      "p5_free": true,
+      "residual": {
+        "0": [
+          4
+        ],
+        "1": [
+          6
+        ],
+        "2": [
+          7
+        ]
+      },
+      "secure": true,
+      "tight": true,
+      "tight_clique_ok": true,
+      "tight_ok": true
+    }
+  },
+  "empty_or_clique_corollary_checks": 10870,
+  "failures": [],
+  "non_p5free_tight_nonclique_choices": 4,
+  "p5free_tight_bad_pairs": 0,
+  "p5free_tight_choices": 1198,
+  "random_graphs": 2500,
+  "residual_choices": 11473,
+  "secure_constructions": 11473,
+  "status": "PASS",
+  "tight_bad_vertex_checks": 332,
+  "tight_choices": 7645
+}
+
