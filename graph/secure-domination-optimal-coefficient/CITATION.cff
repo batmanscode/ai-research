@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use these results, cite this project and the Gupta et al. source paper."
 title: "The optimal secure-domination coefficient for connected induced-P5-free graphs: exact slices, structural reductions, and proof-carrying finite evidence"
 type: software
-version: 0.2.0
+version: 0.3.0
 date-released: 2026-08-29
 authors:
   - name: "Silly Goose Research Labs contributors"
