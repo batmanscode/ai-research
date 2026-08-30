@@ -1,0 +1,2 @@
+observation_id	variant_id	sequence	native_core	randomized_positions	alphabet	construct_id	biological_library_id	batch_id	mutation_count_stratum
+OBS_EXAMPLE_001	VAR_EXAMPLE_001	REPLACE_ME	REPLACE_ME	REPLACE_ME	F/I/L/M/V	CONSTRUCT_A	LIBRARY_1	BATCH_1	0

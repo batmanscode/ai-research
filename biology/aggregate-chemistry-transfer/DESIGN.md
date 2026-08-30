@@ -37,7 +37,8 @@ required.
 6. Show within-count ranking to separate chemistry signal from mutation burden.
 7. Explain why position-invariant aggregation may transfer when naive site
    correspondence does not.
-8. Finish with the prospective fourth-backbone test and publication boundary.
+8. Finish with the prospective fourth-backbone test, the negative public-
+   candidate audit, the label-escrow procedure, and the publication boundary.
 
 ## Visual language
 
@@ -54,7 +55,9 @@ required.
 The exploratory label appears before the first chart. Point estimates,
 bootstrap intervals, permutation tests, native cores, method code, and the
 preregistration remain reachable in one reading path. Provenance data are not
-described as independent replication.
+described as independent replication. The source audit may say that no eligible
+public candidate exists; it may not imply that the freeze package itself is new
+biological evidence.
 
 ## Interaction
 

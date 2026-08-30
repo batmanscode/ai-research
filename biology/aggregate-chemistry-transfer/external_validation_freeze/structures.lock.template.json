@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "candidate_accession": "REPLACE_BEFORE_FREEZE",
+  "structure_source": "PDB_OR_PINNED_PREDICTION",
+  "structure_identifier": "REPLACE_BEFORE_FREEZE",
+  "structure_revision": "REPLACE_BEFORE_FREEZE",
+  "chain": "REPLACE_BEFORE_FREEZE",
+  "conformer_rule": "first_model_or_predeclared_ensemble_mean",
+  "randomized_site_mapping": [],
+  "contact_cutoff_angstrom": 8.0,
+  "descriptor_formulas": [
+    "mean_local_contact_count",
+    "mean_relative_solvent_accessibility",
+    "mean_packing_density"
+  ],
+  "alignment_objective": "maximum_weight_label_free_contact_graph_match",
+  "tie_breaker": "lexicographically_smallest_residue_index_tuple",
+  "notes": "Every placeholder and the mapping must be fixed before phenotype reveal."
+}

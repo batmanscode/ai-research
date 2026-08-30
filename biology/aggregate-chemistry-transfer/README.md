@@ -8,6 +8,12 @@
 
 **Citation:** [`CITATION.cff`](CITATION.cff)
 
+**Prospective-validation audit:**
+[`external_validation_feasibility.md`](external_validation_feasibility.md)
+
+**Label-escrow freeze:**
+[`external_validation_freeze/`](external_validation_freeze/)
+
 ## Status
 
 This is a **reconstructed exploratory analysis**, not an untouched external
@@ -97,7 +103,11 @@ not establish a universal biological mechanism, because there are only three
 backbones and the public test landscapes influenced the research path. A
 confirmatory paper needs the now-frozen protocol evaluated once on an untouched
 fourth randomized-core landscape. `fourth_backbone_preregistration.md` gives a
-concrete prospective design.
+concrete prospective design. A source audit found no eligible public fourth
+matched backbone: FLIP2 Hydro and the source GEO core scores are the same three
+protein landscapes, while the extra GEO experiments are FYN-only and use
+different designs or readouts. The executable label-escrow package therefore
+freezes the next genuine candidate before a data steward reveals phenotypes.
 
 ## Sources
 
@@ -105,3 +115,5 @@ concrete prospective design.
 - [FLIP2 data, Zenodo record 18433203](https://zenodo.org/records/18433203)
 - Escobedo et al., *Science* (2025),
   [source analyses](https://github.com/lehner-lab/combinatorialcores)
+- [Fourth-backbone source and license audit](external_validation_feasibility.md)
+- [Prospective label-escrow protocol and evaluator](external_validation_freeze/)

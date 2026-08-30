@@ -103,7 +103,9 @@ All three full-rank paired-bootstrap improvement intervals exclude zero; all
 three within-count permutation tests report `p = 1/1001`. These are exploratory
 public-test results. The broader representation path was influenced by prior
 test inspection. Confirmation requires the frozen prospective fourth-backbone
-study.
+study. An official-source audit found no eligible public matched candidate;
+the new label-escrow package freezes candidate metadata, model predictions,
+structure rules, protocol, and evaluator code before a steward reveals labels.
 
 ## Visual papers
 
@@ -144,8 +146,9 @@ automatic deployment workflow. See `DEPLOYMENT.md`.
   but not proof traces.
 - Minimum-order SAT evidence is described honestly but no formally checked DRAT
   trace is included in this reconstruction.
-- The biology result has no untouched fourth backbone or wet-lab confirmation.
-- Production-host browser passes remain pending until the owner deploys both
+- The biology result has no untouched fourth backbone or wet-lab confirmation;
+  the public-source audit found no eligible fourth matched landscape.
+- Production-host browser passes remain pending until the owner deploys all three
   visual papers.
 - Human screen-reader and device testing are not claimed.
 
