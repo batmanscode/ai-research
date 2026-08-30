@@ -41,6 +41,7 @@ python3 biology/aggregate-chemistry-transfer/native_core_transfer.py \
   --bootstrap 50 --permutations 100
 
 node --check graph/secure-domination-p5-free/website/js/graph-story.js
+node --check graph/secure-domination-optimal-coefficient/website/js/proof-map.js
 sha256sum -c CHECKSUMS.sha256
 ```
 
@@ -56,26 +57,32 @@ credential values; report only pass/fail or filenames needing inspection.
 
 The project-owned `website/` directories remain valid independent static roots.
 For the canonical combined release, build the root Dockerfile and run the graph
-scenario at `/secure-domination-p5-free/` and the biology scenario at
+witness scenario at `/secure-domination-p5-free/`, the sharp-theorem scenario
+at `/secure-domination-optimal-coefficient/`, and the biology scenario at
 `/aggregate-chemistry-transfer/`. Each paper must resolve every first-party
 asset inside its own path prefix rather than through its sibling.
 
-1. Confirm the hero states `gamma_s = 4 > 3 = alpha` and the coefficient gap.
+1. Confirm the witness hero states `gamma_s = 4 > 3 = alpha` and links its
+   lower witness to the solved `4/3` coefficient theorem.
 2. Select Shape, Flip, Three, and Four. Confirm edge counts 30, 36, 36, 36;
    state copy and legends change; the failed exchange names vertices 1, 7, and
    10; the secure set is `{0,1,2,3}`.
 3. Play, pause, and directly select a step during playback.
 4. Follow proof, certificate, research-log, repository, and source links.
-5. Separately open the biology website and verify all nine comparison values,
+5. Open the coefficient website. Confirm the hero states
+   `gamma_s<=alpha+1<=4alpha/3` with `alpha>=3`; select Start, Split, Path,
+   Cliques, Bridge, and Done; verify the copy never calls a dominating `P3`
+   itself secure and never treats finite checks as the all-orders proof.
+6. Separately open the biology website and verify all nine comparison values,
    all three within-count values, native cores, and the exploratory warning.
-6. On both websites, confirm no unexpected console errors, broken first-party requests, clipped
+7. On all three websites, confirm no unexpected console errors, broken first-party requests, clipped
    text, or horizontal document overflow.
-7. Confirm an unknown deployment path returns `404`. The combined deployment
+8. Confirm an unknown deployment path returns `404`. The combined deployment
    deliberately provides no root research homepage or application health route.
 
 Repeat at approximately 1440×900, 1024×768, 390×844, and 320×568. At 200%
-zoom, verify usable reflow. Keyboard through skip link, tabs, play control, and
-links; verify Left/Right and Home/End move and select graph tabs. Confirm visible
+zoom, verify usable reflow. Keyboard through skip link, tabs, play controls, and
+links; verify Left/Right and Home/End move and select both graph steppers. Confirm visible
 focus and that reduced-motion preference removes nonessential transition
 duration. At 320 px, confirm header labels stay on one line and navigation links
 retain at least 44 px of touch height.

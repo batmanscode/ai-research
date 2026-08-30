@@ -1,5 +1,28 @@
 # Durable verification results
 
+## 30 August 2026 — sharp four-thirds theorem paper
+
+- **Scientific scope:** the new paper states the exact all-orders theorem only
+  for connected induced-`P5`-free graphs with `alpha>=3`, keeps the published
+  `3alpha/2` theorem valid but nonoptimal, and labels conventional peer review
+  pending. The witness paper now links its lower bound to the solved upper
+  theorem instead of presenting the old interval as open.
+- **Interaction/source:** the coefficient paper owns a deterministic six-step
+  SVG proof map with direct selection, optional playback, and complete
+  Left/Right/Home/End tab behavior. JavaScript syntax, HTML IDs, six-tab count,
+  first-party asset resolution, whitespace, and credential-pattern checks pass.
+- **Deployment:** the root image contract now copies a third independent static
+  root to `/secure-domination-optimal-coefficient/`; owner-managed deployment
+  remains unchanged and no GitHub workflow was added. A staged route mirror
+  returned `200` for all three entry points and the new CSS/JavaScript assets;
+  an unknown path returned `404`.
+- **Open visual gate:** the cloud browser rejected both the workspace-local HTTP
+  URL and its synchronized file URL under its URL policy. No screenshot or
+  Gemini pixel review is claimed. After the owner deploys the merged Coolify
+  image, run the desktop/compact/phone/narrow journeys on the public route,
+  review those exact captures directly, then send them to Gemini 3.7 Flash and
+  Telegram.
+
 ## 30 August 2026 — one lightweight path-based deployment
 
 - **Architecture:** the canonical release now uses one repository-root

@@ -66,6 +66,6 @@ loading is unavailable. Information must remain legible without the web fonts.
 
 For material visual changes, inspect representative desktop (1440×900), compact
 (1024×768), phone (390×844), and narrow (320×568) states. Exercise all four
-graph steps and the biology page, check console and first-party requests, then
-review representative captures directly. Gemini Flash may critique final
-captures; accept only substantiated suggestions.
+witness steps, all six coefficient-proof steps, and the biology page; check
+console and first-party requests, then review representative captures directly.
+Gemini Flash may critique final captures; accept only substantiated suggestions.

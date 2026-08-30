@@ -6,6 +6,7 @@ domination and a corrected exploratory experiment on protein-fitness transfer.
 
 **Independent visual papers:**
 [graph counterexample](graph/secure-domination-p5-free/website/index.html) ·
+[sharp coefficient theorem](graph/secure-domination-optimal-coefficient/website/index.html) ·
 [protein transfer](biology/aggregate-chemistry-transfer/website/index.html)
 
 ## Results at a glance
@@ -36,8 +37,9 @@ cd biology/aggregate-chemistry-transfer
 python3 native_core_transfer.py
 ```
 
-Both visual papers are dependency-free. The root Dockerfile serves them from one
-small static deployment at `/secure-domination-p5-free/` and
+All three visual papers are dependency-free. The root Dockerfile serves them
+from one small static deployment at `/secure-domination-p5-free/`,
+`/secure-domination-optimal-coefficient/`, and
 `/aggregate-chemistry-transfer/`. Their project-owned `website/` directories
 remain independently usable as static roots. The original `site/` paths remain
 compatibility copies for previously shared or cached links.

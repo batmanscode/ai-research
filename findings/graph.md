@@ -131,4 +131,5 @@ passed the all-orders proof; finite audits are corroborating only.
 - [Connected residual and higher-order clique reductions](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/connected-clique-residual.md)
 - [Pairwise-private closure and global cross-partition theorem](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/larger-clique-private-geometry.md)
 - [Sharp four-thirds theorem](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/optimal-four-thirds-theorem.md)
+- [Noob-first visual proof map](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/website/index.html)
 - [Bacsó–Tuza structural theorem](https://doi.org/10.1007/BF02352694)
