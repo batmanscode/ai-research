@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "direction": "larger_phenotype_is_better",
+  "candidate_design": {
+    "core_length": 7,
+    "allowed_alphabet": ["F", "I", "L", "M", "V"],
+    "minimum_biological_libraries": 3,
+    "assignment_rule": "every variant appears once in every biological library"
+  },
+  "required_prediction_columns": [
+    "native_count",
+    "aggregate_chemistry",
+    "additive_position_ridge",
+    "onehot_ridge",
+    "plm_likelihood",
+    "onehot_plus_plm",
+    "structure_invariant"
+  ],
+  "primary_endpoint": "spearman_aggregate_chemistry_minus_native_count",
+  "co_primary_endpoint": "within_native_count_spearman_aggregate_chemistry",
+  "applied_endpoint": "precision_at_5_percent_aggregate_chemistry_minus_native_count",
+  "secondary_precision_fractions": [0.01, 0.10],
+  "bootstrap": {
+    "replicates": 1000,
+    "confidence": 0.95,
+    "seed": 20260830,
+    "procedure": "resample biological libraries and batches with replacement, then variants within mutation-count strata"
+  },
+  "permutation": {
+    "replicates": 1000,
+    "alpha": 0.05,
+    "seed": 20260831,
+    "procedure": "shuffle phenotype within biological-library, batch, and mutation-count blocks"
+  },
+  "ranking_tie_breaker": "sha256(seed|variant_id)",
+  "replication_criterion": "primary paired-bootstrap interval lower bound > 0 AND co-primary one-sided permutation p <= 0.05",
+  "reporting_rule": "emit every frozen comparator and every locked endpoint regardless of sign"
+}

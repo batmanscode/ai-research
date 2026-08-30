@@ -64,3 +64,27 @@ result or claim.
 Freeze the current representation and evaluation code, then run it once on a
 new protein before inspecting labels. That experiment—not another bootstrap on
 the same three backbones—is the clean evidence boundary.
+
+## 8. Public fourth-backbone audit
+
+An official-source and license review found no eligible public fourth matched
+backbone. FLIP2 Hydro contains the same three already inspected proteins. The
+source GEO core scores are provenance duplicates, and its extra experiments
+remain FYN-only with different sites or readouts. No candidate phenotype or
+score file was opened during this audit.
+
+The accession mapping was also checked against primary records: `P06241` is
+FYN, `P0A9X9` is CspA, and `P01053` is CI-2A. Visible parentheticals on the
+current FLIP2 page appear swapped; the project mapping remains correct.
+
+## 9. Prospective label escrow
+
+The next real candidate can now be frozen without labels. The package validates
+the seven-site F/I/L/M/V design, three-library coverage, precomputed comparator
+scores, and structure/protocol locks; it then hashes those artifacts and both
+evaluation scripts. The reveal evaluator refuses changed hashes and runs every
+prespecified comparator and endpoint regardless of outcome.
+
+This does not create a fourth-backbone result. It converts “test another
+protein later” into an auditable procedure that prevents another round of
+study-level test feedback.

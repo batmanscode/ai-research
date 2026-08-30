@@ -231,3 +231,29 @@
   name credible, the header balanced and non-SaaS, the `SG` circle sufficient,
   and a large hero goose likely to distract from the theorem and exploratory
   finding. The working agent independently reached the same conclusion.
+
+## 30 August 2026 — fourth-backbone feasibility and label escrow
+
+- **Source audit:** the official FLIP2 Hydro release, its pinned Zenodo record,
+  source GEO study, source analysis repository, and candidate structures were
+  checked without downloading or opening a candidate phenotype file. No
+  eligible public fourth matched backbone was found; the extra public assays
+  either reuse FYN-SH3 or change the sites/readout.
+- **Identity correction:** primary UniProt/RCSB records support `P06241` =
+  FYN-SH3, `P0A9X9` = CspA, and `P01053` = CI-2A. Documentation now anchors
+  protein names to those accession records rather than the apparently swapped
+  parentheticals on the FLIP2 page.
+- **Prospective package:** a phenotype-free freeze validates the exact design
+  alphabet, native core, site mapping, mutation-count strata, replicate
+  coverage, all seven comparator columns, structure metadata, and code hashes.
+  It refuses overwrite and requires the revealed observations to match the
+  frozen design exactly.
+- **Automated:** Python bytecode compilation passed. Four adversarial unit tests
+  passed, covering valid freeze/reveal, immutability, forbidden phenotype
+  columns, mutation-count mismatch, and pre-reveal hash tampering. A clean
+  reduced rerun reproduced the checked point estimates exactly: aggregate
+  Spearman 0.411, 0.246, and 0.476 for FYN-SH3, CspA, and CI-2A.
+- **Claim boundary:** this is a source result plus confirmatory infrastructure,
+  not a fourth-backbone result. A genuine confirmation still requires an
+  unrelated matched library whose phenotypes remain escrowed until the frozen
+  manifest is independently archived.

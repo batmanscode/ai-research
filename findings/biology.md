@@ -29,9 +29,16 @@ This is partial empirical evidence about representation behavior, not a
 universal biological mechanism or an untouched leaderboard claim. Public test
 landscapes influenced the broader research path. The decisive next experiment
 is a frozen, prospective evaluation on a fourth backbone; a preregistration is
-included.
+included. An official-source audit found no eligible public fourth matched
+backbone: the FLIP2 and source GEO core files cover the same three proteins,
+while additional public assays remain FYN-only with changed designs or
+readouts. No candidate phenotype file was opened. A label-escrow package now
+locks candidate metadata, predictions, structural rules, protocol, and
+evaluator hashes before a steward reveals any future labels.
 
 - [Interactive visual paper](https://github.com/batmanscode/ai-research/blob/main/biology/aggregate-chemistry-transfer/website/index.html)
 - [Full methods and limitations](https://github.com/batmanscode/ai-research/blob/main/biology/aggregate-chemistry-transfer/README.md)
 - [Reproducible pipeline](https://github.com/batmanscode/ai-research/blob/main/biology/aggregate-chemistry-transfer/native_core_transfer.py)
 - [Fourth-backbone preregistration](https://github.com/batmanscode/ai-research/blob/main/biology/aggregate-chemistry-transfer/fourth_backbone_preregistration.md)
+- [Fourth-backbone feasibility audit](https://github.com/batmanscode/ai-research/blob/main/biology/aggregate-chemistry-transfer/external_validation_feasibility.md)
+- [Prospective label-escrow package](https://github.com/batmanscode/ai-research/tree/main/biology/aggregate-chemistry-transfer/external_validation_freeze)

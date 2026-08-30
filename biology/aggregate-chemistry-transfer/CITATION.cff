@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this analysis, cite this project, FLIP2, and the underlying Hydro dataset."
 title: "A small aggregate-chemistry model transfers across three protein backbones"
 type: software
-version: 1.0.1
+version: 1.1.0
 date-released: 2026-08-30
 authors:
   - name: "Silly Goose Research Labs contributors"
@@ -14,3 +14,5 @@ keywords:
   - FLIP2
   - domain generalization
   - physicochemical features
+  - prospective validation
+  - label escrow

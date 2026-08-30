@@ -42,6 +42,8 @@ python3 biology/aggregate-chemistry-transfer/native_core_transfer.py \
 
 node --check graph/secure-domination-p5-free/website/js/graph-story.js
 node --check graph/secure-domination-optimal-coefficient/website/js/proof-map.js
+python3 -m unittest \
+  biology/aggregate-chemistry-transfer/external_validation_freeze/tests/test_freeze_package.py
 sha256sum -c CHECKSUMS.sha256
 ```
 
