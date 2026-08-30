@@ -151,12 +151,27 @@ finite hypothesis-mining evidence.
   reserved root blocks.  They close every configuration with
   \(|R|-m\leq\alpha(G)-\alpha(G-K)+1\).  For each clique vertex, at most one
   attached outside component can fail to be complete to it.
+- If a dominating triangle has an edge between two distinct singleton-private
+  regions, then the graph has a dominating induced \(P_3\).  The
+  [triangle private-cross-edge theorem](structure/triangle-private-cross-edge.md)
+  therefore closes that entire branch by the dominating-path theorem.  In the
+  still-open triangle residue, the three singleton-private regions are
+  pairwise anticomplete and every remaining cross-region interaction passes
+  through vertices with at least two triangle neighbours.
+- A multi-neighbour/private edge at a dominating triangle yields an induced
+  \(P_3\) that dominates everything outside one private region.  The
+  [multi-region absorption lemma](structure/triangle-multi-absorption.md)
+  turns every such edge into a concrete independent-witness charge in that
+  region; globally coupling those charges is still open.
 - Joins, universal vertices, clique blow-ups, and the tested substitution
   families collapse rather than preserve the large ratio.
 
 The remaining proof bottleneck is now entirely a collective packing/exchange
 problem on the dominating-clique side of the standard connected-
-\(P_5\)-free structural split. A minimum dominating clique of size at most two already gives
+\(P_5\)-free structural split.  For a triangle core, singleton-private
+regions may be assumed pairwise anticomplete, so the unresolved coupling is
+concentrated in the multi-neighbour region.  A minimum dominating clique of
+size at most two already gives
 \(\gamma_s\leq\alpha+1\) from the general
 \(\gamma_s\leq\gamma+\alpha-1\) bound. Larger cliques require selecting
 representatives that simultaneously cover all multi-clique-neighbor attacks
@@ -189,6 +204,8 @@ bound.
 | A cut vertex implies \(\gamma_s\leq\alpha+1\) in a connected induced-\(P_5\)-free graph. | **Theorem**, by the constructive rooted-completion argument. |
 | A dominating induced \(P_3\) implies \(\gamma_s\leq\alpha+1\) when \(\alpha\geq3\). | **Theorem**, by the minimum-weight equality construction. |
 | A clique-separator root cover with \(m\) disjoint saved blocks satisfies \(\gamma_s\leq\alpha(G-K)+|R|-m\). | **Theorem**, by rooted and residual completion gluing. |
+| A private cross edge at a dominating triangle forces a dominating induced \(P_3\). | **Theorem**, by the induced-\(C_5\) witness argument and independent referee audit. |
+| A multi/private edge at a dominating triangle leaves undominated vertices only in its source private region. | **Theorem**, by the multi-region absorption lemma. |
 | Minimum dominating clique at least three implies \(\gamma_s\leq\alpha\). | **Open structural subclaim**; exact untraced SAT supports it through order 15 at \(\alpha=4\) and order 14 at \(\alpha=5\). |
 | Connected graphs satisfy \(\gamma_s\leq\alpha+1\). | **Open candidate**, under active proof and counterexample attack. |
 | \(4/3\leq c_{\mathrm{opt}}\leq3/2\). | **Theorem**, from the exact witness and the published upper bound. |
@@ -226,6 +243,17 @@ bound.
   [`referees/verify_clique_component_gluing.py`](referees/verify_clique_component_gluing.py),
   and the independent proof review is
   [`referees/clique-component-gluing-audit.md`](referees/clique-component-gluing-audit.md).
+- [`structure/triangle-private-cross-edge.md`](structure/triangle-private-cross-edge.md)
+  proves that a private cross edge at a dominating triangle forces a
+  dominating induced path.  Its direct Atlas checker is
+  [`referees/verify_triangle_private_cross_edge.py`](referees/verify_triangle_private_cross_edge.py),
+  the bounded corroborating SAT model is
+  [`computation/triangle_private_cross_edge_sat.py`](computation/triangle_private_cross_edge_sat.py),
+  and the clean-room proof audit is
+  [`referees/triangle-private-cross-edge-audit.md`](referees/triangle-private-cross-edge-audit.md).
+- [`structure/triangle-multi-absorption.md`](structure/triangle-multi-absorption.md)
+  proves the local multi/private absorption lemma.  Its direct Atlas audit is
+  [`referees/verify_triangle_multi_absorption.py`](referees/verify_triangle_multi_absorption.py).
 - [`structure/private-clique-obstructions.md`](structure/private-clique-obstructions.md)
   proves the complete-multipartite private-witness lemma and records exact
   counterexamples to discarded shortcuts. Run

@@ -40,7 +40,8 @@ coefficient between \(4/3\) and \(3/2\) remains open.
 
 ## Structural progress after the counterexample
 
-The follow-up project now proves three all-orders bounds relevant to the
+The follow-up project now proves several all-orders bounds and reductions
+relevant to the
 stronger candidate
 
 \[
@@ -77,6 +78,18 @@ the global \(\alpha+1\) candidate is now reduced to one structural core:
 dominating cliques of order at least three. This is genuine progress, not a
 solution of the remaining clique branch or of the exact coefficient.
 
+Inside that clique core, two further reductions are now proof-grade.  Rooted
+secure completions can be glued across disconnected components of `G-K`, with
+one guard saved for every component assigned a disjoint reserved root block.
+For a dominating triangle, any edge between two distinct singleton-private
+regions forces a dominating induced \(P_3\), and hence the \(\alpha+1\)
+bound.  The only still-unresolved triangle residue therefore has pairwise
+anticomplete private regions; all cross-region coupling passes through
+vertices adjacent to at least two triangle hubs.  A local absorption lemma
+shows that every multi/private edge already dominates everything outside its
+source private region, but the global packing of those local witnesses is not
+yet proved.
+
 - [Interactive visual paper](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-p5-free/website/index.html)
 - [Proof and precise scope](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-p5-free/README.md)
 - [Independent exhaustive verifier](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-p5-free/verify_counterexample.py)
@@ -86,4 +99,7 @@ solution of the remaining clique branch or of the exact coefficient.
 - [Independent cut-vertex audit](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/referees/cut-vertex-audit.md)
 - [Dominating-path theorem and proof](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/dominating-p3.md)
 - [Two independent dominating-path audits](https://github.com/batmanscode/ai-research/tree/main/graph/secure-domination-optimal-coefficient/referees)
+- [Clique-component gluing theorems](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/clique-component-gluing.md)
+- [Triangle private-cross-edge theorem](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/triangle-private-cross-edge.md)
+- [Triangle multi-region absorption lemma](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/triangle-multi-absorption.md)
 - [Bacsó–Tuza structural theorem](https://doi.org/10.1007/BF02352694)

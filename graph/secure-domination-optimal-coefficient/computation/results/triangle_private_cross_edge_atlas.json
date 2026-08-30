@@ -1,0 +1,11 @@
+{
+  "atlas_graphs": 1253,
+  "cross_edges_with_dominating_c5": 152,
+  "cross_edges_with_dominating_p3": 521,
+  "dominating_triangles": 3022,
+  "p5_free_graphs": 873,
+  "status": "PASS",
+  "theorem_failures": [],
+  "triangle_cross_edges": 521
+}
+
