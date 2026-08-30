@@ -96,13 +96,16 @@ dependency.
 
 For the remaining larger-clique core, a smallest counterexample with
 connected residual `H=G-K` must satisfy
-`alpha(H)=alpha(G)` and `gamma_s(H)=alpha(H)+1`.  In the pairwise-
-anticomplete private-region subbranch, active bad vertices have nested
-missed-hub sets.  If the largest has size `f`, an all-orders accounting gives
-`gamma_s(G)<=alpha(G)+f`; hence only `f>=2` can survive for `|K|>=4`.  In the
-cross-edge geometry, every arbitrary private transversal is complete
-multipartite.  These are independently refereed reductions, not a solution
-of the larger-clique branch.
+`alpha(H)=alpha(G)` and `gamma_s(H)=alpha(H)+1`.  The pairwise-anticomplete
+private-region subbranch is now completely solved: active missed-hub sets are
+nested, have order at most two, and the two-hub case supplies one extra common
+hub saving, proving `gamma_s(G)<=alpha(G)+1` for every clique order.  When
+`|K|>=4`, the private cross-edge geometry also has one globally compatible
+partition: between distinct private regions, adjacency is exactly membership
+in different global cross parts.  The only remaining core is the multi-part
+cross-edge exchange, with arbitrary within-region edges and multi-hub
+neighbours.  These are independently refereed all-orders results, not a
+solution of that final core.
 
 - [Interactive visual paper](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-p5-free/website/index.html)
 - [Proof and precise scope](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-p5-free/README.md)
@@ -118,4 +121,5 @@ of the larger-clique branch.
 - [Triangle multi-region absorption lemma](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/triangle-multi-absorption.md)
 - [Full dominating-triangle theorem](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/triangle-bad-m.md)
 - [Connected residual and higher-order clique reductions](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/connected-clique-residual.md)
+- [Pairwise-private closure and global cross-partition theorem](https://github.com/batmanscode/ai-research/blob/main/graph/secure-domination-optimal-coefficient/structure/larger-clique-private-geometry.md)
 - [Bacsó–Tuza structural theorem](https://doi.org/10.1007/BF02352694)

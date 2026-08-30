@@ -186,12 +186,11 @@ Taking \(J\) maximum in \(G[B_X]\) and using (5) gives the all-orders bound
 \tag{6}
 \]
 
-For \(t=3\), (6) recovers the full dominating-triangle theorem.  For every
-larger clique, it closes the pairwise-private branch whenever the largest
-active bad vertex misses at most one hub.  Thus a live obstruction in this
-branch must have \(t\geq4\) and an active bad vertex missing at least two
-clique hubs.  Saving one additional hub in that nested missed set is the
-sharply isolated exchange problem.
+For \(t=3\), (6) recovers the full dominating-triangle theorem.  The later
+[larger-clique theorem](larger-clique-private-geometry.md) sharpens this
+reduction: an active missed set has order at most two, and the two-hub case
+supplies one additional hub saving.  Consequently the entire pairwise-private
+branch satisfies \(\gamma_s\leq\alpha+1\) for every clique order.
 
 ## 3. Every private transversal is complete multipartite
 
@@ -214,16 +213,17 @@ no induced \(P_3\), and is therefore a disjoint union of cliques.  Hence
 \]
 
 The conclusion holds for every arbitrary choice of one witness per private
-region.  It is a per-transversal statement; it does not yet imply one global
-multipartite partition of all private-region vertices.  Establishing such a
-compatibility theorem, or finding the exact replacement for it, is the other
-precise route into the remaining \(|K|\geq4\) core.
+region.  For \(|K|\geq4\), the later
+[global cross-partition theorem](larger-clique-private-geometry.md) proves
+that these per-transversal partitions are compatible: cross-region adjacency
+is determined by one common partition of the whole private union.  Edges
+inside one private region remain unrestricted.
 
 ## Scope
 
-Equations (2), (6), and (7) are all-orders theorems.  They do not prove the
-global \(\alpha+1\) candidate: the remaining cases are inclusion-minimal
-dominating cliques of order at least four, with either a nontrivial private
-cross-edge geometry or a nested active missed set of size at least two.
+Equations (2), (6), and (7) are all-orders theorems.  The subsequent
+larger-clique proof closes the pairwise-anticomplete branch and globalizes the
+cross partition.  The remaining case is therefore an inclusion-minimal
+dominating clique of order at least four with at least two global cross parts.
 Bounded SAT searches are maintained separately as corroborating evidence and
 are not a logical dependency of these statements.

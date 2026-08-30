@@ -406,12 +406,59 @@ pairwise-private instance with `f<=1`.  A local `K4` construction shows that
 lies outside the remaining global core.  Any all-orders exclusion of `f>=2`
 must genuinely use 2-connectivity or the clique-component machinery.
 
+Section 20 supersedes that provisional boundary: `f<=2` always, and the
+`f=2` case itself supplies an additional common-hub saving without needing
+2-connectivity.
+
 In the complementary cross-edge geometry, every arbitrary choice of one
 private witness per hub induces a complete multipartite graph: an edge
 missed by a third witness creates an induced `P5` through their private hubs.
 The statement is per transversal.  A single compatible global partition of
 all private vertices has not been established.
 
+Section 20 subsequently establishes exactly that compatibility for
+cross-region pairs when `|K|>=4`, while keeping within-region edges
+unrestricted.
+
 An independent referee checked every induced-path chord, the nesting
 quantifiers, and the `alpha+f` accounting.  These are all-orders reductions,
 not a proof of the remaining `|K|>=4` case.
+
+## 20. Pairwise-private closure and one global cross partition
+
+The nested missed-set argument can be sharpened.  An active bad vertex that
+misses at least two hubs is complete to every residual private clique at a
+missed hub.  Three missed hubs would then expose an induced `P5`, so the
+largest active missed set has order at most two.
+
+When exactly two hubs are missed, the corresponding private maximum
+independent sets are singletons.  All active members of a maximum independent
+bad set miss one common hub, and any inactive member seeing that hub would
+create another induced `P5`.  Adding the common hub to the earlier independent
+set supplies the missing guard saving.  Therefore every inclusion-minimal
+dominating clique whose singleton-private regions are pairwise anticomplete
+satisfies
+
+`gamma_s(G) <= alpha(G)+1`,
+
+for every clique order.  This proof does not use connected-residual equality
+or finite computation.
+
+The complementary cross-edge geometry also globalizes when `|K|>=4`.  Join
+two private vertices in an auxiliary graph `Q` exactly when they lie in
+different private regions and are nonadjacent in `G`.  A shortest `Q` path
+whose distinct-region endpoints are adjacent in `G` must alternate between
+two private regions.  A third private witness has uniform adjacency along
+that path; a fourth hub then completes an induced `P5`.  Hence each `Q`
+component is cross-complete in `Q`, and for vertices in distinct private
+regions,
+
+`uv in E(G)` exactly when `u,v` lie in different global cross parts.
+
+Within-region edges remain arbitrary.  The remaining proof target is the
+genuinely multi-part cross-edge exchange: at least two global cross parts,
+arbitrary within-region structure, and the multi-hub-neighbour region `M`.
+Two independent proof audits passed both all-orders statements.  A smallest
+transversal-profile enumeration found eight abstract partition conflicts;
+all eight create an induced `P5` once the private-hub structure is restored,
+matching the hand proof.
