@@ -1,111 +1,83 @@
 # Deployment
 
-Deployment is intentionally owner-managed. No GitHub Actions deployment
-workflow is included. The canonical visual papers are served together from one
-small Coolify application; the portfolio owns the separate research index.
+Deployment is owner-managed. The canonical production image is built by the
+private `batmanscode/portfolio` repository, which pins this public repository
+as a Git submodule and copies only the declared visual-paper roots into its
+static `dist/` output. Research code, datasets, proof material, logs, and
+project documents remain public here and do not enter the website image.
 
-## Public route contract
+## Public-site manifest
 
-The root Dockerfile publishes only the three paper directories:
+[`public-sites.json`](public-sites.json) is the deployment boundary. It maps
+each stable URL slug to one project-owned static root:
 
-| Paper | Route |
-|---|---|
-| Secure domination | `/secure-domination-p5-free/` |
-| Sharp secure-domination coefficient | `/secure-domination-optimal-coefficient/` |
-| Protein transfer | `/aggregate-chemistry-transfer/` |
+| Paper | Source | Route |
+|---|---|---|
+| Secure domination | `graph/secure-domination-p5-free/website` | `/secure-domination-p5-free/` |
+| Sharp secure-domination coefficient | `graph/secure-domination-optimal-coefficient/website` | `/secure-domination-optimal-coefficient/` |
+| Protein transfer | `biology/aggregate-chemistry-transfer/website` | `/aggregate-chemistry-transfer/` |
 
-### Deriving a URL before deployment
+Every declared source must stay inside this repository, contain `index.html`,
+and use relative first-party asset paths. A new visual paper chooses one stable
+lowercase slug and adds one manifest entry. The Portfolio build validates the
+manifest and refuses traversal, duplicate slugs, missing roots, or missing
+entry points before copying anything.
 
-The host comes from the domain attached in Coolify. The path comes directly
-from the destination directory in the root Dockerfile:
+## Portfolio release contract
 
-```text
-COPY ... /usr/share/nginx/html/<paper-slug>/
-                                  ↓
-https://<coolify-domain>/<paper-slug>/
-```
+Portfolio checks out this repository at `vendor/ai-research`. Its production
+build reads the pinned manifest and stages each declared source at
+`dist/<slug>/`. The final nginx image contains the hub plus those static paper
+folders only; it does not contain the Git checkout or the rest of this
+repository.
 
-For example, copying the graph paper into
-`/usr/share/nginx/html/secure-domination-p5-free/` fixes its path as
-`/secure-domination-p5-free/`. With `research.sillygoose.fyi` attached, its
-planned URL is therefore
-`https://research.sillygoose.fyi/secure-domination-p5-free/` before the first
-deployment occurs.
+Advancing `ai-research` does not silently change production. The submodule pin
+must move in a reviewed Portfolio commit. Portfolio may use Dependabot's
+`gitsubmodule` ecosystem to propose that pin update automatically.
 
-The route is explicit; nginx does not derive it from the source project folder
-or paper title. For a new paper, choose a stable lowercase slug, copy its public
-files into the matching destination directory, and add that route to the table
-above. The trailing slash remains canonical because the route names a directory
-whose entry point is `index.html`.
+## Coolify
 
-The deployment has no root homepage. The base nginx image handles static files,
-directory indexes, and missing paths with its default behavior; this repository
-does not carry a root `nginx.conf`, application health endpoint, or Docker
-`HEALTHCHECK`.
+In steady state, only the Portfolio Coolify application owns
+`research.sillygoose.fyi`; no per-paper path domains are required. Git
+submodules must be enabled for that resource. Coolify supports submodule cloning
+and currently enables it by default.
 
-Each paper keeps relative first-party asset paths, so the trailing slash is part
-of its canonical URL. A request without it is normalized to the directory URL
-by nginx.
+For the migration:
 
-## Coolify contract
+1. deploy a Portfolio revision that contains the pinned submodule and exported
+   paper folders;
+2. verify the research root, all three paper URLs, their first-party assets, and
+   an unknown path;
+3. only then remove `research.sillygoose.fyi` and its path rules from the old
+   `ai-research` resource; and
+4. stop that resource, retaining it briefly for rollback before deletion.
 
-Create one GitHub-App application with these settings:
+The root `Dockerfile` remains a local-preview and short rollback option. It
+serves the same three paper routes on port `8080`, deliberately without a root
+homepage. It should not keep the production research hostname after the
+Portfolio deployment is verified.
 
-| Setting | Value |
-|---|---|
-| Repository | `https://github.com/batmanscode/ai-research` |
-| Branch | `main` |
-| Build pack | Dockerfile |
-| Base Directory | `/` |
-| Dockerfile | `/Dockerfile` |
-| Port Exposes | `8080` |
-| Port Mappings | empty |
-| Environment variables | none |
-| Persistent storage | none |
+Reference: [Coolify application Git settings](https://coolify.io/docs/applications).
 
-Attach the research subdomain to that resource. For
-`research.sillygoose.fyi`, the intended paper URLs are:
+## URL, attribution, and analytics contract
 
-- `https://research.sillygoose.fyi/secure-domination-p5-free/`
-- `https://research.sillygoose.fyi/secure-domination-optimal-coefficient/`
-- `https://research.sillygoose.fyi/aggregate-chemistry-transfer/`
+The canonical paper URLs do not change, so portfolio cards, sitemap entries,
+source links, and Emergent Mind attribution/UTM parameters need no migration.
+The existing Research Labs Umami property remains attached to
+`research.sillygoose.fyi`; moving static files between build sources does not
+change that hostname or website ID. The visual papers themselves gain no new
+tracker as part of this deployment change.
 
-Do not publish those URLs as live until both production routes and their assets
-have been checked. Auto Deploy is optional: leave it off for manual releases,
-or enable it when every push to `main` should refresh the paper collection.
+## Local image verification
 
-## Image contract
-
-The root image uses the same unprivileged nginx family as the portfolio, but it
-does not need the portfolio's host routing, SPA fallback, or cache rules. The
-Dockerfile therefore uses the base image's default static configuration and
-copies only each paper's public HTML, CSS, JavaScript, and images.
-
-The papers have no application build, runtime model call, secret, database, or
-environment variable. `site/` remains a compatibility source for previously
-shared or cached links and is not copied into the canonical deployment image.
-
-The Dockerfiles inside the individual `website/` directories remain temporary
-rollback options for the first combined release. They are not the canonical
-Coolify path and are not runtime redundancy. Remove them after the combined
-production deployment is verified unless standalone paper domains are still
-useful.
-
-## Release check
-
-After deployment, run the hosted website scenario in `PLAYTEST.md` against both
-paper URLs. Verify desktop and mobile states, graph steps where applicable,
-console and first-party requests, external source links, and the biology caveat.
-Only then add the production URLs to the portfolio or repository metadata.
-
-When a local Docker runtime is available:
+The independent paper-only preview remains available:
 
 ```bash
 docker build -t silly-goose-research .
 docker run --rm -p 8080:8080 silly-goose-research
 ```
 
-In another terminal, open all canonical paths or check them directly:
+Then check the three routes and one miss:
 
 ```bash
 curl -I http://127.0.0.1:8080/secure-domination-p5-free/
