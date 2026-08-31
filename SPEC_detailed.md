@@ -1,6 +1,6 @@
 # Detailed specification
 
-Last updated: 30 August 2026
+Last updated: 31 August 2026
 
 This is the current product, research, and technical truth for `ai-research`,
 published under the Silly Goose Research Labs umbrella brand.
@@ -22,7 +22,8 @@ independently deployable, lay-facing visual paper for each result.
 - `findings/` — Markdown source for external finding submissions.
 - Root documents — project routing, owner intent, current truth, shared design,
   validation, deployment, repository-level citation, licensing, and file
-  integrity. Each named project also owns its result-specific citation.
+  integrity. `public-sites.json` is the small allowlist of deployable visual
+  paper roots. Each named project also owns its result-specific citation.
 
 ## Graph result
 
@@ -131,11 +132,13 @@ motion handling. External links point to stable repository or source URLs.
 
 ## Deployment
 
-Deployment is owner-managed. The canonical release uses the root Dockerfile to
-serve all three project-owned `website/` sources beneath stable path prefixes in one
-Coolify application. It uses the unprivileged nginx image's default static
-configuration on port 8080, with no root homepage, custom health endpoint, or
-automatic deployment workflow. See `DEPLOYMENT.md`.
+Deployment is owner-managed. `public-sites.json` maps stable path slugs to the
+three project-owned `website/` sources. The private Portfolio repository pins
+this repository as a Git submodule, validates that manifest, and copies only
+those static roots into the production research-host image. Advancing this
+repository cannot change production until the reviewed submodule pin advances.
+The root Dockerfile remains a paper-only local preview and rollback path on port
+8080. See `DEPLOYMENT.md`.
 
 ## Known limitations and open gates
 
@@ -158,5 +161,5 @@ automatic deployment workflow. See `DEPLOYMENT.md`.
 - Biology point estimates and selections regenerate from public data.
 - Claims and caveats agree across root, domain, site, and finding documents.
 - All tracked artifact checksums pass and no credentials appear in the commit.
-- Both visual papers work at desktop, compact, phone, and narrow widths once
-  hosted, with no broken first-party assets or critical console errors.
+- All three visual papers work at desktop, compact, phone, and narrow widths
+  once hosted, with no broken first-party assets or critical console errors.
