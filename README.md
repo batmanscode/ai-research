@@ -37,11 +37,12 @@ cd biology/aggregate-chemistry-transfer
 python3 native_core_transfer.py
 ```
 
-All three visual papers are dependency-free. The root Dockerfile serves them
-from one small static deployment at `/secure-domination-p5-free/`,
-`/secure-domination-optimal-coefficient/`, and
-`/aggregate-chemistry-transfer/`. Their project-owned `website/` directories
-remain independently usable as static roots. The original `site/` paths remain
+All three visual papers are dependency-free. Their project-owned `website/`
+directories are declared in [`public-sites.json`](public-sites.json), pinned
+into the private Portfolio build as a Git submodule, and published at
+`/secure-domination-p5-free/`, `/secure-domination-optimal-coefficient/`, and
+`/aggregate-chemistry-transfer/`. The root Dockerfile remains a paper-only
+local preview and rollback path. The original `site/` paths remain
 compatibility copies for previously shared or cached links.
 
 ## Published findings
