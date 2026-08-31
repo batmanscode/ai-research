@@ -1,6 +1,6 @@
 # Playtest and verification contract
 
-Last reviewed: 30 August 2026
+Last reviewed: 31 August 2026
 
 This is the evergreen release contract. Durable baselines and unresolved gates
 live in `playtest/RESULTS.md`.
@@ -58,11 +58,13 @@ credential values; report only pass/fail or filenames needing inspection.
 ## Website scenario
 
 The project-owned `website/` directories remain valid independent static roots.
-For the canonical combined release, build the root Dockerfile and run the graph
-witness scenario at `/secure-domination-p5-free/`, the sharp-theorem scenario
-at `/secure-domination-optimal-coefficient/`, and the biology scenario at
-`/aggregate-chemistry-transfer/`. Each paper must resolve every first-party
-asset inside its own path prefix rather than through its sibling.
+For the canonical combined release, confirm `public-sites.json` declares each
+one exactly once, then run the Portfolio-staged graph witness scenario at
+`/secure-domination-p5-free/`, the sharp-theorem scenario at
+`/secure-domination-optimal-coefficient/`, and the biology scenario at
+`/aggregate-chemistry-transfer/`. The root Dockerfile remains an equivalent
+paper-only preview. Each paper must resolve every first-party asset inside its
+own path prefix rather than through its sibling.
 
 1. Confirm the witness hero states `gamma_s = 4 > 3 = alpha` and links its
    lower witness to the solved `4/3` coefficient theorem.
@@ -79,8 +81,9 @@ asset inside its own path prefix rather than through its sibling.
    all three within-count values, native cores, and the exploratory warning.
 7. On all three websites, confirm no unexpected console errors, broken first-party requests, clipped
    text, or horizontal document overflow.
-8. Confirm an unknown deployment path returns `404`. The combined deployment
-   deliberately provides no root research homepage or application health route.
+8. Confirm an unknown paper path returns `404` on the research host. The
+   Portfolio deployment serves the separate Research Labs hub at the hostname
+   root; the paper-only rollback image deliberately has no root homepage.
 
 Repeat at approximately 1440×900, 1024×768, 390×844, and 320×568. At 200%
 zoom, verify usable reflow. Keyboard through skip link, tabs, play controls, and
