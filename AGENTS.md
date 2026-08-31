@@ -38,6 +38,9 @@ source of scientific truth.
 - Treat `graph/<project>/` and `biology/<project>/` as independent projects.
   Each owns its scientific report, evidence, `CITATION.cff`, `DESIGN.md`, and
   `website/`.
+- Declare every production visual paper in root `public-sites.json`. Keep
+  each slug stable and point only at its project-owned `website/` directory;
+  the Portfolio build exports that allowlist and nothing else.
 - Keep `site/` as a compatibility copy for previously shared or cached paths;
   canonical links belong to the named project directories.
 - all projects should be in their own folders in the same way as the others are unless there's a valid reason
