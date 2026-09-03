@@ -1,6 +1,6 @@
 # Design system
 
-Last updated: 30 August 2026
+Last updated: 4 September 2026
 
 ## Direction
 
@@ -58,6 +58,8 @@ loading is unavailable. Information must remain legible without the web fonts.
   require horizontal scrolling.
 - Navigation labels stay short and on one line at the supported narrow width;
   prefer a few direct links over a disclosure menu.
+- The header's existing `SG` brand link returns to the Research Labs homepage
+  at `/` in the same tab. The paper-specific navigation remains unchanged.
 - Goose illustrations are optional colophon or marginal details, never the
   hero subject. They must not compete with a paper's result, problem, or
   evidence; the compact `SG` mark is sufficient when a mascot adds no meaning.
