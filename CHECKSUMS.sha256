@@ -2,7 +2,7 @@
 9ac6278fb2c1676c90be20f35208c878059d55edec70897d8b669e628e0c8e03  ./AGENTS.md
 b94e1449457fe8213d393ce7a983bb7ccb1c26d56064f7f2e4b19e392064c680  ./CITATION.cff
 4ea632cae911d955a6ac9bde26242be8db2a92f978790a727e38ba77acf9c90a  ./DEPLOYMENT.md
-38c9b71f189e1bb635c5db2d7e1a85b7e4c5bedd114a4c4759fd5600d1483c5c  ./DESIGN.md
+982abc4e914df050584c81b576933b1f69ec777a18c265c9ddfc851b720134ad  ./DESIGN.md
 605bdb27ba458ca664ff8469890fa75edc47d2482bc5660c286b51e9856705a8  ./Dockerfile
 a4d3558568734f2894c29a6a1d62ed7e75f36a5de40ce512004ce6a91c18b11e  ./LICENSE
 03d41037741dea98e20a46ab3c1a5e50bc0e663be132b002322b59058866d6ff  ./PLAYTEST.md
@@ -32,7 +32,7 @@ b2e7f7304cb41aa30e385cb669fdbe541755e9bbb3f10e4a889c6d9845f8bc05  ./biology/aggr
 3c21d11e4a6eef29f685418612ebf03baac8d0a74335189f3eff678f4b11bf26  ./biology/aggregate-chemistry-transfer/website/assets/biology_comparison.png
 fe7af3f5ebd7f949473dfaf138f7f4e5c9fc1fc563327b1a6438ca657c12acaf  ./biology/aggregate-chemistry-transfer/website/css/site.css
 c09c973a459b2baa9fd951656cf040e16469182bb1f4bc0f5409a9b238bc6304  ./biology/aggregate-chemistry-transfer/website/favicon.png
-dca3c2200ec8f985ffde6b0b0adcac2489a812df97006b542061ec7760402749  ./biology/aggregate-chemistry-transfer/website/index.html
+b8d0529cdc183f1bf3f003919411f39deb70a831bb820cecfcaefb76e938d858  ./biology/aggregate-chemistry-transfer/website/index.html
 06dacb83778d522c55415a46420bf1e0561fbdec574aa1d0f694d7db99f46caa  ./biology/aggregate-chemistry-transfer/website/nginx.conf
 af28255782d0dec256f6bae40a70d764ee8614c67f4a646fec5e73db2a41d789  ./findings/README.md
 71b8e7626ad66cdeede4eccc5151edb2666a0c0e85b81d6efb384bd58be2a7a7  ./findings/biology.md
@@ -135,7 +135,7 @@ fa6ea48138b71bbf1da45ff88cec8d7e6e431b5cab1f97f752b43ed4d6c03a19  ./graph/secure
 d0c0823165f6164b6fd3182c3fcfc2c973e9e50290d9334e83238f84281f9ae4  ./graph/secure-domination-optimal-coefficient/website/README.md
 5f7df3676c10eee8f5bb256abe584718581bfe5ea5e270d5b4f64ff9745cdd4a  ./graph/secure-domination-optimal-coefficient/website/css/site.css
 c09c973a459b2baa9fd951656cf040e16469182bb1f4bc0f5409a9b238bc6304  ./graph/secure-domination-optimal-coefficient/website/favicon.png
-3fb193876d29fe7823bc2b6834375828d1135f4ebd57568c07f445dff56b38c0  ./graph/secure-domination-optimal-coefficient/website/index.html
+4ab13b2c981ed35113ef7600ccdd8fd3cec9981aca4e4992bbbd24454be8aacf  ./graph/secure-domination-optimal-coefficient/website/index.html
 1a97e5ca219b89d133edd7be0549ca3800f373c60d8f0eaa8781da4f8ec3fd00  ./graph/secure-domination-optimal-coefficient/website/js/proof-map.js
 06dacb83778d522c55415a46420bf1e0561fbdec574aa1d0f694d7db99f46caa  ./graph/secure-domination-optimal-coefficient/website/nginx.conf
 ff3c80d0373251f15c69d5eca64af4cc88ecb5f661ccb28a5d41a1f3c9472a68  ./graph/secure-domination-p5-free/CITATION.cff
@@ -148,7 +148,7 @@ e0a50626f8476fbc7134584ed84183f33927d89f3c83677826da7f808644bf6c  ./graph/secure
 aa3806970eaad2715582416da0aeb23457fd2bd378bb43054c126aa57488e1f9  ./graph/secure-domination-p5-free/website/README.md
 fe7af3f5ebd7f949473dfaf138f7f4e5c9fc1fc563327b1a6438ca657c12acaf  ./graph/secure-domination-p5-free/website/css/site.css
 c09c973a459b2baa9fd951656cf040e16469182bb1f4bc0f5409a9b238bc6304  ./graph/secure-domination-p5-free/website/favicon.png
-6cc29aebcc267768eefc828cc8c5b51d43a77f4e43a2ea3e5c9a4b2c07fa54ab  ./graph/secure-domination-p5-free/website/index.html
+3f053a1cf09de0466f3a89d0dede6a78dcafb2b45644a66ebeb0f0822f6c131f  ./graph/secure-domination-p5-free/website/index.html
 e3b0df0a5421b70d86d8bffba7c5313023bbfe653a26794b2f9c769d09174d23  ./graph/secure-domination-p5-free/website/js/graph-story.js
 06dacb83778d522c55415a46420bf1e0561fbdec574aa1d0f694d7db99f46caa  ./graph/secure-domination-p5-free/website/nginx.conf
 c34b9ccc82445d515b804ee308051a65b7bfc590ed8b3c29bb995a155d0bdbfc  ./playtest/RESULTS.md
@@ -156,7 +156,7 @@ c34b9ccc82445d515b804ee308051a65b7bfc590ed8b3c29bb995a155d0bdbfc  ./playtest/RES
 15dd4dfb746e7604d826a2455fee6aa0e9337090e4b79fd36da7e0005d2395e2  ./requirements.txt
 3c21d11e4a6eef29f685418612ebf03baac8d0a74335189f3eff678f4b11bf26  ./site/assets/biology_comparison.png
 c09c973a459b2baa9fd951656cf040e16469182bb1f4bc0f5409a9b238bc6304  ./site/assets/favicon.png
-9d5ae9cbe5ccfbc163a4add5bf622ab0c44e6fa691ba277ac2f9289b8a37416c  ./site/biology.html
+85270ba7a57f38fb87a616a26cc58c28019292b4f0b7ce486d240ec2628adc2d  ./site/biology.html
 fe7af3f5ebd7f949473dfaf138f7f4e5c9fc1fc563327b1a6438ca657c12acaf  ./site/css/site.css
-829e84e6959bebcba86c3ee6d746721d10b5af905113f9c3d1c3cc8fc75ebc48  ./site/index.html
+2964fa4be883f852f3deed4c439a0d4fa8136e5587ae32650cd29d24f8d6083c  ./site/index.html
 e3b0df0a5421b70d86d8bffba7c5313023bbfe653a26794b2f9c769d09174d23  ./site/js/graph-story.js
