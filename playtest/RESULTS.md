@@ -312,3 +312,23 @@
   ordinary explanation remains readable independently of the equation. Made
   the deeper-definition link more obvious and its variable formatting
   consistent. Physical-device and screen-reader testing remain unclaimed.
+
+## 5 September 2026 — consistent research navigation
+
+- The Infinity Stones header now matches the graph papers' destinations:
+  Explainer, Proof, Log, and GitHub, with decorative external-link arrows and
+  a visible current-page indicator. The shared design contract records this
+  convention; the biology paper uses Report in place of Proof.
+- Inspected 1440, 1024, 390, and 320 px layouts: no horizontal overflow or
+  wrapped navigation labels; link targets remain 44 px tall. Keyboard focus
+  is visible and the Proof link opens the correct document in the same tab.
+  All three external header destinations and four local assets returned 200;
+  the browser reported no warnings or errors.
+- Gemini 3.8 Flash reviewed desktop and narrow screenshots. Its concern about
+  unequal mobile edge padding was contradicted by the layout: both edges are
+  16 px. The 16 px gaps between navigation links remain adequate on direct
+  inspection; no additional layout change was warranted. Physical-device
+  testing remains unclaimed.
+- Two targeted Emergent Mind open-problem searches found no suitable match
+  for the note. No finding was submitted; publication status is recorded in
+  `findings/README.md`. Research claims and model code were unchanged.
