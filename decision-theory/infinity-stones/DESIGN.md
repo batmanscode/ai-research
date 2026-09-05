@@ -2,9 +2,10 @@
 
 ## Reader promise
 
-No prior maths vocabulary should be needed. Keep the formula and secondary
-assumptions in optional disclosures; explain scores and markers in ordinary
-words.
+No prior maths vocabulary should be needed. Show useful equations beside
+plain-language explanations: the same-average arithmetic and the decision
+rule are visible. Keep the time-weight definition and secondary settings
+optional; readers can follow the story without expanding them.
 
 A curious reader should leave understanding why the same 20-year average can
 produce opposite handover decisions, and what extra information restores a

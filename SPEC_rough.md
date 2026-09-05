@@ -86,3 +86,10 @@ justified, credit the original scenario, and use a playful title. Keep the
 interactive accessible to a layperson, with formal details optional. Add the
 project in its own folder, update only relevant documentation, validate the
 result and visuals, then open a new branch/PR and squash merge when safe.
+
+
+## 5 September 2026 — maths as part of the explanation
+
+Show mathematics where it helps readers understand or learn, with ordinary
+explanations that let other readers continue. Beginner-friendly does not mean
+all equations must be hidden. Keep this adjustment proportional to the page.

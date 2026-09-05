@@ -73,6 +73,11 @@
         <article class="world" data-world="uneven"><div class="world-top"><span class="world-index">C</span><span class="world-status bad">Keeping is better</span></div><h3>An uneven pause</h3><p class="world-law" id="uneven-law"><strong>90%</strong> return after <strong>1 year</strong>; <strong>10%</strong> after <strong>191 years.</strong></p><div class="risk-track" role="img" aria-label="Tolerable handover risk 7.76 percent; chosen risk 15 percent"><div class="risk-fill" style="width:7.7646%"></div><div class="risk-marker" style="left:15%"></div></div><div class="threshold-label"><span>Risk worth taking, up to</span><strong class="threshold-value">7.76%</strong></div><div class="value-row"><span>Safety score</span><strong class="safe-value">13.90</strong></div></article>
       </div>
       <div class="comparison-summary" aria-live="polite" aria-atomic="true"><div><span class="mini-label">Keeping the stones</span><strong id="keep-value">20.00</strong><span id="safe-unit">safety score</span></div><p id="comparison-copy">Same average, opposite answers: handover helps in the reliable world but hurts in the uneven one.</p></div>
+      <div class="average-check" aria-labelledby="average-check-title">
+        <h3 id="average-check-title">The same average, in one line</h3>
+        <p class="average-equation" id="average-arithmetic">90% × 1 + 10% × 191 = 20 years</p>
+        <p>For the uneven world, multiply each pause by its chance, then add. Rare long pauses can hide lots of early returns.</p>
+      </div>
       <p class="caption"><strong>How to read this:</strong> if the black line is inside the purple bar, handover is worth its risk. The safety score adds up the safe years you can expect, giving nearer years extra weight if you chose that above. Higher is better; the green box shows the score for keeping the stones. Each card assumes you repeat the handover whenever new stones appear.</p>
     </section>
 
@@ -99,7 +104,23 @@
 
     <section class="result shell" id="result" aria-labelledby="result-title">
       <div class="result-copy"><p class="eyebrow">The proved result / Within this model</p><h2 id="result-title">The average alone<br><em>cannot clear the handover.</em></h2><p>If you give any extra weight to safety soon, an average pause alone cannot justify even a tiny handover risk. Some pattern with that same average will make keeping the stones better.</p><p>Make early returns very common. Offset them with rare, very long pauses. The average stays fixed while the tolerable handover risk approaches zero.</p><p><strong>Knowing the stones cannot return for a certain time changes that.</strong> So does permanent removal of production. The theorem identifies the missing information; it does not say disarmament always fails.</p><a class="button" href="https://github.com/batmanscode/ai-research/blob/main/decision-theory/infinity-stones/proof.md">Read the complete proof ↗</a></div>
-      <details class="formula-note"><summary>Want the maths?</summary><p class="caption">The formula below is for a positive time-weighting rate. The proof also covers zero.</p><span class="mini-label">The exact decision boundary</span><p class="formula">q ≤ <span class="fraction"><span>λ(1 − L)</span><span>β + λ(1 − L)</span></span></p><dl><div><dt>q</dt><dd>Failure probability at each handover.</dd></div><div><dt>λ</dt><dd>Background catastrophe hazard while distributed.</dd></div><div><dt>β</dt><dd>Rate used to weight future safe time.</dd></div><div><dt>L</dt><dd>The average of e<sup>−βR</sup> over possible return times R.</dd></div></dl><p class="caption">Average the transformed return times. Transforming their average gives a different answer.</p></details>
+      <aside class="formula-note" aria-labelledby="formula-title">
+        <h3 id="formula-title">The rule behind the bars</h3>
+        <p class="formula-intro">A handover is worth its risk when its chance of failure stays at or below this limit:</p>
+        <p class="formula" role="math" aria-label="q is less than or equal to lambda times H divided by one plus lambda times H">q ≤ <span class="fraction"><span>λH</span><span>1 + λH</span></span></p>
+        <dl>
+          <div><dt>q</dt><dd>Chance of failure at each handover.</dd></div>
+          <div><dt>λ</dt><dd>Danger rate while everyone keeps their stones.</dd></div>
+          <div><dt>H</dt><dd>Average safe time bought by one successful handover, using your time weights.</dd></div>
+        </dl>
+        <p class="formula-takeaway">For the same background danger, more safe time between handovers means more handover risk is worth taking. At the limit, keeping and handing over tie.</p>
+        <details class="weight-definition">
+          <summary>How do the time weights enter?</summary>
+          <p>Let <var>R</var> be a pause's length and <var>β</var> the rate chosen under “How much nearer years matter.” E just means “take the average over possible pauses.”</p>
+          <p class="formula" role="math" aria-label="H equals the average of one minus e to the power minus beta R, divided by beta">H = E[<span class="fraction"><span>1 − e<sup>−βR</sup></span><span>β</span></span>]</p>
+          <p>This expression is for <var>β</var> &gt; 0. At <var>β</var> = 0, every year counts equally: <var>H</var> = E[<var>R</var>], the average pause. Both cases use the rule above.</p>
+        </details>
+      </aside>
     </section>
 
     <section class="patience shell"><p class="eyebrow">One more twist</p><h2>Perfect patience changes<br><em>what the average can tell you.</em></h2><div class="two-columns"><p>Count a safe year far in the future just as much as a safe year today, and the average becomes enough. All three cards agree. Move “How much nearer years matter” to zero to see it.</p><p>Give even a little extra weight to nearer years, and some extremely uneven pattern can still spoil that guarantee. As you become more patient, that troublesome pattern becomes more extreme. No single world suddenly jumps from one answer to another.</p></div></section>

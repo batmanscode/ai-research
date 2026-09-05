@@ -140,8 +140,9 @@ evidence boundary.
 
 `decision-theory/infinity-stones/website/index.html` introduces the scenario
 without requiring maths, compares three equal-average comeback patterns, and
-lets readers test which time limits make a decision possible. The equation is
-optional; scores, assumptions, and CYBRDELIC attribution are visible.
+lets readers test which time limits make a decision possible. The decision
+equation and same-average arithmetic are visible with ordinary explanations; the time-weight definition and secondary settings are optional.
+Scores, assumptions, and CYBRDELIC attribution remain visible.
 
 Each paper owns its first-party assets and can be deployed without the other.
 All four pages use relative first-party assets, semantic headings, a skip link,
