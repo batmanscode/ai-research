@@ -30,8 +30,10 @@ Log ↗, and GitHub ↗. The hero's experiment link starts the interactive story
 2. Explain the recurring loop: keep; hand over; fail or gain a pause; factories
    return. Distinguish model assumptions from facts. Before the experiments,
    a visible box explains that permanent prevention needs only one risky
-   collection, links its calculation, and identifies surviving production as
-   the experiments' assumption.
+   collection and shows its calculation: 28.33 versus 20, with a 40% break-even
+   risk for explicitly fixed example inputs. Define the score and symbols
+   beside the visible arithmetic, link the derivation, and identify surviving
+   production as the experiments' assumption.
 3. Same-average comparison. Three explicitly described return laws, a marker
    for chosen handover risk, exact thresholds, and expected discounted safe
    time. Changes update every value and accessible text together.

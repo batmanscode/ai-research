@@ -7,7 +7,7 @@
   <meta name="theme-color" content="#f9f8f4">
   <title>Who gets the Infinity Stones? — Silly Goose Research Labs</title>
   <link rel="icon" href="favicon.png" type="image/png">
-  <link rel="stylesheet" href="css/site.css?v=f9d5f6b34a2d">
+  <link rel="stylesheet" href="css/site.css?v=085f447ca5ed">
   <script src="js/model.js" defer></script>
   <script src="js/explorer.js" defer></script>
 </head>
@@ -59,8 +59,40 @@
       <aside class="production-note" aria-labelledby="production-title">
         <h3 id="production-title">Couldn’t they stop the factories forever?</h3>
         <p>If whoever collects the stones can permanently prevent new ones being made, there’s only one risky collection. If it succeeds, the world stays safe in this model. We consider that case too.</p>
+        <div class="oneoff-example" aria-labelledby="oneoff-title">
+          <div class="oneoff-story">
+            <p class="oneoff-label">Worked example · fixed inputs</p>
+            <h4 id="oneoff-title">One gamble. No second collection.</h4>
+            <p>Suppose collection has a <strong>15% chance of catastrophe</strong> and an 85% chance of permanent safety. Failure is immediate and scores zero.</p>
+            <p>The safety score adds up expected safe years, giving nearer years more weight. Higher is better; it is not a survival percentage.</p>
+            <p class="oneoff-assumptions">For this example, <var>λ</var> = 0.02/year is the danger rate while keeping the stones (about a 2% chance in a year). <var>β</var> = 0.03/year sets the time weighting: a safe year 23 years away counts about half as much as one today. These inputs stay fixed when you move the sliders below.</p>
+          </div>
+          <div class="oneoff-maths">
+            <div class="oneoff-score">
+              <h5>Permanent prevention · safety score</h5>
+              <div class="oneoff-equation" role="math" aria-label="One minus q, divided by beta, equals 0.85 divided by 0.03, approximately 28.33">
+                <span class="fraction"><span>1 − <var>q</var></span><span><var>β</var></span></span><span>=</span><span class="fraction"><span>0.85</span><span>0.03</span></span><span>≈ <strong>28.33</strong></span>
+              </div>
+            </div>
+            <div class="oneoff-score">
+              <h5>Keep the stones · safety score</h5>
+              <div class="oneoff-equation" role="math" aria-label="One divided by beta plus lambda equals one divided by 0.05 equals 20">
+                <span class="fraction"><span>1</span><span><var>β</var> + <var>λ</var></span></span><span>=</span><span class="fraction"><span>1</span><span>0.05</span></span><span>= <strong>20</strong></span>
+              </div>
+              <p class="oneoff-addition">The denominator is 0.03 + 0.02 = 0.05.</p>
+            </div>
+            <p><strong>Permanent prevention wins in this example.</strong> The chance of a safe future outweighs the one-off risk.</p>
+          </div>
+          <div class="oneoff-threshold">
+            <p><strong>How risky could that one collection be?</strong> Below 40%, permanent prevention scores higher. At 40%, the choices tie; above it, keeping wins.</p>
+            <div class="oneoff-equation" role="math" aria-label="Break-even failure chance q equals lambda divided by beta plus lambda equals 0.02 divided by 0.05 equals 40 percent">
+              <span><var>q</var> =</span><span class="fraction"><span><var>λ</var></span><span><var>β</var> + <var>λ</var></span></span><span>=</span><span class="fraction"><span>0.02</span><span>0.05</span></span><span>= <strong>40%</strong></span>
+            </div>
+            <p class="oneoff-symbol"><var>q</var> is the chance that collection fails. The 40% boundary comes from these example inputs, not a universal rule.</p>
+          </div>
+        </div>
         <p><strong>The experiments below assume production survives:</strong> destroying today’s stones leaves the ability to manufacture more.</p>
-        <a href="https://github.com/batmanscode/ai-research/blob/main/decision-theory/infinity-stones/proof.md#7-a-different-custodian-assumption-changes-the-theorem">See the one-off calculation <span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/batmanscode/ai-research/blob/main/decision-theory/infinity-stones/proof.md#7-a-different-custodian-assumption-changes-the-theorem">Read the one-off derivation <span aria-hidden="true">↗</span></a>
       </aside>
       <p class="scope-note"><strong>What “better” means here:</strong> more safe time, on average. These are made-up risks for a thought experiment.</p>
     </section>

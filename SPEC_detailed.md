@@ -144,7 +144,9 @@ lets readers test which time limits make a decision possible. The decision
 equation and same-average arithmetic are visible with ordinary explanations; the time-weight definition and secondary settings are optional.
 Scores, assumptions, and CYBRDELIC attribution remain visible.
 Before the experiments, a visible setup box distinguishes permanent prevention
-from surviving production and links the one-off calculation in the proof.
+from surviving production. Its visible, fixed-input worked example gives the
+one-off score (28.33 versus 20) and 40% break-even risk, defines the symbols and
+time weighting, and links the derivation in the proof.
 
 Each paper owns its first-party assets and can be deployed without the other.
 All four pages use relative first-party assets, semantic headings, a skip link,

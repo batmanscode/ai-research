@@ -7,7 +7,7 @@ a4dfb0b698a01994b1dd8bb201f8b4ca39037fd2fa0c5cab83ae9c6c5dfdaa5e  ./CITATION.cff
 a4d3558568734f2894c29a6a1d62ed7e75f36a5de40ce512004ce6a91c18b11e  ./LICENSE
 3920719be85651a1731bcc13da8b28d3dd971391cccba3b3f61ddae85d0d7d5f  ./PLAYTEST.md
 6e529968c2ffcfdc7fc19a43eabb033ff15dc75f501c958b4397eb6ec7df231f  ./README.md
-a36518ae1ead9c6cdd279c544c8064c4c78c771e01bc23ce9d8ddd48fb0e4245  ./SPEC_detailed.md
+44a90d8664e31c74b5286074b3c520c756c0060f5925b16cfd62302f989baebf  ./SPEC_detailed.md
 18f5b09ff652ebfc114a5e44be11134d57c168eed339d47c71a289266fcf240f  ./SPEC_rough.md
 d8466d08ea5dd02302d6d5e919405bc0416c3ecbd5c28016cd3c0ebd1904f7bb  ./biology/README.md
 52d6750f7240f5f3d6764a9f55e57f5a0dd9059f8eab00a517c95d52870b2b54  ./biology/aggregate-chemistry-transfer/CITATION.cff
@@ -36,7 +36,7 @@ b8d0529cdc183f1bf3f003919411f39deb70a831bb820cecfcaefb76e938d858  ./biology/aggr
 06dacb83778d522c55415a46420bf1e0561fbdec574aa1d0f694d7db99f46caa  ./biology/aggregate-chemistry-transfer/website/nginx.conf
 583a5128e35fc0beabab7cb196102e1ab5e1e52088a14c8f0b47da7cb7fb9b13  ./decision-theory/README.md
 1ad9762df6eaf99044668b39f59dc35bed82877f1c3e9b305ddf5890fcc954b4  ./decision-theory/infinity-stones/CITATION.cff
-671cc621035c6b4e053f60ebb715a3c98363ffabfe376252f9f96b0a50cc8f25  ./decision-theory/infinity-stones/DESIGN.md
+e83cdab80cef0dcb1b8576f4333882e04d07a85bcf85a9dcb61b84e5c499244b  ./decision-theory/infinity-stones/DESIGN.md
 9767f63ed198aa84c536f4ab226f3c57553c0dead4ff9f2939940318d48f3c45  ./decision-theory/infinity-stones/README.md
 6912924100d1b5319c985b6a67264264a56d9c9c10d67ced35126effd0d3132c  ./decision-theory/infinity-stones/proof.md
 48feabe8428696f440f6a0d9b815bfdc0c01e164de51ed3a2a74c43d55d938e6  ./decision-theory/infinity-stones/research-log.md
@@ -44,9 +44,9 @@ da1438c533343fce81d97f23ef0bc8821f979e20ddcdbf56081b440e4652d0a2  ./decision-the
 d71aaaf274c904217ab89d27863429c0953aee6eb7b2e52a6a4c0d38cad7b48f  ./decision-theory/infinity-stones/verify-web.cjs
 35146c91974176c0839393d0a6c9b9568bb4edc158732507252a234b20a0dd15  ./decision-theory/infinity-stones/verify.py
 0777a9181b71ff4f20c84cbfcb10cd8351c6233878a3772eaa4b383e3663f018  ./decision-theory/infinity-stones/website/README.md
-f9d5f6b34a2dd0b62172e7f087c1c86b259e9839844b4114d9a3aae020f8cfff  ./decision-theory/infinity-stones/website/css/site.css
+085f447ca5edded3e2af0034ba43d014a8b54873d73a73c4eb8ea7cc12414de1  ./decision-theory/infinity-stones/website/css/site.css
 c09c973a459b2baa9fd951656cf040e16469182bb1f4bc0f5409a9b238bc6304  ./decision-theory/infinity-stones/website/favicon.png
-4a3688c4b0e296b49fe9fffca314df19095a0cb8c8cd83646bf7f5b2ea54e75d  ./decision-theory/infinity-stones/website/index.html
+4edf699daabd43e13a0b25c495d6107cf3c2d94c4039083bf32f7cde936b75be  ./decision-theory/infinity-stones/website/index.html
 061fb2ee38cafc75f235ea13382aa251eb11df1edc1b3c4253f67ebf251cf870  ./decision-theory/infinity-stones/website/js/explorer.js
 3cb11dc17dbc5adbf88aaae5c9719222c30ed85af3d434e032780c2e17e4d9f6  ./decision-theory/infinity-stones/website/js/model.js
 e7b06fab166e8a538b64128be7c71aa0b49e36f8d5f71aa59d0aa23e3e6b2804  ./findings/README.md
@@ -166,7 +166,7 @@ c09c973a459b2baa9fd951656cf040e16469182bb1f4bc0f5409a9b238bc6304  ./graph/secure
 3f053a1cf09de0466f3a89d0dede6a78dcafb2b45644a66ebeb0f0822f6c131f  ./graph/secure-domination-p5-free/website/index.html
 e3b0df0a5421b70d86d8bffba7c5313023bbfe653a26794b2f9c769d09174d23  ./graph/secure-domination-p5-free/website/js/graph-story.js
 06dacb83778d522c55415a46420bf1e0561fbdec574aa1d0f694d7db99f46caa  ./graph/secure-domination-p5-free/website/nginx.conf
-7a954a8022e7eb2aad69116a870725b6223cecaba418d398aa26d664a5f4b926  ./playtest/RESULTS.md
+13bd568113336d57a8dc8da2d94e80d828c89712a1131f407c5e136da50ad556  ./playtest/RESULTS.md
 54d5c4c963b70157d3bbf7e0ed2ebab5841e3c102286d038447d33de6bbeaf8b  ./public-sites.json
 15dd4dfb746e7604d826a2455fee6aa0e9337090e4b79fd36da7e0005d2395e2  ./requirements.txt
 3c21d11e4a6eef29f685418612ebf03baac8d0a74335189f3eff678f4b11bf26  ./site/assets/biology_comparison.png
