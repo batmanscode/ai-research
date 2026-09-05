@@ -16,6 +16,7 @@ each stable URL slug to one project-owned static root:
 | Secure domination | `graph/secure-domination-p5-free/website` | `/secure-domination-p5-free/` |
 | Sharp secure-domination coefficient | `graph/secure-domination-optimal-coefficient/website` | `/secure-domination-optimal-coefficient/` |
 | Protein transfer | `biology/aggregate-chemistry-transfer/website` | `/aggregate-chemistry-transfer/` |
+| Infinity Stones | `decision-theory/infinity-stones/website` | `/infinity-stones/` |
 
 Every declared source must stay inside this repository, contain `index.html`,
 and use relative first-party asset paths. A new visual paper chooses one stable
@@ -32,7 +33,10 @@ folders only; it does not contain the Git checkout or the rest of this
 repository.
 
 Advancing `ai-research` does not silently change production. The submodule pin
-must move in a reviewed Portfolio commit. Portfolio may use Dependabot's
+must move in a reviewed Portfolio commit. The Infinity Stones route is staged here; publishing it requires that Portfolio
+pin update.
+
+Portfolio may use Dependabot's
 `gitsubmodule` ecosystem to propose that pin update automatically.
 
 ## Coolify
@@ -46,14 +50,14 @@ For the migration:
 
 1. deploy a Portfolio revision that contains the pinned submodule and exported
    paper folders;
-2. verify the research root, all three paper URLs, their first-party assets, and
+2. verify the research root, all declared paper URLs, their first-party assets, and
    an unknown path;
 3. only then remove `research.sillygoose.fyi` and its path rules from the old
    `ai-research` resource; and
 4. stop that resource, retaining it briefly for rollback before deletion.
 
 The root `Dockerfile` remains a local-preview and short rollback option. It
-serves the same three paper routes on port `8080`, deliberately without a root
+serves the declared paper routes on port `8080`, deliberately without a root
 homepage. It should not keep the production research hostname after the
 Portfolio deployment is verified.
 
@@ -77,12 +81,13 @@ docker build -t silly-goose-research .
 docker run --rm -p 8080:8080 silly-goose-research
 ```
 
-Then check the three routes and one miss:
+Then check the four routes and one miss:
 
 ```bash
 curl -I http://127.0.0.1:8080/secure-domination-p5-free/
 curl -I http://127.0.0.1:8080/secure-domination-optimal-coefficient/
 curl -I http://127.0.0.1:8080/aggregate-chemistry-transfer/
+curl -I http://127.0.0.1:8080/infinity-stones/
 curl -I http://127.0.0.1:8080/not-a-paper
 ```
 

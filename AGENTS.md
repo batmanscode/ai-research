@@ -35,7 +35,8 @@ source of scientific truth.
   changes.
 - Deployment is owner-managed. Do not add or run automatic deployment unless
   the owner explicitly requests it.
-- Treat `graph/<project>/` and `biology/<project>/` as independent projects.
+- Treat `graph/<project>/`, `biology/<project>/`, and
+  `decision-theory/<project>/` as independent projects.
   Each owns its scientific report, evidence, `CITATION.cff`, `DESIGN.md`, and
   `website/`.
 - Declare every production visual paper in root `public-sites.json`. Keep

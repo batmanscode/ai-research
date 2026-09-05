@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "Cite this note for the model-specific bounds; also credit CYBRDELIC's originating scenario. Mathematical methods have their own citations in the research log."
+title: "Who gets the Infinity Stones? A sharp robustness bound for repeated risky disarmament"
+type: software
+version: 1.0.0
+date-released: 2026-09-05
+authors:
+  - name: "Silly Goose Research Labs contributors"
+repository-code: "https://github.com/batmanscode/ai-research/tree/main/decision-theory/infinity-stones"
+license: MIT
+keywords:
+  - disarmament
+  - renewal theory
+  - distributional robustness
+  - convex order
+  - decision theory
+references:
+  - type: generic
+    title: "Imagine the elite are capable of producing factories that make infinity stones."
+    authors:
+      - name: "CYBRDELIC (@cybrdelic)"
+    date-published: 2026-08-31
+    url: "https://x.com/cybrdelic/status/2094237445240102951"
+  - type: article
+    title: "The Critical Barrier to Civil War Settlement"
+    authors:
+      - family-names: Walter
+        given-names: Barbara F.
+    year: 1997
+    doi: "10.1162/002081897550384"
+  - type: article
+    title: "Bounds on the Expectation of a Convex Function of a Multivariate Random Variable"
+    authors:
+      - family-names: Madansky
+        given-names: Albert
+    year: 1959
+    doi: "10.1214/aoms/1177706203"

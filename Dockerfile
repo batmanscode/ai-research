@@ -23,4 +23,9 @@ COPY biology/aggregate-chemistry-transfer/website/favicon.png /usr/share/nginx/h
 COPY biology/aggregate-chemistry-transfer/website/css /usr/share/nginx/html/aggregate-chemistry-transfer/css
 COPY biology/aggregate-chemistry-transfer/website/assets /usr/share/nginx/html/aggregate-chemistry-transfer/assets
 
+COPY decision-theory/infinity-stones/website/index.html /usr/share/nginx/html/infinity-stones/
+COPY decision-theory/infinity-stones/website/favicon.png /usr/share/nginx/html/infinity-stones/
+COPY decision-theory/infinity-stones/website/css /usr/share/nginx/html/infinity-stones/css
+COPY decision-theory/infinity-stones/website/js /usr/share/nginx/html/infinity-stones/js
+
 EXPOSE 8080

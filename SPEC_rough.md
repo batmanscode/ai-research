@@ -77,3 +77,12 @@ This file preserves owner intent and major decisions. It is append-only.
 - Retain the individual paper Dockerfiles only as temporary rollback options
   through the first combined production release; remove them afterward unless
   standalone paper domains remain useful.
+
+
+## 5 September 2026 — Infinity Stones research note
+
+Develop the CYBRDELIC thread into a useful original research contribution if
+justified, credit the original scenario, and use a playful title. Keep the
+interactive accessible to a layperson, with formal details optional. Add the
+project in its own folder, update only relevant documentation, validate the
+result and visuals, then open a new branch/PR and squash merge when safe.

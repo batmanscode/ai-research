@@ -1,6 +1,6 @@
 # Detailed specification
 
-Last updated: 31 August 2026
+Last updated: 5 September 2026
 
 This is the current product, research, and technical truth for `ai-research`,
 published under the Silly Goose Research Labs umbrella brand.
@@ -18,6 +18,8 @@ independently deployable, lay-facing visual paper for each result.
   verifier, design contract, and visual paper.
 - `biology/` — category index; each named project owns its analysis, results,
   preregistration, design contract, and visual paper.
+- `decision-theory/` — category index; each project owns its model, proof,
+  reproducible checks, citation, and beginner-facing interactive.
 - `site/` — compatibility copy of the original two-page static explainer.
 - `findings/` — Markdown source for external finding submissions.
 - Root documents — project routing, owner intent, current truth, shared design,
@@ -108,6 +110,17 @@ study. An official-source audit found no eligible public matched candidate;
 the new label-escrow package freezes candidate metadata, model predictions,
 structure rules, protocol, and evaluator code before a steward reveals labels.
 
+## Recurring disarmament result
+
+`decision-theory/infinity-stones/` develops CYBRDELIC's Infinity Stones
+scenario into a stationary model with fresh handover risk, temporary safety,
+and returning production. The proof gives an exact decision threshold, sharp
+bounds given a mean and time limits, a zero mean-only robust threshold, and
+noncommuting patience/uncertainty limits. These are conditional mathematical
+results using established renewal and convexity tools; global novelty and
+external peer review remain unconfirmed. A permanently trustworthy custodian
+is explicitly shown to change the result.
+
 ## Visual papers
 
 `graph/secure-domination-p5-free/website/index.html` introduces secure
@@ -125,15 +138,20 @@ reference state, three held-backbone comparisons, within-count signal,
 invariance hypothesis, failed position-specific structural transfer, and
 evidence boundary.
 
+`decision-theory/infinity-stones/website/index.html` introduces the scenario
+without requiring maths, compares three equal-average comeback patterns, and
+lets readers test which time limits make a decision possible. The equation is
+optional; scores, assumptions, and CYBRDELIC attribution are visible.
+
 Each paper owns its first-party assets and can be deployed without the other.
-All three pages use relative first-party assets, semantic headings, a skip link,
+All four pages use relative first-party assets, semantic headings, a skip link,
 responsive layouts, visible text labels in addition to color, and reduced-
 motion handling. External links point to stable repository or source URLs.
 
 ## Deployment
 
 Deployment is owner-managed. `public-sites.json` maps stable path slugs to the
-three project-owned `website/` sources. The private Portfolio repository pins
+four project-owned `website/` sources. The private Portfolio repository pins
 this repository as a Git submodule, validates that manifest, and copies only
 those static roots into the production research-host image. Advancing this
 repository cannot change production until the reviewed submodule pin advances.
@@ -151,15 +169,17 @@ The root Dockerfile remains a paper-only local preview and rollback path on port
   trace is included in this reconstruction.
 - The biology result has no untouched fourth backbone or wet-lab confirmation;
   the public-source audit found no eligible fourth matched landscape.
-- Production-host browser passes remain pending until the owner deploys all three
-  visual papers.
+- The new Infinity Stones route requires a reviewed Portfolio pin update
+  before production-host verification; this source change does not deploy it.
 - Human screen-reader and device testing are not claimed.
 
 ## Acceptance criteria
 
+- Infinity Stones evidence regenerates, agrees with the browser calculator,
+  and keeps model assumptions and novelty limits visible.
 - Exact graph certificate regenerates and matches the checked-in file.
 - Biology point estimates and selections regenerate from public data.
 - Claims and caveats agree across root, domain, site, and finding documents.
 - All tracked artifact checksums pass and no credentials appear in the commit.
-- All three visual papers work at desktop, compact, phone, and narrow widths
+- All four visual papers work at desktop, compact, phone, and narrow widths
   once hosted, with no broken first-party assets or critical console errors.

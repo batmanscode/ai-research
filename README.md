@@ -7,7 +7,8 @@ domination and a corrected exploratory experiment on protein-fitness transfer.
 **Independent visual papers:**
 [graph counterexample](graph/secure-domination-p5-free/website/index.html) ·
 [sharp coefficient theorem](graph/secure-domination-optimal-coefficient/website/index.html) ·
-[protein transfer](biology/aggregate-chemistry-transfer/website/index.html)
+[protein transfer](biology/aggregate-chemistry-transfer/website/index.html) ·
+[Infinity Stones](decision-theory/infinity-stones/website/index.html)
 
 ## Results at a glance
 
@@ -16,6 +17,8 @@ domination and a corrected exploratory experiment on protein-fitness transfer.
 | Graph counterexample | For the complement \(G\) of the icosahedral graph, \(\gamma_s(G)=4>3=\alpha(G)\). Thus the coefficient-one strengthening is false and the universal coefficient is at least \(4/3\). | The 12-vertex example and its lower bound are exact theorem/counterexample results—not conjectures. Minimum order remains finite computational evidence; the continuation below proves the matching upper bound. | [`graph/secure-domination-p5-free/`](graph/secure-domination-p5-free/) |
 | Graph coefficient theorem | Every connected induced-`P5`-free graph with `alpha>=3` satisfies `gamma_s<=alpha+1`; therefore the optimal universal coefficient is exactly `4/3`, attained by the icosahedral complement. | Solved all-orders theorem package with multiple independent proof audits; conventional external peer review remains pending. | [`graph/secure-domination-optimal-coefficient/`](graph/secure-domination-optimal-coefficient/) |
 | Protein fitness | A validation-selected 11–16 feature aggregate-chemistry ridge improves on native mutation count in all three FLIP2 Hydro held-backbone folds; within-count signal is positive in each. | Exploratory reconstruction, not untouched confirmation. No eligible public fourth matched backbone was found; a preregistration and executable label-escrow package are ready for a new candidate. | [`biology/aggregate-chemistry-transfer/`](biology/aggregate-chemistry-transfer/) |
+
+| Risky disarmament | In a recurring-production model, the average pause alone gives no positive guaranteed handover-risk threshold. Known time limits give sharp bounds. | Proved within an explicit model; global novelty and external peer review remain unconfirmed. Inspired by and credited to CYBRDELIC. | [`decision-theory/infinity-stones/`](decision-theory/infinity-stones/) |
 
 ## Reproduce
 
@@ -37,11 +40,20 @@ cd biology/aggregate-chemistry-transfer
 python3 native_core_transfer.py
 ```
 
-All three visual papers are dependency-free. Their project-owned `website/`
+The Infinity Stones note includes a standard-library verifier and a small
+interactive calculator:
+
+```bash
+python3 decision-theory/infinity-stones/verify.py
+node decision-theory/infinity-stones/verify-web.cjs
+```
+
+All four visual papers are dependency-free. Their project-owned `website/`
 directories are declared in [`public-sites.json`](public-sites.json), pinned
 into the private Portfolio build as a Git submodule, and published at
 `/secure-domination-p5-free/`, `/secure-domination-optimal-coefficient/`, and
-`/aggregate-chemistry-transfer/`. The root Dockerfile remains a paper-only
+`/aggregate-chemistry-transfer/`. The new `/infinity-stones/` route is registered
+for the next reviewed Portfolio pin update. The root Dockerfile remains a paper-only
 local preview and rollback path. The original `site/` paths remain
 compatibility copies for previously shared or cached links.
 
@@ -69,6 +81,7 @@ instead:
 - [`graph/secure-domination-p5-free/CITATION.cff`](graph/secure-domination-p5-free/CITATION.cff)
 - [`graph/secure-domination-optimal-coefficient/CITATION.cff`](graph/secure-domination-optimal-coefficient/CITATION.cff)
 - [`biology/aggregate-chemistry-transfer/CITATION.cff`](biology/aggregate-chemistry-transfer/CITATION.cff)
+- [`decision-theory/infinity-stones/CITATION.cff`](decision-theory/infinity-stones/CITATION.cff)
 
 When a project receives a preprint or archive DOI, its project citation should
 be updated to prefer that permanent scholarly record.
@@ -78,6 +91,7 @@ be updated to prefer that permanent scholarly record.
 ```text
 graph/      category index and named graph-theory projects
 biology/    category index and named biological projects
+decision-theory/  category index and named decision-model projects
 site/       compatibility copy of the original combined explainer
 findings/   publication index and source bodies for the Emergent Mind reports
 ```

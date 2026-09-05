@@ -1,6 +1,6 @@
 # Playtest and verification contract
 
-Last reviewed: 31 August 2026
+Last reviewed: 5 September 2026
 
 This is the evergreen release contract. Durable baselines and unresolved gates
 live in `playtest/RESULTS.md`.
@@ -23,6 +23,7 @@ prove responsive layout; an AI review does not replace primary judgment.
 | Documentation only | Markdown/link review, checksum refresh, secret scan, commit diff review. |
 | Graph code or claim | Documentation gate plus exact verifier, regenerated certificate comparison, and claim-scope review. |
 | Biology code or claim | Documentation gate plus selected-model/point-estimate reproduction; use the full bootstrap/permutation run for published statistics or figures. |
+| Decision model or claim | Documentation gate plus proof review, Python evidence reproduction, and browser-model fixture/edge agreement. |
 | Public UI or visual | Relevant computation gate plus desktop/compact/phone/narrow browser journeys, all changed states, console/asset review, and direct screenshot review. |
 | External publication | All affected gates plus stable public source links, duplicate-finding check, and final attribution/scope review. |
 
@@ -44,6 +45,9 @@ node --check graph/secure-domination-p5-free/website/js/graph-story.js
 node --check graph/secure-domination-optimal-coefficient/website/js/proof-map.js
 python3 -m unittest \
   biology/aggregate-chemistry-transfer/external_validation_freeze/tests/test_freeze_package.py
+python3 decision-theory/infinity-stones/verify.py --output /tmp/infinity-stones.json
+cmp decision-theory/infinity-stones/results/verification.json /tmp/infinity-stones.json
+node decision-theory/infinity-stones/verify-web.cjs
 sha256sum -c CHECKSUMS.sha256
 ```
 
@@ -79,9 +83,14 @@ own path prefix rather than through its sibling.
    itself secure and never treats finite checks as the all-orders proof.
 6. Separately open the biology website and verify all nine comparison values,
    all three within-count values, native cores, and the exploratory warning.
-7. On all three websites, confirm no unexpected console errors, broken first-party requests, clipped
+7. On the Infinity Stones page, confirm the default equal-average reversal,
+   zero time-weighting agreement, zero background-danger and zero-handover-risk
+   edges, all three information choices, collapsed bounds, keyboard sliders,
+   reset, and optional maths disclosure. Confirm ordinary copy explains the
+   bars and scores without requiring the equation.
+8. On all affected websites, confirm no unexpected console errors, broken first-party requests, clipped
    text, or horizontal document overflow.
-8. Confirm an unknown paper path returns `404` on the research host. The
+9. Confirm an unknown paper path returns `404` on the research host. The
    Portfolio deployment serves the separate Research Labs hub at the hostname
    root; the paper-only rollback image deliberately has no root homepage.
 
