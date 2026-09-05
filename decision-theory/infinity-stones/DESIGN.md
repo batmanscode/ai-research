@@ -28,7 +28,10 @@ Log ↗, and GitHub ↗. The hero's experiment link starts the interactive story
 1. Question and direct scenario credit to CYBRDELIC, with a clear research-note
    status. Six geometric stones lead into the concentration bottleneck.
 2. Explain the recurring loop: keep; hand over; fail or gain a pause; factories
-   return. Distinguish model assumptions from facts.
+   return. Distinguish model assumptions from facts. Before the experiments,
+   a visible box explains that permanent prevention needs only one risky
+   collection, links its calculation, and identifies surviving production as
+   the experiments' assumption.
 3. Same-average comparison. Three explicitly described return laws, a marker
    for chosen handover risk, exact thresholds, and expected discounted safe
    time. Changes update every value and accessible text together.

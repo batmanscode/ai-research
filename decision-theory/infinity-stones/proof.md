@@ -233,19 +233,46 @@ model or a claim that a tiny discount rate always changes the decision.
 
 ## 7. A different custodian assumption changes the theorem
 
-Suppose one permanent custodian is perfectly safe with probability `1-q` and
-fails the first handover otherwise. Once the first handover succeeds, all
-future handovers succeed with certainty. Then `A_persistent=(1-q)/beta`, so
+### Permanent prevention: one risky collection
 
-\[
-A_{\rm persistent}\geq K
+Suppose a successful first handover permanently eliminates production and
+all subsequent catastrophe risk counted by this model. Failure is immediate
+and has value zero; success has safe-time value `1/beta`, for `beta > 0`.
+Weighting these outcomes by their probabilities gives
+
+$$
+A_{\rm permanent}
+=(1-q)\int_0^\infty e^{-\beta t}\,dt
+=\frac{1-q}{\beta}.
+$$
+
+Keeping the stones still has value `K=1/(beta+lambda)`. Therefore
+
+$$
+A_{\rm permanent}\geq K
 \quad\Longleftrightarrow\quad q\leq\frac{\lambda}{\beta+\lambda}.
-\]
+$$
 
-The entire return-time law disappears. This countermodel prevents reading the
-independent-episode theorem as a universal statement about a single person's
-trustworthiness. Permanent removal of production gives the same policy value
-because it eliminates later handovers altogether.
+At equality the policies tie. With the illustrative `lambda=0.02` and
+`beta=0.03`, this threshold is `0.02/0.05=40%`. At `q=15%`, permanent
+prevention has value `0.85/0.03`, approximately `28.33`, versus `20` for
+keeping. These are weighted safe-time scores under the example's assumptions.
+
+There is no second collection and no return-time distribution to estimate.
+This case assumes permanent prevention is available and succeeds whenever
+the first handover succeeds; it does not establish that capability.
+
+### A permanently trustworthy custodian
+
+Alternatively, suppose one permanent custodian is perfectly safe with
+probability `1-q` and fails the first handover otherwise. Once the first
+handover succeeds, all future handovers succeed with certainty. Its value is
+also `A_persistent=(1-q)/beta`, with the same threshold, even if production
+returns. The entire return-time law again disappears.
+
+These countermodels prevent reading the independent-episode theorem as a
+universal statement about disarmament or a single person's trustworthiness.
+They do not model ongoing enforcement with later betrayal or failure.
 
 ## 8. Mathematical provenance
 

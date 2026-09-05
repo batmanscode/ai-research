@@ -143,6 +143,8 @@ without requiring maths, compares three equal-average comeback patterns, and
 lets readers test which time limits make a decision possible. The decision
 equation and same-average arithmetic are visible with ordinary explanations; the time-weight definition and secondary settings are optional.
 Scores, assumptions, and CYBRDELIC attribution remain visible.
+Before the experiments, a visible setup box distinguishes permanent prevention
+from surviving production and links the one-off calculation in the proof.
 
 Each paper owns its first-party assets and can be deployed without the other.
 All four pages use relative first-party assets, semantic headings, a skip link,
