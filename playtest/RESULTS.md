@@ -359,3 +359,23 @@
   response to its hierarchy feedback. Its mobile gutter concern was not
   supported: the step numbers retain the existing 20 px left margin.
   Physical-device and human screen-reader testing remain unclaimed.
+
+## 6 September 2026 — one-off calculation on the website
+
+- Expanded the permanent-prevention box with visible score arithmetic and
+  the 40% break-even calculation from proof section 7. The worked example is
+  explicitly fixed: slider changes below do not alter its inputs. Defined
+  the score, time weighting, and symbols nearby; the external link now says
+  "Read the one-off derivation".
+- Exact fractions confirm `85/3` versus `20` and the threshold `2/5`.
+  Python evidence reproduced byte for byte; all 192 browser-model cases
+  passed. No model code or scientific claims changed.
+- Inspected 1440, 1024, 390, and 320 px layouts without horizontal overflow.
+  Equations remain readable at the narrow width. The proof link retains a
+  44 px target; IDs, anchors, and all three local assets passed checks.
+  Browser logs showed no warnings or errors.
+- Gemini 3.8 Flash reviewed desktop and phone captures. Darkened essential
+  definitions, explained the denominator addition, and labeled the numbers
+  as safety scores. Both exact final captures received a second visual
+  review with no material issues. Screenshots are review artifacts outside
+  the source tree; no provider payloads or credentials are stored here.
