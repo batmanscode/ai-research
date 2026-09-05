@@ -86,7 +86,8 @@ own path prefix rather than through its sibling.
 7. On the Infinity Stones page, confirm the default equal-average reversal,
    zero time-weighting agreement, zero background-danger and zero-handover-risk
    edges, all three information choices, collapsed bounds, keyboard sliders,
-   reset, and optional maths disclosure. Confirm ordinary copy explains the
+   reset, visible average arithmetic and decision rule, and the optional
+   time-weight definition. Confirm ordinary copy explains the
    bars and scores without requiring the equation.
 8. On all affected websites, confirm no unexpected console errors, broken first-party requests, clipped
    text, or horizontal document overflow.

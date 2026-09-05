@@ -36,6 +36,9 @@
       label.className='world-status '+(status==='tie'?'tie':status==='handover'?'good':'bad');
     }
     $('uneven-law').textContent=concise(early*100)+'% return after 1 year; '+concise(100-early*100)+'% after '+concise(results.slow)+' years.';
+    const roundedSlow=Number(results.slow.toFixed(1));
+    const equals=Math.abs(results.slow-roundedSlow)<1e-8?' = ':' ≈ ';
+    $('average-arithmetic').textContent=concise(early*100)+'% × 1 + '+concise(100-early*100)+'% × '+concise(results.slow)+equals+'20 years';
     $('keep-value').textContent=num(results.reliable.keep);
     $('safe-unit').textContent=beta===0?'expected safe years':'safety score';
     let copy;

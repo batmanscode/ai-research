@@ -296,3 +296,19 @@
   physical-device testing, and native browser 200% zoom remain unclaimed.
   The new production route needs a separately reviewed Portfolio submodule
   update; local source/browser checks do not prove production deployment.
+
+
+## 5 September 2026 — useful maths in the reading flow
+
+- Replaced the collapsed equation with a visible, equivalent decision rule
+  `q <= lambda H/(1+lambda H)`, defining `H` as the average weighted safe pause.
+  The deeper time-weight definition remains optional. Added live same-average
+  arithmetic, with an approximation sign whenever the displayed pause rounds.
+- JavaScript syntax and the existing 192 parameter/fixture checks passed.
+  Browser checks covered the default, 0%, 37% (rounded), and 99% early returns,
+  reset, and the expanded definition. Desktop and phone/narrow layouts had no
+  horizontal overflow or console warnings/errors. No research model changed.
+- Direct visual inspection and Gemini 3.8 Flash review confirmed that the
+  ordinary explanation remains readable independently of the equation. Made
+  the deeper-definition link more obvious and its variable formatting
+  consistent. Physical-device and screen-reader testing remain unclaimed.
