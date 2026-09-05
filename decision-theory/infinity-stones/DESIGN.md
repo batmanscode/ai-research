@@ -20,6 +20,9 @@ Faceted stones are inline SVG geometry, not branded Marvel artwork. The SG
 home link and the existing favicon supply family identity. No hero mascot,
 stock imagery, remote fonts, autoplay, or decorative scientific chart.
 
+The header follows the shared research navigation: Explainer, Proof ↗,
+Log ↗, and GitHub ↗. The hero's experiment link starts the interactive story.
+
 ## Narrative and interaction
 
 1. Question and direct scenario credit to CYBRDELIC, with a clear research-note

@@ -1,6 +1,6 @@
 # Design system
 
-Last updated: 4 September 2026
+Last updated: 5 September 2026
 
 ## Direction
 
@@ -58,8 +58,11 @@ loading is unavailable. Information must remain legible without the web fonts.
   require horizontal scrolling.
 - Navigation labels stay short and on one line at the supported narrow width;
   prefer a few direct links over a disclosure menu.
+- Paper headers use consistent destinations: Explainer (the current page),
+  Proof or Report as appropriate, Log, and GitHub. Mark external research
+  links with ↗; keep section jumps within the page content.
 - The header's existing `SG` brand link returns to the Research Labs homepage
-  at `/` in the same tab. The paper-specific navigation remains unchanged.
+  at `/` in the same tab.
 - Goose illustrations are optional colophon or marginal details, never the
   hero subject. They must not compete with a paper's result, problem, or
   evidence; the compact `SG` mark is sufficient when a mascot adds no meaning.

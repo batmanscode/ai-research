@@ -12,3 +12,14 @@ project `README.md`, code, and certificates/results.
 If a project path or production URL changes, update its source body, patch the
 existing finding rather than submitting a duplicate, and read the API object
 back before recording success here.
+
+## Infinity Stones note
+
+[Who gets the Infinity Stones?](../decision-theory/infinity-stones/README.md)
+has not been submitted to Emergent Mind. On 5 September 2026, two targeted
+open-problem searches covering recurring disarmament and robust renewal
+decisions returned no problem whose statement this result advances. This is
+a publication-fit assessment, not an exhaustive search or a priority claim.
+Emergent Mind's [findings route](https://www.emergentmind.com/skills/open-problems)
+accepts partial results tied to a listed problem; the note remains available
+as a standalone repository publication.
