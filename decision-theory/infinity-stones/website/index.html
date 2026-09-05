@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="An interactive research note: the same average time until the Infinity Stones return can imply opposite disarmament decisions. Explore a proved robustness bound and its assumptions.">
+  <meta name="theme-color" content="#f9f8f4">
+  <title>Who gets the Infinity Stones? — Silly Goose Research Labs</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/site.css">
+  <script src="js/model.js" defer></script>
+  <script src="js/explorer.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the research</a>
+  <header class="topbar shell">
+    <a class="brand" href="/" aria-label="Silly Goose Research Labs home"><span class="brand-mark">SG</span><span class="brand-name">Silly Goose Research Labs</span></a>
+    <nav aria-label="Primary navigation"><a href="#explore">Explore</a><a href="#result">Result</a><a href="#sources">Sources</a></nav>
+  </header>
+  <main id="main">
+    <section class="hero shell">
+      <div>
+        <p class="eyebrow">A thought experiment / Research note</p>
+        <h1>Who gets the<br><em>Infinity Stones?</em></h1>
+        <p class="lede">Hand them to one person. Hope they destroy them. Now suppose the factories can make more.</p>
+        <p class="hero-finding">We proved a small but surprising result: <strong>the average time until the stones return cannot, by itself, guarantee that a risky handover is worth it.</strong></p>
+        <a class="button primary" href="#explore">Try the three worlds <span aria-hidden="true">↓</span></a>
+        <p class="credit">The scenario belongs to <a href="https://x.com/cybrdelic/status/2094237445240102951">CYBRDELIC (@cybrdelic) ↗</a><br>31 August 2026. The model and its assumptions are ours.</p>
+      </div>
+      <aside class="handover-diagram" aria-label="The risky part">
+        <div class="diagram-top"><span class="mini-label">The risky part</span><span class="folio">All six stones</span></div>
+        <svg viewBox="0 0 400 280" role="img" aria-labelledby="stones-title stones-desc">
+          <title id="stones-title">Six separately owned stones pass to one person</title>
+          <desc id="stones-desc">Distribution protects multiple owners. Collecting the stones concentrates power before destruction can occur. A successful destruction may be temporary if factories restart.</desc>
+          <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" fill="#aba799"/></marker><path id="gem" d="M0 -17 13 -7 10 12 0 19 -10 12 -13 -7z"/></defs>
+          <g fill="none" stroke="#d4d0c6" stroke-width="1.3" marker-end="url(#arrow)"><path d="M42 77Q42 127 162 167"/><path d="M104 77Q104 127 178 159"/><path d="M168 77 190 150"/><path d="M232 77 210 150"/><path d="M296 77Q296 127 222 159"/><path d="M358 77Q358 127 238 167"/></g>
+          <g stroke-width="1.5"><use href="#gem" transform="translate(42 53)" fill="#dfbc77" stroke="#947027"/><use href="#gem" transform="translate(104 53)" fill="#b9c8e8" stroke="#5c739a"/><use href="#gem" transform="translate(168 53)" fill="#c8b5dd" stroke="#806394"/><use href="#gem" transform="translate(232 53)" fill="#b8cfbd" stroke="#597c5f"/><use href="#gem" transform="translate(296 53)" fill="#e3b9aa" stroke="#a16955"/><use href="#gem" transform="translate(358 53)" fill="#e9d6a1" stroke="#a48b46"/></g>
+          <circle cx="200" cy="187" r="40" fill="#eee8f3" stroke="#806394" stroke-width="1.5"/>
+          <path d="m200 159 17 13-4 25-13 15-13-15-4-25z" fill="#806394"/>
+          <path d="m200 159 0 53m-17-40 30 25m4-25-30 25" fill="none" stroke="#bda8cf" stroke-width="1"/>
+          <text x="200" y="260" text-anchor="middle" fill="#665477" font-size="14" font-family="sans-serif">One person. All the power.</text>
+        </svg>
+        <p>Call them Thanos, if you like.<br><strong>The second handover matters too.</strong></p>
+      </aside>
+    </section>
+
+    <section class="setup shell" aria-labelledby="setup-title">
+      <div class="section-heading"><p class="eyebrow">The rules we added</p><h2 id="setup-title">Destruction is a pause.<br><em>It may not be an ending.</em></h2></div>
+      <div class="steps">
+        <article><span class="step-number">01</span><h3>Keep the stones</h3><p>Everyone keeps their own stones. They can shield themselves from attacks, but we assume some danger remains.</p></article>
+        <article><span class="step-number">02</span><h3>Risk the handover</h3><p>One person gets all the stones. They might use that power against everyone. If they destroy the stones instead, the world is safe for a while.</p></article>
+        <article><span class="step-number">03</span><h3>Meet the factories again</h3><p>Factories eventually make more stones. You face the same choice again. Every handover is a fresh gamble: a past success does not make the next one safe.</p></article>
+      </div>
+      <p class="scope-note"><strong>What “better” means here:</strong> more safe time, on average. These are made-up risks for a thought experiment. We are not deciding how real weapons or AI should be governed.</p>
+    </section>
+
+    <section class="explorer shell" id="explore" aria-labelledby="explore-title">
+      <div class="section-heading split-heading"><div><p class="eyebrow">Experiment 01 / Change the pattern</p><h2 id="explore-title">Twenty years on average.<br><em>Three different promises.</em></h2></div><button class="button reset" id="reset" type="button">Reset example ↺</button></div>
+      <p class="section-intro">Every world below has the same <strong>20-year average pause</strong>. Move the risk, then change how often the uneven world returns early. The other assumptions stay the same.</p>
+      <noscript><p class="scope-note">JavaScript is off. The reproducible default example and proof remain readable; the sliders and live calculations require JavaScript.</p></noscript>
+      <div class="controls">
+        <div class="control"><label for="handover-risk">Failure at each handover <output id="q-output" for="handover-risk">15%</output></label><input id="handover-risk" type="range" min="0" max="60" step="1" value="15"><small>A probability per attempt, not per year.</small></div>
+        <div class="control"><label for="early-chance">Uneven world: chance of early return <output id="early-output" for="early-chance">90%</output></label><input id="early-chance" type="range" min="0" max="99" step="1" value="90"><small>Early means 1 year. The long pause adjusts to keep the average at 20.</small></div>
+      </div>
+      <details class="other-settings"><summary>Change the other assumptions</summary><p class="caption">The example starts with about a 2% yearly danger while keeping the stones, and gives nearer safe years extra weight. Try changing either.</p><div class="controls">
+        <div class="control"><label for="armed-risk">Yearly danger while keeping them <output id="lambda-output" for="armed-risk">1.98% / yr</output></label><input aria-valuetext="1.98 percent per year" id="armed-risk" type="range" min="0" max="8" step="0.1" value="2"><small>Chance of catastrophe in a year while everyone keeps their own stones.</small></div>
+        <div class="control"><label for="discount">How much nearer years matter <output id="beta-output" for="discount">3% / yr</output></label><input id="discount" type="range" min="0" max="10" step="0.1" value="3"><small>At 3%, a safe year 23 years from now counts half as much as one today. At 0%, every year counts equally.</small></div>
+      </div></details>
+      <div class="comparison-key"><span><i class="key-line"></i> Chosen handover risk</span><span><i class="key-bar"></i> Highest handover risk worth taking</span><span>Common scale: 0–100%</span></div>
+      <div class="worlds" id="worlds">
+        <article class="world" data-world="reliable"><div class="world-top"><span class="world-index">A</span><span class="world-status good">Handover is better</span></div><h3>A reliable pause</h3><p class="world-law">Always returns after <strong>20 years.</strong></p><div class="risk-track" role="img" aria-label="Tolerable handover risk 23.12 percent; chosen risk 15 percent"><div class="risk-fill" style="width:23.1238%"></div><div class="risk-marker" style="left:15%"></div></div><div class="threshold-label"><span>Risk worth taking, up to</span><strong class="threshold-value">23.12%</strong></div><div class="value-row"><span>Safety score</span><strong class="safe-value">23.96</strong></div></article>
+        <article class="world" data-world="exponential"><div class="world-top"><span class="world-index">B</span><span class="world-status good">Handover is better</span></div><h3>An unpredictable pause</h3><p class="world-law">The chance of returning stays the same each year. Average: <strong>20 years.</strong></p><div class="risk-track" role="img" aria-label="Tolerable handover risk 20 percent; chosen risk 15 percent"><div class="risk-fill" style="width:20%"></div><div class="risk-marker" style="left:15%"></div></div><div class="threshold-label"><span>Risk worth taking, up to</span><strong class="threshold-value">20.00%</strong></div><div class="value-row"><span>Safety score</span><strong class="safe-value">22.67</strong></div></article>
+        <article class="world" data-world="uneven"><div class="world-top"><span class="world-index">C</span><span class="world-status bad">Keeping is better</span></div><h3>An uneven pause</h3><p class="world-law" id="uneven-law"><strong>90%</strong> return after <strong>1 year</strong>; <strong>10%</strong> after <strong>191 years.</strong></p><div class="risk-track" role="img" aria-label="Tolerable handover risk 7.76 percent; chosen risk 15 percent"><div class="risk-fill" style="width:7.7646%"></div><div class="risk-marker" style="left:15%"></div></div><div class="threshold-label"><span>Risk worth taking, up to</span><strong class="threshold-value">7.76%</strong></div><div class="value-row"><span>Safety score</span><strong class="safe-value">13.90</strong></div></article>
+      </div>
+      <div class="comparison-summary" aria-live="polite" aria-atomic="true"><div><span class="mini-label">Keeping the stones</span><strong id="keep-value">20.00</strong><span id="safe-unit">safety score</span></div><p id="comparison-copy">Same average, opposite answers: handover helps in the reliable world but hurts in the uneven one.</p></div>
+      <p class="caption"><strong>How to read this:</strong> if the black line is inside the purple bar, handover is worth its risk. The safety score adds up the safe years you can expect, giving nearer years extra weight if you chose that above. Higher is better; the green box shows the score for keeping the stones. Each card assumes you repeat the handover whenever new stones appear.</p>
+    </section>
+
+    <section class="guarantee shell" id="guarantee" aria-labelledby="guarantee-title">
+      <div class="section-heading"><p class="eyebrow">Experiment 02 / Change what you know</p><h2 id="guarantee-title">An average is a hint.<br><em>A limit is a guarantee.</em></h2></div>
+      <p class="section-intro">The average is still 20 years. Now imagine you do not know the pattern—only how early or late the stones could return. Is that enough information to make a decision?</p>
+      <div class="guarantee-layout">
+        <div class="bound-controls">
+          <label class="select-label" for="information">What do we know?</label><select id="information"><option value="bounded">Average + earliest + latest</option><option value="floor">Average + earliest only</option><option value="mean">Just the average</option></select>
+          <div class="control" id="floor-control"><label for="floor">Cannot return before <output id="floor-output" for="floor">1 year</output></label><input id="floor" type="range" min="0.1" max="20" step="0.1" value="1"></div>
+          <div class="control" id="ceiling-control"><label for="ceiling">Must return within <output id="ceiling-output" for="ceiling">191 years</output></label><input id="ceiling" type="range" min="20" max="400" step="1" value="191"></div>
+          <p class="caption">This uses the risk and safety settings you chose above.</p>
+        </div>
+        <div class="bound-display">
+          <div class="bound-values"><div><span class="mini-label">Worst possible pattern</span><strong id="bound-low">7.76%</strong></div><span class="bound-to">to</span><div><span class="mini-label">Best possible pattern</span><strong id="bound-high">23.12%</strong></div></div>
+          <div class="bound-track" role="img" id="bound-track" aria-label="Possible tolerable handover risks range from 7.76 to 23.12 percent; chosen risk is 15 percent"><div id="guaranteed-zone" style="width:7.7646%"></div><div id="uncertain-zone" style="left:7.7646%;width:15.3592%"></div><div class="risk-marker" id="bound-marker" style="left:15%"></div></div>
+          <div class="axis"><span>0%</span><span>50%</span><span>100%</span></div>
+          <p class="bound-verdict" id="bound-verdict" aria-live="polite">The known limits still allow opposite decisions.</p>
+          <p class="caption" id="bound-explanation">The worst pattern mixes the earliest and latest returns. The best returns after exactly 20 years every time. Other patterns can give any answer between these two.</p>
+          <p class="caption">Green: handover is worth it for every pattern allowed by your settings. Stripes: you need more information. Beyond the stripes: keeping wins. Exactly at a boundary, a tie may be possible.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="result shell" id="result" aria-labelledby="result-title">
+      <div class="result-copy"><p class="eyebrow">The proved result / Within this model</p><h2 id="result-title">The average alone<br><em>cannot clear the handover.</em></h2><p>If you give any extra weight to safety soon, an average pause alone cannot justify even a tiny handover risk. Some pattern with that same average will make keeping the stones better.</p><p>Make early returns very common. Offset them with rare, very long pauses. The average stays fixed while the tolerable handover risk approaches zero.</p><p><strong>Knowing the stones cannot return for a certain time changes that.</strong> So does permanent removal of production. The theorem identifies the missing information; it does not say disarmament always fails.</p><a class="button" href="https://github.com/batmanscode/ai-research/blob/main/decision-theory/infinity-stones/proof.md">Read the complete proof ↗</a></div>
+      <details class="formula-note"><summary>Want the maths?</summary><p class="caption">The formula below is for a positive time-weighting rate. The proof also covers zero.</p><span class="mini-label">The exact decision boundary</span><p class="formula">q ≤ <span class="fraction"><span>λ(1 − L)</span><span>β + λ(1 − L)</span></span></p><dl><div><dt>q</dt><dd>Failure probability at each handover.</dd></div><div><dt>λ</dt><dd>Background catastrophe hazard while distributed.</dd></div><div><dt>β</dt><dd>Rate used to weight future safe time.</dd></div><div><dt>L</dt><dd>The average of e<sup>−βR</sup> over possible return times R.</dd></div></dl><p class="caption">Average the transformed return times. Transforming their average gives a different answer.</p></details>
+    </section>
+
+    <section class="patience shell"><p class="eyebrow">One more twist</p><h2>Perfect patience changes<br><em>what the average can tell you.</em></h2><div class="two-columns"><p>Count a safe year far in the future just as much as a safe year today, and the average becomes enough. All three cards agree. Move “How much nearer years matter” to zero to see it.</p><p>Give even a little extra weight to nearer years, and some extremely uneven pattern can still spoil that guarantee. As you become more patient, that troublesome pattern becomes more extreme. No single world suddenly jumps from one answer to another.</p></div></section>
+
+    <section class="evidence shell" aria-labelledby="evidence-title"><div><p class="eyebrow">Show the work</p><h2 id="evidence-title">Proof first.<br><em>Checks from another direction.</em></h2><p>The written proof covers every comeback pattern allowed by the model. We also checked the calculator a different way: follow the world through time, adding up safe years and tracking failed handovers.</p><a href="https://github.com/batmanscode/ai-research/blob/main/decision-theory/infinity-stones/results/verification.json">Verification record ↗</a></div><div class="evidence-numbers"><div><strong>8,820</strong><span>exact arithmetic checks</span></div><div><strong>62</strong><span>checks by following time</span></div><div><strong>1,000</strong><span>comeback-pattern checks</span></div><div><strong>6</strong><span>examples that defeat the average</span></div></div></section>
+
+    <section class="limits shell" aria-labelledby="limits-title"><p class="eyebrow">Read before generalizing</p><h2 id="limits-title">The assumptions do real work.</h2><div class="two-columns"><div><h3>Fresh risk, every time</h3><p>This is not one immortal person's hidden good-or-evil personality. If a successful first handover proves that the person is permanently trustworthy, the comeback pattern stops mattering. The proof explains that alternative too.</p><h3>We only count safety</h3><p>We do not price freedom, inequality, useful applications, or the incentives of an elite. The note addresses a narrower question than the original three-way dilemma.</p></div><div><h3>The rules stay the same</h3><p>We assume each round starts fresh, with the same rules. Factories and handovers do not influence each other's luck. Learning, better technology, or people deliberately rebuilding weapons could change the answer.</p><h3>What is new here?</h3><p>This note pins down exactly what an average and time limits can tell us in this scenario. The underlying maths and the problem of trusting someone during disarmament are older ideas. We have not established that nobody has derived this result before. External peer review is still pending.</p></div></div></section>
+
+    <section class="sources shell" id="sources" aria-labelledby="sources-title"><p class="eyebrow">Credit where it belongs</p><h2 id="sources-title">A tweet started it.<br><em>Older ideas made it precise.</em></h2><ol><li><span>01</span><div><a href="https://x.com/cybrdelic/status/2094237445240102951">CYBRDELIC · The original Infinity Stones scenario ↗</a><p>31 August 2026. Original scenario credit; no coauthorship or endorsement implied. <a href="https://x.com/cybrdelic/status/2095691559035457557">The follow-up invitation ↗</a></p></div></li><li><span>02</span><div><a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/S0020818397440110">Barbara F. Walter · The Critical Barrier to Civil War Settlement ↗</a><p>1997. Losing the ability to protect yourself during disarmament was already a serious research problem.</p></div></li><li><span>03</span><div><a href="https://www.cambridge.org/core/journals/international-organization/article/abs/war-as-a-commitment-problem/65DFFF1CD73A16F7ED4EEF6D4F934608">Robert Powell · War as a Commitment Problem ↗</a><p>2006. Agreements that change future power can undermine their own enforcement.</p></div></li><li><span>04</span><div><a href="https://ocw.mit.edu/courses/6-262-discrete-stochastic-processes-spring-2011/931ffa0940899c27f34b71ad64fd2bb0_MIT6_262S11_chap04.pdf">Robert Gallager · Renewal processes ↗</a><p>MIT notes, Chapter 4. The mathematical machinery for a system that starts again.</p></div></li><li><span>05</span><div><a href="https://www.jstor.org/stable/2237413">Albert Madansky · Convex expectation bounds ↗</a><p>1959. The endpoint bound is classical; we use it rather than claim to have invented it.</p></div></li></ol><a class="text-link" href="https://github.com/batmanscode/ai-research/blob/main/decision-theory/infinity-stones/research-log.md">Full literature comparison, failed starts, and novelty limits ↗</a></section>
+  </main>
+  <footer class="shell"><span>Silly Goose Research Labs · 5 September 2026</span><div><a href="https://github.com/batmanscode/ai-research/tree/main/decision-theory/infinity-stones">Source &amp; reproduction ↗</a><a href="https://github.com/batmanscode/ai-research/blob/main/decision-theory/infinity-stones/CITATION.cff">Cite this note ↗</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,170 @@
+{
+  "counts": {
+    "bellman_policy_cases": 10,
+    "bounded_support_and_convex_order_cases": 1000,
+    "calendar_probability_flow_cases": 62,
+    "exact_rational_threshold_cases": 8820,
+    "positive_mean_only_witnesses": 6
+  },
+  "evidence_scope": "Numerical and exact-algebra implementation checks; written proofs establish universal claims.",
+  "exponential_fixture": {
+    "handover_value": 22.666666666666668,
+    "mean": 20,
+    "name": "exponential",
+    "threshold": 0.19999999999999998
+  },
+  "fixed_law_patience_checks": [
+    {
+      "name": "reliable",
+      "thresholds": [
+        0.23123772786486135,
+        0.27966161297173847,
+        0.28565306822138686,
+        0.28571422448980294
+      ]
+    },
+    {
+      "name": "uneven",
+      "thresholds": [
+        0.0776463793007009,
+        0.23591335039589129,
+        0.2851563948933715,
+        0.2857137271945074
+      ]
+    }
+  ],
+  "fixtures": [
+    {
+      "calendar_tail_bound": 9.541728601831313e-19,
+      "calendar_value": 23.961439694106584,
+      "handover_value": 23.96143969410659,
+      "law": [
+        [
+          20,
+          1.0
+        ]
+      ],
+      "mean": 20.0,
+      "name": "reliable",
+      "threshold": 0.23123772786486135
+    },
+    {
+      "calendar_tail_bound": 9.541728601831313e-19,
+      "calendar_value": 13.903268830207585,
+      "handover_value": 13.903268830207592,
+      "law": [
+        [
+          1,
+          0.9
+        ],
+        [
+          191,
+          0.1
+        ]
+      ],
+      "mean": 20.0,
+      "name": "uneven",
+      "threshold": 0.0776463793007009
+    }
+  ],
+  "keep_value": 20.0,
+  "maximum_calendar_error": 2.842170943040401e-14,
+  "mean_only_witnesses": [
+    {
+      "epsilon": 0.1,
+      "law": [
+        [
+          2.0,
+          0.9
+        ],
+        [
+          181.99999999999997,
+          0.1
+        ]
+      ],
+      "threshold": 0.0920023004383965
+    },
+    {
+      "epsilon": 0.01,
+      "law": [
+        [
+          0.2,
+          0.99
+        ],
+        [
+          1980.1999999999998,
+          0.01
+        ]
+      ],
+      "threshold": 0.010503319644565535
+    },
+    {
+      "epsilon": 0.001,
+      "law": [
+        [
+          0.02,
+          0.999
+        ],
+        [
+          19980.02,
+          0.001
+        ]
+      ],
+      "threshold": 0.0010650113521826468
+    },
+    {
+      "epsilon": 0.0001,
+      "law": [
+        [
+          0.002,
+          0.9999
+        ],
+        [
+          199980.00199999998,
+          0.0001
+        ]
+      ],
+      "threshold": 0.00010665009135548446
+    },
+    {
+      "epsilon": 1e-05,
+      "law": [
+        [
+          0.0002,
+          0.99999
+        ],
+        [
+          1999980.0002,
+          1e-05
+        ]
+      ],
+      "threshold": 1.0666500891355813e-05
+    },
+    {
+      "epsilon": 1e-06,
+      "law": [
+        [
+          1.9999999999999998e-05,
+          0.999999
+        ],
+        [
+          19999980.00002,
+          1e-06
+        ]
+      ],
+      "threshold": 1.0666650088913559e-06
+    }
+  ],
+  "parameters": {
+    "beta": 0.03,
+    "lambda": 0.02,
+    "mu": 20,
+    "q": 0.15
+  },
+  "persistent_custodian_threshold": 0.39999999999999997,
+  "positive_floor_threshold_infimum": 0.019322271353995692,
+  "schema_version": 1,
+  "seed": 20260905,
+  "status": "pass",
+  "undiscounted_threshold": 0.28571428571428575
+}

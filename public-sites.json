@@ -12,6 +12,10 @@
     {
       "slug": "aggregate-chemistry-transfer",
       "source": "biology/aggregate-chemistry-transfer/website"
+    },
+    {
+      "slug": "infinity-stones",
+      "source": "decision-theory/infinity-stones/website"
     }
   ]
 }

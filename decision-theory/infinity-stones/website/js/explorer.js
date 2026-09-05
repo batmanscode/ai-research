@@ -1,0 +1,83 @@
+/* All figures are exact model calculations; no API calls or simulated data. */
+(function(){
+  'use strict';
+  const M=window.StonesModel;
+  const $=id=>document.getElementById(id);
+  const inputs=['handover-risk','armed-risk','discount','early-chance','floor','ceiling','information'];
+  const percent=x=>(100*x).toFixed(2)+'%';
+  const num=x=>Number.isFinite(x)?x.toFixed(2):'∞';
+  const concise=x=>Number(x.toFixed(1)).toString();
+  function render(){
+    const q=Number($('handover-risk').value)/100;
+    const lam=Number($('armed-risk').value)/100;
+    const beta=Number($('discount').value)/100;
+    const early=Number($('early-chance').value)/100;
+    const a=Number($('floor').value),b=Number($('ceiling').value),information=$('information').value;
+    $('q-output').textContent=concise(q*100)+'%';
+    $('lambda-output').textContent=(-Math.expm1(-lam)*100).toFixed(2)+'% / yr';
+    $('armed-risk').nextElementSibling.textContent='Chance of catastrophe in a year while everyone keeps their own stones.';
+    $('armed-risk').setAttribute('aria-valuetext',(-Math.expm1(-lam)*100).toFixed(2)+' percent per year');
+    $('beta-output').textContent=concise(beta*100)+'% / yr';
+    $('discount').nextElementSibling.textContent=beta===0?'Every future safe year counts equally.':'At this setting, a safe year '+concise(Math.log(2)/beta)+' years away counts half as much as one today. Higher settings favour nearer years.';
+    $('early-output').textContent=concise(early*100)+'%';
+    const results=M.worlds(lam,beta,q,early);
+    const statuses=[];
+    for(const name of ['reliable','exponential','uneven']){
+      const node=document.querySelector('[data-world="'+name+'"]'),r=results[name],status=M.preference(q,r.threshold);
+      statuses.push(status);
+      node.querySelector('.threshold-value').textContent=percent(r.threshold);
+      node.querySelector('.safe-value').textContent=num(r.value);
+      node.querySelector('.value-row span').textContent=beta===0?'Expected safe years':'Safety score';
+      node.querySelector('.risk-fill').style.width=(r.threshold*100)+'%';
+      node.querySelector('.risk-marker').style.left=(q*100)+'%';
+      node.querySelector('.risk-track').setAttribute('aria-label','Tolerable handover risk '+percent(r.threshold)+'; chosen risk '+percent(q));
+      const label=node.querySelector('.world-status');
+      label.textContent=status==='tie'?'Equal value':status==='handover'?'Handover is better':'Keeping is better';
+      label.className='world-status '+(status==='tie'?'tie':status==='handover'?'good':'bad');
+    }
+    $('uneven-law').textContent=concise(early*100)+'% return after 1 year; '+concise(100-early*100)+'% after '+concise(results.slow)+' years.';
+    $('keep-value').textContent=num(results.reliable.keep);
+    $('safe-unit').textContent=beta===0?'expected safe years':'safety score';
+    let copy;
+    if(lam===0)copy=q===0?'Both policies have zero catastrophe risk in this model.':'Keeping the stones is perfectly safe here. Any chance of a failed handover makes it worse.';
+    else if(beta===0)copy='All three worlds agree. With equal weight on every future year, only the shared average pause matters.';
+    else if(statuses.includes('handover')&&statuses.includes('keep'))copy='Same average, opposite answers: the comeback pattern changes whether handover is worth its risk.';
+    else if(statuses.every(s=>s==='handover'))copy='Handover is better in all three displayed worlds. Their shared average still does not guarantee the same answer for every possible pattern.';
+    else if(statuses.every(s=>s==='keep'))copy='Keeping is better in all three displayed worlds at this handover risk.';
+    else copy='At least one world is a tie: keeping and handing over give the same safety score.';
+    $('comparison-copy').textContent=copy;
+    $('floor-output').textContent=concise(a)+(a===1?' year':' years');
+    $('ceiling-output').textContent=concise(b)+' years';
+    $('floor-control').hidden=information==='mean';
+    $('ceiling-control').hidden=information!=='bounded';
+    const bound=M.bounds(lam,beta,a,b,information);
+    $('bound-low').textContent=percent(bound.low);
+    $('bound-high').textContent=percent(bound.high);
+    $('guaranteed-zone').style.width=(bound.low*100)+'%';
+    $('uncertain-zone').style.left=(bound.low*100)+'%';
+    $('uncertain-zone').style.width=(Math.max(0,bound.high-bound.low)*100)+'%';
+    $('bound-marker').style.left=(q*100)+'%';
+    $('bound-track').setAttribute('aria-label','Possible tolerable handover risks range from '+percent(bound.low)+' to '+percent(bound.high)+'; chosen risk '+percent(q));
+    let verdict;
+    if(q<=bound.low+1e-10)verdict='Handover is at least as good for every possible pattern.';
+    else if(q>bound.high+1e-10)verdict='Keeping is better for every possible pattern.';
+    else if(Math.abs(q-bound.high)<1e-10)verdict='Keeping is at least as good; the best pattern is a tie.';
+    else verdict='The known information still allows opposite decisions.';
+    $('bound-verdict').textContent=verdict;
+    let explanation;
+    if(beta===0)explanation='When every future year counts equally, the average is enough. Every possible pattern gives the same answer.';
+    else if(lam===0)explanation='Keeping is perfectly safe here. No pattern makes a risky handover better.';
+    else if(information==='mean')explanation='Some patterns make the risk worth taking as close to zero as you like. The average alone cannot justify any positive handover risk. The exact zero is a limit, never reached by a positive pause.';
+    else if(information==='floor'&&a<20)explanation='Knowing the earliest return gives a floor. Patterns with rare, very long pauses can get as close to that floor as you like. A reliable 20-year pause gives the highest answer.';
+    else if(Math.abs(bound.low-bound.high)<1e-10)explanation='These limits mean the stones must return after exactly 20 years. There is only one possible pattern.';
+    else explanation='The worst pattern mixes the earliest and latest returns. The best returns after exactly 20 years every time. Other patterns can give any answer between these two.';
+    $('bound-explanation').textContent=explanation;
+  }
+  for(const id of inputs)$(id).addEventListener('input',render);
+  $('reset').addEventListener('click',()=>{
+    const defaults={'handover-risk':15,'armed-risk':2,'discount':3,'early-chance':90,'floor':1,'ceiling':191,'information':'bounded'};
+    for(const [id,value]of Object.entries(defaults))$(id).value=value;
+    render();
+  });
+  render();
+})();
